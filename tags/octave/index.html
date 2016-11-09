@@ -1,136 +1,57 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Octave &middot; Miaulog</title>
-
-    <meta name="description" content="">
-
-    <meta name="generator" content="Hugo 0.18-DEV" />
-    <meta name="twitter:card" content="summary">
-    
-    <meta name="twitter:title" content="Octave &middot; Miaulog">
-    <meta name="twitter:description" content="">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Octave &middot; Miaulog">
-    <meta property="og:description" content="">
-
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
-
-    <link rel="stylesheet" href="http://tuxedocat.github.io//css/all.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <link rel="alternate" type="application/rss+xml" title="Miaulog" href="http://tuxedocat.github.io//index.xml" />
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.18-DEV" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="http://tuxedocat.github.io/css/normalize.css">
+<link rel="stylesheet" href="http://tuxedocat.github.io/css/skeleton.css">
+<link rel="stylesheet" href="http://tuxedocat.github.io/css/custom.css">
+<link rel="alternate" href="http://tuxedocat.github.io/index.xml" type="application/rss+xml" title="Miaulog">
+<title>Octave - Miaulog</title>
 </head>
 <body>
 
+<div class="container">
 
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-    <div class="header">
-        <hgroup>
-            <h1 class="brand-title"><a href="http://tuxedocat.github.io/">Miaulog</a></h1>
-            <h2 class="brand-tagline"></h2>
-        </hgroup>
+	<header role="banner">
+		<div class="header-logo">
+			<a href="http://tuxedocat.github.io/"><img src="http://tuxedocat.github.io/images/logo.jpg" width="60" height="60" alt="Miaulog"></a>
+		</div>
+		
+	</header>
 
-        <nav class="nav">
-            <ul class="nav-list">
-                
-                
-                <li class="nav-item">
-                    <a class="pure-button" href="http://tuxedocat.github.io//index.xml"><i class="fa fa-rss"></i> rss</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+
+	<main role="main">
+		<h1 class="list-title">Octave</h1>
+
+		<article itemscope itemtype="http://schema.org/Blog">
+			<h2 class="entry-title" itemprop="headline"><a href="http://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/">Octave</a></h2>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2015-01-25">January 25, 2015</time></span>
+		</article>
+
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			
+			
+			
+		</div>
+		<div class="copyright">Copyright &copy; tuxedocat / CC BY-NC-SA 4.0</div>
+	</footer>
+
 </div>
 
 
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <div>
-            
-            <div class="posts">
-                
-                <h1 class="content-subhead">25 Jan 2015, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
 
-                        <a href="http://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/" class="post-title">Octave</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="http://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>某機械学習のクラスを受講している。
-深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。</p>
-
-<p>2015年コースも課題はOctaveが推奨プログラミング言語のようなので、Octaveの環境を整える。</p>
-
-<p>会社のマシンには、<a href="http://mxeoctave.osuv.de/">Windows版非公式ビルド(MXE Octave)</a>を。
-自宅MacMiniは、Homebrewで。</p>
-
-<pre><code class="language-sh">$ brew tap homebrew/science
-$ brew install octave
-</code></pre>
-
-<p>OctaveはMATLABとの互換性においては、ScilabやFreeMatよりも高いはず。
-この点で、MATLAB勢力もそこそこ居るという今の仕事においても無駄にはならなさそう。</p>
-
-<p>また、いくらPython（とそのエコシステムに含まれるNumpy/Scipy, Pandas, Scikit-learnなど）が優秀で、ライセンス面でも十分MATLABを代替できるとしても、色々な理由でPython一本で技術計算をするのは難しいと思ったのもある。<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
-
-<p>まぁ、MATLABでもPythonでもRでも、開発環境がつらすぎるExcelVBAに比べると、喜んでやります!って気持ちになる。<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">社内での最大勢力はExcel（+VBA）&hellip;ついでMATLAB、Rという感じ。
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">（悲しいかな、社内にはそういう機械学習寄りの業務の人もいる。自分の業務が全く逸れてしまっているだけで。）（そこに希望を持ってしまうと、色々な判断が遅れてしまうだろう。だが、普段からそういう分野に興味があると言っておいて、何もしていないってのはマズいから&hellip;）
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-</ol>
-</div>
-
-                    </div>
-                </section>
-                
-            </div>
-            
-
-            <div class="footer">
-    <div class="pure-menu pure-menu-horizontal pure-menu-open">
-        <ul>
-            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
-        </ul>
-    </div>
-</div>
-<script src="http://tuxedocat.github.io//js/all.min.js"></script>
-
-        </div>
-    </div>
-</div>
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', '', 'auto');
-ga('send', 'pageview');
-
-</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
