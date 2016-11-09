@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Miaulog</title>
-    <link>http://tuxedocat.github.io/</link>
+    <link>http://tuxedocat.github.io/index.xml</link>
     <description>Recent content on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>

@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ui on Miaulog</title>
-    <link>http://tuxedocat.github.io/tags/ui/</link>
+    <link>http://tuxedocat.github.io/tags/ui/index.xml</link>
     <description>Recent content in Ui on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Oct 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://tuxedocat.github.io/tags/ui/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

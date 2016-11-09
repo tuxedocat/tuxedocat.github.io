@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Osx on Miaulog</title>
-    <link>http://tuxedocat.github.io/tags/osx/</link>
+    <link>http://tuxedocat.github.io/tags/osx/index.xml</link>
     <description>Recent content in Osx on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://tuxedocat.github.io/tags/osx/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
