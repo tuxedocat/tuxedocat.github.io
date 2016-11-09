@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Miaulog</title>
+    <link>http://tuxedocat.github.io/tags/python/index.xml</link>
+    <description>Recent content in Python on Miaulog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tuxedocat.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Link</title>
+      <link>http://tuxedocat.github.io/post/2016-08-21-notebook-collection/</link>
+      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-08-21-notebook-collection/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Courseraの&amp;rdquo;Machine Learning by Andrew Ng&amp;rdquo;を含む、いろいろなコースのPython実装版らしい。 他の人が書いたものを見て学ぶには、同じ課題のものを使うのが効果的だと思っているので、すごくありがたい。（Octaveで解いたけど、補助コードが多くてアレだったし。）&lt;/p&gt;
+
+&lt;p&gt;Python implementations for various topics/courses including “Machine Learning” on Coursera by Andrew Ng. It would be effective to learn from codes for the same exercises written by others, which I’ve been thinking lately, I appreciate for publishing this.
+(I&amp;rsquo;ve completed the course with Octave, but there are too much helper codes which make the coding process somehow unenjoyable.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython</title>
+      <link>http://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</guid>
+      <description>
+
+&lt;h2 id=&#34;reported-issues&#34;&gt;Reported issues&lt;/h2&gt;
+
+&lt;p&gt;In debugging console (w/ iPython), &lt;code&gt;tput unknown terminal &#39;emacs&#39;&lt;/code&gt; is repeatedly appearing.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o&#34;&gt;http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs&#34;&gt;http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;https://youtrack.jetbrains.com/issue/PY-14999&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##Possible cause
+* In &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;, $TERM is hard-coded
+    * &lt;code&gt;line6:  os.environ[&#39;TERM&#39;] = &#39;emacs&#39; #to use proper page_more() for paging&lt;/code&gt;
+    * This overwrites your $TERM setting if you use iPython console when debugging.
+    * If your env doesn&amp;rsquo;t have terminfo for emacs, then it fails.&lt;/p&gt;
+
+&lt;p&gt;##Workaround
+* Add terminfo for emacs
+    * &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&#34;&gt;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&lt;/a&gt;
+    * I just copied terminfo of dumb-terminal as emacs&amp;rsquo;s terminfo, and it worked. (at least stopped showing messages)
+* Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/p&gt;
+
+&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Anaconda2と日本語パス</title>
+      <link>http://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;会社マシンのAnaconda2環境で、とあるパッケージのインストール時に&lt;code&gt;UnicodeDecodeError&lt;/code&gt;が出た。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/conda/conda/issues/1352&#34;&gt;Issues&lt;/a&gt; を見ると、パスに非Ascii文字が含まれる環境でのAnaconda2の利用は非推奨だという感じだった。&lt;/li&gt;
+&lt;li&gt;なのでおとなしくAnaconda3へ移行して、&lt;code&gt;conda create -n py2x python=2.7 anaconda&lt;/code&gt;で環境を作った。&lt;/li&gt;
+&lt;li&gt;それ以降は当該の問題は生じていない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;（usernameは英数字なのだけど&amp;hellip;）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Link: Numpy docstring / Howto</title>
+      <link>http://tuxedocat.github.io/post/2015-09-13-numpy-docstring/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-09-13-numpy-docstring/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ちゃんとDocstrings書こうと思ったとき、いつもどの流派の書き方でやればいいのか迷ってしまう。そしてその後は結局、Numpy派をお手本にして書いていた気がするので、今後はこの手間を省略できるように、記録しておく。（大げさな感じ…）&lt;/p&gt;
+
+&lt;p&gt;Sphinxもやりたい。SphinxだけではなくPandocやもっと最近の色々なものなど、Documentation周りのことに興味を持っている。学際領域っぽい魅力があるからかもしれない。（ただしTeXは難しすぎてあきらめている。）&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://docs.sphinx-users.jp/latest/ext/example_numpy.html&#34;&gt;Sphinx: Numpy Style Docstring&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Link: Type hinting support in PyCharm</title>
+      <link>http://tuxedocat.github.io/post/2015-09-13-type-hinting-python/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-09-13-type-hinting-python/</guid>
+      <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Eclipse (PyDev) → SublimeText + iPython → Atom + iPython (自宅), Spyder, PyCharm, VS2013 (会社) …という感じで色々試してきたけど、PyCharmが一番使いやすいと感じている。&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Type Hinting&amp;rdquo;については色々なやり方が提案されていて、まだまだ発展途上なんだけど、その中では、PyCharmやJediが対応しているDocstring形式の方法は、現状の折衷案としてうまいやり方かもしれない。 (Pythonのバージョンと独立しているっぽいので。)
+ただ、個人的にはいつもNumpy式のDocstringを真似ていたので、ちょっと面倒くさい。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://legacy.python.org/dev/peps/pep-3107/&#34;&gt;PEP3107&lt;/a&gt; や &lt;a href=&#34;http://www.mypy-lang.org/&#34;&gt;Mypy&lt;/a&gt; みたいな関数アノテーション方式のほうが見た目は好きだ。
+PyCharmはこちらにも部分的に対応しているみたいなので、最高としか言い様がない (?)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UnicodeEncodeError when running python scripts in Atom.io</title>
+      <link>http://tuxedocat.github.io/post/2015-05-06-atom-python-script/</link>
+      <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-05-06-atom-python-script/</guid>
+      <description>
+
+&lt;p&gt;##何?
+Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る。&lt;/p&gt;
+
+&lt;p&gt;##どうする?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;__init__.py&lt;/code&gt;などでstdoutのencodingを変更する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import sys
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=&#39;utf-8&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Atom.appから起動時には、環境変数をログインシェルから読むみたいなので、例えば&lt;code&gt;.bash_profile&lt;/code&gt;に&lt;code&gt;export LANG=&#39;en_US.UTF-8&#39;&lt;/code&gt;などと書いておく。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;経緯&#34;&gt;経緯&lt;/h3&gt;
+
+&lt;p&gt;python3.4をpyenv globalで設定していたのに、atomのscript-pluginではOSXのpython2.7.9が使われるのはなんでだろう、と思っていた。
+普段はiterm2でzshを起動するようにしていたので、ログインシェル(bash)の設定ファイルへ環境を反映していなかったのが原因だった。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>http://tuxedocat.github.io/post/2015-01-27-anaconda/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-01-27-anaconda/</guid>
+      <description>&lt;p&gt;Anaconda Scientific Python Distributionを会社マシンとおうちMacMiniに入れた。
+自前ビルドでは負荷が高そうなNumpy/Scipyを安定的に運用したいのと、念のため色々な環境を同じバージョンにしておきたいので。
+この種の安定版ディストリビューションは瑣末なことで気を揉まなくてすむし、それだけコミュニティも成熟してきたということで、使っていきたい。&lt;/p&gt;
+
+&lt;p&gt;Windowsでは、そのまま&lt;a href=&#34;https://store.continuum.io/cshop/anaconda/&#34;&gt;Continuumのサイト&lt;/a&gt;から。&lt;/p&gt;
+
+&lt;p&gt;Macではpyenvが対応しているので &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt; ~/ pyenv install anaconda3-2.1.0
+ ~/ pyenv global anaconda3-2.1.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;という感じ。&lt;/p&gt;
+
+&lt;p&gt;科学技術計算や機械学習系のパッケージはだいたい揃っているし、ビルドでコケることもない。
+科学技術計算用途で、MATLAB・Rの代替環境として広めたいのなら、これぐらい楽な方がいいと思う。&lt;/p&gt;
+
+&lt;p&gt;この調子で、Haskell環境もStackageのLTS Haskellにしようかな&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;(追記) たまたま以前からpyenvを使っていた、というだけです。anaconda distributionには、&lt;code&gt;conda&lt;/code&gt;というパッケージマネージャ兼仮想環境ツールがあるので、今はそちらを使っています。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simple programming: FizzBuzz</title>
+      <link>http://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</link>
+      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</guid>
+      <description>&lt;p&gt;##In Python&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(this won&amp;rsquo;t work for i = 0)&lt;/p&gt;
+
+&lt;p&gt;##In Haskell
+In ghci:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;[if (mod x 15)==0 then &amp;quot;FizzBuzz&amp;quot; else if (mod x 5)==0 then &amp;quot;Buzz&amp;quot; else if (mod x 3)==0 then &amp;quot;Fizz&amp;quot; else (show x) | x  String
+fizzBuzz x
+    | (mod x 15)== 0 = &amp;quot;FizzBuzz&amp;quot;
+    | (mod x 5) == 0 = &amp;quot;Buzz&amp;quot;
+    | (mod x 3) == 0 = &amp;quot;Fizz&amp;quot;
+    | otherwise      = show x
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then,  load into the interpreter,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;map fizzBuzz [1..100]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

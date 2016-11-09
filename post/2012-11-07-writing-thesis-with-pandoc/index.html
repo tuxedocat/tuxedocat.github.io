@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The workflow for my thesis &middot; Miaulog</title>
+
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.18-DEV" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="The workflow for my thesis &middot; Miaulog">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The workflow for my thesis &middot; Miaulog">
+    <meta property="og:description" content="">
+
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="http://tuxedocat.github.io//css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="Miaulog" href="http://tuxedocat.github.io//index.xml" />
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+    <div class="header">
+        <hgroup>
+            <h1 class="brand-title"><a href="http://tuxedocat.github.io/">Miaulog</a></h1>
+            <h2 class="brand-tagline"></h2>
+        </hgroup>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                
+                
+                <li class="nav-item">
+                    <a class="pure-button" href="http://tuxedocat.github.io//index.xml"><i class="fa fa-rss"></i> rss</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            
+            <div class="posts">
+                <h1 class="content-subhead">07 Nov 2012, 00:00</h1>
+                <section class="post">
+                    <header class="post-header">
+
+                        <a href="http://tuxedocat.github.io/post/2012-11-07-writing-thesis-with-pandoc/" class="post-title">The workflow for my thesis</a>
+
+                        <p class="post-meta">
+                            
+                            
+                                under 
+                                
+                                <a class="post-category post-category-Random" href="http://tuxedocat.github.io//categories/random">Random</a>
+                            
+                        </p>
+                    </header>
+                    
+                    <div class="post-share">
+                        <div class="post-share-links">
+                            <h4 style="">Share</h4>
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="post-description">
+                        
+
+<h1 id="overview">Overview</h1>
+
+<ol>
+<li>Write thesis body in <a href="http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown">Pandoc Markdown</a>.</li>
+<li>Build latex sources and pdf using <a href="https://code.google.com/p/waf/">Waf build system</a>.
+
+<ol>
+<li>Do with thesis pandoc <a href="http://johnmacfarlane.net/pandoc/README.html#templates">template</a> file if you need.</li>
+</ol></li>
+</ol>
+
+<h1 id="example-of-wscript">Example of wscript</h1>
+
+<p><code>wscript</code> is like Makefile for Waf.</p>
+
+<pre><code class="language-python">srcdir='.'
+blddir='build'
+
+def configure(ctx):
+    ctx.load('tex')
+    if not ctx.env.LATEX:
+        ctx.fatal('The program LaTex is required')
+
+
+from waflib.Configure import conf
+@conf
+def mktex(ctx):
+    ctx.exec_command('pandoc %s -t latex --template ./pandoc-template.tex -o %s'%('mthesis.markdown', 'mthesis.tex'))
+
+def view_pdf(bld):
+    bld.exec_command(&quot;open -a Preview \&quot;{0}/mthesis.pdf\&quot;&quot;.format(blddir))
+
+def build(bld):
+    bld(
+            features = 'tex',
+            type     = 'xelatex', # pdflatex or xelatex
+            source   = 'mthesis.tex', # mandatory, the source
+            outs     = 'pdf', # 'pdf' or 'ps pdf'
+            deps     = 'crossreferencing.lst', # to give dependencies directly
+            prompt   = 1, # 0 for the batch mode
+        )
+    bld.install_files('${PREFIX}','output_pdf_file.pdf')
+</code></pre>
+
+<h1 id="example-of-make-ing">Example of &lsquo;make&rsquo;-ing</h1>
+
+<pre><code class="language-sh">./waf clean configure mktex build view_pdf
+</code></pre>
+
+<h1 id="sublimetext2-build-system-setting">SublimeText2 build system setting</h1>
+
+<pre><code class="language-json">    {
+        &quot;working_dir&quot; : &quot;$filedir&quot;,
+        &quot;path&quot;: &quot;/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/usr/local/bin&quot;,
+        &quot;cmd&quot;: [&quot;./waf&quot;, &quot;clean&quot;, &quot;mktex&quot;, &quot;configure&quot;, &quot;build&quot;, &quot;view_pdf&quot;]
+    }
+</code></pre>
+
+<p>Press Cmd+B (on Mac) will do everything</p>
+
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="footer">
+    <div class="pure-menu pure-menu-horizontal pure-menu-open">
+        <ul>
+            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
+        </ul>
+    </div>
+</div>
+<script src="http://tuxedocat.github.io//js/all.min.js"></script>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

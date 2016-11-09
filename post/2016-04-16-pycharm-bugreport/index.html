@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython &middot; Miaulog</title>
+
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.18-DEV" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython &middot; Miaulog">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython &middot; Miaulog">
+    <meta property="og:description" content="">
+
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="http://tuxedocat.github.io//css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="Miaulog" href="http://tuxedocat.github.io//index.xml" />
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+    <div class="header">
+        <hgroup>
+            <h1 class="brand-title"><a href="http://tuxedocat.github.io/">Miaulog</a></h1>
+            <h2 class="brand-tagline"></h2>
+        </hgroup>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                
+                
+                <li class="nav-item">
+                    <a class="pure-button" href="http://tuxedocat.github.io//index.xml"><i class="fa fa-rss"></i> rss</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            
+            <div class="posts">
+                <h1 class="content-subhead">16 Apr 2016, 00:00</h1>
+                <section class="post">
+                    <header class="post-header">
+
+                        <a href="http://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/" class="post-title">[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython</a>
+
+                        <p class="post-meta">
+                            
+                            
+                                under 
+                                
+                                <a class="post-category post-category-Random" href="http://tuxedocat.github.io//categories/random">Random</a>
+                            
+                        </p>
+                    </header>
+                    
+                    <div class="post-share">
+                        <div class="post-share-links">
+                            <h4 style="">Share</h4>
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="post-description">
+                        
+
+<h2 id="reported-issues">Reported issues</h2>
+
+<p>In debugging console (w/ iPython), <code>tput unknown terminal 'emacs'</code> is repeatedly appearing.</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o">http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o</a></li>
+<li><a href="http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs">http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs</a></li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-14999">https://youtrack.jetbrains.com/issue/PY-14999</a></li>
+</ul>
+
+<p>##Possible cause
+* In <code>pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py</code>, $TERM is hard-coded
+    * <code>line6:  os.environ['TERM'] = 'emacs' #to use proper page_more() for paging</code>
+    * This overwrites your $TERM setting if you use iPython console when debugging.
+    * If your env doesn&rsquo;t have terminfo for emacs, then it fails.</p>
+
+<p>##Workaround
+* Add terminfo for emacs
+    * <a href="https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html">https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html</a>
+    * I just copied terminfo of dumb-terminal as emacs&rsquo;s terminfo, and it worked. (at least stopped showing messages)
+* Or, edit <code>pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py</code>`</p>
+
+<p>って内容を <a href="https://youtrack.jetbrains.com/issue/PY-14999">PyCharmのIssue Tracker</a> に書いた。 少しは役に立つといいけど。</p>
+
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="footer">
+    <div class="pure-menu pure-menu-horizontal pure-menu-open">
+        <ul>
+            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
+        </ul>
+    </div>
+</div>
+<script src="http://tuxedocat.github.io//js/all.min.js"></script>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

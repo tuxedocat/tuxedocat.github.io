@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Miaulog</title>
+    <link>http://tuxedocat.github.io/categories/about/index.xml</link>
+    <description>Recent content in About on Miaulog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tuxedocat.github.io/categories/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CV</title>
+      <link>http://tuxedocat.github.io/about/2011-01-01-CV/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/about/2011-01-01-CV/</guid>
+      <description>
+
+&lt;p&gt;I am interested in languages, photography, and cats.&lt;/p&gt;
+
+&lt;h1 id=&#34;basic-information&#34;&gt;Basic information&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Name: Yu Sawai&lt;/li&gt;
+&lt;li&gt;Nationality: Japanese&lt;/li&gt;
+&lt;li&gt;Gender: Male&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nara Institute of Science and Technology (NAIST), Nara, Japan.&lt;br /&gt;
+Studied computational linguistics and information science (MEng).&lt;/li&gt;
+&lt;li&gt;Doshisha Univ., Kyoto, Japan.&lt;br /&gt;
+Studied mechanical engineering and fluid engineering.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;experience&#34;&gt;Experience&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Current
+
+&lt;ul&gt;
+&lt;li&gt;CAE/HPC/Data-mining application engineer at a tokyo-based manufacturing company&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Past
+
+&lt;ul&gt;
+&lt;li&gt;Assistant researcher at Institut fur Polymerwerkstoff und
+Kunststofftechnik of TU Clausthal, Germany as an IAESTE intern (2010.09-12)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;skills&#34;&gt;Skills&lt;/h1&gt;
+
+&lt;h2 id=&#34;natural-languages&#34;&gt;Natural Languages&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Japanese (native)&lt;/li&gt;
+&lt;li&gt;English
+
+&lt;ul&gt;
+&lt;li&gt;TOEIC score &lt;sup&gt;935&lt;/sup&gt;&amp;frasl;&lt;sub&gt;990&lt;/sub&gt; (June, 2012)&lt;/li&gt;
+&lt;li&gt;IELTS band score 7.0/9.0 (Nov. 2014)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;German (learning, forever beginner)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tech&#34;&gt;Tech&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Python &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Numpy, Scipy, Scikit-learn, Pandas&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Mac OS X&lt;/li&gt;
+&lt;li&gt;Linux (CentOS6x)&lt;/li&gt;
+&lt;li&gt;Vim (novice)&lt;/li&gt;
+&lt;li&gt;Shell script (bash)&lt;/li&gt;
+&lt;li&gt;Markdown&lt;/li&gt;
+&lt;li&gt;git (novice)&lt;/li&gt;
+&lt;li&gt;HTML/CSS (novice)&lt;/li&gt;
+&lt;li&gt;LaTeX&lt;/li&gt;
+&lt;li&gt;Lava/LSF&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

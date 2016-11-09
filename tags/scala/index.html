@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scala &middot; Miaulog</title>
+
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.18-DEV" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="Scala &middot; Miaulog">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Scala &middot; Miaulog">
+    <meta property="og:description" content="">
+
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="http://tuxedocat.github.io//css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="Miaulog" href="http://tuxedocat.github.io//index.xml" />
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+    <div class="header">
+        <hgroup>
+            <h1 class="brand-title"><a href="http://tuxedocat.github.io/">Miaulog</a></h1>
+            <h2 class="brand-tagline"></h2>
+        </hgroup>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                
+                
+                <li class="nav-item">
+                    <a class="pure-button" href="http://tuxedocat.github.io//index.xml"><i class="fa fa-rss"></i> rss</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            
+            <div class="posts">
+                
+                <h1 class="content-subhead">31 Oct 2016, 00:00</h1>
+                <section class="post">
+                    <header class="post-header">
+
+                        <a href="http://tuxedocat.github.io/post/2016-10-31-spark-sql-select/" class="post-title">Spark-SQL DataFrame: Selecting multiple columns</a>
+
+                        <p class="post-meta">
+                            
+                            
+                                under 
+                                
+                                <a class="post-category post-category-Random" href="http://tuxedocat.github.io//categories/random">Random</a>
+                            
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <pre><code class="language-scala">val columnNames = Seq(&quot;col1&quot;,&quot;col2&quot;,.....&quot;coln&quot;)
+
+// using the string column names:
+val result = dataframe.select(columnNames.head, columnNames.tail: _*)
+
+// or, equivalently, using Column objects:
+val result = dataframe.select(columnNames.map(c =&gt; col(c)): _*)
+</code></pre>
+
+<blockquote>
+<p>_* transforms a collection into a vararg argument - used when calling a method expecting a vararg, like select does: def select(col: String, cols: String*)</p>
+</blockquote>
+
+<p>ref. <a href="http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co">http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co</a></p>
+
+                    </div>
+                </section>
+                
+                <h1 class="content-subhead">25 Sep 2016, 00:00</h1>
+                <section class="post">
+                    <header class="post-header">
+
+                        <a href="http://tuxedocat.github.io/post/2016-09-25-json4s/" class="post-title">Link</a>
+
+                        <p class="post-meta">
+                            
+                            
+                                under 
+                                
+                                <a class="post-category post-category-Random" href="http://tuxedocat.github.io//categories/random">Random</a>
+                            
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p><a href="http://json4s.org/">http://json4s.org/</a></p>
+
+<blockquote>
+<p>At this moment there are at least 6 json libraries for scala, not counting the java json libraries. All these libraries have a very similar AST. This project aims to provide a single AST to be used by other scala json libraries.</p>
+</blockquote>
+
+<p>Although there may be simple-enough stdlib for serializing/deserializing objects into/from JSON, this would be better for most cases.</p>
+
+                    </div>
+                </section>
+                
+            </div>
+            
+
+            <div class="footer">
+    <div class="pure-menu pure-menu-horizontal pure-menu-open">
+        <ul>
+            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
+        </ul>
+    </div>
+</div>
+<script src="http://tuxedocat.github.io//js/all.min.js"></script>
+
+        </div>
+    </div>
+</div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

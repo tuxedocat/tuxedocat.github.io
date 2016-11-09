@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nix on Miaulog</title>
+    <link>http://tuxedocat.github.io/tags/nix/index.xml</link>
+    <description>Recent content in Nix on Miaulog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tuxedocat.github.io/tags/nix/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dokuwikiで日本語PDFを出力したかった</title>
+      <link>http://tuxedocat.github.io/post/2015-11-18-dokuwiki-japanese-pdf/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-11-18-dokuwiki-japanese-pdf/</guid>
+      <description>&lt;p&gt;CentOS6.6, Dokuwiki Hrun、Dw2Pdf_20150622でのこと。&lt;/p&gt;
+
+&lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ipagp.ttf等を&lt;code&gt;dw2pdf/mpdf/ttffonts/&lt;/code&gt;へ格納&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/mpdf/config_lang2fonts.php&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;East Asian&lt;/code&gt;のところで &lt;code&gt;$unifont = &amp;quot;ipagp, sjis, sjisB&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/mpdf/lang2fonts.css&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:lang(&amp;quot;ja&amp;quot;)&lt;/code&gt;のところで&lt;code&gt;font-family: ipagp;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/conf/style.css&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;body {font-family: ipagp, sans-serif; }&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/DokuPDF.class.php&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_constructer&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$this-&amp;gt;useAdobeCJK = true;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The workflow for my thesis</title>
+      <link>http://tuxedocat.github.io/post/2012-11-07-writing-thesis-with-pandoc/</link>
+      <pubDate>Wed, 07 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2012-11-07-writing-thesis-with-pandoc/</guid>
+      <description>
+
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write thesis body in &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown&#34;&gt;Pandoc Markdown&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Build latex sources and pdf using &lt;a href=&#34;https://code.google.com/p/waf/&#34;&gt;Waf build system&lt;/a&gt;.
+
+&lt;ol&gt;
+&lt;li&gt;Do with thesis pandoc &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#templates&#34;&gt;template&lt;/a&gt; file if you need.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;example-of-wscript&#34;&gt;Example of wscript&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;wscript&lt;/code&gt; is like Makefile for Waf.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;srcdir=&#39;.&#39;
+blddir=&#39;build&#39;
+
+def configure(ctx):
+    ctx.load(&#39;tex&#39;)
+    if not ctx.env.LATEX:
+        ctx.fatal(&#39;The program LaTex is required&#39;)
+
+
+from waflib.Configure import conf
+@conf
+def mktex(ctx):
+    ctx.exec_command(&#39;pandoc %s -t latex --template ./pandoc-template.tex -o %s&#39;%(&#39;mthesis.markdown&#39;, &#39;mthesis.tex&#39;))
+
+def view_pdf(bld):
+    bld.exec_command(&amp;quot;open -a Preview \&amp;quot;{0}/mthesis.pdf\&amp;quot;&amp;quot;.format(blddir))
+
+def build(bld):
+    bld(
+            features = &#39;tex&#39;,
+            type     = &#39;xelatex&#39;, # pdflatex or xelatex
+            source   = &#39;mthesis.tex&#39;, # mandatory, the source
+            outs     = &#39;pdf&#39;, # &#39;pdf&#39; or &#39;ps pdf&#39;
+            deps     = &#39;crossreferencing.lst&#39;, # to give dependencies directly
+            prompt   = 1, # 0 for the batch mode
+        )
+    bld.install_files(&#39;${PREFIX}&#39;,&#39;output_pdf_file.pdf&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;example-of-make-ing&#34;&gt;Example of &amp;lsquo;make&amp;rsquo;-ing&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;./waf clean configure mktex build view_pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;sublimetext2-build-system-setting&#34;&gt;SublimeText2 build system setting&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;    {
+        &amp;quot;working_dir&amp;quot; : &amp;quot;$filedir&amp;quot;,
+        &amp;quot;path&amp;quot;: &amp;quot;/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/usr/local/bin&amp;quot;,
+        &amp;quot;cmd&amp;quot;: [&amp;quot;./waf&amp;quot;, &amp;quot;clean&amp;quot;, &amp;quot;mktex&amp;quot;, &amp;quot;configure&amp;quot;, &amp;quot;build&amp;quot;, &amp;quot;view_pdf&amp;quot;]
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press Cmd+B (on Mac) will do everything&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Haskell: Installing ghc without root privilege</title>
+      <link>http://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</link>
+      <pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</guid>
+      <description>&lt;p&gt;##Get OS specific &amp;ldquo;Binary Packages&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd /home/foo
+$wget http://www.haskell.org/ghc/dist/7.0.4/ghc-7.0.4-x86_64-unknown-linux.tar.bz2
+$tar -xvf ghc-7.0.4-x86_64-unknown-linux.tar.bz2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##Configure and install as usual&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd ghc-7.0.4
+$./configure --prefix=/home/foo/usr  #something like this...
+$make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##Notes
+You will obviously need to install &lt;code&gt;cabal&lt;/code&gt; from somewhere else&amp;hellip;
+Using &lt;code&gt;haskell-platform&lt;/code&gt; will make it easier.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd /home/foo
+$wget http://lambda.haskell.org/platform/download/2011.4.0.0/haskell-platform-2011.4.0.0.tar.gz
+$cd haskell-platform-2011.4.0.0
+$./configure --prefix=/home/foo/usr
+$make
+$make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/8084832/ghc-install-without-root&#34;&gt;Reference: Stackoverflow&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Byobu: an useful metacommand for gnu screen</title>
+      <link>http://tuxedocat.github.io/post/2012-01-26-byobu/</link>
+      <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2012-01-26-byobu/</guid>
+      <description>&lt;p&gt;##Notes
+* Byobu probably doesn&amp;rsquo;t work well on Mac OSX (e.g. via Homebrew or build from source)
+    * In my case, &lt;code&gt;newt-python&lt;/code&gt; and some libraries are missing. (byobu 5.5)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This commands would be different in the latest versions of byobu, since I could only use byobu 2.68 with screen 4.00.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##Starting byobu
+&lt;code&gt;$byobu&lt;/code&gt;
+as the same as screen command.&lt;/p&gt;
+
+&lt;p&gt;##Basic commands:
+Escape sequence is &lt;code&gt;ctrl+a&lt;/code&gt; by default though it can be changed in the configuration dialogue (press F9).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;C-a c : create new screen window
+C-a [0-Z]: move to other window
+C-a a : switch to previous window
+C-a d : detach screen
+C-a k : kill screen
+C-a [ : scroll (copy) mode, mark start and end point with &amp;lt;enter&amp;gt; then copy selected area to buffer
+C-a ] : paste from buffer
+C-a | : split screen vertically
+C-a s : split screen horizontally
+C-a TAB : switch between split screens
+C-a ? : help
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##using F-keys (not compatible with screen)
+    F2 : create a new window
+    F3 : switch to previous window
+    F4 : switch to next window
+    F6 : detach screen
+    F7 : enter scroll back mode
+    F9 : show configuration dialogue
+    F12 : lock this terminal &lt;/enter&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GNU screen: Run your commands even sudden connection lost occurs</title>
+      <link>http://tuxedocat.github.io/post/2012-01-12-gnu-screen/</link>
+      <pubDate>Thu, 12 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2012-01-12-gnu-screen/</guid>
+      <description>&lt;p&gt;Assuming your system is Unix like systems, and &lt;code&gt;screen&lt;/code&gt; is installed.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Create sessions&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$screen&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;(introduction will appear)&lt;/li&gt;
+&lt;li&gt;press enter&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Basic commands&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;C-a c: create new session&lt;/li&gt;
+&lt;li&gt;C-a w: show current sessions&lt;/li&gt;
+&lt;li&gt;C-a [0-Z]: move to other sessions&lt;/li&gt;
+&lt;li&gt;C-a d: detach screen&lt;/li&gt;
+&lt;li&gt;C-a k: kill screen&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Restoring sessions if connection lost occurs&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;$screen -ls&lt;/code&gt;: which shows list of screen sessions like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;There are screens on:
+    pid.tty.host       (DATE1)   (Attached)
+    pid.tty.host       (DATE2)   (Detached)
+2 Sockets in /var/run/screen/S-$USERNAME.
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;$screen -r [pid.tty.host]&lt;/code&gt;: re-attach screen&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;$screen -D [pid.tty.host]&lt;/code&gt;: detach and logout screen&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Solving Permission Denied</title>
+      <link>http://tuxedocat.github.io/post/2011-12-30-ssh-permission-denied/</link>
+      <pubDate>Fri, 30 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2011-12-30-ssh-permission-denied/</guid>
+      <description>
+
+&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
+
+&lt;p&gt;When logging in to server using public key authentication, I couldn&amp;rsquo;t log in.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;ssh -vvv foo@bar
+# omitted
+debug1: Authentications that can continue: publickey
+debug2: we did not send a packet, disable method
+debug1: No more authentication methods to try.
+Permission denied (publickey).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;popular-solution&#34;&gt;Popular solution&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;make sure permission of ~/.ssh is 700&lt;/li&gt;
+&lt;li&gt;also ~/.ssh/* is 600&lt;/li&gt;
+&lt;li&gt;this would be a pitfail: /home/xxx/ should be 755&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;afterall&#34;&gt;Afterall&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;The solution above didn&amp;rsquo;t work for me (Mac OS X 10.7.2, ssh-key type rsa2).
+It seems I&amp;rsquo;m just putting wrong key in .ssh&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

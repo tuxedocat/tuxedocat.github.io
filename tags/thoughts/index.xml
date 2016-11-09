@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts on Miaulog</title>
+    <link>http://tuxedocat.github.io/tags/thoughts/index.xml</link>
+    <description>Recent content in Thoughts on Miaulog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tuxedocat.github.io/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DL</title>
+      <link>http://tuxedocat.github.io/post/2015-05-26-deeplearning-forum/</link>
+      <pubDate>Tue, 26 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-05-26-deeplearning-forum/</guid>
+      <description>&lt;p&gt;Deep Learning Forumへ行ってきた。
+仕事扱いなのは金銭面ではうれしい。
+有益だった。&lt;/p&gt;
+
+&lt;p&gt;なぜか、こういう場にくるといつも勝手に縮こまってしまう。
+それが本業なわけではないからという後ろめたさなんだろうか。&lt;/p&gt;
+
+&lt;p&gt;個人プロジェクトを許してくれたり、業務とは直接関係はない分野のカンファレンスに仕事中に参加してもよかったりと、わりと自由にできるのはありがたい。
+そう考えるべきか、それとも結局本業にはしてもらえないこの状況を嘆くべきか。&lt;/p&gt;
+
+&lt;p&gt;そうしたスキルの不一致をサラリーマン的な論理で圧殺するような環境になったとしたら(異動とかで…)、逃げ出そうと思っている。
+(そう思いつつ耐える時間、独学の低い密度の経験しか積めない時間そのものの負債を考えると、つらい。)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Octave</title>
+      <link>http://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/</link>
+      <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/</guid>
+      <description>&lt;p&gt;某機械学習のクラスを受講している。
+深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。&lt;/p&gt;
+
+&lt;p&gt;2015年コースも課題はOctaveが推奨プログラミング言語のようなので、Octaveの環境を整える。&lt;/p&gt;
+
+&lt;p&gt;会社のマシンには、&lt;a href=&#34;http://mxeoctave.osuv.de/&#34;&gt;Windows版非公式ビルド(MXE Octave)&lt;/a&gt;を。
+自宅MacMiniは、Homebrewで。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ brew tap homebrew/science
+$ brew install octave
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OctaveはMATLABとの互換性においては、ScilabやFreeMatよりも高いはず。
+この点で、MATLAB勢力もそこそこ居るという今の仕事においても無駄にはならなさそう。&lt;/p&gt;
+
+&lt;p&gt;また、いくらPython（とそのエコシステムに含まれるNumpy/Scipy, Pandas, Scikit-learnなど）が優秀で、ライセンス面でも十分MATLABを代替できるとしても、色々な理由でPython一本で技術計算をするのは難しいと思ったのもある。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;まぁ、MATLABでもPythonでもRでも、開発環境がつらすぎるExcelVBAに比べると、喜んでやります!って気持ちになる。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;社内での最大勢力はExcel（+VBA）&amp;hellip;ついでMATLAB、Rという感じ。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;（悲しいかな、社内にはそういう機械学習寄りの業務の人もいる。自分の業務が全く逸れてしまっているだけで。）（そこに希望を持ってしまうと、色々な判断が遅れてしまうだろう。だが、普段からそういう分野に興味があると言っておいて、何もしていないってのはマズいから&amp;hellip;）
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>stack.push(book_hs).push(book_german).push(book_lingua).push(graphic_design)....</title>
+      <link>http://tuxedocat.github.io/post/2014-12-27-todo-list/</link>
+      <pubDate>Sat, 27 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2014-12-27-todo-list/</guid>
+      <description>&lt;p&gt;積ん読山の高さがどんどん高くなってきた．
+もともと興味が散漫だったうえに，最近は謎の焦燥感に追い立てられて，衝動買いを繰り返しているせいだ．&lt;/p&gt;
+
+&lt;p&gt;周りを見ると焦りだけはつのるが，何がしたいのかと問われると自信をもって答えられる代替案を出せないのがつらい．
+（今がつらいのだけは自覚できる，センサーの感度だけが高い感じ）&lt;/p&gt;
+
+&lt;p&gt;それでも，これは面白いな〜というのはある．
+いろいろあるなかで迷走していると，ふらふらと低空飛行しそうなので，ある程度絞ってみた．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;英語・ドイツ語
+
+&lt;ul&gt;
+&lt;li&gt;念のため&lt;/li&gt;
+&lt;li&gt;娯楽&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;言語学
+
+&lt;ul&gt;
+&lt;li&gt;XX言語学という細分化ができないぐらい無知なのを自覚した&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;写真
+
+&lt;ul&gt;
+&lt;li&gt;絵心のない自分にとって，ほぼ唯一の表現手段&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;デザイン（特にタイポグラフィ）
+
+&lt;ul&gt;
+&lt;li&gt;念のため&lt;/li&gt;
+&lt;li&gt;なぜ良い|善いデザインが良い|善いといえるのか，基本を知りたい．&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Haskell
+
+&lt;ul&gt;
+&lt;li&gt;Learn You a Haskell For Great Goodを一読してわかった気になった（わかってない）&lt;/li&gt;
+&lt;li&gt;Project EulerをHaskellで少しずつ解いてみている&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;計算理論等，CSの基本
+
+&lt;ul&gt;
+&lt;li&gt;ここがわかっていないコンプレックスがある
+
+&lt;ul&gt;
+&lt;li&gt;いつまでも疎外感があるのでなんとかしたい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;機械学習は元々の能力不足で多分投資効果が低そう… もう少し基礎をつけてからやろうかな．
+（いつまでも基礎が終わらない）
+（これでも工学修士（情報学））&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Neue Helvetica?</title>
+      <link>http://tuxedocat.github.io/post/2014-10-26-thoughts-on-helveticaneue/</link>
+      <pubDate>Sun, 26 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2014-10-26-thoughts-on-helveticaneue/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Here’s where my ire is really provoked: Helvetica Neue Light as an interface font. Wrong. Horrible and wrong. Let’s get Apple out of the way. Since iOS 7 and soon in OS Yosemite, Apple has been using Helvetica Neue for its user interfaces. The preview of iOS7 used Helvetica Neue Light and Ultra Light, which was received very badly. Consequently the Regular weight is now the default, as it will be in the forthcoming desktop UI. Helvetica is still far from ideal as a UI font, but Apple’s in-built Dynamic Type helps by doing things like tweaking the letter spacing for differently sized text, and on a Retina display it may work fine. But this doesn’t mean that the incumbent Lucida Grande doesn’t remain a better choice from a practical perspective.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://clagnut.com/blog/2379/&#34;&gt;The Scourge of Helvetica Neue Light | Clagnut&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最近のOSX/iOSのデフォルトUIフォントになっているHelvetica Neue (Light)。
+それからの周辺への広まりに対する苦言。&lt;/p&gt;
+
+&lt;p&gt;VerdanaとかMyriad Proのときもそうかもしれなかったけど、どこか影響力の大きなところが使い出すと、（若干二流気味なところで|デザイン重視ではないところで）なんとなくそのフォントが主軸になる感じがしていた。
+素人だから、XXっぽいフォントだな〜としか感じなかったけれど。&lt;/p&gt;
+
+&lt;p&gt;Helvetica Neueそれ自体には本当に余計な色気がなく、何か面白みに欠けると思っている。
+まだLucida Grandeがデフォルトフォントだったころ、試しにデフォルトフォントをHelvetica Neueにしてみたけれど、すごくWindowsっぽい感じになってしまい萎えた記憶がある。
+そのままUI向けにするのは（素人仕事だと）難しそうに思えた。&lt;/p&gt;
+
+&lt;p&gt;この記事を読むと、そんな素人っぽい仕事が蔓延しそうなので、なかなかつらいですね…と感じた。
+フラットデザインを手抜きだと言ったり、バウハウスっぽい意匠をデザインではないと言ったりする種類の人を脳内で想像して悶々とすることがあるけど、この記事みたいな事例は確かにあるから安易に敵視できないな。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>引用</title>
+      <link>http://tuxedocat.github.io/post/2014-07-05-job/</link>
+      <pubDate>Sat, 05 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2014-07-05-job/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;これに対して問題を創ること、つまり、コンセプトを考えることは、一見遊んでいるように見える。しかも、すぐに成果が出るわけでもない。実験や設計の「作業」をしていれば、必ずなんらかの「結果」（それを「成果」と勘違いする）は出てくる。だから、定期的な業務報告書に書く内容に困ることはない。しかし、問題そのものを創ろうとすると、業務報告書に書く内容がまったくないこともありうる。そうしたつらさに耐えられない技術者は、問題を創ることよりも、問題を解くことに注力する。これが構想なき繁忙を生む。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://bizgate.nikkei.co.jp/article/74505312_6.html&#34;&gt;技術者は構想・利益なき繁忙に陥っていないか : 日経BizGate&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;この記事の前半部，自分が今いる業界&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:a&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:a&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;のことが書いてあった．
+責任を明確にすることが，この分野の技術者にとって最善かどうかは議論の余地はあるが，今みたいに「寸暇を惜しんで（就業時間外も含む前提）」仕事を作り出している感じは，それこそ勝手にやってるだけにしか見えない．&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;強く望んだり，能力を買われて&amp;hellip;という結果ではなく本当にただ配属されたという感じがはじめからずっと残っている．私はソフトウェアエンジニア職に応募して採用されたはずだが? と．
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:a&#34;&gt;許せるところ．それはこの会社は写真文化に関わっているし(自分は違うけど)，社会にとって善いことをしているし，無くてはならないものに関わっているし，ということはしょーもなくて悪になりうるような仕事じゃない，って点．マウスオーバーで再生される例の広告を作ってる当事者だったら，多分仕事続かない．
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:a&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;という偏見と先入観で職を探していたら，割りといいのが見つかった！と思った直後にこれだよ．
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;(例えばの話)その現場の一線で戦ってる技術者から，こんな数値実験をして欲しい！2日後の会議で使うから！されることはよくある．私は7時以降は眠気やその他諸々で生産性がガタ落ちする人間なので，そこそこのクオリティで間に合わせて帰る．仕様が決まっていないなら，評価もできないし，裁量も分からないと思っているから．(今のところ，特に問題はない．既にこいつやる気ない&amp;hellip;って思われている可能性はあるけど．) なぜそういう風にやるかって，この手の仕事は結局使われずじまいなことが多いからだ．もうひとつあるのは，不要な時間が多い感じがしたから．報告書に凝っているがゆえに残業している人が多い気がする．それって目的からのズレがあるよ！
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>それでも</title>
+      <link>http://tuxedocat.github.io/post/2014-06-17-thoughts-2/</link>
+      <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2014-06-17-thoughts-2/</guid>
+      <description>&lt;p&gt;この一年，色々なところで人生終わってるって話をしてきた．
+思い切った進路変更をしたにもかかわらず，そこからの連続性を断たれてしまったこと．
+「エンジニア」という言葉が指すものが，進路変更以前と同じものになってしまったこと．
+入ってから色々と話が違って，今に至った過程．
+そういう諸々は本当に運が無かったと思うが，そんな仕打ちをしたやつはやはり憎たらしい．&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;それでも今は結婚したばかりだし，なかなか幸せだ．キャリアや知的な満足度，社会的な居心地の良さの追求以外は幸せだ．未だに吃音だろうがクソな仕事場に居ようが，これで簡単には死ねなくなった．そして心折られて打ちひしがれるままに灰になるよりは，またどこかに逃げる方を選ぶ気概がかろうじて残っている．&lt;/p&gt;
+
+&lt;p&gt;今までの人生では珍しかった驚きや居心地の良さ，自由な雰囲気を楽しむ機会をくれた人や，そこに一緒に居た人達を，改めて尊敬している．あのときの選択は，今でも正直に生きてよかったと感じている．
+だから，現状は嫌すぎて本当に逃げたいとしか思えない．平然と耐えることのほうが，そんな人達への裏切りのように思える．&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;もちろん企業の人事なので，契約の範囲内で云々は承知している．総合職って括りで契約しているので…
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;そうはいっても，ろくにjob descriptionも書いてないようなやり方はおかしいと思う．上司の話を聞くと，人手が足りないから少しでも流体解析の経験がある新人を…というわけでも無い．初顔合わせ〜研修が終わるまでの評価期間では，語学力，プレゼンテーション能力，(どちらかといえばメタ的な部分での)開発能力を買われていた．だから，アホ人事のこの選択は，僕の過去の選択を無に帰して，その苦痛ゆえに服従させる目的ぐらいしか合理的なところがなさそう．
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>もしかしたら... と．</title>
+      <link>http://tuxedocat.github.io/post/2014-05-17-thoughts-on-workplace/</link>
+      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2014-05-17-thoughts-on-workplace/</guid>
+      <description>&lt;p&gt;コード書かない仕事だからつらいのではなく，コード書かない仕事が行われてそうな環境や文化がつらいのかも．&lt;/p&gt;
+
+&lt;p&gt;殺風景なオフィス．オープンで議論が活発なわけでもなく，ただパーティションが低くて気が散るだけの大部屋式．増え続ける定例会議&amp;hellip;などなど．&lt;/p&gt;
+
+&lt;p&gt;仮に今の仕事内容でも，海外で…なんて考えると意外と耐えられるかもしれない．逆に内容はぴったり希望通りでも，気質とか文化が合わなかったら今とは違うけれども同じ大きさのつらみを味わうのかもしれない．&lt;/p&gt;
+
+&lt;p&gt;とはいえ，雰囲気・気質・文化と，技術の分野の面両方で，今は裏切られた感がある．今後損失になりそうだし，あんまり耐えようとか騙そうとか思っちゃいけないだろうな．&lt;/p&gt;
+
+&lt;p&gt;「ACL (short)の発表経験がある現職webエンジニア」だったなら、苦労も少しは今後にも役に立つはず。しかし、そういうドメインのエンジニアとして採用だったはずなのに、配属後に流体解析やらされている自分。他人に今何をやってるか聞かれた日は、何も手が動かないぐらい気が重くなる。&lt;/p&gt;
+
+&lt;p&gt;経験を積めば積むほど詰んでくる錯覚すら憶える。せめて業務のうち2割でも、自分の目指す方向に沿った内容できればよかったのだが。&lt;/p&gt;
+
+&lt;p&gt;ここからまた道筋を変えるのは、インターンや大学院での分野変更より、社会的な圧力が高そうで気が引けている。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Random on Miaulog</title>
+    <link>http://tuxedocat.github.io/categories/random/index.xml</link>
+    <description>Recent content in Random on Miaulog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tuxedocat.github.io/categories/random/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spark-SQL DataFrame: Selecting multiple columns</title>
+      <link>http://tuxedocat.github.io/post/2016-10-31-spark-sql-select/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-10-31-spark-sql-select/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val columnNames = Seq(&amp;quot;col1&amp;quot;,&amp;quot;col2&amp;quot;,.....&amp;quot;coln&amp;quot;)
+
+// using the string column names:
+val result = dataframe.select(columnNames.head, columnNames.tail: _*)
+
+// or, equivalently, using Column objects:
+val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_* transforms a collection into a vararg argument - used when calling a method expecting a vararg, like select does: def select(col: String, cols: String*)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ref. &lt;a href=&#34;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&#34;&gt;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Disk partition manipulation on OSX 10.11</title>
+      <link>http://tuxedocat.github.io/post/2016-10-30-osx-clean-install/</link>
+      <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-10-30-osx-clean-install/</guid>
+      <description>&lt;p&gt;🐡 💢
+tl;dr
+&amp;gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
+
+&lt;p&gt;Just a private log of my struggle&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Trace&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Saw how people are disappointed with new Macbook Pro&lt;/li&gt;
+&lt;li&gt;Start thinking to re-use my old MBP 2011 (clean install)&lt;/li&gt;
+&lt;li&gt;Found BootCamp partition of 70GB which I won’t use anymore :soon: Erase partition via DiskUtility.app&lt;/li&gt;
+&lt;li&gt;Reboot, and enter the recovery mode of El Capitan using Recovery HD partition&lt;/li&gt;
+&lt;li&gt;Enter DiskUtility, and try merging the system partition with free-space which is formally BootCamp partition via Partition menu&lt;/li&gt;
+&lt;li&gt;“Operation failed …”&lt;/li&gt;
+&lt;li&gt;Leave DiskUtility, enter Terminal, and play with diskutil command.&lt;/li&gt;
+&lt;li&gt;diskutil mergePartitions or some commands failed.&lt;/li&gt;
+&lt;li&gt;Found Recovery HD partition, which is right next to system partition, was then merged free-space of BootCamp partition&lt;/li&gt;
+&lt;li&gt;Delete Recovery HD partition to get continuous free-space&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;OK, let’s start from zero.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Create El Capitan’s install drive from another mac using &lt;code&gt;sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reboot MBP with that disk, erase Macintosh HD again, and this worked normally.&lt;/li&gt;
+&lt;li&gt;Perform clean install.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thoughts&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What if I need to merge scattered partitions which cannot be merged easily? :soon: Some features of CoreStorage can be used like LVM, I guess.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Link</title>
+      <link>http://tuxedocat.github.io/post/2016-09-25-json4s/</link>
+      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-09-25-json4s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://json4s.org/&#34;&gt;http://json4s.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;At this moment there are at least 6 json libraries for scala, not counting the java json libraries. All these libraries have a very similar AST. This project aims to provide a single AST to be used by other scala json libraries.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Although there may be simple-enough stdlib for serializing/deserializing objects into/from JSON, this would be better for most cases.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Link</title>
+      <link>http://tuxedocat.github.io/post/2016-08-21-notebook-collection/</link>
+      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-08-21-notebook-collection/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Courseraの&amp;rdquo;Machine Learning by Andrew Ng&amp;rdquo;を含む、いろいろなコースのPython実装版らしい。 他の人が書いたものを見て学ぶには、同じ課題のものを使うのが効果的だと思っているので、すごくありがたい。（Octaveで解いたけど、補助コードが多くてアレだったし。）&lt;/p&gt;
+
+&lt;p&gt;Python implementations for various topics/courses including “Machine Learning” on Coursera by Andrew Ng. It would be effective to learn from codes for the same exercises written by others, which I’ve been thinking lately, I appreciate for publishing this.
+(I&amp;rsquo;ve completed the course with Octave, but there are too much helper codes which make the coding process somehow unenjoyable.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Link</title>
+      <link>http://tuxedocat.github.io/post/2016-08-06-link-paper/</link>
+      <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-08-06-link-paper/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&#34;&gt;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Written Memories: Understanding, Deriving and Extending the LSTM - R2RT&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In this post, we do a few things: We’ll define and describe RNNs generally, focusing on the limitations of vanilla RNNs that led to the development of the LSTM.
+We’ll describe the intuitions behind the LSTM architecture, which will enable us to build up to and derive the LSTM. Along the way we will derive the GRU. We’ll also derive a pseudo LSTM, which we’ll see is better in principle and performance to the standard LSTM.
+We’ll then extend these intuitions to show how they lead directly to a few recent and exciting architectures: highway and residual networks, and Neural Turing Machines.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Neural系言語処理、全く追いつけていないので勉強しないと… （精度が高いとか流行りだからとかではなく、複合的なタスクが解けるようになるような新しさに興味がある）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>『猫的感覚　動物行動学が教えるネコの心理』を読んだ</title>
+      <link>http://tuxedocat.github.io/post/2016-07-03-cat-sense/</link>
+      <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-07-03-cat-sense/</guid>
+      <description>&lt;p&gt;猫（イエネコ）がどのようにその祖先から変化し、人間との共生をするようになったか、ということから始まる。その後、完全に家畜化されてはいないイエネコの特徴や性質を、著者らのものを含む色々な研究成果から明らかにしていく。最後のほうでは、人間のつくる急速に変化する環境において、これからも猫と人間が互恵関係にあるためには何が必要なのか…という展望を示す、って流れの本だった。&lt;/p&gt;
+
+&lt;p&gt;新しいことを知った、という点では中盤のイエネコの動物行動学的な特徴についての記述が面白かった。&lt;/p&gt;
+
+&lt;p&gt;有益さという点では、猫をよく思わない人間が持ち出すいろいろな理由に対して、事実確認を行っていた後半部がよかった。
+確かに、野良猫の一部（野生化した猫？）は小動物を狩る。しかし、それ以外の都市部で暮らす野良猫やイエネコはもはや熱心なハンターではない。また、ネコ以外にも野鳥などを狩る動物は多い。ネコによる悪影響は想像よりも小さいのではないかといえそうな流れだった。当然、孤立した生態系に野生化した猫が入り込んだ場合は被害が出る点にも触れている。ここでは、こうした野生動物の保護が、猫だけを取り除けば済むような単純な話ではないことを言っていた。&lt;/p&gt;
+
+&lt;p&gt;また、避妊や去勢は現代では常識なだけでなく動物の権利的な面でも推奨されていることだ。けれど、これは、遺伝子プールの多様性確保、特に先の狩猟本能や猫の不安駆動な部分を和らげてより良く人間社会に向いた個体を増やすという点では、果たして良いものなのだろうかという問いかけもできる。
+人間が良かれと思ってやったことが、結局最も人間社会に向いてない猫（野良猫・野生猫）の遺伝子ばかりを残すことになってしまうのではないか、という考えは新しいと思った。&lt;/p&gt;
+
+&lt;p&gt;（なるほど、と思うけど、そんなに短期間に変化するものなのかな、って疑問もある。）&lt;/p&gt;
+
+&lt;p&gt;…という感じの、だいぶ固いアカデミックな本だった。よかった。翻訳は直訳調で読みにくかったかもしれない。ただし、訳の正確性については、原著の&amp;rdquo;Cat Sense &amp;hellip;&amp;ldquo;を読んでないのでわからない。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython</title>
+      <link>http://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</guid>
+      <description>
+
+&lt;h2 id=&#34;reported-issues&#34;&gt;Reported issues&lt;/h2&gt;
+
+&lt;p&gt;In debugging console (w/ iPython), &lt;code&gt;tput unknown terminal &#39;emacs&#39;&lt;/code&gt; is repeatedly appearing.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o&#34;&gt;http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs&#34;&gt;http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;https://youtrack.jetbrains.com/issue/PY-14999&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##Possible cause
+* In &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;, $TERM is hard-coded
+    * &lt;code&gt;line6:  os.environ[&#39;TERM&#39;] = &#39;emacs&#39; #to use proper page_more() for paging&lt;/code&gt;
+    * This overwrites your $TERM setting if you use iPython console when debugging.
+    * If your env doesn&amp;rsquo;t have terminfo for emacs, then it fails.&lt;/p&gt;
+
+&lt;p&gt;##Workaround
+* Add terminfo for emacs
+    * &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&#34;&gt;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&lt;/a&gt;
+    * I just copied terminfo of dumb-terminal as emacs&amp;rsquo;s terminfo, and it worked. (at least stopped showing messages)
+* Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/p&gt;
+
+&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>「日本企業の社員は、なぜこんなにもモチベーションが低いのか？ 」を読んだ</title>
+      <link>http://tuxedocat.github.io/post/2016-03-21-why-japanese-people/</link>
+      <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-03-21-why-japanese-people/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00TQE9TIK/ref=r_soa_w_d&#34;&gt;Rochelle Kopp, 『日本企業の社員は、なぜこんなにもモチベーションが低いのか？ 』&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;なぜ読んだか&#34;&gt;「なぜ読んだか」&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;労の地獄に落とされたからには、世界の他の場所でも労が地獄なのかどうかを知らないと気が済まなかった。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;昨年末から「労」批判書籍を少し読んでみた。労働法関連の専門家が書いた新書は読みやすく、いろいろな意欲が停滞しているこの時期にも、思いのほか読み進められた。そして、スタックに積まれていたものは消化した。&lt;/p&gt;
+
+&lt;p&gt;ここで「労」関連の新書や一般書はおやすみにして、言語学関連の本を読みたい。&lt;/p&gt;
+
+&lt;h2 id=&#34;たぶんこんな本だった&#34;&gt;「たぶんこんな本だった」&lt;/h2&gt;
+
+&lt;p&gt;かつて栄華を極めた日本企業とその成功の要因とされた日本式人事管理システム。最近では経済・社会環境の変化により、その利点はもはや小さく、欠点が目立つようになった。様々な調査で分かっている通り、「社員のエンゲージメント」や「社員への信頼」などのスコアが世界的に最低ランクであるという事実を直視し、そんな状態を作り出す人事管理システムを見直すべきはないか、という提言をする本、だと思った。&lt;/p&gt;
+
+&lt;p&gt;この本では、モチベーションを主に「エンゲージメント」（会社への関与や感情的な結びつきの強さで、強ければ良感情を持っていることになる）という言葉で表した事例が多数紹介されている。それらのほとんどで、日本企業の社員のエンゲージメントの度合いは、世界最低レベルだという結果が出ているらしい。
+エンゲージメントの低さの理由を下にあるようなものを例示したのち、そうした困難を改善した（欧米系）企業の事例を紹介するって流れなので、絶望ばかりではない。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;社員を大人扱いしない（信頼しない）&lt;/li&gt;
+&lt;li&gt;職務内容が入社後に決まる&lt;/li&gt;
+&lt;li&gt;配置転換の背後にある仕組みはあまり合理的ではない&lt;/li&gt;
+&lt;li&gt;ローパフォーマンスな人を解雇できない
+
+&lt;ul&gt;
+&lt;li&gt;（できるけどやらない、とか、たらい回しにする、とか、ひどいやり方で自主退職に追い込む、とかいろいろあるらしいが…どれも生産性を下げているので良くない、という。）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;マネージャーが利用する方法が古い、もしくは間違っている
+
+&lt;ul&gt;
+&lt;li&gt;「マイクロマネジメント」を行う&lt;/li&gt;
+&lt;li&gt;（ひどい場合怒鳴る、脅す、恥をかかせるってのもあるらしい）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;社会システム規模での話も書かれている。
+正社員という終身雇用およびその他の福利厚生を享受できる（できた）集団には、無制限の配置転換や転勤、そして残業が強いられる。でも、正社員システムはコストが高いため、非正規＋その他という集団を拡大させた。問題なのは、どちらも働く人のモチベーションについて寄与する仕組みではないということ。それだけではなく、女性や外国人やその他のマイノリティの多様性を受け入れない形態にできあがってしまっていて、これも結局モチベーションを下げている。&lt;/p&gt;
+
+&lt;p&gt;では、どうすればいいのか。システムとしては、法が遵守され、職務経歴書による職務定義の客観化が行われ、自由な労働市場が機能していること。また、働く人自身が、&amp;rdquo;employability&amp;rdquo; （この本では雇用適性と書かれているが、たぶん同じ概念を指す）を意識すること。この状態を保つようにできている他国のシステムの良い部分を採用すること。そのために、人事管理システムや社員にも変化が必要だという。そこには、「限定正社員」の概念の採用も含まれている。&lt;/p&gt;
+
+&lt;h2 id=&#34;雑感&#34;&gt;雑感&lt;/h2&gt;
+
+&lt;p&gt;……という提言は、以前、濱口桂一郎氏の「若者と労働」「働く女子の運命」を読んだから、受け入れやすかった。別に流動性の高い労働市場が無慈悲な即死地帯であるわけではないのだし。現状生じているいろいろなミスマッチを防ぐために、職務内容や評価基準を明確化して運用するのは「みんな」にとっても利益になるんじゃないかな、と思っていた。&lt;/p&gt;
+
+&lt;p&gt;この本が意味があると思うのは、マネジメント層や被雇用者に対するメッセージが多く含まれているところ。労働問題に関心がありそうな人たちだけでなく、もしかしたら加害者になりうる人も、読んでいそうな雰囲気がある。 そのメッセージ成分には、よりよい仕組みがあることに気付かさせてくれる優しさがある反面、急激な変化によって自動的によい仕組みが手に入るという希望は期待せず責任を持つことを要求してくる&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; ので、グサッとくる。でも、この本は個人レベルの責任が全てだと断定した論調&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; のものではない。そのへんも読みやすさに寄与しているのかも。&lt;/p&gt;
+
+&lt;p&gt;諸外国のような仕組みがなぜ自動で手に入っていないのかと思うと気が重くなるけど、だからって同じように一から改善の手間を繰り返す必要もない。
+最良の事例や理論から学んで、一気に変わってもいいような気がする。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;
+期待できるような環境に移る自衛が先か、それとも、意外と環境を変えられるのか、という選択にはまだ時間がかかりそう。&lt;/p&gt;
+
+&lt;h3 id=&#34;他の本&#34;&gt;他の本&lt;/h3&gt;
+
+&lt;p&gt;（IT）技術者は恩恵を受ける側だと思うので、社会システム更新に関する動向を知っておきたかった。それと、他の本で読んだ内容を確認したかった。&lt;/p&gt;
+
+&lt;p&gt;なので、具体的な事例や、「こういうのがいいな」という情報を得るためには 36 Signals の &amp;ldquo;Rework&amp;rdquo; や &amp;ldquo;Remote&amp;rdquo; が面白いと思う。今どうなっているのかは知らないけど、読んだ当時は羨ましく思った。&lt;/p&gt;
+
+&lt;h3 id=&#34;内容には関係ない部分&#34;&gt;内容には関係ない部分&lt;/h3&gt;
+
+&lt;p&gt;後半に入ると誤植がちらほらとあったけど、内容に関わるものはなかった。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:2&#34;&gt;常軌を逸した環境からは合理的判断に基づいて離れることを勧めている点でちゃんとしている。ひどい仕打ちをされたからと、結果的に自己目的化してしまった「追い出し部屋反対運動」事例については、僕も疑問に思う。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34;&gt;『当然、悪い仕組みは変えなくてはならないし、個人の選択で自由になれたり周囲を変えることができるかもしれない。いやなのは、こうした仕組み自体を保つような個人が大多数だった場合、その人たちはそもそも、普遍的な「良さ」をそうは感じないかもしれない。こうなると、改善を試みる個人がひどい不利益をかぶるかもしれない。だいたい、そうなっているのが現状じゃないか、と拗ねる気持ちも喚起されそう。だから、個人の集合体による不具合を別に個人が解決すべきとは思わない。もし、より効果的な方法が公権力によるものだったとしたら、別にそれでいいのでは？個人の意識なんてそういう外界の変化に合わせて移ろいゆくものだから。』という感じで好もうと好まざると、個人は環境やシステムの影響を多分に受けると信じている。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;後進国の方は別に先進国がたどった進化を追わなくてもいい。その時に手に入る最良のものを採用すればいい。……という、電話通信インフラで「リープフロッギング」と呼ばれた事例もちょろっと紹介されている。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[Kindle] 単語帳の整理</title>
+      <link>http://tuxedocat.github.io/post/2016-03-05-kindle-dictionary-management/</link>
+      <pubDate>Sat, 05 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-03-05-kindle-dictionary-management/</guid>
+      <description>&lt;p&gt;TL;DR &lt;code&gt;sqlite3 Kindle/system/vocabulary/vocab.db&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Kindleの単語帳機能は、辞書で調べた単語を記録してくれるのでそれ自体は便利だけど、次の2つの点が気に入らなくて不満がたまってきていた。&lt;/p&gt;
+
+&lt;p&gt;まず、本当に「なんでも追加してくれてしまう」ところ。Kindle端末のレスポンスの悪さもあってか、ハイライト時に意図せず、格助詞やその他の機能語も追加されてしまうことがよくあった。 &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+こうして、単語帳は単語分割が失敗したフレーズに含まれるどうでもいい一般名詞や、機能語で埋め尽くされていく。&lt;/p&gt;
+
+&lt;p&gt;こうなると、不要な単語を一括で整理したくなる。が、Kindle端末の単語帳アプリには、登録された単語を一括削除する術が（現時点では）用意されていない。これがふたつめのつらさ。
+一つずつ単語をタップし、辞書のポップアップから削除しなければならない。レスポンスの悪さと画面の点滅のせいで、わりとつらい作業になってしまう。&lt;/p&gt;
+
+&lt;p&gt;何かいい手は無いかなぁと思って、KindleをMacにマウントして中身にそれらしいファイルがあるかどうか調べてみた。 &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;それらしいファイルがあった。 &lt;code&gt;Kindle/system/vocabulary&lt;/code&gt; 内には &lt;code&gt;vocab.db&lt;/code&gt; という sqlite3 のDBが入っていた。
+ここまでくればあとは何とでも…。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sqlite3 vocab.db
+sqlite&amp;gt; PRAGMA table_info(words);
+0|id|TEXT|1||1
+1|word|TEXT|0||0
+2|stem|TEXT|0||0
+3|lang|TEXT|0||0
+4|category|INTEGER|0|0|0
+5|timestamp|INTEGER|0|0|0
+6|profileid|TEXT|0||0
+
+sqlite&amp;gt; SELECT * FROM words WHERE lang = &amp;quot;ja&amp;quot;;
+ja:しかしながら、本来|しかしながら、本来|しかし‐ながら|ja|0|1451836371172|
+ja:ところが|ところが|ところが|ja|0|1451836908962|
+ja:如才|如才|じょ‐さい|ja|0|1456149872209|
+ja:緋色|緋色|ひ‐いろ|ja|0|1430219728555|
+
+sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最後にKindleをUnmountして、再起動させれば単語の削除が反映される。&lt;/p&gt;
+
+&lt;p&gt;QoLがちょっとだけ上がった。イエィ！&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;日本語の本では、ハイライトやフレーズ選択の操作性があまり良くない。単語分割がうまくできていないからかもしれない。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;ハイライトやメモを抽出しようとした時のことを思い出した。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;©マーク・ワトニー氏
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>「ソフトウェア見積り 人月の暗黙知を解き明かす」を読んだ</title>
+      <link>http://tuxedocat.github.io/post/2016-03-04-software-estimation/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-03-04-software-estimation/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/ebook/dp/B00KR96M6K&#34;&gt;スティーブ・マコネル,「ソフトウェア見積り 人月の暗黙知を解き明かす」&lt;/a&gt; をさっと読んだ。&lt;/p&gt;
+
+&lt;p&gt;現場での実践に注力する「アートとしての見積り」を定義し、その観点からソフトウェア開発（他の知的生産プロジェクトでも当てはまるけど）につきものである不確実さをどのように見積りで考慮するか、そしてアートとしての見積りの限界を示す本だったように感じた。&lt;/p&gt;
+
+&lt;p&gt;アートとしての見積りとサイエンスとしての見積り、という概念をこの本では知ることができた。前者が本書の主な対象で、経験的な根拠に基づいた基本的な見積り手法や、見積りそのものの方法論を扱う。後者は、ソフトウェア工学の知見を多分に含む、学術的で理論に基づく数式を駆使した見積り手法。&lt;/p&gt;
+
+&lt;p&gt;後半で紹介されたいろいろな手法についてはなるほどな〜という感想しかわかなかった。それは開発経験が足りないからであって本の問題ではない。
+（明日から使える小規模プロジェクトにおける規模の見積り・ターゲットの重要度の見積り方法、例えば「Tシャツのサイズ分け」などは早速試してみた。）&lt;/p&gt;
+
+&lt;p&gt;個人的にこの本で得られた知見があるとすれば、「見積りと計画の違い」「ターゲットとコミットメントの違い」「不確実性のコーン」の3つの概念とその説明が有益だったと思う。
+というのは、そもそもこうした概念が自分にも、少なくとも周囲の環境にも浸透していない気がするからだ。
+こと今の会社の現場においては、技術者もマネージャーも無頓着な場合が多く、例えば見積りは更新されうるものだということを理解している人は少なそうな気がする。&lt;/p&gt;
+
+&lt;p&gt;自分がプロジェクト自体の見積りの責任者になるのはすぐには考え難いけど、どういう心持ちで見積りを見ればいいのか、どういうものであるべきなのか、という感覚を持つのは、自衛にしても社会的利益のためにしても、必要なんじゃないかなと思った。
+読んでよかった。&lt;/p&gt;
+
+&lt;h4 id=&#34;mar-21-2016&#34;&gt;Mar 21. 2016&lt;/h4&gt;
+
+&lt;p&gt;なんかセールで半額になってた。つらい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>「フィンランド語は猫の言葉」を読んだ</title>
+      <link>http://tuxedocat.github.io/post/2016-02-17-finland-book/</link>
+      <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-02-17-finland-book/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00RGL8DSW/ref=cm_sw_r_tw_dp_5uS7wb0Y3YSQW&#34;&gt;稲垣美晴,「フィンランド語は猫の言葉」&lt;/a&gt; を読んだ。&lt;/p&gt;
+
+&lt;p&gt;フィンランドでの言語学科留学体験記（ただし1980年代）という感じで、中島義道氏の「ウィーン愛憎」の「憎」無しバージョンに思えた。
+&lt;strong&gt;残念ながら猫の話はほとんど出てこない。&lt;/strong&gt; フィンランド語の相槌が「ニー」という一エピソードから付けられただけなのであった。&lt;/p&gt;
+
+&lt;p&gt;（なぜだかわからないけど、こうした留学日誌的エッセイには、よくある留学指南本のごとく「まず日本を知らなければならない」の類の主張が含まれているのはずっと気になっている。ウィーン愛憎ではそうした帰属意識や義務は皮肉めいた風に使われていた（外敵に対する防御反応のような感じで）。ここに関しては考えをまとめたい。というのも、僕はそういう考えを全く持っていないからだ。必須の段階とは思わないし、そもそも自国の文化的知識やその理解度や、それをうまく表現できるかどうかなんて個々人によって要求される度合いも、自己評価のレベルが異なりすぎて、あたかも共通の必須事項として挙げられるほど果たして客観的なものなのだろうか、と思ってしまうのだった。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[Kindle] Amazon.comアカウントも持っている場合に困ったこと</title>
+      <link>http://tuxedocat.github.io/post/2016-01-10-kindle-dual-account-issue/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-01-10-kindle-dual-account-issue/</guid>
+      <description>&lt;p&gt;Kindle Paperwhiteは2015年の「買ってよかったもの」のひとつだけど、使用には少し難点があった。&lt;/p&gt;
+
+&lt;p&gt;その問題とは、Kindle Paperwhiteからストアを開き、端末から直接購入したりサンプルをダウンロードしたりができないってやつで、Kindleの使用頻度が上がってくると結構不便に感じていた。（他の端末から購入してKindleに転送していた…）&lt;/p&gt;
+
+&lt;p&gt;そのうちめんどくささが限界に達したので、Amazonのカスタマーサポートに連絡したら、以下のような返事がもらえた。（連絡から1日かからなかったと思う。早い！）&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Amazon.comとAmazon.co.jpに登録されているEメールアドレス・パスワードが同一の場合、いずれかのパスワードを変更してください&lt;/li&gt;
+&lt;li&gt;端末に登録されているアカウントを解除します（ホーム画面でメニューをタップ＞設定＞登録＞登録を解除 の順にタップします）&lt;/li&gt;
+&lt;li&gt;端末にAmazon.comのアカウントを登録します&lt;/li&gt;
+&lt;li&gt;端末からストアへアクセスし、コンテンツが購入できるかお試しください
+※購入先サイトがAmazon.co.jpとなっていれば、当サイトのストアが表示されます&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これらのうち、&lt;code&gt;2, 3&lt;/code&gt;のAmazon.comアカウントの方で登録することで問題は解消できた。
+手元で解決できなさそうな問題でサポートが提供されている場合は、聞いてみるのが正確だし早いというケースだった。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;3か月ぐらい前のことだけど、記録に残しておく。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;色々なBlog記事を探しても、アカウントの統合やAmazon.co.jpアカウントの再登録でOK、みたいな内容が多かった。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2015年の本</title>
+      <link>http://tuxedocat.github.io/post/2015-12-25-books/</link>
+      <pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-12-25-books/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;全面改訂　超簡単　お金の運用術
+
+&lt;ul&gt;
+&lt;li&gt;金銭面の脆弱性をなんとかしたくて、適当な本を選んで読んだ。他の本との比較はしていないので、まだ実践していない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;写真構図の教科書　光で思いどおりに描くための写真の手引き
+
+&lt;ul&gt;
+&lt;li&gt;構図ライブラリを作ろうと思ったのでKindle版を読んだ。紙の本の方が良かった事例。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ネコを撮る
+
+&lt;ul&gt;
+&lt;li&gt;写真展で本物の岩合氏と会った帰りに買った本。面白かった。（猫の気持ちがわかる人らしい）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;夏への扉
+
+&lt;ul&gt;
+&lt;li&gt;邦訳の表紙絵の猫の後頭部が気になったので、古典的名作に手を出した。ハードSFではなく、すこしふしぎって感じの話で気楽に読めた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;一九八四年 ハヤカワepi文庫
+
+&lt;ul&gt;
+&lt;li&gt;今まで読んでいなかったのを後悔した。今年読んだ小説では一番面白かった。ちょうどKindlePWを買った頃だった。Kindle版なので、ちょっとでも気に入った箇所にはハイライトを付けられて読書体験はなかなか良かった。が、電子版にはトマス・ピンチョンによる解説が収録されていないってことに最後の最後で気付いて損した気分になった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;世界を変えた哲学者たち (角川ソフィア文庫)
+
+&lt;ul&gt;
+&lt;li&gt;面白かった。なぜか、中島義道氏の本での哲学者評の文体を思い出した。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;最新版 「うつ」を治す PHP新書
+
+&lt;ul&gt;
+&lt;li&gt;だんだんと調子を崩してきたときに読んだ本。自分のため、というよりは、親や妻に説明するときのための補強材料にしたかったのだと今になって思う。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;虐殺器官 ハヤカワ文庫JA
+
+&lt;ul&gt;
+&lt;li&gt;ちょっとくどい感じの筆致（Hideo Kojima風、そりゃそうなんだけど）だったけど、面白かった。結局、伊藤計劃作品ではこれが一番気に入った。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The Indifference Engine
+
+&lt;ul&gt;
+&lt;li&gt;短編集。昔メタルギアソリッドをやって、ちょっとくどいなぁと感じた記憶が蘇った。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;貧乏人の経済学 - もういちど貧困問題を根っこから考える
+
+&lt;ul&gt;
+&lt;li&gt;考えれば当然のことだけど、社会科学も着実に粛々と行われていることを知れたので、希望が湧いた。データと人間の両方に対して誠実な著者だと思った。僕はベーシックインカムのランダム化対照試行を見てみたい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;アカマイ　知られざるインターネットの巨人 (角川ＥＰＵＢ選書)
+
+&lt;ul&gt;
+&lt;li&gt;小学生の頃、インターネット黎明期、Akamaiという謎の会社について気になっていたけど調べていなかったことを今になって思い出したので、読んだ。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;愛着障害～子ども時代を引きずる人々～ 光文社新書
+
+&lt;ul&gt;
+&lt;li&gt;色々と、親のせいにしたかった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;PHOTOGRAPHER&amp;rsquo;S EYE -写真の構図とデザインの考え方-
+
+&lt;ul&gt;
+&lt;li&gt;写真を体系的に学べる本を探していた。分厚いし、西洋美術史の話が多くて勉強不足なのを実感したけど、リファレンスとしても使えそうなので今後もお世話になりそう。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Photoshop逆引きデザイン事典[CC/CS6/CS5/CS4/CS3]
+
+&lt;ul&gt;
+&lt;li&gt;役立ちそうだったけど、ほとんどの作業がLightroomCCで間に合っているのであまり読んでない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;変身
+
+&lt;ul&gt;
+&lt;li&gt;昔読んだけど失くしてしまったので改めて読んでみた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;オンライン機械学習（機械学習プロフェッショナルシリーズ）
+
+&lt;ul&gt;
+&lt;li&gt;中古で買った。必要なものがコンパクトにまとまっているような気がした。実装力があれば…&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;深層学習（機械学習プロフェッショナルシリーズ）
+
+&lt;ul&gt;
+&lt;li&gt;中古で買った。簡単なNNは線形代数がわかれば一応書けるので、実は初学者向けなのではないかと感じた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;[新装改訂版]Illustratorで学ぶ 「ベジェ曲線」習熟ドリル
+
+&lt;ul&gt;
+&lt;li&gt;トラックパッドでは腱鞘炎必至なので、今の所手をつけていない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;うつと不安の認知療法練習帳
+
+&lt;ul&gt;
+&lt;li&gt;この本を買った頃、仕事のつらみが最大値をとっていた。つらい間一ヶ月ぐらい記録をつけていたが、環境の改善の方がずっと良い影響があったのでやめてしまった。（本当に偶然で、自ら働きかけたって気はしない感じの変化。）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;美の構成学　バウハウスからフラクタルまで (中公新書)
+
+&lt;ul&gt;
+&lt;li&gt;スイスデザイン展に行った帰りに買った。日本的な文様の美しさとその利用の提言、みたいな箇所はあまりよくわからなかったが、バウハウス史が簡潔にまとまっている初めの章だけでも十分面白かった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ハーモニー ハヤカワ文庫JA
+
+&lt;ul&gt;
+&lt;li&gt;etmlは映画版ではどうなるんだろう、と思っていた。（必要だったのだろうか）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;スナップ写真のルールとマナー
+
+&lt;ul&gt;
+&lt;li&gt;度胸があるわけではないので、最近つきものの社会的トラブルについて勉強しようとした。ただ、本当にトラブルになった場合、この本でアドバイスをしていた弁護士に相談するほうが早そう…&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;トルコ語のしくみ《新版》 (言葉のしくみ)
+
+&lt;ul&gt;
+&lt;li&gt;イスタンブール旅行に備えて、Duolingoと共にお勉強をしていた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;自殺について 他四篇 (岩波文庫)
+
+&lt;ul&gt;
+&lt;li&gt;題名の通り、という意味はない。版が少し古いものだったので、書体が読みにくかった。それと、ハイライトを付けたかったので電子版を買ってしまった。（訳は異なるので別カウント）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;論理哲学論考 (岩波文庫)
+
+&lt;ul&gt;
+&lt;li&gt;野矢茂樹氏の解説が読みたかった。バートランド・ラッセルの解説の勘違い箇所を自力で見つけられたってこと以外は、ただただ読んだ、というだけで終わってしまった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ラッセル幸福論 (岩波文庫)
+
+&lt;ul&gt;
+&lt;li&gt;途中まで読んで放置してしまった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;情報理論 (ちくま学芸文庫)
+
+&lt;ul&gt;
+&lt;li&gt;途中まで読んで放置してしまった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;哲学用語図鑑
+
+&lt;ul&gt;
+&lt;li&gt;親知らずの手術を待つ間に暇つぶしのために買って読んだ。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Photographer&amp;rsquo;s Mind : どう撮り、見せるか。記憶に残る写真の作り方
+
+&lt;ul&gt;
+&lt;li&gt;Photographer&amp;rsquo;s eyeがビジュアル要素に重点を置いているのに対して、こちらは西洋美術史や写真史の中でのいろいろなスタイルの背景や技法を紹介することに注力している様子だった。こちらも今後お世話になりそう。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;統計学入門 (基礎統計学)
+
+&lt;ul&gt;
+&lt;li&gt;統計学の不出来さにコンプレックスがあるので買った。少し古い本だけど、読みやすい文体。基礎事項の確認とリファレンスに使うことがある。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;持たない幸福論　働きたくない、家族を作らない、お金に縛られない (幻冬舎単行本)
+
+&lt;ul&gt;
+&lt;li&gt;働きたくないから面白かった。けど、このタイプの言論は少しデジタルユートピア論（？）っぽいところがあって、完全に投影できるわけではなさそう。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;星を継ぐもの (創元ＳＦ文庫)
+
+&lt;ul&gt;
+&lt;li&gt;科学的推理ドラマみたいな感じだった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;「きんいろモザイク」と英語レッスン
+
+&lt;ul&gt;
+&lt;li&gt;かわいい。CDが付いていると良かった（その場合、教材としてはどうなのか）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;帰ってきたヒトラー　合本版
+
+&lt;ul&gt;
+&lt;li&gt;原著 Er ist wieder da は自身のドイツ語力不足のため、サンプルですら時間がかかって仕方なかった。皮肉が効いていて面白いし、もしかしたらヒトラーに自己を投影できる人もいるかもしれないと思うぐらい、人間的な描写があって良かった。最後はハッピーエンド。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;トルコ語 (ひとり歩きの会話集)
+
+&lt;ul&gt;
+&lt;li&gt;旅の指さし会話帳が売り切れていたので買った。（実際にはあまり使わなかった）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;プログラマの考え方がおもしろいほど身につく本 問題解決能力を鍛えよう！
+
+&lt;ul&gt;
+&lt;li&gt;筋トレっぽい感じではじめはつらそうに思えたけど、解説がしっかりしているので良かった。（ただ、興味関心と業務上の都合で、統計の方を優先したため、中断している）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;体系的に学ぶ 安全なWebアプリケーションの作り方
+
+&lt;ul&gt;
+&lt;li&gt;もし知らないままでいたら、ひどい失敗をしてしまうだろうなという不安があったため、読んだ。（まだ実践はしていない）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;世界で闘うプログラミング力を鍛える150問～トップIT企業のプログラマになるための本～
+
+&lt;ul&gt;
+&lt;li&gt;念のため、ということで買っておいた。就職活動Tipsが前半部に載っていたが、これが機能する国や環境は羨ましいと思った。後半部はALDSや「プログラマの考え方〜」で勉強してからの方がいいと思ったのでやっていない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;はじめての数論 原著第3版 発見と証明の大航海‐ピタゴラスの定理から楕円曲線まで
+
+&lt;ul&gt;
+&lt;li&gt;Project Eulerをちまちまと解こうとしているが、やはり数学力が足りない。なので、ゆっくりとこの本を読んで数論を学ぼうと思った。（そしたら知能が足りないことに気づいた）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;自殺について (角川ソフィア文庫)
+
+&lt;ul&gt;
+&lt;li&gt;ハイライトを付けたかったので再購入。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;フィンランド語は猫の言葉 (講談社文庫)
+
+&lt;ul&gt;
+&lt;li&gt;留学願望が高まってくると、留学日誌的な随筆を読みたくなる。フィンランドを知りたい、という動機もあった。（結果、フィンランド旅行に行くことが決まった）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;外国語学習の科学―第二言語習得論とは何か (岩波新書)
+
+&lt;ul&gt;
+&lt;li&gt;自分のためというより、外国語学習コンプレックスの強い妻のことを考えてみたくなったので、買ってみた。まだ読んでない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Think Stats 第2版
+
+&lt;ul&gt;
+&lt;li&gt;原著第1版もざっと読んだが、内容が変わっているということで買った。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;反知性主義―アメリカが生んだ「熱病」の正体―（新潮選書）
+
+&lt;ul&gt;
+&lt;li&gt;反知性主義の簡単な理解のために読んだ。山形浩生氏のブログの受け売りです。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;アプリケーションをつくる英語
+
+&lt;ul&gt;
+&lt;li&gt;ひどい命名や翻訳を何度も見たし、自分がそういう失敗をしないとは限らないので、ソフトウェア関連の用例を知りたくなった。リファレンスとして利用している。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;知る、読む、使う！ オープンソースライセンス
+
+&lt;ul&gt;
+&lt;li&gt;ソフトウェアにはお金払いたくない、との前社長による邪悪な発言がずっと頭の片隅に残っていた。そして法を知らなくては蒙は解けないと思いはじめた。…ということは一割ぐらいで、OSSのライセンスのまとまった資料が欲しかったので読んだ。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;データ解析のための統計モデリング入門――一般化線形モデル・階層ベイズモデル・MCMC (確率と情報の科学)
+
+&lt;ul&gt;
+&lt;li&gt;モデリングという視点や方法論についてあまりにも無知だったので、信頼できそうな書籍を読むことにした。StatsmodelsとPyMCで適当に確認しただけなので、まだまだ勉強不足だけど、読んでよかった。（ところで、「シミュレイション」って転記はなんなんだろう…岩波データサイエンスでもそうなっている）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;エンジニアとして世界の最前線で働く選択肢　～渡米・面接・転職・キャリアアップ・レイオフ対策までの実践ガイド
+
+&lt;ul&gt;
+&lt;li&gt;海外進出指南本は、既に確立されたキャリアを歩む人向け、失うものがない人向け、有能マッチョ主義者向け、みたいなものしかないと思っていた。本人の成功談しかない割に、読者に要求する能力基準は高めに設定してあるとか（成功保証はないのだから当然だけど）。この本はそういうわけではなく、良い点、悪い点が素直に書いたあったし、技術者として誠実な感じがした。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;最効率! 例文で覚えるドイツ語単語
+
+&lt;ul&gt;
+&lt;li&gt;Duolingoだけでは全然身につかない気がした。今は耳と単語力を鍛えようとしている。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;バンディットアルゴリズムによる最適化手法
+
+&lt;ul&gt;
+&lt;li&gt;まだ読んでいない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;コード・シンプリシティ
+
+&lt;ul&gt;
+&lt;li&gt;まだ読んでいない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;デザイニング・データビジュアライゼーション
+
+&lt;ul&gt;
+&lt;li&gt;まだ読んでいない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;データ匿名化手法
+
+&lt;ul&gt;
+&lt;li&gt;まだ読んでいない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;アルゴリズムパズル
+
+&lt;ul&gt;
+&lt;li&gt;まだ読んでいない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;統計学のための数学入門30講 (科学のことばとしての数学)
+
+&lt;ul&gt;
+&lt;li&gt;必要な数学的事項がコンパクトにまとまっている本が欲しかったので。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;岩波データサイエンス Vol.1
+
+&lt;ul&gt;
+&lt;li&gt;最近、「もてて困るもてて困る」法や統計モデリングについての興味関心が高まっているので。Vol2も読みたい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;暴力の人類史 上
+
+&lt;ul&gt;
+&lt;li&gt;図書館で貸し出し予約をしてから3か月待っても、依然待ち行列は短くならなかったので購入。今年一番の本かもしれない。上巻では、人類史においては一貫して暴力は減少している、ということの実証が行なわれている。そう言ってしまえばそれだけなのだけど、統計データや過去の実証的研究の膨大な情報をまとめ上げ、説得をするスタイルに圧倒される。何回も読まないといけないなぁ。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;暴力の人類史 下
+
+&lt;ul&gt;
+&lt;li&gt;なんとか年内に読めた。後半はなぜ、人類がこれからも平和化し続けるのだろうと言えるのかを示す内容となっている。生得的な理由からも、理性的な理由からもその傾向を示しているため、読み終わってから希望が湧いた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ハイパフォーマンスPython
+
+&lt;ul&gt;
+&lt;li&gt;技術書では今年一番かもしれない。何をするにも前提として正確なプロファイルが行われないと意味がない、ということが何度も例示されていた。黒魔術のような名前で呼んでいるようなコード例も、あくまで段階を踏んで行った先に、可読性や開発スピードとのトレードオフを許容できる場合に限って有効だ、という立ち位置は冷静でかっこいい。（僕は自己満足的な最適化もできない程度の技術力なので、言う権利はない。）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Building Probabilistic Graphical Models with Python [eBook]
+
+&lt;ul&gt;
+&lt;li&gt;まだ読んでいない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Mastering Probabilistic Graphical Models Using Python [eBook]
+
+&lt;ul&gt;
+&lt;li&gt;まだ読んでいない。CourseraのPGMのコースと併せて勉強しようかな。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;プログラミングコンテスト攻略のためのアルゴリズムとデータ構造
+
+&lt;ul&gt;
+&lt;li&gt;もっと早く買っておけばよかった…&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;若者と労働　「入社」の仕組みから解きほぐす 中公新書ラクレ
+
+&lt;ul&gt;
+&lt;li&gt;早くジョブ型雇用メインになってほしいので興味を持った。後に出た「働く女子の運命」より、こちらの方が、世界でも稀に見る非ジョブ型社会という問題を認識するにはわかりやすかった。と同時に絶望しかけたが、これは本のせいではない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;世界の言語入門（講談社現代新書）
+
+&lt;ul&gt;
+&lt;li&gt;ざっくりとした世界言語探訪&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;英語のしくみ
+
+&lt;ul&gt;
+&lt;li&gt;流し読み&lt;/li&gt;
+&lt;li&gt;有益な感じ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;辞書を編む
+
+&lt;ul&gt;
+&lt;li&gt;辞書編纂者の仕事について&lt;/li&gt;
+&lt;li&gt;「舟を編む」を読むほうがいいかも&amp;hellip;というのは、こちらは新書っぽい概説的な話とエッセイなので、この人の文体がくどめに感じられてしまったから。だけど、それでもドラマ性があって「ことば」が好きなら楽しめそう。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;アルファベットの辞典
+
+&lt;ul&gt;
+&lt;li&gt;時間切れで読めないまま返却（ざっと読んで、装丁の良さに感動した）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;フィンランド語は猫の言葉
+
+&lt;ul&gt;
+&lt;li&gt;留学体験記。「ウィーン愛憎」とは異なり、憎しみ成分は特にない。そして、猫はほとんど関係ない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ハイパフォーマンスデータ暴力</title>
+      <link>http://tuxedocat.github.io/post/2015-12-20-highperformance-data-violence/</link>
+      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-12-20-highperformance-data-violence/</guid>
+      <description>&lt;p&gt;オライリーの電子書籍セール&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;バンディットアルゴリズムによる最適化手法&lt;/li&gt;
+&lt;li&gt;コード・シンプリシティ&lt;/li&gt;
+&lt;li&gt;デザイニング・データビジュアライゼーション&lt;/li&gt;
+&lt;li&gt;データ匿名化手法&lt;/li&gt;
+&lt;li&gt;アルゴリズムパズル&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;紙の本&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ハイパフォーマンスPython
+
+&lt;ul&gt;
+&lt;li&gt;有益だった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;岩波データサイエンス Vol.1
+
+&lt;ul&gt;
+&lt;li&gt;有益だった。Stan使ってみようと思った。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;暴力の人類史 上下
+
+&lt;ul&gt;
+&lt;li&gt;暴力的な情報量の本。名著の予感。毎日興奮気味に夜更かしして読み進めている。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;統計学のための数学入門30講
+
+&lt;ul&gt;
+&lt;li&gt;会社でリファレンスとして使ってみている。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Anaconda2と日本語パス</title>
+      <link>http://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;会社マシンのAnaconda2環境で、とあるパッケージのインストール時に&lt;code&gt;UnicodeDecodeError&lt;/code&gt;が出た。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/conda/conda/issues/1352&#34;&gt;Issues&lt;/a&gt; を見ると、パスに非Ascii文字が含まれる環境でのAnaconda2の利用は非推奨だという感じだった。&lt;/li&gt;
+&lt;li&gt;なのでおとなしくAnaconda3へ移行して、&lt;code&gt;conda create -n py2x python=2.7 anaconda&lt;/code&gt;で環境を作った。&lt;/li&gt;
+&lt;li&gt;それ以降は当該の問題は生じていない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;（usernameは英数字なのだけど&amp;hellip;）&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
