@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spark on Miaulog</title>
+    <link>http://tuxedocat.github.io/tags/spark/index.xml</link>
+    <description>Recent content in Spark on Miaulog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tuxedocat.github.io/tags/spark/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spark-SQL DataFrame: Selecting multiple columns</title>
+      <link>http://tuxedocat.github.io/post/2016-10-31-spark-sql-select/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-10-31-spark-sql-select/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val columnNames = Seq(&amp;quot;col1&amp;quot;,&amp;quot;col2&amp;quot;,.....&amp;quot;coln&amp;quot;)
+
+// using the string column names:
+val result = dataframe.select(columnNames.head, columnNames.tail: _*)
+
+// or, equivalently, using Column objects:
+val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_* transforms a collection into a vararg argument - used when calling a method expecting a vararg, like select does: def select(col: String, cols: String*)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ref. &lt;a href=&#34;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&#34;&gt;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

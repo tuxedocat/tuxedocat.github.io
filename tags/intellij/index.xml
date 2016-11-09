@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intellij on Miaulog</title>
+    <link>http://tuxedocat.github.io/tags/intellij/index.xml</link>
+    <description>Recent content in Intellij on Miaulog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tuxedocat.github.io/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython</title>
+      <link>http://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</guid>
+      <description>
+
+&lt;h2 id=&#34;reported-issues&#34;&gt;Reported issues&lt;/h2&gt;
+
+&lt;p&gt;In debugging console (w/ iPython), &lt;code&gt;tput unknown terminal &#39;emacs&#39;&lt;/code&gt; is repeatedly appearing.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o&#34;&gt;http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs&#34;&gt;http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;https://youtrack.jetbrains.com/issue/PY-14999&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##Possible cause
+* In &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;, $TERM is hard-coded
+    * &lt;code&gt;line6:  os.environ[&#39;TERM&#39;] = &#39;emacs&#39; #to use proper page_more() for paging&lt;/code&gt;
+    * This overwrites your $TERM setting if you use iPython console when debugging.
+    * If your env doesn&amp;rsquo;t have terminfo for emacs, then it fails.&lt;/p&gt;
+
+&lt;p&gt;##Workaround
+* Add terminfo for emacs
+    * &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&#34;&gt;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&lt;/a&gt;
+    * I just copied terminfo of dumb-terminal as emacs&amp;rsquo;s terminfo, and it worked. (at least stopped showing messages)
+* Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/p&gt;
+
+&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

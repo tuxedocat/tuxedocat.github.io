@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haskell on Miaulog</title>
+    <link>http://tuxedocat.github.io/tags/haskell/index.xml</link>
+    <description>Recent content in Haskell on Miaulog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tuxedocat.github.io/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Haskell: Installing ghc without root privilege</title>
+      <link>http://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</link>
+      <pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</guid>
+      <description>&lt;p&gt;##Get OS specific &amp;ldquo;Binary Packages&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd /home/foo
+$wget http://www.haskell.org/ghc/dist/7.0.4/ghc-7.0.4-x86_64-unknown-linux.tar.bz2
+$tar -xvf ghc-7.0.4-x86_64-unknown-linux.tar.bz2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##Configure and install as usual&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd ghc-7.0.4
+$./configure --prefix=/home/foo/usr  #something like this...
+$make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##Notes
+You will obviously need to install &lt;code&gt;cabal&lt;/code&gt; from somewhere else&amp;hellip;
+Using &lt;code&gt;haskell-platform&lt;/code&gt; will make it easier.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd /home/foo
+$wget http://lambda.haskell.org/platform/download/2011.4.0.0/haskell-platform-2011.4.0.0.tar.gz
+$cd haskell-platform-2011.4.0.0
+$./configure --prefix=/home/foo/usr
+$make
+$make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/8084832/ghc-install-without-root&#34;&gt;Reference: Stackoverflow&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simple programming: FizzBuzz</title>
+      <link>http://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</link>
+      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</guid>
+      <description>&lt;p&gt;##In Python&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(this won&amp;rsquo;t work for i = 0)&lt;/p&gt;
+
+&lt;p&gt;##In Haskell
+In ghci:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;[if (mod x 15)==0 then &amp;quot;FizzBuzz&amp;quot; else if (mod x 5)==0 then &amp;quot;Buzz&amp;quot; else if (mod x 3)==0 then &amp;quot;Fizz&amp;quot; else (show x) | x  String
+fizzBuzz x
+    | (mod x 15)== 0 = &amp;quot;FizzBuzz&amp;quot;
+    | (mod x 5) == 0 = &amp;quot;Buzz&amp;quot;
+    | (mod x 3) == 0 = &amp;quot;Fizz&amp;quot;
+    | otherwise      = show x
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then,  load into the interpreter,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;map fizzBuzz [1..100]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

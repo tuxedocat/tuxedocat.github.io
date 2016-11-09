@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU Failure (possibly...) on my MBP15&#39; (early 2011 model) &middot; Miaulog</title>
+
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.18-DEV" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="GPU Failure (possibly...) on my MBP15&#39; (early 2011 model) &middot; Miaulog">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="GPU Failure (possibly...) on my MBP15&#39; (early 2011 model) &middot; Miaulog">
+    <meta property="og:description" content="">
+
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="http://tuxedocat.github.io//css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="Miaulog" href="http://tuxedocat.github.io//index.xml" />
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+    <div class="header">
+        <hgroup>
+            <h1 class="brand-title"><a href="http://tuxedocat.github.io/">Miaulog</a></h1>
+            <h2 class="brand-tagline"></h2>
+        </hgroup>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                
+                
+                <li class="nav-item">
+                    <a class="pure-button" href="http://tuxedocat.github.io//index.xml"><i class="fa fa-rss"></i> rss</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            
+            <div class="posts">
+                <h1 class="content-subhead">12 Jul 2014, 00:00</h1>
+                <section class="post">
+                    <header class="post-header">
+
+                        <a href="http://tuxedocat.github.io/post/2014-07-12-MBPGPU/" class="post-title">GPU Failure (possibly...) on my MBP15&#39; (early 2011 model)</a>
+
+                        <p class="post-meta">
+                            
+                            
+                                under 
+                                
+                                <a class="post-category post-category-Random" href="http://tuxedocat.github.io//categories/random">Random</a>
+                            
+                        </p>
+                    </header>
+                    
+                    <div class="post-share">
+                        <div class="post-share-links">
+                            <h4 style="">Share</h4>
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="post-description">
+                        
+
+<h2 id="symptoms">Symptoms</h2>
+
+<p>Various glitch happen when connecting external displays, or doing GPU intensive tasks.</p>
+
+<ul>
+<li><a href="http://www.mbp2011.com/">More details. made by people who are having the same trouble</a></li>
+<li><a href="https://discussions.apple.com/thread/4766577">On Apple&rsquo;s discussion board, it is still actively updated.</a></li>
+</ul>
+
+<h2 id="workaround">Workaround</h2>
+
+<p>Disable external GPU&hellip; or bring this mbp to &lsquo;genius&rsquo; bar, and get the logic board replaced. The latter is obviously expensive solution, and according to the discussion above, it doesn&rsquo;t resolve the problem permanently.</p>
+
+<p>I would rather wait for upcoming Macbook Pro (late 2014) than tentatively fixing this 3 years-old macbook with no warranty by paying more than <sup>1</sup>&frasl;<sub>5</sub> of my salary.  So I&rsquo;ve decided to disable external GPU, and forget about my thunderbolt display.</p>
+
+<pre><code class="language-sh"># In the single user mode..... (press Cmd+S on boot)
+
+# mount the disk to operate
+$ mount -uw /
+
+# I'm just a person who always want it back
+$ mkdir ./DisabledExtensions
+
+$ cd /System/Library/Extensions
+$ mv AMD* /DisabledExtensions
+
+# I perhaps had to clear the kext-cache, or rebuild kexts, but that time I just restarted and clear the PRAM
+$ shutdown  -h now
+</code></pre>
+
+<h2 id="how-is-it-lately">How is it lately?</h2>
+
+<p>Absolutely annoying. Of course this saved me from the fatal failure (cannot boot, crash on boot with grayed out display, and etc.), now I can write something on the MBP like this. But while working on some applications which highly depended on the external GPUs such as Google Chrome, Adobe things, some OSX preinstalled applications (Preview.app, Calendar.app, Safari, and etc.) , I&rsquo;ve experienced minor display glitches, and/or very-low FPS animations.</p>
+
+<p>Now I switched to Firefox (reluctantly, but still vimperator is great.), and since I haven&rsquo;t been on the codes lately (sadly because of the job?) it&rsquo;s just annoying not fatal.</p>
+
+<p>(I&rsquo;ll probably buy a new one, and give this to my wife.)</p>
+
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="footer">
+    <div class="pure-menu pure-menu-horizontal pure-menu-open">
+        <ul>
+            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
+        </ul>
+    </div>
+</div>
+<script src="http://tuxedocat.github.io//js/all.min.js"></script>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
