@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Depression on Miaulog</title>
-    <link>http://tuxedocat.github.io/tags/depression/index.xml</link>
+    <link>http://tuxedocat.github.io/tags/depression/</link>
     <description>Recent content in Depression on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 05 Jul 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://tuxedocat.github.io/tags/depression/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dokuwiki on Miaulog</title>
-    <link>http://tuxedocat.github.io/tags/dokuwiki/index.xml</link>
+    <link>http://tuxedocat.github.io/tags/dokuwiki/</link>
     <description>Recent content in Dokuwiki on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 18 Nov 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://tuxedocat.github.io/tags/dokuwiki/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
