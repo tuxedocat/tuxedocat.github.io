@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Miaulog</title>
-    <link>http://tuxedocat.github.io/tags/python/index.xml</link>
+    <link>https://tuxedocat.github.io/tags/python/index.xml</link>
     <description>Recent content in Python on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="http://tuxedocat.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tuxedocat.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Link</title>
-      <link>http://tuxedocat.github.io/post/2016-08-21-notebook-collection/</link>
+      <link>https://tuxedocat.github.io/post/2016-08-21-notebook-collection/</link>
       <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2016-08-21-notebook-collection/</guid>
+      <guid>https://tuxedocat.github.io/post/2016-08-21-notebook-collection/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -30,10 +30,10 @@
     
     <item>
       <title>[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython</title>
-      <link>http://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</link>
+      <link>https://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</link>
       <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</guid>
+      <guid>https://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</guid>
       <description>
 
 &lt;h2 id=&#34;reported-issues&#34;&gt;Reported issues&lt;/h2&gt;
@@ -64,10 +64,10 @@
     
     <item>
       <title>Anaconda2と日本語パス</title>
-      <link>http://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</link>
+      <link>https://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</link>
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</guid>
+      <guid>https://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;会社マシンのAnaconda2環境で、とあるパッケージのインストール時に&lt;code&gt;UnicodeDecodeError&lt;/code&gt;が出た。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/conda/conda/issues/1352&#34;&gt;Issues&lt;/a&gt; を見ると、パスに非Ascii文字が含まれる環境でのAnaconda2の利用は非推奨だという感じだった。&lt;/li&gt;
@@ -81,10 +81,10 @@
     
     <item>
       <title>Link: Numpy docstring / Howto</title>
-      <link>http://tuxedocat.github.io/post/2015-09-13-numpy-docstring/</link>
+      <link>https://tuxedocat.github.io/post/2015-09-13-numpy-docstring/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2015-09-13-numpy-docstring/</guid>
+      <guid>https://tuxedocat.github.io/post/2015-09-13-numpy-docstring/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;ちゃんとDocstrings書こうと思ったとき、いつもどの流派の書き方でやればいいのか迷ってしまう。そしてその後は結局、Numpy派をお手本にして書いていた気がするので、今後はこの手間を省略できるように、記録しておく。（大げさな感じ…）&lt;/p&gt;
@@ -97,10 +97,10 @@
     
     <item>
       <title>Link: Type hinting support in PyCharm</title>
-      <link>http://tuxedocat.github.io/post/2015-09-13-type-hinting-python/</link>
+      <link>https://tuxedocat.github.io/post/2015-09-13-type-hinting-python/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2015-09-13-type-hinting-python/</guid>
+      <guid>https://tuxedocat.github.io/post/2015-09-13-type-hinting-python/</guid>
       <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;Eclipse (PyDev) → SublimeText + iPython → Atom + iPython (自宅), Spyder, PyCharm, VS2013 (会社) …という感じで色々試してきたけど、PyCharmが一番使いやすいと感じている。&lt;/p&gt;
@@ -115,10 +115,10 @@ PyCharmはこちらにも部分的に対応しているみたいなので、最�
     
     <item>
       <title>UnicodeEncodeError when running python scripts in Atom.io</title>
-      <link>http://tuxedocat.github.io/post/2015-05-06-atom-python-script/</link>
+      <link>https://tuxedocat.github.io/post/2015-05-06-atom-python-script/</link>
       <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2015-05-06-atom-python-script/</guid>
+      <guid>https://tuxedocat.github.io/post/2015-05-06-atom-python-script/</guid>
       <description>
 
 &lt;p&gt;##何?
@@ -146,10 +146,10 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=&#39;utf-8&#39;)
     
     <item>
       <title>Anaconda</title>
-      <link>http://tuxedocat.github.io/post/2015-01-27-anaconda/</link>
+      <link>https://tuxedocat.github.io/post/2015-01-27-anaconda/</link>
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2015-01-27-anaconda/</guid>
+      <guid>https://tuxedocat.github.io/post/2015-01-27-anaconda/</guid>
       <description>&lt;p&gt;Anaconda Scientific Python Distributionを会社マシンとおうちMacMiniに入れた。
 自前ビルドでは負荷が高そうなNumpy/Scipyを安定的に運用したいのと、念のため色々な環境を同じバージョンにしておきたいので。
 この種の安定版ディストリビューションは瑣末なことで気を揉まなくてすむし、それだけコミュニティも成熟してきたということで、使っていきたい。&lt;/p&gt;
@@ -182,10 +182,10 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=&#39;utf-8&#39;)
     
     <item>
       <title>Simple programming: FizzBuzz</title>
-      <link>http://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</link>
+      <link>https://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</link>
       <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</guid>
+      <guid>https://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</guid>
       <description>&lt;p&gt;##In Python&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]

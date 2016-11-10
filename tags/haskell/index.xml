@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Haskell on Miaulog</title>
-    <link>http://tuxedocat.github.io/tags/haskell/index.xml</link>
+    <link>https://tuxedocat.github.io/tags/haskell/index.xml</link>
     <description>Recent content in Haskell on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="http://tuxedocat.github.io/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tuxedocat.github.io/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Haskell: Installing ghc without root privilege</title>
-      <link>http://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</link>
+      <link>https://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</link>
       <pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</guid>
+      <guid>https://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</guid>
       <description>&lt;p&gt;##Get OS specific &amp;ldquo;Binary Packages&amp;rdquo;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd /home/foo
@@ -47,10 +47,10 @@ $make install
     
     <item>
       <title>Simple programming: FizzBuzz</title>
-      <link>http://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</link>
+      <link>https://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</link>
       <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</guid>
+      <guid>https://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</guid>
       <description>&lt;p&gt;##In Python&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]

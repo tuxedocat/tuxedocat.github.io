@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sublimetext on Miaulog</title>
-    <link>http://tuxedocat.github.io/tags/sublimetext/index.xml</link>
+    <link>https://tuxedocat.github.io/tags/sublimetext/index.xml</link>
     <description>Recent content in Sublimetext on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="http://tuxedocat.github.io/tags/sublimetext/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tuxedocat.github.io/tags/sublimetext/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[SublimeText] Enabling key repeating on Mavericks</title>
-      <link>http://tuxedocat.github.io/post/2013-12-22-SublimeText-Enabling-Key-Repeating/</link>
+      <link>https://tuxedocat.github.io/post/2013-12-22-SublimeText-Enabling-Key-Repeating/</link>
       <pubDate>Sun, 22 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2013-12-22-SublimeText-Enabling-Key-Repeating/</guid>
+      <guid>https://tuxedocat.github.io/post/2013-12-22-SublimeText-Enabling-Key-Repeating/</guid>
       <description>&lt;p&gt;On OSX Mavericks, I found the J-K keys repeating was not working when using the vintage (Vim-like) mode.&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s because of the change made by the OS for providing &amp;lsquo;press-and-hold&amp;rsquo; behavior to input certain characters and accents (like in iOS), so the following command snippet can re-enable key repeating:&lt;/p&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>[SublimeText] UI glitch hell!!</title>
-      <link>http://tuxedocat.github.io/post/2013-12-20-SublimeText2-UI-Glitch/</link>
+      <link>https://tuxedocat.github.io/post/2013-12-20-SublimeText2-UI-Glitch/</link>
       <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2013-12-20-SublimeText2-UI-Glitch/</guid>
+      <guid>https://tuxedocat.github.io/post/2013-12-20-SublimeText2-UI-Glitch/</guid>
       <description>
 
 &lt;h2 id=&#34;symptom&#34;&gt;Symptom&lt;/h2&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coursera on Miaulog</title>
-    <link>http://tuxedocat.github.io/tags/coursera/index.xml</link>
+    <link>https://tuxedocat.github.io/tags/coursera/index.xml</link>
     <description>Recent content in Coursera on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="http://tuxedocat.github.io/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tuxedocat.github.io/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>マイクロ進捗</title>
-      <link>http://tuxedocat.github.io/post/2015-05-07-micro-shinchoku/</link>
+      <link>https://tuxedocat.github.io/post/2015-05-07-micro-shinchoku/</link>
       <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2015-05-07-micro-shinchoku/</guid>
+      <guid>https://tuxedocat.github.io/post/2015-05-07-micro-shinchoku/</guid>
       <description>&lt;p&gt;復習と現実逃避と、そしてアリバイ作りのために受けていたCourseraの機械学習のクラス（Andrew Ng先生のml008）の結果が出た。
 Accomplishmentは100%だった。（本当??）&lt;/p&gt;
 
@@ -58,10 +58,10 @@ Accomplishmentは100%だった。（本当??）&lt;/p&gt;
     
     <item>
       <title>Octave</title>
-      <link>http://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/</link>
+      <link>https://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/</guid>
+      <guid>https://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/</guid>
       <description>&lt;p&gt;某機械学習のクラスを受講している。
 深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。&lt;/p&gt;
 
