@@ -1,137 +1,98 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osx &middot; Miaulog</title>
+	<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Miaulog">
+		
+		<meta name="generator" content="Hugo 0.18-DEV" />
+		<title>Osx &middot; Miaulog</title>
+		<link rel="shortcut icon" href="https://tuxedocat.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://tuxedocat.github.io/css/style.css">
+		<link rel="stylesheet" href="https://tuxedocat.github.io/css/highlight.css">
+		
 
-    <meta name="description" content="">
+		
+		<link rel="stylesheet" href="https://tuxedocat.github.io/css/monosocialiconsfont.css">
+		
 
-    <meta name="generator" content="Hugo 0.18-DEV" />
-    <meta name="twitter:card" content="summary">
+		
+	</head>
+
+	<body>
+	<nav class="main-nav">
+	
+	
+		<a href='https://tuxedocat.github.io/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='https://tuxedocat.github.io/about'>About</a>
+	
+
+	
+</nav>
+	<div class="profile">
+    <section id="wrapper">
+        <header id="header">
+            <a href='https://tuxedocat.github.io/about'>
+                <img id="avatar" class="2x" src="https://tuxedocat.github.io/images/avatar.png"/>
+            </a>
+            <h1>Miaulog</h1>
+            <h2>Photography, Programming, Languages, Cats</h2>
+        </header>
+    </section>
+</div>
+
+	<section id="wrapper" class="home">
+		<ul id="post-list">
     
-    <meta name="twitter:title" content="Osx &middot; Miaulog">
-    <meta name="twitter:description" content="">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Osx &middot; Miaulog">
-    <meta property="og:description" content="">
-
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
-
-    <link rel="stylesheet" href="https://tuxedocat.github.io//css/all.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <link rel="alternate" type="application/rss+xml" title="Miaulog" href="https://tuxedocat.github.io//index.xml" />
-</head>
-<body>
-
-
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-    <div class="header">
-        <hgroup>
-            <h1 class="brand-title"><a href="https://tuxedocat.github.io/">Miaulog</a></h1>
-            <h2 class="brand-tagline"></h2>
-        </hgroup>
-
-        <nav class="nav">
-            <ul class="nav-list">
-                
-                
-                <li class="nav-item">
-                    <a class="pure-button" href="https://tuxedocat.github.io//index.xml"><i class="fa fa-rss"></i> rss</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
-
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <div>
-            
-            <div class="posts">
-                
-                <h1 class="content-subhead">30 Oct 2016, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2016-10-30-osx-clean-install/" class="post-title">Disk partition manipulation on OSX 10.11</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>🐡 💢
-tl;dr
-&gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.</p>
-
-<p>Just a private log of my struggle&hellip;</p>
-
-<p>Trace</p>
-
-<ul>
-<li>Saw how people are disappointed with new Macbook Pro</li>
-<li>Start thinking to re-use my old MBP 2011 (clean install)</li>
-<li>Found BootCamp partition of 70GB which I won’t use anymore :soon: Erase partition via DiskUtility.app</li>
-<li>Reboot, and enter the recovery mode of El Capitan using Recovery HD partition</li>
-<li>Enter DiskUtility, and try merging the system partition with free-space which is formally BootCamp partition via Partition menu</li>
-<li>“Operation failed …”</li>
-<li>Leave DiskUtility, enter Terminal, and play with diskutil command.</li>
-<li>diskutil mergePartitions or some commands failed.</li>
-<li>Found Recovery HD partition, which is right next to system partition, was then merged free-space of BootCamp partition</li>
-<li>Delete Recovery HD partition to get continuous free-space</li>
-<li>&ldquo;OK, let’s start from zero.&rdquo;</li>
-<li>Create El Capitan’s install drive from another mac using <code>sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app</code></li>
-<li>Reboot MBP with that disk, erase Macintosh HD again, and this worked normally.</li>
-<li>Perform clean install.</li>
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2016-10-30-osx-clean-install/'><aside class="dates">Oct 30</aside></a>
+                <a href='https://tuxedocat.github.io/post/2016-10-30-osx-clean-install/'>Disk partition manipulation on OSX 10.11 <h2></h2></a>
+            </li>
+        
+    
 </ul>
+        <nav id="post-nav">
+    
+</nav>
+		<footer id="footer">
+    
+        <div id="social">
 
-<p>Thoughts</p>
+	
+	
+    
+    <a class="symbol" href="https://github.com/tuxedocat">
+        github
+    </a>
+    
 
-<ul>
-<li>What if I need to merge scattered partitions which cannot be merged easily? :soon: Some features of CoreStorage can be used like LVM, I guess.</li>
-</ul>
 
-                    </div>
-                </section>
-                
-            </div>
-            
-
-            <div class="footer">
-    <div class="pure-menu pure-menu-horizontal pure-menu-open">
-        <ul>
-            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
-        </ul>
-    </div>
-</div>
-<script src="https://tuxedocat.github.io//js/all.min.js"></script>
-
-        </div>
-    </div>
 </div>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    <p class="small">
+    
+        tuxedocat / CC BY-NC-SA 4.0
+    
+    </p>
+</footer>
 
-ga('create', '', 'auto');
-ga('send', 'pageview');
+	</section>
 
-</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://tuxedocat.github.io/js/main.js"></script>
+<script src="https://tuxedocat.github.io/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-</body>
+
+
+
+
+	</body>
 </html>

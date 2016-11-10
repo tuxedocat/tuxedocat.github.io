@@ -1,584 +1,185 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random &middot; Miaulog</title>
+	<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Miaulog">
+		
+		<meta name="generator" content="Hugo 0.18-DEV" />
+		<title>Random &middot; Miaulog</title>
+		<link rel="shortcut icon" href="https://tuxedocat.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://tuxedocat.github.io/css/style.css">
+		<link rel="stylesheet" href="https://tuxedocat.github.io/css/highlight.css">
+		
 
-    <meta name="description" content="">
+		
+		<link rel="stylesheet" href="https://tuxedocat.github.io/css/monosocialiconsfont.css">
+		
 
-    <meta name="generator" content="Hugo 0.18-DEV" />
-    <meta name="twitter:card" content="summary">
+		
+	</head>
+
+	<body>
+	<nav class="main-nav">
+	
+	
+		<a href='https://tuxedocat.github.io/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='https://tuxedocat.github.io/about'>About</a>
+	
+
+	
+</nav>
+	<div class="profile">
+    <section id="wrapper">
+        <header id="header">
+            <a href='https://tuxedocat.github.io/about'>
+                <img id="avatar" class="2x" src="https://tuxedocat.github.io/images/avatar.png"/>
+            </a>
+            <h1>Miaulog</h1>
+            <h2>Photography, Programming, Languages, Cats</h2>
+        </header>
+    </section>
+</div>
+
+	<section id="wrapper" class="home">
+		<ul id="post-list">
     
-    <meta name="twitter:title" content="Random &middot; Miaulog">
-    <meta name="twitter:description" content="">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Random &middot; Miaulog">
-    <meta property="og:description" content="">
-
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
-
-    <link rel="stylesheet" href="https://tuxedocat.github.io//css/all.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <link rel="alternate" type="application/rss+xml" title="Miaulog" href="https://tuxedocat.github.io//index.xml" />
-</head>
-<body>
-
-
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-    <div class="header">
-        <hgroup>
-            <h1 class="brand-title"><a href="https://tuxedocat.github.io/">Miaulog</a></h1>
-            <h2 class="brand-tagline"></h2>
-        </hgroup>
-
-        <nav class="nav">
-            <ul class="nav-list">
-                
-                
-                <li class="nav-item">
-                    <a class="pure-button" href="https://tuxedocat.github.io//index.xml"><i class="fa fa-rss"></i> rss</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
-
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <div>
-            
-            <div class="posts">
-                
-                <h1 class="content-subhead">06 May 2015, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2015-05-06-atom-python-script/" class="post-title">UnicodeEncodeError when running python scripts in Atom.io</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        
-
-<p>##何?
-Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、<code>print()</code>などで<code>UnicodeEncodeError</code>が出る。</p>
-
-<p>##どうする?</p>
-
-<ul>
-<li><p><code>__init__.py</code>などでstdoutのencodingを変更する。</p>
-
-<pre><code class="language-python">import sys
-import io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-</code></pre></li>
-
-<li><p>Atom.appから起動時には、環境変数をログインシェルから読むみたいなので、例えば<code>.bash_profile</code>に<code>export LANG='en_US.UTF-8'</code>などと書いておく。</p></li>
-</ul>
-
-<h3 id="経緯">経緯</h3>
-
-<p>python3.4をpyenv globalで設定していたのに、atomのscript-pluginではOSXのpython2.7.9が使われるのはなんでだろう、と思っていた。
-普段はiterm2でzshを起動するようにしていたので、ログインシェル(bash)の設定ファイルへ環境を反映していなかったのが原因だった。</p>
-
-                    </div>
-                </section>
-                
-                <h1 class="content-subhead">27 Jan 2015, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2015-01-27-anaconda/" class="post-title">Anaconda</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>Anaconda Scientific Python Distributionを会社マシンとおうちMacMiniに入れた。
-自前ビルドでは負荷が高そうなNumpy/Scipyを安定的に運用したいのと、念のため色々な環境を同じバージョンにしておきたいので。
-この種の安定版ディストリビューションは瑣末なことで気を揉まなくてすむし、それだけコミュニティも成熟してきたということで、使っていきたい。</p>
-
-<p>Windowsでは、そのまま<a href="https://store.continuum.io/cshop/anaconda/">Continuumのサイト</a>から。</p>
-
-<p>Macではpyenvが対応しているので <sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
-
-<pre><code class="language-sh"> ~/ pyenv install anaconda3-2.1.0
- ~/ pyenv global anaconda3-2.1.0
-</code></pre>
-
-<p>という感じ。</p>
-
-<p>科学技術計算や機械学習系のパッケージはだいたい揃っているし、ビルドでコケることもない。
-科学技術計算用途で、MATLAB・Rの代替環境として広めたいのなら、これぐらい楽な方がいいと思う。</p>
-
-<p>この調子で、Haskell環境もStackageのLTS Haskellにしようかな&hellip;</p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">(追記) たまたま以前からpyenvを使っていた、というだけです。anaconda distributionには、<code>conda</code>というパッケージマネージャ兼仮想環境ツールがあるので、今はそちらを使っています。
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-</ol>
-</div>
-
-                    </div>
-                </section>
-                
-                <h1 class="content-subhead">25 Jan 2015, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/" class="post-title">Octave</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>某機械学習のクラスを受講している。
-深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。</p>
-
-<p>2015年コースも課題はOctaveが推奨プログラミング言語のようなので、Octaveの環境を整える。</p>
-
-<p>会社のマシンには、<a href="http://mxeoctave.osuv.de/">Windows版非公式ビルド(MXE Octave)</a>を。
-自宅MacMiniは、Homebrewで。</p>
-
-<pre><code class="language-sh">$ brew tap homebrew/science
-$ brew install octave
-</code></pre>
-
-<p>OctaveはMATLABとの互換性においては、ScilabやFreeMatよりも高いはず。
-この点で、MATLAB勢力もそこそこ居るという今の仕事においても無駄にはならなさそう。</p>
-
-<p>また、いくらPython（とそのエコシステムに含まれるNumpy/Scipy, Pandas, Scikit-learnなど）が優秀で、ライセンス面でも十分MATLABを代替できるとしても、色々な理由でPython一本で技術計算をするのは難しいと思ったのもある。<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
-
-<p>まぁ、MATLABでもPythonでもRでも、開発環境がつらすぎるExcelVBAに比べると、喜んでやります!って気持ちになる。<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">社内での最大勢力はExcel（+VBA）&hellip;ついでMATLAB、Rという感じ。
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">（悲しいかな、社内にはそういう機械学習寄りの業務の人もいる。自分の業務が全く逸れてしまっているだけで。）（そこに希望を持ってしまうと、色々な判断が遅れてしまうだろう。だが、普段からそういう分野に興味があると言っておいて、何もしていないってのはマズいから&hellip;）
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-</ol>
-</div>
-
-                    </div>
-                </section>
-                
-                <h1 class="content-subhead">27 Dec 2014, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2014-12-27-todo-list/" class="post-title">stack.push(book_hs).push(book_german).push(book_lingua).push(graphic_design)....</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>積ん読山の高さがどんどん高くなってきた．
-もともと興味が散漫だったうえに，最近は謎の焦燥感に追い立てられて，衝動買いを繰り返しているせいだ．</p>
-
-<p>周りを見ると焦りだけはつのるが，何がしたいのかと問われると自信をもって答えられる代替案を出せないのがつらい．
-（今がつらいのだけは自覚できる，センサーの感度だけが高い感じ）</p>
-
-<p>それでも，これは面白いな〜というのはある．
-いろいろあるなかで迷走していると，ふらふらと低空飛行しそうなので，ある程度絞ってみた．</p>
-
-<ul>
-<li>英語・ドイツ語
-
-<ul>
-<li>念のため</li>
-<li>娯楽</li>
-</ul></li>
-<li>言語学
-
-<ul>
-<li>XX言語学という細分化ができないぐらい無知なのを自覚した</li>
-</ul></li>
-<li>写真
-
-<ul>
-<li>絵心のない自分にとって，ほぼ唯一の表現手段</li>
-</ul></li>
-<li>デザイン（特にタイポグラフィ）
-
-<ul>
-<li>念のため</li>
-<li>なぜ良い|善いデザインが良い|善いといえるのか，基本を知りたい．</li>
-</ul></li>
-<li>Haskell
-
-<ul>
-<li>Learn You a Haskell For Great Goodを一読してわかった気になった（わかってない）</li>
-<li>Project EulerをHaskellで少しずつ解いてみている</li>
-</ul></li>
-<li>計算理論等，CSの基本
-
-<ul>
-<li>ここがわかっていないコンプレックスがある
-
-<ul>
-<li>いつまでも疎外感があるのでなんとかしたい</li>
-</ul></li>
-</ul></li>
-</ul>
-
-<p>機械学習は元々の能力不足で多分投資効果が低そう… もう少し基礎をつけてからやろうかな．
-（いつまでも基礎が終わらない）
-（これでも工学修士（情報学））</p>
-
-                    </div>
-                </section>
-                
-                <h1 class="content-subhead">22 Dec 2014, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2014-12-22-books/" class="post-title">2014年の本</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <ul>
-<li>モダンWeb ―新しいWebプラットフォームの基盤技術</li>
-<li>言語学の教室 哲学者と学ぶ認知言語学 (中公新書)</li>
-<li>哲学の教科書 (講談社学術文庫)</li>
-<li>もうすぐ絶滅するという紙の書物について</li>
-<li>のない社会</li>
-<li>中級ドイツ語のしくみ</li>
-<li>街歩きのドイツ語</li>
-<li>珠玉のプログラミング 本質を見抜いたアルゴリズムとデータ構造</li>
-<li>関数プログラミング 珠玉のアルゴリズムデザイン</li>
-<li>パブねこ 英国のパブと宿に暮らす猫を訪ねて</li>
-<li>言語学入門</li>
-<li>強いチームはオフィスを捨てる</li>
-<li>プログラマの数学</li>
-<li>ヤバい統計学</li>
-<li>Yコンビネーター</li>
-<li>ビジュアル・ストーリーテリング -インフォグラフィックが切り拓くビジネスコミュニケーションの未来</li>
-<li>デザインの教室 手を動かして学ぶデザイントレーニング</li>
-<li>デザインの授業　目で見て学ぶデザインの構成術</li>
-<li>ボクは吃音ドクターです。</li>
-<li>論理学</li>
-<li>Rework</li>
-<li>The good, the bad, and the furry</li>
-<li>善人ほど悪い奴はいない ニーチェの人間学</li>
-<li>バッドデータ ハンドブック</li>
-<li>すごいHaskellたのしく学ぼう！</li>
-<li>ドイツ流街づくり読本 ドイツの都市計画から日本の街づくりへ</li>
-</ul>
-
-                    </div>
-                </section>
-                
-                <h1 class="content-subhead">26 Oct 2014, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2014-10-26-thoughts-on-helveticaneue/" class="post-title">Neue Helvetica?</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <blockquote>
-<p>Here’s where my ire is really provoked: Helvetica Neue Light as an interface font. Wrong. Horrible and wrong. Let’s get Apple out of the way. Since iOS 7 and soon in OS Yosemite, Apple has been using Helvetica Neue for its user interfaces. The preview of iOS7 used Helvetica Neue Light and Ultra Light, which was received very badly. Consequently the Regular weight is now the default, as it will be in the forthcoming desktop UI. Helvetica is still far from ideal as a UI font, but Apple’s in-built Dynamic Type helps by doing things like tweaking the letter spacing for differently sized text, and on a Retina display it may work fine. But this doesn’t mean that the incumbent Lucida Grande doesn’t remain a better choice from a practical perspective.</p>
-</blockquote>
-
-<p><a href="http://clagnut.com/blog/2379/">The Scourge of Helvetica Neue Light | Clagnut</a></p>
-
-<p>最近のOSX/iOSのデフォルトUIフォントになっているHelvetica Neue (Light)。
-それからの周辺への広まりに対する苦言。</p>
-
-<p>VerdanaとかMyriad Proのときもそうかもしれなかったけど、どこか影響力の大きなところが使い出すと、（若干二流気味なところで|デザイン重視ではないところで）なんとなくそのフォントが主軸になる感じがしていた。
-素人だから、XXっぽいフォントだな〜としか感じなかったけれど。</p>
-
-<p>Helvetica Neueそれ自体には本当に余計な色気がなく、何か面白みに欠けると思っている。
-まだLucida Grandeがデフォルトフォントだったころ、試しにデフォルトフォントをHelvetica Neueにしてみたけれど、すごくWindowsっぽい感じになってしまい萎えた記憶がある。
-そのままUI向けにするのは（素人仕事だと）難しそうに思えた。</p>
-
-<p>この記事を読むと、そんな素人っぽい仕事が蔓延しそうなので、なかなかつらいですね…と感じた。
-フラットデザインを手抜きだと言ったり、バウハウスっぽい意匠をデザインではないと言ったりする種類の人を脳内で想像して悶々とすることがあるけど、この記事みたいな事例は確かにあるから安易に敵視できないな。</p>
-
-                    </div>
-                </section>
-                
-                <h1 class="content-subhead">12 Jul 2014, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2014-07-12-MBPGPU/" class="post-title">GPU Failure (possibly...) on my MBP15&#39; (early 2011 model)</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        
-
-<h2 id="symptoms">Symptoms</h2>
-
-<p>Various glitch happen when connecting external displays, or doing GPU intensive tasks.</p>
-
-<ul>
-<li><a href="http://www.mbp2011.com/">More details. made by people who are having the same trouble</a></li>
-<li><a href="https://discussions.apple.com/thread/4766577">On Apple&rsquo;s discussion board, it is still actively updated.</a></li>
-</ul>
-
-<h2 id="workaround">Workaround</h2>
-
-<p>Disable external GPU&hellip; or bring this mbp to &lsquo;genius&rsquo; bar, and get the logic board replaced. The latter is obviously expensive solution, and according to the discussion above, it doesn&rsquo;t resolve the problem permanently.</p>
-
-<p>I would rather wait for upcoming Macbook Pro (late 2014) than tentatively fixing this 3 years-old macbook with no warranty by paying more than <sup>1</sup>&frasl;<sub>5</sub> of my salary.  So I&rsquo;ve decided to disable external GPU, and forget about my thunderbolt display.</p>
-
-<pre><code class="language-sh"># In the single user mode..... (press Cmd+S on boot)
-
-# mount the disk to operate
-$ mount -uw /
-
-# I'm just a person who always want it back
-$ mkdir ./DisabledExtensions
-
-$ cd /System/Library/Extensions
-$ mv AMD* /DisabledExtensions
-
-# I perhaps had to clear the kext-cache, or rebuild kexts, but that time I just restarted and clear the PRAM
-$ shutdown  -h now
-</code></pre>
-
-<h2 id="how-is-it-lately">How is it lately?</h2>
-
-<p>Absolutely annoying. Of course this saved me from the fatal failure (cannot boot, crash on boot with grayed out display, and etc.), now I can write something on the MBP like this. But while working on some applications which highly depended on the external GPUs such as Google Chrome, Adobe things, some OSX preinstalled applications (Preview.app, Calendar.app, Safari, and etc.) , I&rsquo;ve experienced minor display glitches, and/or very-low FPS animations.</p>
-
-<p>Now I switched to Firefox (reluctantly, but still vimperator is great.), and since I haven&rsquo;t been on the codes lately (sadly because of the job?) it&rsquo;s just annoying not fatal.</p>
-
-<p>(I&rsquo;ll probably buy a new one, and give this to my wife.)</p>
-
-                    </div>
-                </section>
-                
-                <h1 class="content-subhead">05 Jul 2014, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2014-07-05-job/" class="post-title">引用</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <blockquote>
-<p>これに対して問題を創ること、つまり、コンセプトを考えることは、一見遊んでいるように見える。しかも、すぐに成果が出るわけでもない。実験や設計の「作業」をしていれば、必ずなんらかの「結果」（それを「成果」と勘違いする）は出てくる。だから、定期的な業務報告書に書く内容に困ることはない。しかし、問題そのものを創ろうとすると、業務報告書に書く内容がまったくないこともありうる。そうしたつらさに耐えられない技術者は、問題を創ることよりも、問題を解くことに注力する。これが構想なき繁忙を生む。</p>
-</blockquote>
-
-<p><a href="http://bizgate.nikkei.co.jp/article/74505312_6.html">技術者は構想・利益なき繁忙に陥っていないか : 日経BizGate</a></p>
-
-<p>この記事の前半部，自分が今いる業界<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup><sup class="footnote-ref" id="fnref:a"><a rel="footnote" href="#fn:a">2</a></sup><sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">3</a></sup>のことが書いてあった．
-責任を明確にすることが，この分野の技術者にとって最善かどうかは議論の余地はあるが，今みたいに「寸暇を惜しんで（就業時間外も含む前提）」仕事を作り出している感じは，それこそ勝手にやってるだけにしか見えない．<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">4</a></sup></p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">強く望んだり，能力を買われて&hellip;という結果ではなく本当にただ配属されたという感じがはじめからずっと残っている．私はソフトウェアエンジニア職に応募して採用されたはずだが? と．
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:a">許せるところ．それはこの会社は写真文化に関わっているし(自分は違うけど)，社会にとって善いことをしているし，無くてはならないものに関わっているし，ということはしょーもなくて悪になりうるような仕事じゃない，って点．マウスオーバーで再生される例の広告を作ってる当事者だったら，多分仕事続かない．
- <a class="footnote-return" href="#fnref:a"><sup>[return]</sup></a></li>
-<li id="fn:2">という偏見と先入観で職を探していたら，割りといいのが見つかった！と思った直後にこれだよ．
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-<li id="fn:3">(例えばの話)その現場の一線で戦ってる技術者から，こんな数値実験をして欲しい！2日後の会議で使うから！されることはよくある．私は7時以降は眠気やその他諸々で生産性がガタ落ちする人間なので，そこそこのクオリティで間に合わせて帰る．仕様が決まっていないなら，評価もできないし，裁量も分からないと思っているから．(今のところ，特に問題はない．既にこいつやる気ない&hellip;って思われている可能性はあるけど．) なぜそういう風にやるかって，この手の仕事は結局使われずじまいなことが多いからだ．もうひとつあるのは，不要な時間が多い感じがしたから．報告書に凝っているがゆえに残業している人が多い気がする．それって目的からのズレがあるよ！
- <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
-</ol>
-</div>
-
-                    </div>
-                </section>
-                
-                <h1 class="content-subhead">17 Jun 2014, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2014-06-17-thoughts-2/" class="post-title">それでも</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>この一年，色々なところで人生終わってるって話をしてきた．
-思い切った進路変更をしたにもかかわらず，そこからの連続性を断たれてしまったこと．
-「エンジニア」という言葉が指すものが，進路変更以前と同じものになってしまったこと．
-入ってから色々と話が違って，今に至った過程．
-そういう諸々は本当に運が無かったと思うが，そんな仕打ちをしたやつはやはり憎たらしい．<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup> <sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
-
-<p>それでも今は結婚したばかりだし，なかなか幸せだ．キャリアや知的な満足度，社会的な居心地の良さの追求以外は幸せだ．未だに吃音だろうがクソな仕事場に居ようが，これで簡単には死ねなくなった．そして心折られて打ちひしがれるままに灰になるよりは，またどこかに逃げる方を選ぶ気概がかろうじて残っている．</p>
-
-<p>今までの人生では珍しかった驚きや居心地の良さ，自由な雰囲気を楽しむ機会をくれた人や，そこに一緒に居た人達を，改めて尊敬している．あのときの選択は，今でも正直に生きてよかったと感じている．
-だから，現状は嫌すぎて本当に逃げたいとしか思えない．平然と耐えることのほうが，そんな人達への裏切りのように思える．</p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">もちろん企業の人事なので，契約の範囲内で云々は承知している．総合職って括りで契約しているので…
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">そうはいっても，ろくにjob descriptionも書いてないようなやり方はおかしいと思う．上司の話を聞くと，人手が足りないから少しでも流体解析の経験がある新人を…というわけでも無い．初顔合わせ〜研修が終わるまでの評価期間では，語学力，プレゼンテーション能力，(どちらかといえばメタ的な部分での)開発能力を買われていた．だから，アホ人事のこの選択は，僕の過去の選択を無に帰して，その苦痛ゆえに服従させる目的ぐらいしか合理的なところがなさそう．
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-</ol>
-</div>
-
-                    </div>
-                </section>
-                
-                <h1 class="content-subhead">17 May 2014, 00:00</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://tuxedocat.github.io/post/2014-05-17-thoughts-on-workplace/" class="post-title">もしかしたら... と．</a>
-
-                        <p class="post-meta">
-                            
-                            
-                                under 
-                                
-                                <a class="post-category post-category-Random" href="https://tuxedocat.github.io//categories/random">Random</a>
-                            
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>コード書かない仕事だからつらいのではなく，コード書かない仕事が行われてそうな環境や文化がつらいのかも．</p>
-
-<p>殺風景なオフィス．オープンで議論が活発なわけでもなく，ただパーティションが低くて気が散るだけの大部屋式．増え続ける定例会議&hellip;などなど．</p>
-
-<p>仮に今の仕事内容でも，海外で…なんて考えると意外と耐えられるかもしれない．逆に内容はぴったり希望通りでも，気質とか文化が合わなかったら今とは違うけれども同じ大きさのつらみを味わうのかもしれない．</p>
-
-<p>とはいえ，雰囲気・気質・文化と，技術の分野の面両方で，今は裏切られた感がある．今後損失になりそうだし，あんまり耐えようとか騙そうとか思っちゃいけないだろうな．</p>
-
-<p>「ACL (short)の発表経験がある現職webエンジニア」だったなら、苦労も少しは今後にも役に立つはず。しかし、そういうドメインのエンジニアとして採用だったはずなのに、配属後に流体解析やらされている自分。他人に今何をやってるか聞かれた日は、何も手が動かないぐらい気が重くなる。</p>
-
-<p>経験を積めば積むほど詰んでくる錯覚すら憶える。せめて業務のうち2割でも、自分の目指す方向に沿った内容できればよかったのだが。</p>
-
-<p>ここからまた道筋を変えるのは、インターンや大学院での分野変更より、社会的な圧力が高そうで気が引けている。</p>
-
-                    </div>
-                </section>
-                
-            </div>
-            
-<div class="pagination">
-  <nav role="pagination" class="post-list-pagination">
-      
-      <a href="https://tuxedocat.github.io/categories/random/page/2/" class="post-list-pagination-item pure-button post-list-pagination-item-prev">
-        <i class="fa fa-angle-double-left"></i>&nbsp;Newer
-      </a>
-      
-    <span class="post-list-pagination-item post-list-pagination-item-current">Page 3 of 4</span>
     
-      <a href="https://tuxedocat.github.io/categories/random/page/4/" class="post-list-pagination-item pure-button post-list-pagination-item-next">
-        Older&nbsp;<i class="fa fa-angle-double-right"></i>
-      </a>
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2015-05-06-atom-python-script/'><aside class="dates">May 6</aside></a>
+                <a href='https://tuxedocat.github.io/post/2015-05-06-atom-python-script/'>UnicodeEncodeError when running python scripts in Atom.io <h2></h2></a>
+            </li>
+        
     
-  </nav>
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2015-01-27-anaconda/'><aside class="dates">Jan 27</aside></a>
+                <a href='https://tuxedocat.github.io/post/2015-01-27-anaconda/'>Anaconda <h2></h2></a>
+            </li>
+        
+    
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/'><aside class="dates">Jan 25</aside></a>
+                <a href='https://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/'>Octave <h2></h2></a>
+            </li>
+        
+    
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2014-12-27-todo-list/'><aside class="dates">Dec 27</aside></a>
+                <a href='https://tuxedocat.github.io/post/2014-12-27-todo-list/'>stack.push(book_hs).push(book_german).push(book_lingua).push(graphic_design).... <h2></h2></a>
+            </li>
+        
+    
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2014-12-22-books/'><aside class="dates">Dec 22</aside></a>
+                <a href='https://tuxedocat.github.io/post/2014-12-22-books/'>2014年の本 <h2></h2></a>
+            </li>
+        
+    
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2014-10-26-thoughts-on-helveticaneue/'><aside class="dates">Oct 26</aside></a>
+                <a href='https://tuxedocat.github.io/post/2014-10-26-thoughts-on-helveticaneue/'>Neue Helvetica? <h2></h2></a>
+            </li>
+        
+    
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2014-07-12-MBPGPU/'><aside class="dates">Jul 12</aside></a>
+                <a href='https://tuxedocat.github.io/post/2014-07-12-MBPGPU/'>GPU Failure (possibly...) on my MBP15&#39; (early 2011 model) <h2></h2></a>
+            </li>
+        
+    
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2014-07-05-job/'><aside class="dates">Jul 5</aside></a>
+                <a href='https://tuxedocat.github.io/post/2014-07-05-job/'>引用 <h2></h2></a>
+            </li>
+        
+    
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2014-06-17-thoughts-2/'><aside class="dates">Jun 17</aside></a>
+                <a href='https://tuxedocat.github.io/post/2014-06-17-thoughts-2/'>それでも <h2></h2></a>
+            </li>
+        
+    
+    
+        
+            <li>
+                <a href='https://tuxedocat.github.io/post/2014-05-17-thoughts-on-workplace/'><aside class="dates">May 17</aside></a>
+                <a href='https://tuxedocat.github.io/post/2014-05-17-thoughts-on-workplace/'>もしかしたら... と． <h2></h2></a>
+            </li>
+        
+    
+</ul>
+        <nav id="post-nav">
+    
+        
+        <span class="prev">
+            <a href="https://tuxedocat.github.io/categories/random/page/2/">
+                <span class="arrow">←</span> Newer Posts
+            </a>
+        </span>
+        
+        
+        <span class="next">
+            <a href="https://tuxedocat.github.io/categories/random/page/4/">
+                Older Posts <span class="arrow">→</span>
+            </a>
+        </span>
+        
+    
+</nav>
+		<footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://github.com/tuxedocat">
+        github
+    </a>
+    
+
+
 </div>
 
+    
+    <p class="small">
+    
+        tuxedocat / CC BY-NC-SA 4.0
+    
+    </p>
+</footer>
 
-            <div class="footer">
-    <div class="pure-menu pure-menu-horizontal pure-menu-open">
-        <ul>
-            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
-        </ul>
-    </div>
-</div>
-<script src="https://tuxedocat.github.io//js/all.min.js"></script>
+	</section>
 
-        </div>
-    </div>
-</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://tuxedocat.github.io/js/main.js"></script>
+<script src="https://tuxedocat.github.io/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', '', 'auto');
-ga('send', 'pageview');
 
-</script>
 
-</body>
+
+	</body>
 </html>
