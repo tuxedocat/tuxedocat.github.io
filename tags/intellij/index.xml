@@ -27,17 +27,29 @@
 &lt;li&gt;&lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;https://youtrack.jetbrains.com/issue/PY-14999&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;##Possible cause
-* In &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;, $TERM is hard-coded
-    * &lt;code&gt;line6:  os.environ[&#39;TERM&#39;] = &#39;emacs&#39; #to use proper page_more() for paging&lt;/code&gt;
-    * This overwrites your $TERM setting if you use iPython console when debugging.
-    * If your env doesn&amp;rsquo;t have terminfo for emacs, then it fails.&lt;/p&gt;
+&lt;h2 id=&#34;possible-cause&#34;&gt;Possible cause&lt;/h2&gt;
 
-&lt;p&gt;##Workaround
-* Add terminfo for emacs
-    * &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&#34;&gt;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&lt;/a&gt;
-    * I just copied terminfo of dumb-terminal as emacs&amp;rsquo;s terminfo, and it worked. (at least stopped showing messages)
-* Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;, $TERM is hard-coded
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;line6:  os.environ[&#39;TERM&#39;] = &#39;emacs&#39; #to use proper page_more() for paging&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;This overwrites your $TERM setting if you use iPython console when debugging.&lt;/li&gt;
+&lt;li&gt;If your env doesn&amp;rsquo;t have terminfo for emacs, then it fails.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;workaround&#34;&gt;Workaround&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add terminfo for emacs
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&#34;&gt;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I just copied terminfo of dumb-terminal as emacs&amp;rsquo;s terminfo, and it worked. (at least stopped showing messages)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;
 </description>

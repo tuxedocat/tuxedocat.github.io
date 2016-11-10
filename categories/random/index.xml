@@ -38,13 +38,16 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
       <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://tuxedocat.github.io/post/2016-10-30-osx-clean-install/</guid>
-      <description>&lt;p&gt;🐡 💢
-tl;dr
+      <description>
+
+&lt;h3 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h3&gt;
+
+&lt;p&gt;tl;dr
 &amp;gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
 
 &lt;p&gt;Just a private log of my struggle&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;Trace&lt;/p&gt;
+&lt;h3 id=&#34;trace&#34;&gt;Trace&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Saw how people are disappointed with new Macbook Pro&lt;/li&gt;
@@ -63,7 +66,7 @@ tl;dr
 &lt;li&gt;Perform clean install.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Thoughts&lt;/p&gt;
+&lt;h3 id=&#34;thoughts&#34;&gt;Thoughts&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;What if I need to merge scattered partitions which cannot be merged easily? :soon: Some features of CoreStorage can be used like LVM, I guess.&lt;/li&gt;
@@ -166,17 +169,29 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
 &lt;li&gt;&lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;https://youtrack.jetbrains.com/issue/PY-14999&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;##Possible cause
-* In &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;, $TERM is hard-coded
-    * &lt;code&gt;line6:  os.environ[&#39;TERM&#39;] = &#39;emacs&#39; #to use proper page_more() for paging&lt;/code&gt;
-    * This overwrites your $TERM setting if you use iPython console when debugging.
-    * If your env doesn&amp;rsquo;t have terminfo for emacs, then it fails.&lt;/p&gt;
+&lt;h2 id=&#34;possible-cause&#34;&gt;Possible cause&lt;/h2&gt;
 
-&lt;p&gt;##Workaround
-* Add terminfo for emacs
-    * &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&#34;&gt;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&lt;/a&gt;
-    * I just copied terminfo of dumb-terminal as emacs&amp;rsquo;s terminfo, and it worked. (at least stopped showing messages)
-* Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;, $TERM is hard-coded
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;line6:  os.environ[&#39;TERM&#39;] = &#39;emacs&#39; #to use proper page_more() for paging&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;This overwrites your $TERM setting if you use iPython console when debugging.&lt;/li&gt;
+&lt;li&gt;If your env doesn&amp;rsquo;t have terminfo for emacs, then it fails.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;workaround&#34;&gt;Workaround&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add terminfo for emacs
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&#34;&gt;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I just copied terminfo of dumb-terminal as emacs&amp;rsquo;s terminfo, and it worked. (at least stopped showing messages)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;
 </description>

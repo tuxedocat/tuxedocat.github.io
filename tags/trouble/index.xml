@@ -15,13 +15,16 @@
       <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://tuxedocat.github.io/post/2016-10-30-osx-clean-install/</guid>
-      <description>&lt;p&gt;🐡 💢
-tl;dr
+      <description>
+
+&lt;h3 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h3&gt;
+
+&lt;p&gt;tl;dr
 &amp;gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
 
 &lt;p&gt;Just a private log of my struggle&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;Trace&lt;/p&gt;
+&lt;h3 id=&#34;trace&#34;&gt;Trace&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Saw how people are disappointed with new Macbook Pro&lt;/li&gt;
@@ -40,7 +43,7 @@ tl;dr
 &lt;li&gt;Perform clean install.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Thoughts&lt;/p&gt;
+&lt;h3 id=&#34;thoughts&#34;&gt;Thoughts&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;What if I need to merge scattered partitions which cannot be merged easily? :soon: Some features of CoreStorage can be used like LVM, I guess.&lt;/li&gt;
@@ -56,10 +59,11 @@ tl;dr
       <guid>https://tuxedocat.github.io/post/2015-05-06-atom-python-script/</guid>
       <description>
 
-&lt;p&gt;##何?
-Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る。&lt;/p&gt;
+&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
 
-&lt;p&gt;##どうする?&lt;/p&gt;
+&lt;p&gt;Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る。&lt;/p&gt;
+
+&lt;h2 id=&#34;どうする&#34;&gt;どうする?&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;__init__.py&lt;/code&gt;などでstdoutのencodingを変更する。&lt;/p&gt;

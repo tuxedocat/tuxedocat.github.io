@@ -65,17 +65,29 @@
 <li><a href="https://youtrack.jetbrains.com/issue/PY-14999">https://youtrack.jetbrains.com/issue/PY-14999</a></li>
 </ul>
 
-<p>##Possible cause
-* In <code>pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py</code>, $TERM is hard-coded
-    * <code>line6:  os.environ['TERM'] = 'emacs' #to use proper page_more() for paging</code>
-    * This overwrites your $TERM setting if you use iPython console when debugging.
-    * If your env doesn&rsquo;t have terminfo for emacs, then it fails.</p>
+<h2 id="possible-cause">Possible cause</h2>
 
-<p>##Workaround
-* Add terminfo for emacs
-    * <a href="https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html">https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html</a>
-    * I just copied terminfo of dumb-terminal as emacs&rsquo;s terminfo, and it worked. (at least stopped showing messages)
-* Or, edit <code>pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py</code>`</p>
+<ul>
+<li>In <code>pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py</code>, $TERM is hard-coded
+
+<ul>
+<li><code>line6:  os.environ['TERM'] = 'emacs' #to use proper page_more() for paging</code></li>
+<li>This overwrites your $TERM setting if you use iPython console when debugging.</li>
+<li>If your env doesn&rsquo;t have terminfo for emacs, then it fails.</li>
+</ul></li>
+</ul>
+
+<h2 id="workaround">Workaround</h2>
+
+<ul>
+<li>Add terminfo for emacs
+
+<ul>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html">https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html</a></li>
+<li>I just copied terminfo of dumb-terminal as emacs&rsquo;s terminfo, and it worked. (at least stopped showing messages)</li>
+</ul></li>
+<li>Or, edit <code>pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py</code>`</li>
+</ul>
 
 <p>って内容を <a href="https://youtrack.jetbrains.com/issue/PY-14999">PyCharmのIssue Tracker</a> に書いた。 少しは役に立つといいけど。</p>
 

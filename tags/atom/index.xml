@@ -17,10 +17,11 @@
       <guid>https://tuxedocat.github.io/post/2015-05-06-atom-python-script/</guid>
       <description>
 
-&lt;p&gt;##何?
-Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る。&lt;/p&gt;
+&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
 
-&lt;p&gt;##どうする?&lt;/p&gt;
+&lt;p&gt;Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る。&lt;/p&gt;
+
+&lt;h2 id=&#34;どうする&#34;&gt;どうする?&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;__init__.py&lt;/code&gt;などでstdoutのencodingを変更する。&lt;/p&gt;

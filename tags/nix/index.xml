@@ -125,22 +125,25 @@ def build(bld):
       <pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>https://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</guid>
-      <description>&lt;p&gt;##Get OS specific &amp;ldquo;Binary Packages&amp;rdquo;&lt;/p&gt;
+      <description>
+
+&lt;h2 id=&#34;get-os-specific-binary-packages&#34;&gt;Get OS specific &amp;ldquo;Binary Packages&amp;rdquo;&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd /home/foo
 $wget http://www.haskell.org/ghc/dist/7.0.4/ghc-7.0.4-x86_64-unknown-linux.tar.bz2
 $tar -xvf ghc-7.0.4-x86_64-unknown-linux.tar.bz2
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;##Configure and install as usual&lt;/p&gt;
+&lt;h2 id=&#34;configure-and-install-as-usual&#34;&gt;Configure and install as usual&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd ghc-7.0.4
 $./configure --prefix=/home/foo/usr  #something like this...
 $make install
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;##Notes
-You will obviously need to install &lt;code&gt;cabal&lt;/code&gt; from somewhere else&amp;hellip;
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;You will obviously need to install &lt;code&gt;cabal&lt;/code&gt; from somewhere else&amp;hellip;
 Using &lt;code&gt;haskell-platform&lt;/code&gt; will make it easier.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd /home/foo
@@ -161,20 +164,28 @@ $make install
       <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>https://tuxedocat.github.io/post/2012-01-26-byobu/</guid>
-      <description>&lt;p&gt;##Notes
-* Byobu probably doesn&amp;rsquo;t work well on Mac OSX (e.g. via Homebrew or build from source)
-    * In my case, &lt;code&gt;newt-python&lt;/code&gt; and some libraries are missing. (byobu 5.5)&lt;/p&gt;
+      <description>
+
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;This commands would be different in the latest versions of byobu, since I could only use byobu 2.68 with screen 4.00.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Byobu probably doesn&amp;rsquo;t work well on Mac OSX (e.g. via Homebrew or build from source)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In my case, &lt;code&gt;newt-python&lt;/code&gt; and some libraries are missing. (byobu 5.5)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;This commands would be different in the latest versions of byobu, since I could only use byobu 2.68 with screen 4.00.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;##Starting byobu
-&lt;code&gt;$byobu&lt;/code&gt;
+&lt;h2 id=&#34;starting-byobu&#34;&gt;Starting byobu&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;$byobu&lt;/code&gt;
 as the same as screen command.&lt;/p&gt;
 
-&lt;p&gt;##Basic commands:
-Escape sequence is &lt;code&gt;ctrl+a&lt;/code&gt; by default though it can be changed in the configuration dialogue (press F9).&lt;/p&gt;
+&lt;h2 id=&#34;basic-commands&#34;&gt;Basic commands:&lt;/h2&gt;
+
+&lt;p&gt;Escape sequence is &lt;code&gt;ctrl+a&lt;/code&gt; by default though it can be changed in the configuration dialogue (press F9).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;C-a c : create new screen window
 C-a [0-Z]: move to other window
@@ -189,14 +200,16 @@ C-a TAB : switch between split screens
 C-a ? : help
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;##using F-keys (not compatible with screen)
-    F2 : create a new window
-    F3 : switch to previous window
-    F4 : switch to next window
-    F6 : detach screen
-    F7 : enter scroll back mode
-    F9 : show configuration dialogue
-    F12 : lock this terminal &lt;/enter&gt;&lt;/p&gt;
+&lt;h2 id=&#34;using-f-keys-not-compatible-with-screen&#34;&gt;using F-keys (not compatible with screen)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;F2 : create a new window
+F3 : switch to previous window
+F4 : switch to next window
+F6 : detach screen
+F7 : enter scroll back mode
+F9 : show configuration dialogue
+F12 : lock this terminal &amp;lt;/enter&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

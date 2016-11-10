@@ -15,22 +15,25 @@
       <pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>https://tuxedocat.github.io/post/2012-01-30-installing-ghc-without-root/</guid>
-      <description>&lt;p&gt;##Get OS specific &amp;ldquo;Binary Packages&amp;rdquo;&lt;/p&gt;
+      <description>
+
+&lt;h2 id=&#34;get-os-specific-binary-packages&#34;&gt;Get OS specific &amp;ldquo;Binary Packages&amp;rdquo;&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd /home/foo
 $wget http://www.haskell.org/ghc/dist/7.0.4/ghc-7.0.4-x86_64-unknown-linux.tar.bz2
 $tar -xvf ghc-7.0.4-x86_64-unknown-linux.tar.bz2
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;##Configure and install as usual&lt;/p&gt;
+&lt;h2 id=&#34;configure-and-install-as-usual&#34;&gt;Configure and install as usual&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd ghc-7.0.4
 $./configure --prefix=/home/foo/usr  #something like this...
 $make install
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;##Notes
-You will obviously need to install &lt;code&gt;cabal&lt;/code&gt; from somewhere else&amp;hellip;
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;You will obviously need to install &lt;code&gt;cabal&lt;/code&gt; from somewhere else&amp;hellip;
 Using &lt;code&gt;haskell-platform&lt;/code&gt; will make it easier.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$cd /home/foo
@@ -51,15 +54,18 @@ $make install
       <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>https://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</guid>
-      <description>&lt;p&gt;##In Python&lt;/p&gt;
+      <description>
+
+&lt;h2 id=&#34;in-python&#34;&gt;In Python&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;(this won&amp;rsquo;t work for i = 0)&lt;/p&gt;
 
-&lt;p&gt;##In Haskell
-In ghci:&lt;/p&gt;
+&lt;h2 id=&#34;in-haskell&#34;&gt;In Haskell&lt;/h2&gt;
+
+&lt;p&gt;In ghci:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;[if (mod x 15)==0 then &amp;quot;FizzBuzz&amp;quot; else if (mod x 5)==0 then &amp;quot;Buzz&amp;quot; else if (mod x 3)==0 then &amp;quot;Fizz&amp;quot; else (show x) | x  String
 fizzBuzz x

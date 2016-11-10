@@ -20,7 +20,7 @@
 
 &lt;p&gt;I am interested in languages, photography, and cats.&lt;/p&gt;
 
-&lt;h1 id=&#34;basic-information&#34;&gt;Basic information&lt;/h1&gt;
+&lt;h2 id=&#34;basic-information&#34;&gt;Basic information&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Name: Yu Sawai&lt;/li&gt;
@@ -28,7 +28,7 @@
 &lt;li&gt;Gender: Male&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;
+&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Nara Institute of Science and Technology (NAIST), Nara, Japan.&lt;br /&gt;
@@ -37,7 +37,7 @@ Studied computational linguistics and information science (MEng).&lt;/li&gt;
 Studied mechanical engineering and fluid engineering.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;experience&#34;&gt;Experience&lt;/h1&gt;
+&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Current
@@ -53,9 +53,9 @@ Kunststofftechnik of TU Clausthal, Germany as an IAESTE intern (2010.09-12)&lt;/
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;skills&#34;&gt;Skills&lt;/h1&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
 
-&lt;h2 id=&#34;natural-languages&#34;&gt;Natural Languages&lt;/h2&gt;
+&lt;h3 id=&#34;natural-languages&#34;&gt;Natural Languages&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Japanese (native)&lt;/li&gt;
@@ -68,7 +68,7 @@ Kunststofftechnik of TU Clausthal, Germany as an IAESTE intern (2010.09-12)&lt;/
 &lt;li&gt;German (learning, forever beginner)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;tech&#34;&gt;Tech&lt;/h2&gt;
+&lt;h3 id=&#34;tech&#34;&gt;Tech&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Python &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;
@@ -76,11 +76,12 @@ Kunststofftechnik of TU Clausthal, Germany as an IAESTE intern (2010.09-12)&lt;/
 &lt;ul&gt;
 &lt;li&gt;Numpy, Scipy, Scikit-learn, Pandas&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Apache Spark (Cloudera CDH)&lt;/li&gt;
+&lt;li&gt;Scala&lt;/li&gt;
 &lt;li&gt;Mac OS X&lt;/li&gt;
 &lt;li&gt;Linux (CentOS6x)&lt;/li&gt;
 &lt;li&gt;Vim (novice)&lt;/li&gt;
 &lt;li&gt;Shell script (bash)&lt;/li&gt;
-&lt;li&gt;Markdown&lt;/li&gt;
 &lt;li&gt;git (novice)&lt;/li&gt;
 &lt;li&gt;HTML/CSS (novice)&lt;/li&gt;
 &lt;li&gt;LaTeX&lt;/li&gt;

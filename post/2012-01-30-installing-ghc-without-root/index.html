@@ -53,22 +53,25 @@
                     </h2>
                 </header>
                 <section id="post-body">
-                    <p>##Get OS specific &ldquo;Binary Packages&rdquo;</p>
+                    
+
+<h2 id="get-os-specific-binary-packages">Get OS specific &ldquo;Binary Packages&rdquo;</h2>
 
 <pre><code class="language-sh">$cd /home/foo
 $wget http://www.haskell.org/ghc/dist/7.0.4/ghc-7.0.4-x86_64-unknown-linux.tar.bz2
 $tar -xvf ghc-7.0.4-x86_64-unknown-linux.tar.bz2
 </code></pre>
 
-<p>##Configure and install as usual</p>
+<h2 id="configure-and-install-as-usual">Configure and install as usual</h2>
 
 <pre><code class="language-sh">$cd ghc-7.0.4
 $./configure --prefix=/home/foo/usr  #something like this...
 $make install
 </code></pre>
 
-<p>##Notes
-You will obviously need to install <code>cabal</code> from somewhere else&hellip;
+<h2 id="notes">Notes</h2>
+
+<p>You will obviously need to install <code>cabal</code> from somewhere else&hellip;
 Using <code>haskell-platform</code> will make it easier.</p>
 
 <pre><code class="language-sh">$cd /home/foo
