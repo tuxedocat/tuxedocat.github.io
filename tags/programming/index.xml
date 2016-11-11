@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Miaulog</title>
-    <link>https://tuxedocat.github.io/tags/programming/index.xml</link>
+    <link>http://log.tuxedokatze.com/tags/programming/index.xml</link>
     <description>Recent content in Programming on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="https://tuxedocat.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://log.tuxedokatze.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Anaconda2と日本語パス</title>
-      <link>https://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</link>
+      <link>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</link>
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2015-11-18-anaconda2-path-issue/</guid>
+      <guid>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;会社マシンのAnaconda2環境で、とあるパッケージのインストール時に&lt;code&gt;UnicodeDecodeError&lt;/code&gt;が出た。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/conda/conda/issues/1352&#34;&gt;Issues&lt;/a&gt; を見ると、パスに非Ascii文字が含まれる環境でのAnaconda2の利用は非推奨だという感じだった。&lt;/li&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>Dokuwikiで日本語PDFを出力したかった</title>
-      <link>https://tuxedocat.github.io/post/2015-11-18-dokuwiki-japanese-pdf/</link>
+      <link>http://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</link>
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2015-11-18-dokuwiki-japanese-pdf/</guid>
+      <guid>http://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</guid>
       <description>&lt;p&gt;CentOS6.6, Dokuwiki Hrun、Dw2Pdf_20150622でのこと。&lt;/p&gt;
 
 &lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
@@ -68,10 +68,10 @@
     
     <item>
       <title>Link: Numpy docstring / Howto</title>
-      <link>https://tuxedocat.github.io/post/2015-09-13-numpy-docstring/</link>
+      <link>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2015-09-13-numpy-docstring/</guid>
+      <guid>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;ちゃんとDocstrings書こうと思ったとき、いつもどの流派の書き方でやればいいのか迷ってしまう。そしてその後は結局、Numpy派をお手本にして書いていた気がするので、今後はこの手間を省略できるように、記録しておく。（大げさな感じ…）&lt;/p&gt;
@@ -84,10 +84,10 @@
     
     <item>
       <title>Link: Type hinting support in PyCharm</title>
-      <link>https://tuxedocat.github.io/post/2015-09-13-type-hinting-python/</link>
+      <link>http://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2015-09-13-type-hinting-python/</guid>
+      <guid>http://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</guid>
       <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;Eclipse (PyDev) → SublimeText + iPython → Atom + iPython (自宅), Spyder, PyCharm, VS2013 (会社) …という感じで色々試してきたけど、PyCharmが一番使いやすいと感じている。&lt;/p&gt;
@@ -102,10 +102,10 @@ PyCharmはこちらにも部分的に対応しているみたいなので、最�
     
     <item>
       <title>Simple programming: FizzBuzz</title>
-      <link>https://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</link>
+      <link>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</link>
       <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2012-01-18-fizzbuzz/</guid>
+      <guid>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</guid>
       <description>
 
 &lt;h2 id=&#34;in-python&#34;&gt;In Python&lt;/h2&gt;

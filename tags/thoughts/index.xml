@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thoughts on Miaulog</title>
-    <link>https://tuxedocat.github.io/tags/thoughts/index.xml</link>
+    <link>http://log.tuxedokatze.com/tags/thoughts/index.xml</link>
     <description>Recent content in Thoughts on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="https://tuxedocat.github.io/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://log.tuxedokatze.com/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>DL</title>
-      <link>https://tuxedocat.github.io/post/2015-05-26-deeplearning-forum/</link>
+      <link>http://log.tuxedokatze.com/post/2015-05-26-deeplearning-forum/</link>
       <pubDate>Tue, 26 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2015-05-26-deeplearning-forum/</guid>
+      <guid>http://log.tuxedokatze.com/post/2015-05-26-deeplearning-forum/</guid>
       <description>&lt;p&gt;Deep Learning Forumへ行ってきた。
 仕事扱いなのは金銭面ではうれしい。
 有益だった。&lt;/p&gt;
@@ -32,10 +32,10 @@
     
     <item>
       <title>Octave</title>
-      <link>https://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/</link>
+      <link>http://log.tuxedokatze.com/post/2015-01-25-coursera-ml-octave/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2015-01-25-coursera-ml-octave/</guid>
+      <guid>http://log.tuxedokatze.com/post/2015-01-25-coursera-ml-octave/</guid>
       <description>&lt;p&gt;某機械学習のクラスを受講している。
 深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。&lt;/p&gt;
 
@@ -70,10 +70,10 @@ $ brew install octave
     
     <item>
       <title>stack.push(book_hs).push(book_german).push(book_lingua).push(graphic_design)....</title>
-      <link>https://tuxedocat.github.io/post/2014-12-27-todo-list/</link>
+      <link>http://log.tuxedokatze.com/post/2014-12-27-todo-list/</link>
       <pubDate>Sat, 27 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2014-12-27-todo-list/</guid>
+      <guid>http://log.tuxedokatze.com/post/2014-12-27-todo-list/</guid>
       <description>&lt;p&gt;積ん読山の高さがどんどん高くなってきた．
 もともと興味が散漫だったうえに，最近は謎の焦燥感に追い立てられて，衝動買いを繰り返しているせいだ．&lt;/p&gt;
 
@@ -131,10 +131,10 @@ $ brew install octave
     
     <item>
       <title>Neue Helvetica?</title>
-      <link>https://tuxedocat.github.io/post/2014-10-26-thoughts-on-helveticaneue/</link>
+      <link>http://log.tuxedokatze.com/post/2014-10-26-thoughts-on-helveticaneue/</link>
       <pubDate>Sun, 26 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2014-10-26-thoughts-on-helveticaneue/</guid>
+      <guid>http://log.tuxedokatze.com/post/2014-10-26-thoughts-on-helveticaneue/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Here’s where my ire is really provoked: Helvetica Neue Light as an interface font. Wrong. Horrible and wrong. Let’s get Apple out of the way. Since iOS 7 and soon in OS Yosemite, Apple has been using Helvetica Neue for its user interfaces. The preview of iOS7 used Helvetica Neue Light and Ultra Light, which was received very badly. Consequently the Regular weight is now the default, as it will be in the forthcoming desktop UI. Helvetica is still far from ideal as a UI font, but Apple’s in-built Dynamic Type helps by doing things like tweaking the letter spacing for differently sized text, and on a Retina display it may work fine. But this doesn’t mean that the incumbent Lucida Grande doesn’t remain a better choice from a practical perspective.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -158,10 +158,10 @@ $ brew install octave
     
     <item>
       <title>引用</title>
-      <link>https://tuxedocat.github.io/post/2014-07-05-job/</link>
+      <link>http://log.tuxedokatze.com/post/2014-07-05-job/</link>
       <pubDate>Sat, 05 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2014-07-05-job/</guid>
+      <guid>http://log.tuxedokatze.com/post/2014-07-05-job/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;これに対して問題を創ること、つまり、コンセプトを考えることは、一見遊んでいるように見える。しかも、すぐに成果が出るわけでもない。実験や設計の「作業」をしていれば、必ずなんらかの「結果」（それを「成果」と勘違いする）は出てくる。だから、定期的な業務報告書に書く内容に困ることはない。しかし、問題そのものを創ろうとすると、業務報告書に書く内容がまったくないこともありうる。そうしたつらさに耐えられない技術者は、問題を創ることよりも、問題を解くことに注力する。これが構想なき繁忙を生む。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -190,10 +190,10 @@ $ brew install octave
     
     <item>
       <title>それでも</title>
-      <link>https://tuxedocat.github.io/post/2014-06-17-thoughts-2/</link>
+      <link>http://log.tuxedokatze.com/post/2014-06-17-thoughts-2/</link>
       <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2014-06-17-thoughts-2/</guid>
+      <guid>http://log.tuxedokatze.com/post/2014-06-17-thoughts-2/</guid>
       <description>&lt;p&gt;この一年，色々なところで人生終わってるって話をしてきた．
 思い切った進路変更をしたにもかかわらず，そこからの連続性を断たれてしまったこと．
 「エンジニア」という言葉が指すものが，進路変更以前と同じものになってしまったこと．
@@ -220,10 +220,10 @@ $ brew install octave
     
     <item>
       <title>もしかしたら... と．</title>
-      <link>https://tuxedocat.github.io/post/2014-05-17-thoughts-on-workplace/</link>
+      <link>http://log.tuxedokatze.com/post/2014-05-17-thoughts-on-workplace/</link>
       <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2014-05-17-thoughts-on-workplace/</guid>
+      <guid>http://log.tuxedokatze.com/post/2014-05-17-thoughts-on-workplace/</guid>
       <description>&lt;p&gt;コード書かない仕事だからつらいのではなく，コード書かない仕事が行われてそうな環境や文化がつらいのかも．&lt;/p&gt;
 
 &lt;p&gt;殺風景なオフィス．オープンで議論が活発なわけでもなく，ただパーティションが低くて気が散るだけの大部屋式．増え続ける定例会議&amp;hellip;などなど．&lt;/p&gt;

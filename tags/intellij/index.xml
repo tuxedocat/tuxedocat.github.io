@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Intellij on Miaulog</title>
-    <link>https://tuxedocat.github.io/tags/intellij/index.xml</link>
+    <link>http://log.tuxedokatze.com/tags/intellij/index.xml</link>
     <description>Recent content in Intellij on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="https://tuxedocat.github.io/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://log.tuxedokatze.com/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython</title>
-      <link>https://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</link>
+      <link>http://log.tuxedokatze.com/post/2016-04-16-pycharm-bugreport/</link>
       <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://tuxedocat.github.io/post/2016-04-16-pycharm-bugreport/</guid>
+      <guid>http://log.tuxedokatze.com/post/2016-04-16-pycharm-bugreport/</guid>
       <description>
 
 &lt;h2 id=&#34;reported-issues&#34;&gt;Reported issues&lt;/h2&gt;
