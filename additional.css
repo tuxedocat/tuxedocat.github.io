@@ -1,0 +1,32 @@
+/* Quickfix for Cactus theme's list rendering */
+ul {
+    margin-left: 10px;
+}
+
+ul ul {
+    margin-left: 15px;
+}
+
+ul ul ul {
+    margin-left: 20px;
+}
+
+ul ul ul ul {
+    margin-left: 24px;
+}
+
+#wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+}
+
+h2,
+h3,
+h4 {
+    font-size: 19px;
+    font-family: Helvetica, sans-serif;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: #888;
+}
