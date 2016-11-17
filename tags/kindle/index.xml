@@ -15,7 +15,9 @@
       <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-07-03-cat-sense/</guid>
-      <description>&lt;p&gt;猫（イエネコ）がどのようにその祖先から変化し、人間との共生をするようになったか、ということから始まる。その後、完全に家畜化されてはいないイエネコの特徴や性質を、著者らのものを含む色々な研究成果から明らかにしていく。最後のほうでは、人間のつくる急速に変化する環境において、これからも猫と人間が互恵関係にあるためには何が必要なのか…という展望を示す、って流れの本だった。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;猫（イエネコ）がどのようにその祖先から変化し、人間との共生をするようになったか、ということから始まる。その後、完全に家畜化されてはいないイエネコの特徴や性質を、著者らのものを含む色々な研究成果から明らかにしていく。最後のほうでは、人間のつくる急速に変化する環境において、これからも猫と人間が互恵関係にあるためには何が必要なのか…という展望を示す、って流れの本だった。&lt;/p&gt;
 
 &lt;p&gt;新しいことを知った、という点では中盤のイエネコの動物行動学的な特徴についての記述が面白かった。&lt;/p&gt;
 
@@ -27,8 +29,7 @@
 
 &lt;p&gt;（なるほど、と思うけど、そんなに短期間に変化するものなのかな、って疑問もある。）&lt;/p&gt;
 
-&lt;p&gt;…という感じの、だいぶ固いアカデミックな本だった。よかった。翻訳は直訳調で読みにくかったかもしれない。ただし、訳の正確性については、原著の&amp;rdquo;Cat Sense &amp;hellip;&amp;ldquo;を読んでないのでわからない。&lt;/p&gt;
-</description>
+&lt;p&gt;…という感じの、だいぶ固いアカデミックな本だった。よかった。翻訳は直訳調で読みにくかったかもしれない。ただし、訳の正確性については、原著の&amp;rdquo;Cat Sense &amp;hellip;&amp;ldquo;を読んでないのでわからない。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,9 +38,9 @@
       <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-03-21-why-japanese-people/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00TQE9TIK/ref=r_soa_w_d&#34;&gt;Rochelle Kopp, 『日本企業の社員は、なぜこんなにもモチベーションが低いのか？ 』&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00TQE9TIK/ref=r_soa_w_d&#34;&gt;Rochelle Kopp, 『日本企業の社員は、なぜこんなにもモチベーションが低いのか？ 』&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;なぜ読んだか&#34;&gt;「なぜ読んだか」&lt;/h2&gt;
 
@@ -111,8 +112,7 @@
 &lt;li id=&#34;fn:3&#34;&gt;後進国の方は別に先進国がたどった進化を追わなくてもいい。その時に手に入る最良のものを採用すればいい。……という、電話通信インフラで「リープフロッギング」と呼ばれた事例もちょろっと紹介されている。
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -122,6 +122,8 @@
       
       <guid>http://log.tuxedokatze.com/post/2016-03-05-kindle-dictionary-management/</guid>
       <description>&lt;p&gt;TL;DR &lt;code&gt;sqlite3 Kindle/system/vocabulary/vocab.db&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Kindleの単語帳機能は、辞書で調べた単語を記録してくれるのでそれ自体は便利だけど、次の2つの点が気に入らなくて不満がたまってきていた。&lt;/p&gt;
 
@@ -170,8 +172,7 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
 &lt;li id=&#34;fn:3&#34;&gt;©マーク・ワトニー氏
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -183,6 +184,8 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
       <description>&lt;p&gt;Kindle Paperwhiteは2015年の「買ってよかったもの」のひとつだけど、使用には少し難点があった。&lt;/p&gt;
 
 &lt;p&gt;その問題とは、Kindle Paperwhiteからストアを開き、端末から直接購入したりサンプルをダウンロードしたりができないってやつで、Kindleの使用頻度が上がってくると結構不便に感じていた。（他の端末から購入してKindleに転送していた…）&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;そのうちめんどくささが限界に達したので、Amazonのカスタマーサポートに連絡したら、以下のような返事がもらえた。（連絡から1日かからなかったと思う。早い！）&lt;/p&gt;
 
@@ -208,8 +211,7 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
 &lt;li id=&#34;fn:1&#34;&gt;色々なBlog記事を探しても、アカウントの統合やAmazon.co.jpアカウントの再登録でOK、みたいな内容が多かった。
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
   </channel>

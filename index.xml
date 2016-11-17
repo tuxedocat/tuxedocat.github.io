@@ -16,7 +16,9 @@
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val columnNames = Seq(&amp;quot;col1&amp;quot;,&amp;quot;col2&amp;quot;,.....&amp;quot;coln&amp;quot;)
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val columnNames = Seq(&amp;quot;col1&amp;quot;,&amp;quot;col2&amp;quot;,.....&amp;quot;coln&amp;quot;)
 
 // using the string column names:
 val result = dataframe.select(columnNames.head, columnNames.tail: _*)
@@ -29,8 +31,7 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
 &lt;p&gt;_* transforms a collection into a vararg argument - used when calling a method expecting a vararg, like select does: def select(col: String, cols: String*)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;ref. &lt;a href=&#34;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&#34;&gt;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;ref. &lt;a href=&#34;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&#34;&gt;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,14 +40,14 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
       <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/</guid>
-      <description>
-
-&lt;h3 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h3&gt;
 
 &lt;p&gt;tl;dr
 &amp;gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
 
 &lt;p&gt;Just a private log of my struggle&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;trace&#34;&gt;Trace&lt;/h3&gt;
 
@@ -71,8 +72,7 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
 
 &lt;ul&gt;
 &lt;li&gt;What if I need to merge scattered partitions which cannot be merged easily? :soon: Some features of CoreStorage can be used like LVM, I guess.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -87,8 +87,9 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
 &lt;p&gt;At this moment there are at least 6 json libraries for scala, not counting the java json libraries. All these libraries have a very similar AST. This project aims to provide a single AST to be used by other scala json libraries.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Although there may be simple-enough stdlib for serializing/deserializing objects into/from JSON, this would be better for most cases.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Although there may be simple-enough stdlib for serializing/deserializing objects into/from JSON, this would be better for most cases.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -97,17 +98,15 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
       <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-08-21-notebook-collection/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;
+&amp;gt; ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Courseraの&amp;rdquo;Machine Learning by Andrew Ng&amp;rdquo;を含む、いろいろなコースのPython実装版らしい。 他の人が書いたものを見て学ぶには、同じ課題のものを使うのが効果的だと思っているので、すごくありがたい。（Octaveで解いたけど、補助コードが多くてアレだったし。）&lt;/p&gt;
 
 &lt;p&gt;Python implementations for various topics/courses including “Machine Learning” on Coursera by Andrew Ng. It would be effective to learn from codes for the same exercises written by others, which I’ve been thinking lately, I appreciate for publishing this.
-(I&amp;rsquo;ve completed the course with Octave, but there are too much helper codes which make the coding process somehow unenjoyable.)&lt;/p&gt;
-</description>
+(I&amp;rsquo;ve completed the course with Octave, but there are too much helper codes which make the coding process somehow unenjoyable.)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,6 +117,8 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
       <guid>http://log.tuxedokatze.com/post/2016-08-06-link-paper/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&#34;&gt;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;Written Memories: Understanding, Deriving and Extending the LSTM - R2RT&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -126,8 +127,7 @@ We’ll describe the intuitions behind the LSTM architecture, which will enable 
 We’ll then extend these intuitions to show how they lead directly to a few recent and exciting architectures: highway and residual networks, and Neural Turing Machines.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Neural系言語処理、全く追いつけていないので勉強しないと… （精度が高いとか流行りだからとかではなく、複合的なタスクが解けるようになるような新しさに興味がある）&lt;/p&gt;
-</description>
+&lt;p&gt;Neural系言語処理、全く追いつけていないので勉強しないと… （精度が高いとか流行りだからとかではなく、複合的なタスクが解けるようになるような新しさに興味がある）&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -136,7 +136,9 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
       <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-07-03-cat-sense/</guid>
-      <description>&lt;p&gt;猫（イエネコ）がどのようにその祖先から変化し、人間との共生をするようになったか、ということから始まる。その後、完全に家畜化されてはいないイエネコの特徴や性質を、著者らのものを含む色々な研究成果から明らかにしていく。最後のほうでは、人間のつくる急速に変化する環境において、これからも猫と人間が互恵関係にあるためには何が必要なのか…という展望を示す、って流れの本だった。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;猫（イエネコ）がどのようにその祖先から変化し、人間との共生をするようになったか、ということから始まる。その後、完全に家畜化されてはいないイエネコの特徴や性質を、著者らのものを含む色々な研究成果から明らかにしていく。最後のほうでは、人間のつくる急速に変化する環境において、これからも猫と人間が互恵関係にあるためには何が必要なのか…という展望を示す、って流れの本だった。&lt;/p&gt;
 
 &lt;p&gt;新しいことを知った、という点では中盤のイエネコの動物行動学的な特徴についての記述が面白かった。&lt;/p&gt;
 
@@ -148,8 +150,7 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
 
 &lt;p&gt;（なるほど、と思うけど、そんなに短期間に変化するものなのかな、って疑問もある。）&lt;/p&gt;
 
-&lt;p&gt;…という感じの、だいぶ固いアカデミックな本だった。よかった。翻訳は直訳調で読みにくかったかもしれない。ただし、訳の正確性については、原著の&amp;rdquo;Cat Sense &amp;hellip;&amp;ldquo;を読んでないのでわからない。&lt;/p&gt;
-</description>
+&lt;p&gt;…という感じの、だいぶ固いアカデミックな本だった。よかった。翻訳は直訳調で読みにくかったかもしれない。ただし、訳の正確性については、原著の&amp;rdquo;Cat Sense &amp;hellip;&amp;ldquo;を読んでないのでわからない。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -158,7 +159,7 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
       <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-04-16-pycharm-bugreport/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;reported-issues&#34;&gt;Reported issues&lt;/h2&gt;
 
@@ -194,8 +195,7 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
 &lt;li&gt;Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;
-</description>
+&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -204,9 +204,9 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
       <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-03-21-why-japanese-people/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00TQE9TIK/ref=r_soa_w_d&#34;&gt;Rochelle Kopp, 『日本企業の社員は、なぜこんなにもモチベーションが低いのか？ 』&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00TQE9TIK/ref=r_soa_w_d&#34;&gt;Rochelle Kopp, 『日本企業の社員は、なぜこんなにもモチベーションが低いのか？ 』&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;なぜ読んだか&#34;&gt;「なぜ読んだか」&lt;/h2&gt;
 
@@ -278,8 +278,7 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
 &lt;li id=&#34;fn:3&#34;&gt;後進国の方は別に先進国がたどった進化を追わなくてもいい。その時に手に入る最良のものを採用すればいい。……という、電話通信インフラで「リープフロッギング」と呼ばれた事例もちょろっと紹介されている。
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -289,6 +288,8 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
       
       <guid>http://log.tuxedokatze.com/post/2016-03-05-kindle-dictionary-management/</guid>
       <description>&lt;p&gt;TL;DR &lt;code&gt;sqlite3 Kindle/system/vocabulary/vocab.db&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Kindleの単語帳機能は、辞書で調べた単語を記録してくれるのでそれ自体は便利だけど、次の2つの点が気に入らなくて不満がたまってきていた。&lt;/p&gt;
 
@@ -337,8 +338,7 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
 &lt;li id=&#34;fn:3&#34;&gt;©マーク・ワトニー氏
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -347,9 +347,9 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
       <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-03-04-software-estimation/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/ebook/dp/B00KR96M6K&#34;&gt;スティーブ・マコネル,「ソフトウェア見積り 人月の暗黙知を解き明かす」&lt;/a&gt; をさっと読んだ。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/ebook/dp/B00KR96M6K&#34;&gt;スティーブ・マコネル,「ソフトウェア見積り 人月の暗黙知を解き明かす」&lt;/a&gt; をさっと読んだ。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;現場での実践に注力する「アートとしての見積り」を定義し、その観点からソフトウェア開発（他の知的生産プロジェクトでも当てはまるけど）につきものである不確実さをどのように見積りで考慮するか、そしてアートとしての見積りの限界を示す本だったように感じた。&lt;/p&gt;
 
@@ -367,8 +367,7 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
 
 &lt;h4 id=&#34;mar-21-2016&#34;&gt;Mar 21. 2016&lt;/h4&gt;
 
-&lt;p&gt;なんかセールで半額になってた。つらい。&lt;/p&gt;
-</description>
+&lt;p&gt;なんかセールで半額になってた。つらい。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -379,11 +378,12 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
       <guid>http://log.tuxedokatze.com/post/2016-02-17-finland-book/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00RGL8DSW/ref=cm_sw_r_tw_dp_5uS7wb0Y3YSQW&#34;&gt;稲垣美晴,「フィンランド語は猫の言葉」&lt;/a&gt; を読んだ。&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;フィンランドでの言語学科留学体験記（ただし1980年代）という感じで、中島義道氏の「ウィーン愛憎」の「憎」無しバージョンに思えた。
 &lt;strong&gt;残念ながら猫の話はほとんど出てこない。&lt;/strong&gt; フィンランド語の相槌が「ニー」という一エピソードから付けられただけなのであった。&lt;/p&gt;
 
-&lt;p&gt;（なぜだかわからないけど、こうした留学日誌的エッセイには、よくある留学指南本のごとく「まず日本を知らなければならない」の類の主張が含まれているのはずっと気になっている。ウィーン愛憎ではそうした帰属意識や義務は皮肉めいた風に使われていた（外敵に対する防御反応のような感じで）。ここに関しては考えをまとめたい。というのも、僕はそういう考えを全く持っていないからだ。必須の段階とは思わないし、そもそも自国の文化的知識やその理解度や、それをうまく表現できるかどうかなんて個々人によって要求される度合いも、自己評価のレベルが異なりすぎて、あたかも共通の必須事項として挙げられるほど果たして客観的なものなのだろうか、と思ってしまうのだった。）&lt;/p&gt;
-</description>
+&lt;p&gt;（なぜだかわからないけど、こうした留学日誌的エッセイには、よくある留学指南本のごとく「まず日本を知らなければならない」の類の主張が含まれているのはずっと気になっている。ウィーン愛憎ではそうした帰属意識や義務は皮肉めいた風に使われていた（外敵に対する防御反応のような感じで）。ここに関しては考えをまとめたい。というのも、僕はそういう考えを全く持っていないからだ。必須の段階とは思わないし、そもそも自国の文化的知識やその理解度や、それをうまく表現できるかどうかなんて個々人によって要求される度合いも、自己評価のレベルが異なりすぎて、あたかも共通の必須事項として挙げられるほど果たして客観的なものなのだろうか、と思ってしまうのだった。）&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -395,6 +395,8 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
       <description>&lt;p&gt;Kindle Paperwhiteは2015年の「買ってよかったもの」のひとつだけど、使用には少し難点があった。&lt;/p&gt;
 
 &lt;p&gt;その問題とは、Kindle Paperwhiteからストアを開き、端末から直接購入したりサンプルをダウンロードしたりができないってやつで、Kindleの使用頻度が上がってくると結構不便に感じていた。（他の端末から購入してKindleに転送していた…）&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;そのうちめんどくささが限界に達したので、Amazonのカスタマーサポートに連絡したら、以下のような返事がもらえた。（連絡から1日かからなかったと思う。早い！）&lt;/p&gt;
 
@@ -420,8 +422,7 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
 &lt;li id=&#34;fn:1&#34;&gt;色々なBlog記事を探しても、アカウントの統合やAmazon.co.jpアカウントの再登録でOK、みたいな内容が多かった。
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -430,7 +431,11 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
       <pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2015-12-25-books/</guid>
-      <description>&lt;ol&gt;
+      <description>&lt;p&gt;今年の分はひとこと感想付き！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ol&gt;
 &lt;li&gt;全面改訂　超簡単　お金の運用術
 
 &lt;ul&gt;
@@ -773,8 +778,7 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
 &lt;ul&gt;
 &lt;li&gt;留学体験記。「ウィーン愛憎」とは異なり、憎しみ成分は特にない。そして、猫はほとんど関係ない。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/ol&gt;</description>
     </item>
     
     <item>
@@ -783,7 +787,9 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
       <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2015-12-20-highperformance-data-violence/</guid>
-      <description>&lt;p&gt;オライリーの電子書籍セール&lt;/p&gt;
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;オライリーの電子書籍セール&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;バンディットアルゴリズムによる最適化手法&lt;/li&gt;
@@ -816,8 +822,7 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
 &lt;ul&gt;
 &lt;li&gt;会社でリファレンスとして使ってみている。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -826,15 +831,16 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</guid>
-      <description>&lt;ul&gt;
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
 &lt;li&gt;会社マシンのAnaconda2環境で、とあるパッケージのインストール時に&lt;code&gt;UnicodeDecodeError&lt;/code&gt;が出た。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/conda/conda/issues/1352&#34;&gt;Issues&lt;/a&gt; を見ると、パスに非Ascii文字が含まれる環境でのAnaconda2の利用は非推奨だという感じだった。&lt;/li&gt;
 &lt;li&gt;なのでおとなしくAnaconda3へ移行して、&lt;code&gt;conda create -n py2x python=2.7 anaconda&lt;/code&gt;で環境を作った。&lt;/li&gt;
 &lt;li&gt;それ以降は当該の問題は生じていない。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;（usernameは英数字なのだけど&amp;hellip;）&lt;/p&gt;
-</description>
+&lt;p&gt;（usernameは英数字なのだけど&amp;hellip;）&lt;/p&gt;</description>
     </item>
     
   </channel>

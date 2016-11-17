@@ -15,14 +15,14 @@
       <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/</guid>
-      <description>
-
-&lt;h3 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h3&gt;
 
 &lt;p&gt;tl;dr
 &amp;gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
 
 &lt;p&gt;Just a private log of my struggle&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;trace&#34;&gt;Trace&lt;/h3&gt;
 
@@ -47,8 +47,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;What if I need to merge scattered partitions which cannot be merged easily? :soon: Some features of CoreStorage can be used like LVM, I guess.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

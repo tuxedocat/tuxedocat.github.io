@@ -15,11 +15,9 @@
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/about/2011-01-01-CV/</guid>
-      <description>
+      <description>&lt;p&gt;I am interested in languages, photography, and cats.&lt;/p&gt;
 
-&lt;p&gt;I am interested in languages, photography, and cats.&lt;/p&gt;
-
-&lt;h2 id=&#34;basic-information&#34;&gt;Basic information&lt;/h2&gt;
+&lt;h3 id=&#34;basic-information&#34;&gt;Basic information&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Name: Yu Sawai&lt;/li&gt;
@@ -27,7 +25,9 @@
 &lt;li&gt;Gender: Male&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Nara Institute of Science and Technology (NAIST), Nara, Japan.&lt;br /&gt;
@@ -36,7 +36,7 @@ Studied computational linguistics and information science (MEng).&lt;/li&gt;
 Studied mechanical engineering and fluid engineering.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
+&lt;h3 id=&#34;experience&#34;&gt;Experience&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Current
@@ -52,9 +52,9 @@ Kunststofftechnik of TU Clausthal, Germany as an IAESTE intern (2010.09-12)&lt;/
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
+&lt;h3 id=&#34;skills&#34;&gt;Skills&lt;/h3&gt;
 
-&lt;h3 id=&#34;natural-languages&#34;&gt;Natural Languages&lt;/h3&gt;
+&lt;h4 id=&#34;natural-languages&#34;&gt;Natural Languages&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Japanese (native)&lt;/li&gt;
@@ -67,7 +67,7 @@ Kunststofftechnik of TU Clausthal, Germany as an IAESTE intern (2010.09-12)&lt;/
 &lt;li&gt;German (learning, forever beginner)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;tech&#34;&gt;Tech&lt;/h3&gt;
+&lt;h4 id=&#34;tech&#34;&gt;Tech&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Python &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;
@@ -85,8 +85,7 @@ Kunststofftechnik of TU Clausthal, Germany as an IAESTE intern (2010.09-12)&lt;/
 &lt;li&gt;HTML/CSS (novice)&lt;/li&gt;
 &lt;li&gt;LaTeX&lt;/li&gt;
 &lt;li&gt;Lava/LSF&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

@@ -15,17 +15,15 @@
       <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-08-21-notebook-collection/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;
+&amp;gt; ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Courseraの&amp;rdquo;Machine Learning by Andrew Ng&amp;rdquo;を含む、いろいろなコースのPython実装版らしい。 他の人が書いたものを見て学ぶには、同じ課題のものを使うのが効果的だと思っているので、すごくありがたい。（Octaveで解いたけど、補助コードが多くてアレだったし。）&lt;/p&gt;
 
 &lt;p&gt;Python implementations for various topics/courses including “Machine Learning” on Coursera by Andrew Ng. It would be effective to learn from codes for the same exercises written by others, which I’ve been thinking lately, I appreciate for publishing this.
-(I&amp;rsquo;ve completed the course with Octave, but there are too much helper codes which make the coding process somehow unenjoyable.)&lt;/p&gt;
-</description>
+(I&amp;rsquo;ve completed the course with Octave, but there are too much helper codes which make the coding process somehow unenjoyable.)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,7 +32,7 @@
       <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-04-16-pycharm-bugreport/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;reported-issues&#34;&gt;Reported issues&lt;/h2&gt;
 
@@ -70,8 +68,7 @@
 &lt;li&gt;Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;
-</description>
+&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,15 +77,16 @@
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</guid>
-      <description>&lt;ul&gt;
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
 &lt;li&gt;会社マシンのAnaconda2環境で、とあるパッケージのインストール時に&lt;code&gt;UnicodeDecodeError&lt;/code&gt;が出た。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/conda/conda/issues/1352&#34;&gt;Issues&lt;/a&gt; を見ると、パスに非Ascii文字が含まれる環境でのAnaconda2の利用は非推奨だという感じだった。&lt;/li&gt;
 &lt;li&gt;なのでおとなしくAnaconda3へ移行して、&lt;code&gt;conda create -n py2x python=2.7 anaconda&lt;/code&gt;で環境を作った。&lt;/li&gt;
 &lt;li&gt;それ以降は当該の問題は生じていない。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;（usernameは英数字なのだけど&amp;hellip;）&lt;/p&gt;
-</description>
+&lt;p&gt;（usernameは英数字なのだけど&amp;hellip;）&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -99,12 +97,13 @@
       <guid>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;ちゃんとDocstrings書こうと思ったとき、いつもどの流派の書き方でやればいいのか迷ってしまう。そしてその後は結局、Numpy派をお手本にして書いていた気がするので、今後はこの手間を省略できるように、記録しておく。（大げさな感じ…）&lt;/p&gt;
 
 &lt;p&gt;Sphinxもやりたい。SphinxだけではなくPandocやもっと最近の色々なものなど、Documentation周りのことに興味を持っている。学際領域っぽい魅力があるからかもしれない。（ただしTeXは難しすぎてあきらめている。）&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://docs.sphinx-users.jp/latest/ext/example_numpy.html&#34;&gt;Sphinx: Numpy Style Docstring&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://docs.sphinx-users.jp/latest/ext/example_numpy.html&#34;&gt;Sphinx: Numpy Style Docstring&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -115,14 +114,15 @@
       <guid>http://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</guid>
       <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;Eclipse (PyDev) → SublimeText + iPython → Atom + iPython (自宅), Spyder, PyCharm, VS2013 (会社) …という感じで色々試してきたけど、PyCharmが一番使いやすいと感じている。&lt;/p&gt;
 
 &lt;p&gt;&amp;ldquo;Type Hinting&amp;rdquo;については色々なやり方が提案されていて、まだまだ発展途上なんだけど、その中では、PyCharmやJediが対応しているDocstring形式の方法は、現状の折衷案としてうまいやり方かもしれない。 (Pythonのバージョンと独立しているっぽいので。)
 ただ、個人的にはいつもNumpy式のDocstringを真似ていたので、ちょっと面倒くさい。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://legacy.python.org/dev/peps/pep-3107/&#34;&gt;PEP3107&lt;/a&gt; や &lt;a href=&#34;http://www.mypy-lang.org/&#34;&gt;Mypy&lt;/a&gt; みたいな関数アノテーション方式のほうが見た目は好きだ。
-PyCharmはこちらにも部分的に対応しているみたいなので、最高としか言い様がない (?)&lt;/p&gt;
-</description>
+PyCharmはこちらにも部分的に対応しているみたいなので、最高としか言い様がない (?)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,11 +131,11 @@ PyCharmはこちらにも部分的に対応しているみたいなので、最�
       <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2015-05-06-atom-python-script/</guid>
-      <description>
-
-&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
 
 &lt;p&gt;Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;どうする&#34;&gt;どうする?&lt;/h2&gt;
 
@@ -153,8 +153,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=&#39;utf-8&#39;)
 &lt;h3 id=&#34;経緯&#34;&gt;経緯&lt;/h3&gt;
 
 &lt;p&gt;python3.4をpyenv globalで設定していたのに、atomのscript-pluginではOSXのpython2.7.9が使われるのはなんでだろう、と思っていた。
-普段はiterm2でzshを起動するようにしていたので、ログインシェル(bash)の設定ファイルへ環境を反映していなかったのが原因だった。&lt;/p&gt;
-</description>
+普段はiterm2でzshを起動するようにしていたので、ログインシェル(bash)の設定ファイルへ環境を反映していなかったのが原因だった。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -166,6 +165,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=&#39;utf-8&#39;)
       <description>&lt;p&gt;Anaconda Scientific Python Distributionを会社マシンとおうちMacMiniに入れた。
 自前ビルドでは負荷が高そうなNumpy/Scipyを安定的に運用したいのと、念のため色々な環境を同じバージョンにしておきたいので。
 この種の安定版ディストリビューションは瑣末なことで気を揉まなくてすむし、それだけコミュニティも成熟してきたということで、使っていきたい。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Windowsでは、そのまま&lt;a href=&#34;https://store.continuum.io/cshop/anaconda/&#34;&gt;Continuumのサイト&lt;/a&gt;から。&lt;/p&gt;
 
@@ -189,8 +190,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=&#39;utf-8&#39;)
 &lt;li id=&#34;fn:1&#34;&gt;(追記) たまたま以前からpyenvを使っていた、というだけです。anaconda distributionには、&lt;code&gt;conda&lt;/code&gt;というパッケージマネージャ兼仮想環境ツールがあるので、今はそちらを使っています。
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
     <item>

@@ -19,6 +19,8 @@
 
 &lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;ipagp.ttf等を&lt;code&gt;dw2pdf/mpdf/ttffonts/&lt;/code&gt;へ格納&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;dw2pdf/mpdf/config_lang2fonts.php&lt;/code&gt;
@@ -45,8 +47,7 @@
 &lt;li&gt;&lt;code&gt;$this-&amp;gt;useAdobeCJK = true;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

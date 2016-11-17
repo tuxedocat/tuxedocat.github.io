@@ -15,17 +15,15 @@
       <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-08-21-notebook-collection/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;
+&amp;gt; ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Courseraの&amp;rdquo;Machine Learning by Andrew Ng&amp;rdquo;を含む、いろいろなコースのPython実装版らしい。 他の人が書いたものを見て学ぶには、同じ課題のものを使うのが効果的だと思っているので、すごくありがたい。（Octaveで解いたけど、補助コードが多くてアレだったし。）&lt;/p&gt;
 
 &lt;p&gt;Python implementations for various topics/courses including “Machine Learning” on Coursera by Andrew Ng. It would be effective to learn from codes for the same exercises written by others, which I’ve been thinking lately, I appreciate for publishing this.
-(I&amp;rsquo;ve completed the course with Octave, but there are too much helper codes which make the coding process somehow unenjoyable.)&lt;/p&gt;
-</description>
+(I&amp;rsquo;ve completed the course with Octave, but there are too much helper codes which make the coding process somehow unenjoyable.)&lt;/p&gt;</description>
     </item>
     
   </channel>

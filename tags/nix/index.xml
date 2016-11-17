@@ -19,6 +19,8 @@
 
 &lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;ipagp.ttf等を&lt;code&gt;dw2pdf/mpdf/ttffonts/&lt;/code&gt;へ格納&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;dw2pdf/mpdf/config_lang2fonts.php&lt;/code&gt;
@@ -45,8 +47,7 @@
 &lt;li&gt;&lt;code&gt;$this-&amp;gt;useAdobeCJK = true;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -55,9 +56,7 @@
       <pubDate>Wed, 07 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</guid>
-      <description>
-
-&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Write thesis body in &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown&#34;&gt;Pandoc Markdown&lt;/a&gt;.&lt;/li&gt;
@@ -67,6 +66,8 @@
 &lt;li&gt;Do with thesis pandoc &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#templates&#34;&gt;template&lt;/a&gt; file if you need.&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;example-of-wscript&#34;&gt;Example of wscript&lt;/h1&gt;
 
@@ -115,8 +116,7 @@ def build(bld):
     }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Press Cmd+B (on Mac) will do everything&lt;/p&gt;
-</description>
+&lt;p&gt;Press Cmd+B (on Mac) will do everything&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -265,11 +265,11 @@ F12 : lock this terminal &amp;lt;/enter&amp;gt;
       <pubDate>Fri, 30 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2011-12-30-ssh-permission-denied/</guid>
-      <description>
-
-&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
 
 &lt;p&gt;When logging in to server using public key authentication, I couldn&amp;rsquo;t log in.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;ssh -vvv foo@bar
 # omitted
@@ -290,8 +290,7 @@ Permission denied (publickey).
 &lt;h3 id=&#34;afterall&#34;&gt;Afterall&amp;hellip;&lt;/h3&gt;
 
 &lt;p&gt;The solution above didn&amp;rsquo;t work for me (Mac OS X 10.7.2, ssh-key type rsa2).
-It seems I&amp;rsquo;m just putting wrong key in .ssh&lt;/p&gt;
-</description>
+It seems I&amp;rsquo;m just putting wrong key in .ssh&lt;/p&gt;</description>
     </item>
     
   </channel>

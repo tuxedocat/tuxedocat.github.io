@@ -15,7 +15,7 @@
       <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-04-16-pycharm-bugreport/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;reported-issues&#34;&gt;Reported issues&lt;/h2&gt;
 
@@ -51,8 +51,7 @@
 &lt;li&gt;Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;
-</description>
+&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;</description>
     </item>
     
   </channel>

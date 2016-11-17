@@ -53,7 +53,9 @@
                     </h2>
                 </header>
                 <section id="post-body">
-                    <pre><code class="language-scala">val columnNames = Seq(&quot;col1&quot;,&quot;col2&quot;,.....&quot;coln&quot;)
+                    <p></p>
+
+<pre><code class="language-scala">val columnNames = Seq(&quot;col1&quot;,&quot;col2&quot;,.....&quot;coln&quot;)
 
 // using the string column names:
 val result = dataframe.select(columnNames.head, columnNames.tail: _*)
@@ -67,7 +69,6 @@ val result = dataframe.select(columnNames.map(c =&gt; col(c)): _*)
 </blockquote>
 
 <p>ref. <a href="http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co">http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co</a></p>
-
                 </section>
             </article>
             <footer id="post-meta" class="clearfix">

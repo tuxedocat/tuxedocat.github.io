@@ -15,11 +15,11 @@
       <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2015-05-06-atom-python-script/</guid>
-      <description>
-
-&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
 
 &lt;p&gt;Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;どうする&#34;&gt;どうする?&lt;/h2&gt;
 
@@ -37,8 +37,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=&#39;utf-8&#39;)
 &lt;h3 id=&#34;経緯&#34;&gt;経緯&lt;/h3&gt;
 
 &lt;p&gt;python3.4をpyenv globalで設定していたのに、atomのscript-pluginではOSXのpython2.7.9が使われるのはなんでだろう、と思っていた。
-普段はiterm2でzshを起動するようにしていたので、ログインシェル(bash)の設定ファイルへ環境を反映していなかったのが原因だった。&lt;/p&gt;
-</description>
+普段はiterm2でzshを起動するようにしていたので、ログインシェル(bash)の設定ファイルへ環境を反映していなかったのが原因だった。&lt;/p&gt;</description>
     </item>
     
   </channel>

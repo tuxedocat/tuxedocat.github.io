@@ -17,6 +17,8 @@
       <guid>http://log.tuxedokatze.com/post/2016-08-06-link-paper/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&#34;&gt;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;Written Memories: Understanding, Deriving and Extending the LSTM - R2RT&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -25,8 +27,7 @@ We’ll describe the intuitions behind the LSTM architecture, which will enable 
 We’ll then extend these intuitions to show how they lead directly to a few recent and exciting architectures: highway and residual networks, and Neural Turing Machines.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Neural系言語処理、全く追いつけていないので勉強しないと… （精度が高いとか流行りだからとかではなく、複合的なタスクが解けるようになるような新しさに興味がある）&lt;/p&gt;
-</description>
+&lt;p&gt;Neural系言語処理、全く追いつけていないので勉強しないと… （精度が高いとか流行りだからとかではなく、複合的なタスクが解けるようになるような新しさに興味がある）&lt;/p&gt;</description>
     </item>
     
   </channel>

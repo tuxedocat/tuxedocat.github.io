@@ -15,7 +15,7 @@
       <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2015-05-07-micro-shinchoku/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;復習と現実逃避と、そしてアリバイ作りのために受けていたCourseraの機械学習のクラス（Andrew Ng先生のml008）の結果が出た。
 Accomplishmentは100%だった。（本当??）&lt;/p&gt;
@@ -54,8 +54,7 @@ Accomplishmentは100%だった。（本当??）&lt;/p&gt;
 &lt;li id=&#34;fn:4&#34;&gt;電子版が出るならそっちがいい
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -66,6 +65,8 @@ Accomplishmentは100%だった。（本当??）&lt;/p&gt;
       <guid>http://log.tuxedokatze.com/post/2015-01-25-coursera-ml-octave/</guid>
       <description>&lt;p&gt;某機械学習のクラスを受講している。
 深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;2015年コースも課題はOctaveが推奨プログラミング言語のようなので、Octaveの環境を整える。&lt;/p&gt;
 
@@ -92,8 +93,7 @@ $ brew install octave
 &lt;li id=&#34;fn:2&#34;&gt;（悲しいかな、社内にはそういう機械学習寄りの業務の人もいる。自分の業務が全く逸れてしまっているだけで。）（そこに希望を持ってしまうと、色々な判断が遅れてしまうだろう。だが、普段からそういう分野に興味があると言っておいて、何もしていないってのはマズいから&amp;hellip;）
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
   </channel>

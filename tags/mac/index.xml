@@ -15,14 +15,14 @@
       <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/</guid>
-      <description>
-
-&lt;h3 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h3&gt;
 
 &lt;p&gt;tl;dr
 &amp;gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
 
 &lt;p&gt;Just a private log of my struggle&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;trace&#34;&gt;Trace&lt;/h3&gt;
 
@@ -47,8 +47,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;What if I need to merge scattered partitions which cannot be merged easily? :soon: Some features of CoreStorage can be used like LVM, I guess.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -57,7 +56,9 @@
       <pubDate>Sun, 26 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2014-10-26-thoughts-on-helveticaneue/</guid>
-      <description>&lt;blockquote&gt;
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
 &lt;p&gt;Here’s where my ire is really provoked: Helvetica Neue Light as an interface font. Wrong. Horrible and wrong. Let’s get Apple out of the way. Since iOS 7 and soon in OS Yosemite, Apple has been using Helvetica Neue for its user interfaces. The preview of iOS7 used Helvetica Neue Light and Ultra Light, which was received very badly. Consequently the Regular weight is now the default, as it will be in the forthcoming desktop UI. Helvetica is still far from ideal as a UI font, but Apple’s in-built Dynamic Type helps by doing things like tweaking the letter spacing for differently sized text, and on a Retina display it may work fine. But this doesn’t mean that the incumbent Lucida Grande doesn’t remain a better choice from a practical perspective.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -74,8 +75,7 @@
 そのままUI向けにするのは（素人仕事だと）難しそうに思えた。&lt;/p&gt;
 
 &lt;p&gt;この記事を読むと、そんな素人っぽい仕事が蔓延しそうなので、なかなかつらいですね…と感じた。
-フラットデザインを手抜きだと言ったり、バウハウスっぽい意匠をデザインではないと言ったりする種類の人を脳内で想像して悶々とすることがあるけど、この記事みたいな事例は確かにあるから安易に敵視できないな。&lt;/p&gt;
-</description>
+フラットデザインを手抜きだと言ったり、バウハウスっぽい意匠をデザインではないと言ったりする種類の人を脳内で想像して悶々とすることがあるけど、この記事みたいな事例は確かにあるから安易に敵視できないな。&lt;/p&gt;</description>
     </item>
     
     <item>

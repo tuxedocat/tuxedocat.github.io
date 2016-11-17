@@ -15,7 +15,9 @@
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val columnNames = Seq(&amp;quot;col1&amp;quot;,&amp;quot;col2&amp;quot;,.....&amp;quot;coln&amp;quot;)
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val columnNames = Seq(&amp;quot;col1&amp;quot;,&amp;quot;col2&amp;quot;,.....&amp;quot;coln&amp;quot;)
 
 // using the string column names:
 val result = dataframe.select(columnNames.head, columnNames.tail: _*)
@@ -28,8 +30,7 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
 &lt;p&gt;_* transforms a collection into a vararg argument - used when calling a method expecting a vararg, like select does: def select(col: String, cols: String*)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;ref. &lt;a href=&#34;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&#34;&gt;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;ref. &lt;a href=&#34;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&#34;&gt;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -44,8 +45,9 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
 &lt;p&gt;At this moment there are at least 6 json libraries for scala, not counting the java json libraries. All these libraries have a very similar AST. This project aims to provide a single AST to be used by other scala json libraries.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Although there may be simple-enough stdlib for serializing/deserializing objects into/from JSON, this would be better for most cases.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Although there may be simple-enough stdlib for serializing/deserializing objects into/from JSON, this would be better for most cases.&lt;/p&gt;</description>
     </item>
     
   </channel>
