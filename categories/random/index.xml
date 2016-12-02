@@ -10,30 +10,6 @@
     <atom:link href="http://log.tuxedokatze.com/categories/random/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Spark-SQL DataFrame: Selecting multiple columns</title>
-      <link>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</link>
-      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val columnNames = Seq(&amp;quot;col1&amp;quot;,&amp;quot;col2&amp;quot;,.....&amp;quot;coln&amp;quot;)
-
-// using the string column names:
-val result = dataframe.select(columnNames.head, columnNames.tail: _*)
-
-// or, equivalently, using Column objects:
-val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_* transforms a collection into a vararg argument - used when calling a method expecting a vararg, like select does: def select(col: String, cols: String*)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;ref. &lt;a href=&#34;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&#34;&gt;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Disk partition manipulation on OSX 10.11</title>
       <link>http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/</link>
       <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
@@ -72,23 +48,6 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
 &lt;ul&gt;
 &lt;li&gt;What if I need to merge scattered partitions which cannot be merged easily? :soon: Some features of CoreStorage can be used like LVM, I guess.&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Link</title>
-      <link>http://log.tuxedokatze.com/post/2016-09-25-json4s/</link>
-      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2016-09-25-json4s/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://json4s.org/&#34;&gt;http://json4s.org/&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;At this moment there are at least 6 json libraries for scala, not counting the java json libraries. All these libraries have a very similar AST. This project aims to provide a single AST to be used by other scala json libraries.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Although there may be simple-enough stdlib for serializing/deserializing objects into/from JSON, this would be better for most cases.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -840,6 +799,64 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
 &lt;/ul&gt;
 
 &lt;p&gt;（usernameは英数字なのだけど&amp;hellip;）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dokuwikiで日本語PDFを出力したかった</title>
+      <link>http://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</guid>
+      <description>&lt;p&gt;CentOS6.6, Dokuwiki Hrun、Dw2Pdf_20150622でのこと。&lt;/p&gt;
+
+&lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ipagp.ttf等を&lt;code&gt;dw2pdf/mpdf/ttffonts/&lt;/code&gt;へ格納&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/mpdf/config_lang2fonts.php&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;East Asian&lt;/code&gt;のところで &lt;code&gt;$unifont = &amp;quot;ipagp, sjis, sjisB&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/mpdf/lang2fonts.css&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:lang(&amp;quot;ja&amp;quot;)&lt;/code&gt;のところで&lt;code&gt;font-family: ipagp;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/conf/style.css&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;body {font-family: ipagp, sans-serif; }&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/DokuPDF.class.php&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_constructer&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$this-&amp;gt;useAdobeCJK = true;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link: Numpy docstring / Howto</title>
+      <link>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;ちゃんとDocstrings書こうと思ったとき、いつもどの流派の書き方でやればいいのか迷ってしまう。そしてその後は結局、Numpy派をお手本にして書いていた気がするので、今後はこの手間を省略できるように、記録しておく。（大げさな感じ…）&lt;/p&gt;
+
+&lt;p&gt;Sphinxもやりたい。SphinxだけではなくPandocやもっと最近の色々なものなど、Documentation周りのことに興味を持っている。学際領域っぽい魅力があるからかもしれない。（ただしTeXは難しすぎてあきらめている。）&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://docs.sphinx-users.jp/latest/ext/example_numpy.html&#34;&gt;Sphinx: Numpy Style Docstring&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
