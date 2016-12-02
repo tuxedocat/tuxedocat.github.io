@@ -7,7 +7,7 @@
 		<meta name="author" content="Miaulog">
 		
 		<meta name="generator" content="Hugo 0.17" />
-		<title>GNU screen: Run your commands even sudden connection lost occurs &middot; Miaulog</title>
+		<title>Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ &middot; Miaulog</title>
 		<link rel="shortcut icon" href="http://log.tuxedokatze.com/images/favicon.ico">
 		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/style.css">
 		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/highlight.css">
@@ -43,57 +43,85 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>GNU screen: Run your commands even sudden connection lost occurs</h1>
+                    <h1>Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ</h1>
                     <h2 class="headline">
-                    January 12, 2012 
+                    September 14, 2016 
                     <br>
                     
                     
                         
-                            <a href="http://log.tuxedokatze.com/tags/nix">nix</a>
+                            <a href="http://log.tuxedokatze.com/tags/spark">spark</a>
+                        
+                            <a href="http://log.tuxedokatze.com/tags/hadoop">hadoop</a>
+                        
+                            <a href="http://log.tuxedokatze.com/tags/setup">setup</a>
                         
                     
                     
                     </h2>
                 </header>
                 <section id="post-body">
-                    <p>Assuming your system is Unix like systems, and <code>screen</code> is installed.</p>
+                    
 
-<ol>
-<li><p>Create sessions</p>
+<h2 id="ダウンロード">ダウンロード</h2>
 
-<ul>
-<li><code>$screen</code></li>
-<li>(introduction will appear)</li>
-<li>press enter</li>
-</ul></li>
+<p><a href="http://www.cloudera.com/downloads/quickstart_vms/5-8.html">http://www.cloudera.com/downloads/quickstart_vms/5-8.html</a></p>
 
-<li><p>Basic commands</p>
+<p>現在は各種仮想環境用にイメージが用意されている。</p>
 
 <ul>
-<li>C-a c: create new session</li>
-<li>C-a w: show current sessions</li>
-<li>C-a [0-Z]: move to other sessions</li>
-<li>C-a d: detach screen</li>
-<li>C-a k: kill screen</li>
-</ul></li>
+<li>Virtual Box</li>
+<li>VMWare</li>
+<li>KVM</li>
+<li>Docker Container (Clusterdock)</li>
+</ul>
 
-<li><p>Restoring sessions if connection lost occurs</p>
+<p>今回は単一ノードでの検証用かつSparkコード開発用に、VirtualBoxのVMをダウンロードした。
+CDH5.8の場合は、CentOS6.7だった。</p>
+
+<h2 id="セットアップ">セットアップ</h2>
+
+<p>特になし。</p>
+
+<h2 id="caveats">Caveats</h2>
+
+<h3 id="static-ip">Static IP</h3>
+
+<p>Quickstart VMはデフォルトでは NAT インターフェースしか持たない。
+また、マシンのIPは固定されている。（10.0.2.15）
+仮にNetworkManagerで固定IPを設定しても、 <code>/etc/hosts</code> は上記のものに書き換えられてしまう。</p>
+
+<p>Static IPを設定したかったので、以下のことを試した。</p>
 
 <ul>
-<li><p><code>$screen -ls</code>: which shows list of screen sessions like this:</p>
+<li><p>どこで設定されているのか</p>
 
-<pre><code>There are screens on:
-    pid.tty.host       (DATE1)   (Attached)
-    pid.tty.host       (DATE2)   (Detached)
-2 Sockets in /var/run/screen/S-$USERNAME.
-</code></pre></li>
+<ul>
+<li><code>/etc/init.d/cloudera-quickstart-init</code> 内で <code>cloudera-quickstart-ip</code> コマンドが実行されている</li>
+<li><code>which cloudera-quickstart-ip</code> -&gt; <code>/usr/bin/cloudera-quickstart-ip</code></li>
+<li><code>/usr/bin/cloudera-quickstart-ip</code>
 
-<li><p><code>$screen -r [pid.tty.host]</code>: re-attach screen</p></li>
-
-<li><p><code>$screen -D [pid.tty.host]</code>: detach and logout screen</p></li>
+<ul>
+<li>第一引数に与えられたIPがあればそれを使用する。</li>
+<li>引数なしの場合、eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う。</li>
+<li>IPが決まれば、/etc/hostsを編集する。上記でIPが定まらなかった場合、127.0.0.1 を使う。</li>
+<li>単一ノードクラスタとするために、manager と workerは同一ノードである。上記で決定したIPを <code>/var/lib/cloudera-quickstart/tutorial/js/config.js</code> に反映する。</li>
 </ul></li>
-</ol>
+</ul></li>
+
+<li><p>どうすればよいか</p>
+
+<ul>
+<li>VirtualBoxで Bridge Network を追加し、VM上で利用できるようにする。
+
+<ul>
+<li>CentOS6 なので、<code>service NetworkManager stop</code> <code>chkconfig NetworkManager off</code> をして、手動で設定してもいいかもしれない。</li>
+</ul></li>
+<li><code>/etc/init.d/cloudera-quickstart-init</code> 内で <code>cloudera-quickstart-ip</code> コマンドに引数として 設定した Static IP を与える。</li>
+<li>reboot</li>
+<li>起動後、Cloudera Manager の Management Service の Status が &ldquo;Reconfiguration Required&rdquo; みたいな状態になっている場合は、反映して、（webコンソールからクラスタを）再起動</li>
+</ul></li>
+</ul>
 
                 </section>
             </article>

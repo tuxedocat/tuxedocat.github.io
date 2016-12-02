@@ -10,6 +10,76 @@
     <atom:link href="http://log.tuxedokatze.com/tags/hadoop/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ</title>
+      <link>http://log.tuxedokatze.com/post/2016-09-14-ClouderaQuickStartVM/</link>
+      <pubDate>Wed, 14 Sep 2016 20:39:20 +0900</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2016-09-14-ClouderaQuickStartVM/</guid>
+      <description>
+
+&lt;h2 id=&#34;ダウンロード&#34;&gt;ダウンロード&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cloudera.com/downloads/quickstart_vms/5-8.html&#34;&gt;http://www.cloudera.com/downloads/quickstart_vms/5-8.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;現在は各種仮想環境用にイメージが用意されている。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Virtual Box&lt;/li&gt;
+&lt;li&gt;VMWare&lt;/li&gt;
+&lt;li&gt;KVM&lt;/li&gt;
+&lt;li&gt;Docker Container (Clusterdock)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;今回は単一ノードでの検証用かつSparkコード開発用に、VirtualBoxのVMをダウンロードした。
+CDH5.8の場合は、CentOS6.7だった。&lt;/p&gt;
+
+&lt;h2 id=&#34;セットアップ&#34;&gt;セットアップ&lt;/h2&gt;
+
+&lt;p&gt;特になし。&lt;/p&gt;
+
+&lt;h2 id=&#34;caveats&#34;&gt;Caveats&lt;/h2&gt;
+
+&lt;h3 id=&#34;static-ip&#34;&gt;Static IP&lt;/h3&gt;
+
+&lt;p&gt;Quickstart VMはデフォルトでは NAT インターフェースしか持たない。
+また、マシンのIPは固定されている。（10.0.2.15）
+仮にNetworkManagerで固定IPを設定しても、 &lt;code&gt;/etc/hosts&lt;/code&gt; は上記のものに書き換えられてしまう。&lt;/p&gt;
+
+&lt;p&gt;Static IPを設定したかったので、以下のことを試した。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;どこで設定されているのか&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/etc/init.d/cloudera-quickstart-init&lt;/code&gt; 内で &lt;code&gt;cloudera-quickstart-ip&lt;/code&gt; コマンドが実行されている&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;which cloudera-quickstart-ip&lt;/code&gt; -&amp;gt; &lt;code&gt;/usr/bin/cloudera-quickstart-ip&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/usr/bin/cloudera-quickstart-ip&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;第一引数に与えられたIPがあればそれを使用する。&lt;/li&gt;
+&lt;li&gt;引数なしの場合、eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う。&lt;/li&gt;
+&lt;li&gt;IPが決まれば、/etc/hostsを編集する。上記でIPが定まらなかった場合、127.0.0.1 を使う。&lt;/li&gt;
+&lt;li&gt;単一ノードクラスタとするために、manager と workerは同一ノードである。上記で決定したIPを &lt;code&gt;/var/lib/cloudera-quickstart/tutorial/js/config.js&lt;/code&gt; に反映する。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;どうすればよいか&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;VirtualBoxで Bridge Network を追加し、VM上で利用できるようにする。
+
+&lt;ul&gt;
+&lt;li&gt;CentOS6 なので、&lt;code&gt;service NetworkManager stop&lt;/code&gt; &lt;code&gt;chkconfig NetworkManager off&lt;/code&gt; をして、手動で設定してもいいかもしれない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/init.d/cloudera-quickstart-init&lt;/code&gt; 内で &lt;code&gt;cloudera-quickstart-ip&lt;/code&gt; コマンドに引数として 設定した Static IP を与える。&lt;/li&gt;
+&lt;li&gt;reboot&lt;/li&gt;
+&lt;li&gt;起動後、Cloudera Manager の Management Service の Status が &amp;ldquo;Reconfiguration Required&amp;rdquo; みたいな状態になっている場合は、反映して、（webコンソールからクラスタを）再起動&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Cloudera CDHの手動インストールとVMクラスタ構築方法</title>
       <link>http://log.tuxedokatze.com/post/2016-09-14-ClouderaCDH5-8-Setup/</link>
       <pubDate>Wed, 14 Sep 2016 20:29:20 +0900</pubDate>
