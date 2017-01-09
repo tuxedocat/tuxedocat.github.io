@@ -7,8 +7,89 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <lastBuildDate>Mon, 31 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://log.tuxedokatze.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2016年内に読んだ本</title>
+      <link>http://log.tuxedokatze.com/post/2017-01-01-books2016/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2017-01-01-books2016/</guid>
+      <description>&lt;p&gt;正確には「買って，読んだ本」&lt;/p&gt;
+
+&lt;p&gt;順不同．ひとこと感想はTBW&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;専門書-技術書-ノンフィクションなど&#34;&gt;専門書・技術書・ノンフィクションなど&lt;/h2&gt;
+
+&lt;p&gt;まとめてしまっていいものかはわからない&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;マーティン・フォード, &amp;ldquo;ロボットの脅威: 人の仕事がなくなる日&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;スティーブン・ピンカー, &amp;ldquo;言語を生み出す本能（上・下）&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;スティーブ・マコネル, &amp;ldquo;ソフトウェア見積り 人月の暗黙知を解き明かす&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;フェリックス・マーティン, &amp;ldquo;21世紀の貨幣論&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;トム・デマルコ,  &amp;ldquo;ピープルウェア&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;マルク・レビンソン, &amp;ldquo;コンテナ物語: 世界を変えたのは「箱」の発明だった&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;カイザー・ファング, &amp;ldquo;ナンバーセンス　ビッグデータの嘘を見抜く「統計リテラシー」の身につけ方&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;M.J. アドラー&amp;amp;C.V. ドーレン, &amp;ldquo;本を読む本&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Hadoop Application Architectures&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;自然言語処理の基礎と技術&lt;/li&gt;
+&lt;li&gt;自然言語処理（放送大学教科書）&lt;/li&gt;
+&lt;li&gt;スーザン・フォワード, &amp;ldquo;毒になる親&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;フランセス・アッシュクロフト, &amp;ldquo;人間はどこまで耐えられるのか&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Cyrille Rossant, &amp;ldquo;IPython Interactive Computing and Visualization Cookbook&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;ジョン・ブラッドショー, &amp;ldquo;猫的感覚&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Effective Python&lt;/li&gt;
+&lt;li&gt;&amp;rdquo;&amp;ldquo;, &amp;ldquo;詳解 Apache Spark&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;rdquo;&amp;ldquo;, &amp;ldquo;CentOS7 実践ガイド&amp;rdquo;, &amp;ldquo;Kindle Unlimited&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;プログラマのためのDocker教科書 インフラの基礎知識＆コードによる環境構築の自動化&lt;/li&gt;
+&lt;li&gt;藤田昭人, &amp;ldquo;Unix考古学&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;初めてのAnsible&lt;/li&gt;
+&lt;li&gt;CG-ARTS協会, コンピュータグラフィックス, Kindle Unlimited&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;小説-物語&#34;&gt;小説・物語&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;アンディ・ウィアー, &amp;ldquo;火星の人&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;ミヒャエル・エンデ, &amp;ldquo;モモ&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;ジョージ・オーウェル, &amp;ldquo;動物農場－おとぎばなし (岩波文庫) &amp;ldquo;&lt;/li&gt;
+&lt;li&gt;吉野茉莉, &amp;ldquo;トクシュー！&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;吉野茉莉, &amp;ldquo;トクシュー！2&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;コーマック・マッカーシー, &amp;ldquo;ザ・ロード&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;漫画&#34;&gt;漫画&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ベルセルク (1 ~ 38)&lt;/li&gt;
+&lt;li&gt;3月のライオン (1 ~ 12)&lt;/li&gt;
+&lt;li&gt;僕のヒーローアカデミア (1 ~ 11)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;新書-読みもの&#34;&gt;新書・読みもの&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;小島剛一, &amp;ldquo;トルコのもう一つの顔&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Rochelle Kopp, &amp;ldquo;日本企業の社員は、なぜこんなにもモチベーションが低いのか？&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;トレーシー・アロウェイ, &amp;ldquo;脳のワーキングメモリを鍛える！情報を選ぶ・つなぐ・活用する&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;デービッド・アトキンソン, ”新・観光立国論―イギリス人アナリストが提言する２１世紀の「所得倍増計画」”&lt;/li&gt;
+&lt;li&gt;安宅和人, &amp;ldquo;イシューからはじめよ&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;白井恭弘, &amp;ldquo;外国語学習の科学―第二言語習得論とは何か (岩波新書)&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;pha, &amp;ldquo;しないことリスト&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;ラウル アリキヴィ&amp;amp;前田 陽二, &amp;ldquo;未来型国家エストニアの挑戦 　電子政府がひらく世界 (NextPublishing)&amp;rdquo;, Kindle Unlimited&lt;/li&gt;
+&lt;li&gt;アレックス・カー, &amp;ldquo;ニッポン景観論&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;トゥーッカ・トイボネン&amp;amp;古市憲寿, &amp;ldquo;国家がよみがえるとき: 持たざる国であるフィンランドが何度も再生できた理由&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;濱口桂一郎, &amp;ldquo;働く女子の運命&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;カレル・ヴァン・ウォルフレン, &amp;ldquo;いまだ人間を幸福にしない日本というシステム&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;苅谷剛彦, &amp;ldquo;知的複眼思考法: 誰でも持っている創造力のスイッチ&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;山口周, &amp;ldquo;天職は寝て待て: 新しい転職・就活・キャリア論&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;五十嵐太郎, &amp;ldquo;美しい都市・醜い都市: 現代景観論&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
     
     <item>
       <title>Spark-SQL DataFrame: Selecting multiple columns</title>
@@ -628,362 +709,6 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>2015年の本</title>
-      <link>http://log.tuxedokatze.com/post/2015-12-25-books/</link>
-      <pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2015-12-25-books/</guid>
-      <description>&lt;p&gt;今年の分はひとこと感想付き！&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;全面改訂　超簡単　お金の運用術
-
-&lt;ul&gt;
-&lt;li&gt;金銭面の脆弱性をなんとかしたくて、適当な本を選んで読んだ。他の本との比較はしていないので、まだ実践していない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;写真構図の教科書　光で思いどおりに描くための写真の手引き
-
-&lt;ul&gt;
-&lt;li&gt;構図ライブラリを作ろうと思ったのでKindle版を読んだ。紙の本の方が良かった事例。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;ネコを撮る
-
-&lt;ul&gt;
-&lt;li&gt;写真展で本物の岩合氏と会った帰りに買った本。面白かった。（猫の気持ちがわかる人らしい）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;夏への扉
-
-&lt;ul&gt;
-&lt;li&gt;邦訳の表紙絵の猫の後頭部が気になったので、古典的名作に手を出した。ハードSFではなく、すこしふしぎって感じの話で気楽に読めた。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;一九八四年 ハヤカワepi文庫
-
-&lt;ul&gt;
-&lt;li&gt;今まで読んでいなかったのを後悔した。今年読んだ小説では一番面白かった。ちょうどKindlePWを買った頃だった。Kindle版なので、ちょっとでも気に入った箇所にはハイライトを付けられて読書体験はなかなか良かった。が、電子版にはトマス・ピンチョンによる解説が収録されていないってことに最後の最後で気付いて損した気分になった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;世界を変えた哲学者たち (角川ソフィア文庫)
-
-&lt;ul&gt;
-&lt;li&gt;面白かった。なぜか、中島義道氏の本での哲学者評の文体を思い出した。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;最新版 「うつ」を治す PHP新書
-
-&lt;ul&gt;
-&lt;li&gt;だんだんと調子を崩してきたときに読んだ本。自分のため、というよりは、親や妻に説明するときのための補強材料にしたかったのだと今になって思う。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;虐殺器官 ハヤカワ文庫JA
-
-&lt;ul&gt;
-&lt;li&gt;ちょっとくどい感じの筆致（Hideo Kojima風、そりゃそうなんだけど）だったけど、面白かった。結局、伊藤計劃作品ではこれが一番気に入った。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The Indifference Engine
-
-&lt;ul&gt;
-&lt;li&gt;短編集。昔メタルギアソリッドをやって、ちょっとくどいなぁと感じた記憶が蘇った。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;貧乏人の経済学 - もういちど貧困問題を根っこから考える
-
-&lt;ul&gt;
-&lt;li&gt;考えれば当然のことだけど、社会科学も着実に粛々と行われていることを知れたので、希望が湧いた。データと人間の両方に対して誠実な著者だと思った。僕はベーシックインカムのランダム化対照試行を見てみたい。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;アカマイ　知られざるインターネットの巨人 (角川ＥＰＵＢ選書)
-
-&lt;ul&gt;
-&lt;li&gt;小学生の頃、インターネット黎明期、Akamaiという謎の会社について気になっていたけど調べていなかったことを今になって思い出したので、読んだ。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;愛着障害～子ども時代を引きずる人々～ 光文社新書
-
-&lt;ul&gt;
-&lt;li&gt;色々と、親のせいにしたかった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;PHOTOGRAPHER&amp;rsquo;S EYE -写真の構図とデザインの考え方-
-
-&lt;ul&gt;
-&lt;li&gt;写真を体系的に学べる本を探していた。分厚いし、西洋美術史の話が多くて勉強不足なのを実感したけど、リファレンスとしても使えそうなので今後もお世話になりそう。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Photoshop逆引きデザイン事典[CC/CS6/CS5/CS4/CS3]
-
-&lt;ul&gt;
-&lt;li&gt;役立ちそうだったけど、ほとんどの作業がLightroomCCで間に合っているのであまり読んでない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;変身
-
-&lt;ul&gt;
-&lt;li&gt;昔読んだけど失くしてしまったので改めて読んでみた。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;オンライン機械学習（機械学習プロフェッショナルシリーズ）
-
-&lt;ul&gt;
-&lt;li&gt;中古で買った。必要なものがコンパクトにまとまっているような気がした。実装力があれば…&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;深層学習（機械学習プロフェッショナルシリーズ）
-
-&lt;ul&gt;
-&lt;li&gt;中古で買った。簡単なNNは線形代数がわかれば一応書けるので、実は初学者向けなのではないかと感じた。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;[新装改訂版]Illustratorで学ぶ 「ベジェ曲線」習熟ドリル
-
-&lt;ul&gt;
-&lt;li&gt;トラックパッドでは腱鞘炎必至なので、今の所手をつけていない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;うつと不安の認知療法練習帳
-
-&lt;ul&gt;
-&lt;li&gt;この本を買った頃、仕事のつらみが最大値をとっていた。つらい間一ヶ月ぐらい記録をつけていたが、環境の改善の方がずっと良い影響があったのでやめてしまった。（本当に偶然で、自ら働きかけたって気はしない感じの変化。）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;美の構成学　バウハウスからフラクタルまで (中公新書)
-
-&lt;ul&gt;
-&lt;li&gt;スイスデザイン展に行った帰りに買った。日本的な文様の美しさとその利用の提言、みたいな箇所はあまりよくわからなかったが、バウハウス史が簡潔にまとまっている初めの章だけでも十分面白かった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;ハーモニー ハヤカワ文庫JA
-
-&lt;ul&gt;
-&lt;li&gt;etmlは映画版ではどうなるんだろう、と思っていた。（必要だったのだろうか）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;スナップ写真のルールとマナー
-
-&lt;ul&gt;
-&lt;li&gt;度胸があるわけではないので、最近つきものの社会的トラブルについて勉強しようとした。ただ、本当にトラブルになった場合、この本でアドバイスをしていた弁護士に相談するほうが早そう…&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;トルコ語のしくみ《新版》 (言葉のしくみ)
-
-&lt;ul&gt;
-&lt;li&gt;イスタンブール旅行に備えて、Duolingoと共にお勉強をしていた。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;自殺について 他四篇 (岩波文庫)
-
-&lt;ul&gt;
-&lt;li&gt;題名の通り、という意味はない。版が少し古いものだったので、書体が読みにくかった。それと、ハイライトを付けたかったので電子版を買ってしまった。（訳は異なるので別カウント）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;論理哲学論考 (岩波文庫)
-
-&lt;ul&gt;
-&lt;li&gt;野矢茂樹氏の解説が読みたかった。バートランド・ラッセルの解説の勘違い箇所を自力で見つけられたってこと以外は、ただただ読んだ、というだけで終わってしまった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;ラッセル幸福論 (岩波文庫)
-
-&lt;ul&gt;
-&lt;li&gt;途中まで読んで放置してしまった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;情報理論 (ちくま学芸文庫)
-
-&lt;ul&gt;
-&lt;li&gt;途中まで読んで放置してしまった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;哲学用語図鑑
-
-&lt;ul&gt;
-&lt;li&gt;親知らずの手術を待つ間に暇つぶしのために買って読んだ。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Photographer&amp;rsquo;s Mind : どう撮り、見せるか。記憶に残る写真の作り方
-
-&lt;ul&gt;
-&lt;li&gt;Photographer&amp;rsquo;s eyeがビジュアル要素に重点を置いているのに対して、こちらは西洋美術史や写真史の中でのいろいろなスタイルの背景や技法を紹介することに注力している様子だった。こちらも今後お世話になりそう。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;統計学入門 (基礎統計学)
-
-&lt;ul&gt;
-&lt;li&gt;統計学の不出来さにコンプレックスがあるので買った。少し古い本だけど、読みやすい文体。基礎事項の確認とリファレンスに使うことがある。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;持たない幸福論　働きたくない、家族を作らない、お金に縛られない (幻冬舎単行本)
-
-&lt;ul&gt;
-&lt;li&gt;働きたくないから面白かった。けど、このタイプの言論は少しデジタルユートピア論（？）っぽいところがあって、完全に投影できるわけではなさそう。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;星を継ぐもの (創元ＳＦ文庫)
-
-&lt;ul&gt;
-&lt;li&gt;科学的推理ドラマみたいな感じだった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;「きんいろモザイク」と英語レッスン
-
-&lt;ul&gt;
-&lt;li&gt;かわいい。CDが付いていると良かった（その場合、教材としてはどうなのか）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;帰ってきたヒトラー　合本版
-
-&lt;ul&gt;
-&lt;li&gt;原著 Er ist wieder da は自身のドイツ語力不足のため、サンプルですら時間がかかって仕方なかった。皮肉が効いていて面白いし、もしかしたらヒトラーに自己を投影できる人もいるかもしれないと思うぐらい、人間的な描写があって良かった。最後はハッピーエンド。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;トルコ語 (ひとり歩きの会話集)
-
-&lt;ul&gt;
-&lt;li&gt;旅の指さし会話帳が売り切れていたので買った。（実際にはあまり使わなかった）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;プログラマの考え方がおもしろいほど身につく本 問題解決能力を鍛えよう！
-
-&lt;ul&gt;
-&lt;li&gt;筋トレっぽい感じではじめはつらそうに思えたけど、解説がしっかりしているので良かった。（ただ、興味関心と業務上の都合で、統計の方を優先したため、中断している）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;体系的に学ぶ 安全なWebアプリケーションの作り方
-
-&lt;ul&gt;
-&lt;li&gt;もし知らないままでいたら、ひどい失敗をしてしまうだろうなという不安があったため、読んだ。（まだ実践はしていない）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;世界で闘うプログラミング力を鍛える150問～トップIT企業のプログラマになるための本～
-
-&lt;ul&gt;
-&lt;li&gt;念のため、ということで買っておいた。就職活動Tipsが前半部に載っていたが、これが機能する国や環境は羨ましいと思った。後半部はALDSや「プログラマの考え方〜」で勉強してからの方がいいと思ったのでやっていない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;はじめての数論 原著第3版 発見と証明の大航海‐ピタゴラスの定理から楕円曲線まで
-
-&lt;ul&gt;
-&lt;li&gt;Project Eulerをちまちまと解こうとしているが、やはり数学力が足りない。なので、ゆっくりとこの本を読んで数論を学ぼうと思った。（そしたら知能が足りないことに気づいた）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;自殺について (角川ソフィア文庫)
-
-&lt;ul&gt;
-&lt;li&gt;ハイライトを付けたかったので再購入。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;フィンランド語は猫の言葉 (講談社文庫)
-
-&lt;ul&gt;
-&lt;li&gt;留学願望が高まってくると、留学日誌的な随筆を読みたくなる。フィンランドを知りたい、という動機もあった。（結果、フィンランド旅行に行くことが決まった）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;外国語学習の科学―第二言語習得論とは何か (岩波新書)
-
-&lt;ul&gt;
-&lt;li&gt;自分のためというより、外国語学習コンプレックスの強い妻のことを考えてみたくなったので、買ってみた。まだ読んでない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Think Stats 第2版
-
-&lt;ul&gt;
-&lt;li&gt;原著第1版もざっと読んだが、内容が変わっているということで買った。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;反知性主義―アメリカが生んだ「熱病」の正体―（新潮選書）
-
-&lt;ul&gt;
-&lt;li&gt;反知性主義の簡単な理解のために読んだ。山形浩生氏のブログの受け売りです。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;アプリケーションをつくる英語
-
-&lt;ul&gt;
-&lt;li&gt;ひどい命名や翻訳を何度も見たし、自分がそういう失敗をしないとは限らないので、ソフトウェア関連の用例を知りたくなった。リファレンスとして利用している。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;知る、読む、使う！ オープンソースライセンス
-
-&lt;ul&gt;
-&lt;li&gt;ソフトウェアにはお金払いたくない、との前社長による邪悪な発言がずっと頭の片隅に残っていた。そして法を知らなくては蒙は解けないと思いはじめた。…ということは一割ぐらいで、OSSのライセンスのまとまった資料が欲しかったので読んだ。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;データ解析のための統計モデリング入門――一般化線形モデル・階層ベイズモデル・MCMC (確率と情報の科学)
-
-&lt;ul&gt;
-&lt;li&gt;モデリングという視点や方法論についてあまりにも無知だったので、信頼できそうな書籍を読むことにした。StatsmodelsとPyMCで適当に確認しただけなので、まだまだ勉強不足だけど、読んでよかった。（ところで、「シミュレイション」って転記はなんなんだろう…岩波データサイエンスでもそうなっている）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;エンジニアとして世界の最前線で働く選択肢　～渡米・面接・転職・キャリアアップ・レイオフ対策までの実践ガイド
-
-&lt;ul&gt;
-&lt;li&gt;海外進出指南本は、既に確立されたキャリアを歩む人向け、失うものがない人向け、有能マッチョ主義者向け、みたいなものしかないと思っていた。本人の成功談しかない割に、読者に要求する能力基準は高めに設定してあるとか（成功保証はないのだから当然だけど）。この本はそういうわけではなく、良い点、悪い点が素直に書いたあったし、技術者として誠実な感じがした。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;最効率! 例文で覚えるドイツ語単語
-
-&lt;ul&gt;
-&lt;li&gt;Duolingoだけでは全然身につかない気がした。今は耳と単語力を鍛えようとしている。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;バンディットアルゴリズムによる最適化手法
-
-&lt;ul&gt;
-&lt;li&gt;まだ読んでいない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;コード・シンプリシティ
-
-&lt;ul&gt;
-&lt;li&gt;まだ読んでいない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;デザイニング・データビジュアライゼーション
-
-&lt;ul&gt;
-&lt;li&gt;まだ読んでいない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;データ匿名化手法
-
-&lt;ul&gt;
-&lt;li&gt;まだ読んでいない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;アルゴリズムパズル
-
-&lt;ul&gt;
-&lt;li&gt;まだ読んでいない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;統計学のための数学入門30講 (科学のことばとしての数学)
-
-&lt;ul&gt;
-&lt;li&gt;必要な数学的事項がコンパクトにまとまっている本が欲しかったので。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;岩波データサイエンス Vol.1
-
-&lt;ul&gt;
-&lt;li&gt;最近、「もてて困るもてて困る」法や統計モデリングについての興味関心が高まっているので。Vol2も読みたい。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;暴力の人類史 上
-
-&lt;ul&gt;
-&lt;li&gt;図書館で貸し出し予約をしてから3か月待っても、依然待ち行列は短くならなかったので購入。今年一番の本かもしれない。上巻では、人類史においては一貫して暴力は減少している、ということの実証が行なわれている。そう言ってしまえばそれだけなのだけど、統計データや過去の実証的研究の膨大な情報をまとめ上げ、説得をするスタイルに圧倒される。何回も読まないといけないなぁ。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;暴力の人類史 下
-
-&lt;ul&gt;
-&lt;li&gt;なんとか年内に読めた。後半はなぜ、人類がこれからも平和化し続けるのだろうと言えるのかを示す内容となっている。生得的な理由からも、理性的な理由からもその傾向を示しているため、読み終わってから希望が湧いた。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;ハイパフォーマンスPython
-
-&lt;ul&gt;
-&lt;li&gt;技術書では今年一番かもしれない。何をするにも前提として正確なプロファイルが行われないと意味がない、ということが何度も例示されていた。黒魔術のような名前で呼んでいるようなコード例も、あくまで段階を踏んで行った先に、可読性や開発スピードとのトレードオフを許容できる場合に限って有効だ、という立ち位置は冷静でかっこいい。（僕は自己満足的な最適化もできない程度の技術力なので、言う権利はない。）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Building Probabilistic Graphical Models with Python [eBook]
-
-&lt;ul&gt;
-&lt;li&gt;まだ読んでいない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Mastering Probabilistic Graphical Models Using Python [eBook]
-
-&lt;ul&gt;
-&lt;li&gt;まだ読んでいない。CourseraのPGMのコースと併せて勉強しようかな。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;プログラミングコンテスト攻略のためのアルゴリズムとデータ構造
-
-&lt;ul&gt;
-&lt;li&gt;もっと早く買っておけばよかった…&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;若者と労働　「入社」の仕組みから解きほぐす 中公新書ラクレ
-
-&lt;ul&gt;
-&lt;li&gt;早くジョブ型雇用メインになってほしいので興味を持った。後に出た「働く女子の運命」より、こちらの方が、世界でも稀に見る非ジョブ型社会という問題を認識するにはわかりやすかった。と同時に絶望しかけたが、これは本のせいではない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;世界の言語入門（講談社現代新書）
-
-&lt;ul&gt;
-&lt;li&gt;ざっくりとした世界言語探訪&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;英語のしくみ
-
-&lt;ul&gt;
-&lt;li&gt;流し読み&lt;/li&gt;
-&lt;li&gt;有益な感じ&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;辞書を編む
-
-&lt;ul&gt;
-&lt;li&gt;辞書編纂者の仕事について&lt;/li&gt;
-&lt;li&gt;「舟を編む」を読むほうがいいかも&amp;hellip;というのは、こちらは新書っぽい概説的な話とエッセイなので、この人の文体がくどめに感じられてしまったから。だけど、それでもドラマ性があって「ことば」が好きなら楽しめそう。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;アルファベットの辞典
-
-&lt;ul&gt;
-&lt;li&gt;時間切れで読めないまま返却（ざっと読んで、装丁の良さに感動した）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;フィンランド語は猫の言葉
-
-&lt;ul&gt;
-&lt;li&gt;留学体験記。「ウィーン愛憎」とは異なり、憎しみ成分は特にない。そして、猫はほとんど関係ない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
     </item>
     
   </channel>
