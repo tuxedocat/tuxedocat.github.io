@@ -1,0 +1,272 @@
+    <!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Miaulog">
+		
+		<meta name="generator" content="Hugo 0.17" />
+		<title>Simple reading management with Wunderlist &middot; Miaulog</title>
+		<link rel="shortcut icon" href="http://log.tuxedokatze.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/style.css">
+		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/highlight.css">
+		
+		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/theme-cactus-fix.css">
+		
+
+		
+		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/monosocialiconsfont.css">
+		
+
+		
+		<link href="http://log.tuxedokatze.com/index.xml" rel="alternate" type="application/rss+xml" title="Miaulog" />
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://log.tuxedokatze.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='http://log.tuxedokatze.com/about'>About</a>
+	
+
+	
+	<a class="cta" href="http://log.tuxedokatze.com/index.xml">Subscribe</a>
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>Simple reading management with Wunderlist</h1>
+                    <h2 class="headline">
+                    December 31, 2016 
+                    <br>
+                    
+                    
+                        
+                            <a href="http://log.tuxedokatze.com/tags/books">books</a>
+                        
+                            <a href="http://log.tuxedokatze.com/tags/reading">reading</a>
+                        
+                            <a href="http://log.tuxedokatze.com/tags/python">python</a>
+                        
+                    
+                    
+                    </h2>
+                </header>
+                <section id="post-body">
+                    <h2 id="tl-dr">tl;dr</h2>
+
+<blockquote>
+<p>Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&rsquo;ve read.</p>
+</blockquote>
+
+<p></p>
+
+<ul>
+<li>Register dummy app, and get <code>client_id</code> and <code>access_token</code> on Wunderlist&rsquo;s developer&rsquo;s page</li>
+<li>Create list called &ldquo;Reading&rdquo;</li>
+<li>Get some books</li>
+<li>Add task like <code>Author Name, Title, ...</code></li>
+<li><em>Reading time</em>
+
+<ul>
+<li>Write impressions or quote interesting part of the book, and put them into comments form in Wunderlist</li>
+</ul></li>
+<li>Mark as done when finished or just got bored</li>
+<li>Retrieve list via API
+
+<ul>
+<li>Filter by keys such as <code>completed_at</code>, <code>created_at</code> if you want&hellip;</li>
+</ul></li>
+<li>Write article about books I&rsquo;ve read</li>
+</ul>
+
+<h3 id="script-python-3-5">Script (Python 3.5)</h3>
+
+<pre><code class="language-python">#!/usr/bin/env python3
+from requests_oauthlib import OAuth2Session
+import json
+import sys
+from typing import Dict
+
+
+def req_get(s: OAuth2Session, url: str, params: Dict=None):
+    got = s.get(url, params=params)
+    if got.status_code == 200:
+        results = json.loads(got.text)
+        return results
+    else:
+        sys.stderr.write(&quot;HTTP Error: {}&quot;.format(got.status_code))
+        return {}
+
+
+def get_id_of_list(lists: Dict, name: str):
+    for d in lists:
+        if d['title'] == name:
+            return d['id']
+    return None
+
+
+if __name__ == '__main__':
+    client_id = sys.argv[1]
+    access_token = sys.argv[2]
+    api_url = &quot;https://a.wunderlist.com/api/v1/&quot;
+
+    session = OAuth2Session()
+    session.headers['X-Client-ID'] = client_id
+    session.headers['X-Access-Token'] = access_token
+    lists = req_get(session, api_url+&quot;lists&quot;)
+    reading_list_id = get_id_of_list(lists, 'Reading')
+
+    if reading_list_id:
+        params = {'completed': True, 'list_id': reading_list_id}
+        books = req_get(session, api_url+&quot;tasks&quot;, params)
+        for book in sorted(books, key=lambda x: x['completed_at']):
+            # Write to stdout as markdown's numbered list formatting
+            print(&quot;1. &quot; + book['title'])
+</code></pre>
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                
+                        <img class="avatar" src="http://log.tuxedokatze.com/images/avatar.png">
+                        <div>
+                            <span class="dark">Miaulog</span>
+                            <span></span>
+                        </div>
+                    
+                <section id="sharing">
+                    
+
+                </section>
+            </footer>
+
+            
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2017-01-01-books2016/">2016年内に読んだ本<aside class="dates">Jan 1</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2016-12-31-booklist/">Simple reading management with Wunderlist<aside class="dates">Dec 31</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/">Spark-SQL DataFrame: Selecting multiple columns<aside class="dates">Oct 31</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/">Disk partition manipulation on OSX 10.11<aside class="dates">Oct 30</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2016-09-25-json4s/">Link<aside class="dates">Sep 25</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2016-09-14-ClouderaQuickStartVM/">Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ<aside class="dates">Sep 14</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2016-09-14-ClouderaCDH5-8-Setup/">Cloudera CDHの手動インストールとVMクラスタ構築方法<aside class="dates">Sep 14</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2016-08-21-notebook-collection/">Link<aside class="dates">Aug 21</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2016-08-06-link-paper/">Link<aside class="dates">Aug 6</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://log.tuxedokatze.com/post/2016-07-03-cat-sense/">『猫的感覚　動物行動学が教えるネコの心理』を読んだ<aside class="dates">Jul 3</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://github.com/tuxedocat/">
+        github
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        tuxedocat / CC BY-NC-SA 4.0
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://log.tuxedokatze.com/js/main.js"></script>
+<script src="http://log.tuxedokatze.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46681113-3', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+    </body>
+</html>

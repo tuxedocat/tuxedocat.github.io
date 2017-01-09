@@ -92,6 +92,85 @@
     </item>
     
     <item>
+      <title>Simple reading management with Wunderlist</title>
+      <link>http://log.tuxedokatze.com/post/2016-12-31-booklist/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2016-12-31-booklist/</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&amp;rsquo;ve read.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Register dummy app, and get &lt;code&gt;client_id&lt;/code&gt; and &lt;code&gt;access_token&lt;/code&gt; on Wunderlist&amp;rsquo;s developer&amp;rsquo;s page&lt;/li&gt;
+&lt;li&gt;Create list called &amp;ldquo;Reading&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Get some books&lt;/li&gt;
+&lt;li&gt;Add task like &lt;code&gt;Author Name, Title, ...&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Reading time&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write impressions or quote interesting part of the book, and put them into comments form in Wunderlist&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Mark as done when finished or just got bored&lt;/li&gt;
+&lt;li&gt;Retrieve list via API
+
+&lt;ul&gt;
+&lt;li&gt;Filter by keys such as &lt;code&gt;completed_at&lt;/code&gt;, &lt;code&gt;created_at&lt;/code&gt; if you want&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Write article about books I&amp;rsquo;ve read&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;script-python-3-5&#34;&gt;Script (Python 3.5)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python3
+from requests_oauthlib import OAuth2Session
+import json
+import sys
+from typing import Dict
+
+
+def req_get(s: OAuth2Session, url: str, params: Dict=None):
+    got = s.get(url, params=params)
+    if got.status_code == 200:
+        results = json.loads(got.text)
+        return results
+    else:
+        sys.stderr.write(&amp;quot;HTTP Error: {}&amp;quot;.format(got.status_code))
+        return {}
+
+
+def get_id_of_list(lists: Dict, name: str):
+    for d in lists:
+        if d[&#39;title&#39;] == name:
+            return d[&#39;id&#39;]
+    return None
+
+
+if __name__ == &#39;__main__&#39;:
+    client_id = sys.argv[1]
+    access_token = sys.argv[2]
+    api_url = &amp;quot;https://a.wunderlist.com/api/v1/&amp;quot;
+
+    session = OAuth2Session()
+    session.headers[&#39;X-Client-ID&#39;] = client_id
+    session.headers[&#39;X-Access-Token&#39;] = access_token
+    lists = req_get(session, api_url+&amp;quot;lists&amp;quot;)
+    reading_list_id = get_id_of_list(lists, &#39;Reading&#39;)
+
+    if reading_list_id:
+        params = {&#39;completed&#39;: True, &#39;list_id&#39;: reading_list_id}
+        books = req_get(session, api_url+&amp;quot;tasks&amp;quot;, params)
+        for book in sorted(books, key=lambda x: x[&#39;completed_at&#39;]):
+            # Write to stdout as markdown&#39;s numbered list formatting
+            print(&amp;quot;1. &amp;quot; + book[&#39;title&#39;])
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
       <title>Spark-SQL DataFrame: Selecting multiple columns</title>
       <link>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
@@ -670,45 +749,6 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
 &lt;strong&gt;残念ながら猫の話はほとんど出てこない。&lt;/strong&gt; フィンランド語の相槌が「ニー」という一エピソードから付けられただけなのであった。&lt;/p&gt;
 
 &lt;p&gt;（なぜだかわからないけど、こうした留学日誌的エッセイには、よくある留学指南本のごとく「まず日本を知らなければならない」の類の主張が含まれているのはずっと気になっている。ウィーン愛憎ではそうした帰属意識や義務は皮肉めいた風に使われていた（外敵に対する防御反応のような感じで）。ここに関しては考えをまとめたい。というのも、僕はそういう考えを全く持っていないからだ。必須の段階とは思わないし、そもそも自国の文化的知識やその理解度や、それをうまく表現できるかどうかなんて個々人によって要求される度合いも、自己評価のレベルが異なりすぎて、あたかも共通の必須事項として挙げられるほど果たして客観的なものなのだろうか、と思ってしまうのだった。）&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[Kindle] Amazon.comアカウントも持っている場合に困ったこと</title>
-      <link>http://log.tuxedokatze.com/post/2016-01-10-kindle-dual-account-issue/</link>
-      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2016-01-10-kindle-dual-account-issue/</guid>
-      <description>&lt;p&gt;Kindle Paperwhiteは2015年の「買ってよかったもの」のひとつだけど、使用には少し難点があった。&lt;/p&gt;
-
-&lt;p&gt;その問題とは、Kindle Paperwhiteからストアを開き、端末から直接購入したりサンプルをダウンロードしたりができないってやつで、Kindleの使用頻度が上がってくると結構不便に感じていた。（他の端末から購入してKindleに転送していた…）&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;そのうちめんどくささが限界に達したので、Amazonのカスタマーサポートに連絡したら、以下のような返事がもらえた。（連絡から1日かからなかったと思う。早い！）&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;Amazon.comとAmazon.co.jpに登録されているEメールアドレス・パスワードが同一の場合、いずれかのパスワードを変更してください&lt;/li&gt;
-&lt;li&gt;端末に登録されているアカウントを解除します（ホーム画面でメニューをタップ＞設定＞登録＞登録を解除 の順にタップします）&lt;/li&gt;
-&lt;li&gt;端末にAmazon.comのアカウントを登録します&lt;/li&gt;
-&lt;li&gt;端末からストアへアクセスし、コンテンツが購入できるかお試しください
-※購入先サイトがAmazon.co.jpとなっていれば、当サイトのストアが表示されます&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;これらのうち、&lt;code&gt;2, 3&lt;/code&gt;のAmazon.comアカウントの方で登録することで問題は解消できた。
-手元で解決できなさそうな問題でサポートが提供されている場合は、聞いてみるのが正確だし早いというケースだった。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;3か月ぐらい前のことだけど、記録に残しておく。&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;色々なBlog記事を探しても、アカウントの統合やAmazon.co.jpアカウントの再登録でOK、みたいな内容が多かった。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
     </item>
     
   </channel>
