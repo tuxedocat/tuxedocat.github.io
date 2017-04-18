@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/octave/index.xml</link>
-    <description>Recent content on Miaulog</description>
+    <title>Octave on Miaulog</title>
+    <link>http://log.tuxedokatze.com/tags/octave/</link>
+    <description>Recent content in Octave on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="http://log.tuxedokatze.com/tags/octave/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://log.tuxedokatze.com/tags/octave/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Octave</title>
@@ -18,34 +21,7 @@
       <description>&lt;p&gt;某機械学習のクラスを受講している。
 深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;2015年コースも課題はOctaveが推奨プログラミング言語のようなので、Octaveの環境を整える。&lt;/p&gt;
-
-&lt;p&gt;会社のマシンには、&lt;a href=&#34;http://mxeoctave.osuv.de/&#34;&gt;Windows版非公式ビルド(MXE Octave)&lt;/a&gt;を。
-自宅MacMiniは、Homebrewで。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ brew tap homebrew/science
-$ brew install octave
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;OctaveはMATLABとの互換性においては、ScilabやFreeMatよりも高いはず。
-この点で、MATLAB勢力もそこそこ居るという今の仕事においても無駄にはならなさそう。&lt;/p&gt;
-
-&lt;p&gt;また、いくらPython（とそのエコシステムに含まれるNumpy/Scipy, Pandas, Scikit-learnなど）が優秀で、ライセンス面でも十分MATLABを代替できるとしても、色々な理由でPython一本で技術計算をするのは難しいと思ったのもある。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;まぁ、MATLABでもPythonでもRでも、開発環境がつらすぎるExcelVBAに比べると、喜んでやります!って気持ちになる。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;社内での最大勢力はExcel（+VBA）&amp;hellip;ついでMATLAB、Rという感じ。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;（悲しいかな、社内にはそういう機械学習寄りの業務の人もいる。自分の業務が全く逸れてしまっているだけで。）（そこに希望を持ってしまうと、色々な判断が遅れてしまうだろう。だが、普段からそういう分野に興味があると言っておいて、何もしていないってのはマズいから&amp;hellip;）
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

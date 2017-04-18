@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/documentation/index.xml</link>
-    <description>Recent content on Miaulog</description>
+    <title>Documentation on Miaulog</title>
+    <link>http://log.tuxedokatze.com/tags/documentation/</link>
+    <description>Recent content in Documentation on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="http://log.tuxedokatze.com/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://log.tuxedokatze.com/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Link: Numpy docstring / Howto</title>
@@ -17,13 +20,7 @@
       <guid>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;ちゃんとDocstrings書こうと思ったとき、いつもどの流派の書き方でやればいいのか迷ってしまう。そしてその後は結局、Numpy派をお手本にして書いていた気がするので、今後はこの手間を省略できるように、記録しておく。（大げさな感じ…）&lt;/p&gt;
-
-&lt;p&gt;Sphinxもやりたい。SphinxだけではなくPandocやもっと最近の色々なものなど、Documentation周りのことに興味を持っている。学際領域っぽい魅力があるからかもしれない。（ただしTeXは難しすぎてあきらめている。）&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://docs.sphinx-users.jp/latest/ext/example_numpy.html&#34;&gt;Sphinx: Numpy Style Docstring&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,15 +31,7 @@
       <guid>http://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</guid>
       <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Eclipse (PyDev) → SublimeText + iPython → Atom + iPython (自宅), Spyder, PyCharm, VS2013 (会社) …という感じで色々試してきたけど、PyCharmが一番使いやすいと感じている。&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Type Hinting&amp;rdquo;については色々なやり方が提案されていて、まだまだ発展途上なんだけど、その中では、PyCharmやJediが対応しているDocstring形式の方法は、現状の折衷案としてうまいやり方かもしれない。 (Pythonのバージョンと独立しているっぽいので。)
-ただ、個人的にはいつもNumpy式のDocstringを真似ていたので、ちょっと面倒くさい。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://legacy.python.org/dev/peps/pep-3107/&#34;&gt;PEP3107&lt;/a&gt; や &lt;a href=&#34;http://www.mypy-lang.org/&#34;&gt;Mypy&lt;/a&gt; みたいな関数アノテーション方式のほうが見た目は好きだ。
-PyCharmはこちらにも部分的に対応しているみたいなので、最高としか言い様がない (?)&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,56 +51,7 @@ PyCharmはこちらにも部分的に対応しているみたいなので、最�
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;example-of-wscript&#34;&gt;Example of wscript&lt;/h1&gt;
-
-&lt;p&gt;&lt;code&gt;wscript&lt;/code&gt; is like Makefile for Waf.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;srcdir=&#39;.&#39;
-blddir=&#39;build&#39;
-
-def configure(ctx):
-    ctx.load(&#39;tex&#39;)
-    if not ctx.env.LATEX:
-        ctx.fatal(&#39;The program LaTex is required&#39;)
-
-
-from waflib.Configure import conf
-@conf
-def mktex(ctx):
-    ctx.exec_command(&#39;pandoc %s -t latex --template ./pandoc-template.tex -o %s&#39;%(&#39;mthesis.markdown&#39;, &#39;mthesis.tex&#39;))
-
-def view_pdf(bld):
-    bld.exec_command(&amp;quot;open -a Preview \&amp;quot;{0}/mthesis.pdf\&amp;quot;&amp;quot;.format(blddir))
-
-def build(bld):
-    bld(
-            features = &#39;tex&#39;,
-            type     = &#39;xelatex&#39;, # pdflatex or xelatex
-            source   = &#39;mthesis.tex&#39;, # mandatory, the source
-            outs     = &#39;pdf&#39;, # &#39;pdf&#39; or &#39;ps pdf&#39;
-            deps     = &#39;crossreferencing.lst&#39;, # to give dependencies directly
-            prompt   = 1, # 0 for the batch mode
-        )
-    bld.install_files(&#39;${PREFIX}&#39;,&#39;output_pdf_file.pdf&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;example-of-make-ing&#34;&gt;Example of &amp;lsquo;make&amp;rsquo;-ing&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;./waf clean configure mktex build view_pdf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;sublimetext2-build-system-setting&#34;&gt;SublimeText2 build system setting&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;    {
-        &amp;quot;working_dir&amp;quot; : &amp;quot;$filedir&amp;quot;,
-        &amp;quot;path&amp;quot;: &amp;quot;/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/usr/local/bin&amp;quot;,
-        &amp;quot;cmd&amp;quot;: [&amp;quot;./waf&amp;quot;, &amp;quot;clean&amp;quot;, &amp;quot;mktex&amp;quot;, &amp;quot;configure&amp;quot;, &amp;quot;build&amp;quot;, &amp;quot;view_pdf&amp;quot;]
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press Cmd+B (on Mac) will do everything&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

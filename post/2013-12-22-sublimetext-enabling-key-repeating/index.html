@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="[SublimeText] Enabling key repeating on Mavericks - Miaulog" property="og:title">
+<title>[SublimeText] Enabling key repeating on Mavericks | Miaulog</title>
+<link rel="stylesheet" href="http://log.tuxedokatze.com//css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://log.tuxedokatze.com/"><h1 class="title is-4">Miaulog</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/tuxedocat/">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">December 22, 2013</h2>
+    <h1 class="title">[SublimeText] Enabling key repeating on Mavericks</h1>
+    
+      <div class="tags">
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/sublimetext">sublimetext</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/trouble">trouble</a>
+    
+</div>
+
+    
+    <div class="content">
+      <p>On OSX Mavericks, I found the J-K keys repeating was not working when using the vintage (Vim-like) mode.</p>
+
+<p>It&rsquo;s because of the change made by the OS for providing &lsquo;press-and-hold&rsquo; behavior to input certain characters and accents (like in iOS), so the following command snippet can re-enable key repeating:</p>
+
+<pre><code>defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false
+</code></pre>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>tuxedocat / CC BY-NC-SA 4.0</p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-46681113-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+

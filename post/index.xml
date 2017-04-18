@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Miaulog</title>
-    <link>http://log.tuxedokatze.com/post/index.xml</link>
-    <description>Recent content in Post-rsses on Miaulog</description>
+    <title>Posts on Miaulog</title>
+    <link>http://log.tuxedokatze.com/post/</link>
+    <description>Recent content in Posts on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://log.tuxedokatze.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://log.tuxedokatze.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>2016年内に読んだ本</title>
@@ -20,79 +22,7 @@
 
 &lt;p&gt;順不同．ひとこと感想はTBW&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;専門書-技術書-ノンフィクションなど&#34;&gt;専門書・技術書・ノンフィクションなど&lt;/h2&gt;
-
-&lt;p&gt;まとめてしまっていいものかはわからない&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;TODO: 電子版購入の技術書も追記する&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-&lt;li&gt;マーティン・フォード, &amp;ldquo;ロボットの脅威: 人の仕事がなくなる日&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;スティーブン・ピンカー, &amp;ldquo;言語を生み出す本能（上・下）&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;スティーブ・マコネル, &amp;ldquo;ソフトウェア見積り 人月の暗黙知を解き明かす&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;フェリックス・マーティン, &amp;ldquo;21世紀の貨幣論&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;トム・デマルコ,  &amp;ldquo;ピープルウェア&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;マルク・レビンソン, &amp;ldquo;コンテナ物語: 世界を変えたのは「箱」の発明だった&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;カイザー・ファング, &amp;ldquo;ナンバーセンス　ビッグデータの嘘を見抜く「統計リテラシー」の身につけ方&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;M.J. アドラー&amp;amp;C.V. ドーレン, &amp;ldquo;本を読む本&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;Hadoop Application Architectures&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;自然言語処理の基礎と技術&lt;/li&gt;
-&lt;li&gt;自然言語処理（放送大学教科書）&lt;/li&gt;
-&lt;li&gt;スーザン・フォワード, &amp;ldquo;毒になる親&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;フランセス・アッシュクロフト, &amp;ldquo;人間はどこまで耐えられるのか&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Cyrille Rossant, &amp;ldquo;IPython Interactive Computing and Visualization Cookbook&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;ジョン・ブラッドショー, &amp;ldquo;猫的感覚&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Effective Python&lt;/li&gt;
-&lt;li&gt;&amp;rdquo;&amp;ldquo;, &amp;ldquo;詳解 Apache Spark&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&amp;rdquo;&amp;ldquo;, &amp;ldquo;CentOS7 実践ガイド&amp;rdquo;, &amp;ldquo;Kindle Unlimited&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;プログラマのためのDocker教科書 インフラの基礎知識＆コードによる環境構築の自動化&lt;/li&gt;
-&lt;li&gt;藤田昭人, &amp;ldquo;Unix考古学&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;初めてのAnsible&lt;/li&gt;
-&lt;li&gt;CG-ARTS協会, コンピュータグラフィックス, Kindle Unlimited&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;小説-物語&#34;&gt;小説・物語&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;アンディ・ウィアー, &amp;ldquo;火星の人&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;ミヒャエル・エンデ, &amp;ldquo;モモ&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;ジョージ・オーウェル, &amp;ldquo;動物農場－おとぎばなし (岩波文庫) &amp;ldquo;&lt;/li&gt;
-&lt;li&gt;吉野茉莉, &amp;ldquo;トクシュー！&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;吉野茉莉, &amp;ldquo;トクシュー！2&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;コーマック・マッカーシー, &amp;ldquo;ザ・ロード&amp;rdquo;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;漫画&#34;&gt;漫画&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ベルセルク (1 ~ 38)&lt;/li&gt;
-&lt;li&gt;3月のライオン (1 ~ 12)&lt;/li&gt;
-&lt;li&gt;僕のヒーローアカデミア (1 ~ 11)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;新書-読みもの&#34;&gt;新書・読みもの&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;小島剛一, &amp;ldquo;トルコのもう一つの顔&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Rochelle Kopp, &amp;ldquo;日本企業の社員は、なぜこんなにもモチベーションが低いのか？&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;トレーシー・アロウェイ, &amp;ldquo;脳のワーキングメモリを鍛える！情報を選ぶ・つなぐ・活用する&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;デービッド・アトキンソン, ”新・観光立国論―イギリス人アナリストが提言する２１世紀の「所得倍増計画」”&lt;/li&gt;
-&lt;li&gt;安宅和人, &amp;ldquo;イシューからはじめよ&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;白井恭弘, &amp;ldquo;外国語学習の科学―第二言語習得論とは何か (岩波新書)&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;pha, &amp;ldquo;しないことリスト&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;ラウル アリキヴィ&amp;amp;前田 陽二, &amp;ldquo;未来型国家エストニアの挑戦 　電子政府がひらく世界 (NextPublishing)&amp;rdquo;, Kindle Unlimited&lt;/li&gt;
-&lt;li&gt;アレックス・カー, &amp;ldquo;ニッポン景観論&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;トゥーッカ・トイボネン&amp;amp;古市憲寿, &amp;ldquo;国家がよみがえるとき: 持たざる国であるフィンランドが何度も再生できた理由&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;濱口桂一郎, &amp;ldquo;働く女子の運命&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;カレル・ヴァン・ウォルフレン, &amp;ldquo;いまだ人間を幸福にしない日本というシステム&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;苅谷剛彦, &amp;ldquo;知的複眼思考法: 誰でも持っている創造力のスイッチ&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;山口周, &amp;ldquo;天職は寝て待て: 新しい転職・就活・キャリア論&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;五十嵐太郎, &amp;ldquo;美しい都市・醜い都市: 現代景観論&amp;rdquo;&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -107,71 +37,7 @@
 &lt;p&gt;Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&amp;rsquo;ve read.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Register dummy app, and get &lt;code&gt;client_id&lt;/code&gt; and &lt;code&gt;access_token&lt;/code&gt; on Wunderlist&amp;rsquo;s developer&amp;rsquo;s page&lt;/li&gt;
-&lt;li&gt;Create list called &amp;ldquo;Reading&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Get some books&lt;/li&gt;
-&lt;li&gt;Add task like &lt;code&gt;Author Name, Title, ...&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Reading time&lt;/em&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Write impressions or quote interesting part of the book, and put them into comments form in Wunderlist&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Mark as done when finished or just got bored&lt;/li&gt;
-&lt;li&gt;Retrieve list via API
-
-&lt;ul&gt;
-&lt;li&gt;Filter by keys such as &lt;code&gt;completed_at&lt;/code&gt;, &lt;code&gt;created_at&lt;/code&gt; if you want&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Write article about books I&amp;rsquo;ve read&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;script-python-3-5&#34;&gt;Script (Python 3.5)&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python3
-from requests_oauthlib import OAuth2Session
-import json
-import sys
-from typing import Dict
-
-
-def req_get(s: OAuth2Session, url: str, params: Dict=None):
-    got = s.get(url, params=params)
-    if got.status_code == 200:
-        results = json.loads(got.text)
-        return results
-    else:
-        sys.stderr.write(&amp;quot;HTTP Error: {}&amp;quot;.format(got.status_code))
-        return {}
-
-
-def get_id_of_list(lists: Dict, name: str):
-    for d in lists:
-        if d[&#39;title&#39;] == name:
-            return d[&#39;id&#39;]
-    return None
-
-
-if __name__ == &#39;__main__&#39;:
-    client_id = sys.argv[1]
-    access_token = sys.argv[2]
-    api_url = &amp;quot;https://a.wunderlist.com/api/v1/&amp;quot;
-
-    session = OAuth2Session()
-    session.headers[&#39;X-Client-ID&#39;] = client_id
-    session.headers[&#39;X-Access-Token&#39;] = access_token
-    lists = req_get(session, api_url+&amp;quot;lists&amp;quot;)
-    reading_list_id = get_id_of_list(lists, &#39;Reading&#39;)
-
-    if reading_list_id:
-        params = {&#39;completed&#39;: True, &#39;list_id&#39;: reading_list_id}
-        books = req_get(session, api_url+&amp;quot;tasks&amp;quot;, params)
-        for book in sorted(books, key=lambda x: x[&#39;completed_at&#39;]):
-            # Write to stdout as markdown&#39;s numbered list formatting
-            print(&amp;quot;1. &amp;quot; + book[&#39;title&#39;])
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -180,22 +46,7 @@ if __name__ == &#39;__main__&#39;:
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;val columnNames = Seq(&amp;quot;col1&amp;quot;,&amp;quot;col2&amp;quot;,.....&amp;quot;coln&amp;quot;)
-
-// using the string column names:
-val result = dataframe.select(columnNames.head, columnNames.tail: _*)
-
-// or, equivalently, using Column objects:
-val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_* transforms a collection into a vararg argument - used when calling a method expecting a vararg, like select does: def select(col: String, cols: String*)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;ref. &lt;a href=&#34;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&#34;&gt;http://stackoverflow.com/questions/36131716/scala-spark-dataframe-dataframe-select-multiple-columns-given-a-sequence-of-co&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -211,32 +62,7 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
 
 &lt;p&gt;Just a private log of my struggle&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;trace&#34;&gt;Trace&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Saw how people are disappointed with new Macbook Pro&lt;/li&gt;
-&lt;li&gt;Start thinking to re-use my old MBP 2011 (clean install)&lt;/li&gt;
-&lt;li&gt;Found BootCamp partition of 70GB which I won’t use anymore :soon: Erase partition via DiskUtility.app&lt;/li&gt;
-&lt;li&gt;Reboot, and enter the recovery mode of El Capitan using Recovery HD partition&lt;/li&gt;
-&lt;li&gt;Enter DiskUtility, and try merging the system partition with free-space which is formally BootCamp partition via Partition menu&lt;/li&gt;
-&lt;li&gt;“Operation failed …”&lt;/li&gt;
-&lt;li&gt;Leave DiskUtility, enter Terminal, and play with diskutil command.&lt;/li&gt;
-&lt;li&gt;diskutil mergePartitions or some commands failed.&lt;/li&gt;
-&lt;li&gt;Found Recovery HD partition, which is right next to system partition, was then merged free-space of BootCamp partition&lt;/li&gt;
-&lt;li&gt;Delete Recovery HD partition to get continuous free-space&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;OK, let’s start from zero.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Create El Capitan’s install drive from another mac using &lt;code&gt;sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Reboot MBP with that disk, erase Macintosh HD again, and this worked normally.&lt;/li&gt;
-&lt;li&gt;Perform clean install.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;thoughts&#34;&gt;Thoughts&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What if I need to merge scattered partitions which cannot be merged easily? :soon: Some features of CoreStorage can be used like LVM, I guess.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -251,214 +77,37 @@ val result = dataframe.select(columnNames.map(c =&amp;gt; col(c)): _*)
 &lt;p&gt;At this moment there are at least 6 json libraries for scala, not counting the java json libraries. All these libraries have a very similar AST. This project aims to provide a single AST to be used by other scala json libraries.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Although there may be simple-enough stdlib for serializing/deserializing objects into/from JSON, this would be better for most cases.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ</title>
-      <link>http://log.tuxedokatze.com/post/2016-09-14-ClouderaQuickStartVM/</link>
+      <link>http://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</link>
       <pubDate>Wed, 14 Sep 2016 20:39:20 +0900</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2016-09-14-ClouderaQuickStartVM/</guid>
-      <description>
-
-&lt;h2 id=&#34;ダウンロード&#34;&gt;ダウンロード&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cloudera.com/downloads/quickstart_vms/5-8.html&#34;&gt;http://www.cloudera.com/downloads/quickstart_vms/5-8.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;現在は各種仮想環境用にイメージが用意されている。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Virtual Box&lt;/li&gt;
-&lt;li&gt;VMWare&lt;/li&gt;
-&lt;li&gt;KVM&lt;/li&gt;
-&lt;li&gt;Docker Container (Clusterdock)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;今回は単一ノードでの検証用かつSparkコード開発用に、VirtualBoxのVMをダウンロードした。
-CDH5.8の場合は、CentOS6.7だった。&lt;/p&gt;
-
-&lt;h2 id=&#34;セットアップ&#34;&gt;セットアップ&lt;/h2&gt;
-
-&lt;p&gt;特になし。&lt;/p&gt;
-
-&lt;h2 id=&#34;caveats&#34;&gt;Caveats&lt;/h2&gt;
-
-&lt;h3 id=&#34;static-ip&#34;&gt;Static IP&lt;/h3&gt;
-
-&lt;p&gt;Quickstart VMはデフォルトでは NAT インターフェースしか持たない。
-また、マシンのIPは固定されている。（10.0.2.15）
-仮にNetworkManagerで固定IPを設定しても、 &lt;code&gt;/etc/hosts&lt;/code&gt; は上記のものに書き換えられてしまう。&lt;/p&gt;
-
-&lt;p&gt;Static IPを設定したかったので、以下のことを試した。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;どこで設定されているのか&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/etc/init.d/cloudera-quickstart-init&lt;/code&gt; 内で &lt;code&gt;cloudera-quickstart-ip&lt;/code&gt; コマンドが実行されている&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;which cloudera-quickstart-ip&lt;/code&gt; -&amp;gt; &lt;code&gt;/usr/bin/cloudera-quickstart-ip&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/usr/bin/cloudera-quickstart-ip&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;第一引数に与えられたIPがあればそれを使用する。&lt;/li&gt;
-&lt;li&gt;引数なしの場合、eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う。&lt;/li&gt;
-&lt;li&gt;IPが決まれば、/etc/hostsを編集する。上記でIPが定まらなかった場合、127.0.0.1 を使う。&lt;/li&gt;
-&lt;li&gt;単一ノードクラスタとするために、manager と workerは同一ノードである。上記で決定したIPを &lt;code&gt;/var/lib/cloudera-quickstart/tutorial/js/config.js&lt;/code&gt; に反映する。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;どうすればよいか&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;VirtualBoxで Bridge Network を追加し、VM上で利用できるようにする。
-
-&lt;ul&gt;
-&lt;li&gt;CentOS6 なので、&lt;code&gt;service NetworkManager stop&lt;/code&gt; &lt;code&gt;chkconfig NetworkManager off&lt;/code&gt; をして、手動で設定してもいいかもしれない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/etc/init.d/cloudera-quickstart-init&lt;/code&gt; 内で &lt;code&gt;cloudera-quickstart-ip&lt;/code&gt; コマンドに引数として 設定した Static IP を与える。&lt;/li&gt;
-&lt;li&gt;reboot&lt;/li&gt;
-&lt;li&gt;起動後、Cloudera Manager の Management Service の Status が &amp;ldquo;Reconfiguration Required&amp;rdquo; みたいな状態になっている場合は、反映して、（webコンソールからクラスタを）再起動&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</guid>
+      <description>ダウンロード http://www.cloudera.com/downloads/quickstart_vms/5-8.html
+現在は各種仮想環境用にイメージが用意されている。
+ Virtual Box VMWare KVM Docker Container (Clusterdock)  今回は単一ノードでの検証用かつSparkコード開発用に、VirtualBoxのVMをダウンロードした。 CDH5.8の場合は、CentOS6.7だった。
+セットアップ 特になし。
+Caveats Static IP Quickstart VMはデフォルトでは NAT インターフェースしか持たない。 また、マシンのIPは固定されている。（10.0.2.15） 仮にNetworkManagerで固定IPを設定しても、 /etc/hosts は上記のものに書き換えられてしまう。
+Static IPを設定したかったので、以下のことを試した。
+ どこで設定されているのか
+ /etc/init.d/cloudera-quickstart-init 内で cloudera-quickstart-ip コマンドが実行されている which cloudera-quickstart-ip -&amp;gt; /usr/bin/cloudera-quickstart-ip /usr/bin/cloudera-quickstart-ip  第一引数に与えられたIPがあればそれを使用する。 引数なしの場合、eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う。 IPが決まれば、/etc/hostsを編集する。上記でIPが定まらなかった場合、127.0.0.1 を使う。 単一ノードクラスタとするために、manager と workerは同一ノードである。上記で決定したIPを /var/lib/cloudera-quickstart/tutorial/js/config.js に反映する。   どうすればよいか
+ VirtualBoxで Bridge Network を追加し、VM上で利用できるようにする。  CentOS6 なので、service NetworkManager stop chkconfig NetworkManager off をして、手動で設定してもいいかもしれない。  /etc/init.</description>
     </item>
     
     <item>
       <title>Cloudera CDHの手動インストールとVMクラスタ構築方法</title>
-      <link>http://log.tuxedokatze.com/post/2016-09-14-ClouderaCDH5-8-Setup/</link>
+      <link>http://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</link>
       <pubDate>Wed, 14 Sep 2016 20:29:20 +0900</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2016-09-14-ClouderaCDH5-8-Setup/</guid>
-      <description>
-
-&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;master (namenode, service): cdh-vm1.local&lt;/li&gt;
-&lt;li&gt;slave (datanode, worker): cdh-vm2.local, cdh-vm3.local&lt;/li&gt;
-&lt;li&gt;VM: CentOS 7.2 VirtualBox 4Cores 8GB RAM&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;固定IPの設定（VBのBridge Networkを利用）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/etc/hosts&lt;/code&gt; の編集&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;ipaddr 1&amp;gt;    cdh-vm1.local    cdh-vm1
-&amp;lt;ipaddr 2&amp;gt;    cdh-vm2.local    cdh-vm2
-&amp;lt;ipaddr 3&amp;gt;    cdh-vm3.local    cdh-vm3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;/etc/yum.conf&lt;/code&gt; 内での プロキシサーバーの設定&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;SELinuxの停止（※安全だといえる環境なら…）&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sed -i -e &#39;s/SELINUX=.*/SELINUX=disabled/g&#39; /etc/selinux/config&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;reboot&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Firewalldの停止（※安全だといえる環境なら…）&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;systemctl stop firewalld&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;systemctl disable firewalld&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;セットアップ用ユーザーの作成&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;パスワードを同一のものを使う場合: Superuserもしくは、パスワードレスでsudoが利用できるユーザーを作成
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/etc/ssh/ssh_config&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;StrictHostKeyChecking no&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;公開鍵認証を使う場合: &lt;code&gt;ssh-keygen&lt;/code&gt; &lt;code&gt;enter x 2&lt;/code&gt; &lt;code&gt;cp .ssh/id_rsa.pub .ssh/authorized_keys&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;PubkeyAuthentication yes&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;VMのリンククローンを行う。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;MACアドレスはリセットしておく。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;… ここまでをVagrant + Ansibleで構築すると楽。&lt;/p&gt;
-
-&lt;h2 id=&#34;cloudera-cdhの入手&#34;&gt;Cloudera CDHの入手&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cloudera.com/downloads/cdh/5-8-0.html&#34;&gt;Download CDH 5.8.0&lt;/a&gt; をよく読む&lt;/p&gt;
-
-&lt;p&gt;特に、一番簡単なのは、 &lt;a href=&#34;http://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_install_path_a.html#cmig_topic_6_5&#34;&gt;Installation Path A - Automated Installation by Cloudera Manager (Non-Production Mode)&lt;/a&gt;
-以下の流れとなる。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;master への Cloudera Managerのインストール&lt;/li&gt;
-&lt;li&gt;master の Cloudera Manager から、slave へのCDH5.8インストール&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;master-への-cloudera-managerのインストール&#34;&gt;master への Cloudera Managerのインストール&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget https://archive.cloudera.com/cm5/installer/latest/cloudera-manager-installer.bin
-chmod u+x cloudera-manager-installer.bin
-sudo ./cloudera-manager-installer.bin
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;slave-への-cdhインストール&#34;&gt;slave への CDHインストール&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;VMを全機立ち上げる&lt;/li&gt;
-&lt;li&gt;master上で、ブラウザから &lt;code&gt;cdh-vm1:7180/cmf/login&lt;/code&gt; へアクセスする&lt;/li&gt;
-&lt;li&gt;ライセンス条項を読み、同意&lt;/li&gt;
-&lt;li&gt;無償版（Express）、有償版（Enterprise）トライアルなどの選択肢が表示されるが、今回は無償版のExpressを選択&lt;/li&gt;
-&lt;li&gt;クラスタのセットアップのために、クラスタに含まれる全ノード（masterも含む）を選択する&lt;/li&gt;
-&lt;li&gt;インストール方法は以下の２つ。後者がおすすめ、とあるが、頻繁にアップデートしない環境の場合、前者でもよい。今回は、色々な都合で前者を選択。
-
-&lt;ul&gt;
-&lt;li&gt;Package manager 経由 （RPM, DEB）&lt;/li&gt;
-&lt;li&gt;Cloudera Percel での配布&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Oracle JDKのインストールに☑を入れる。&lt;/li&gt;
-&lt;li&gt;インストールに使用するユーザーの設定
-
-&lt;ul&gt;
-&lt;li&gt;root もしくは NOPASSWD 設定の sudoerユーザー&lt;/li&gt;
-&lt;li&gt;共通パスワードもしくは公開鍵を指定する&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;全ノードでManagerおよびCDHのインストールが行われる&lt;/li&gt;
-&lt;li&gt;どのServiceを利用するか選択する&lt;/li&gt;
-&lt;li&gt;どのノードをどの役割（Role）に割り当てるか選択する
-
-&lt;ul&gt;
-&lt;li&gt;今回は初期設定のまま&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;各種Serviceの詳細設定
-
-&lt;ul&gt;
-&lt;li&gt;今回は初期設定のまま&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;セットアップ状況の検証&lt;/li&gt;
-&lt;li&gt;完了&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</guid>
+      <description>Configuration  master (namenode, service): cdh-vm1.local slave (datanode, worker): cdh-vm2.local, cdh-vm3.local VM: CentOS 7.2 VirtualBox 4Cores 8GB RAM  Prerequisites  固定IPの設定（VBのBridge Networkを利用） /etc/hosts の編集  &amp;lt;ipaddr 1&amp;gt; cdh-vm1.local cdh-vm1 &amp;lt;ipaddr 2&amp;gt; cdh-vm2.local cdh-vm2 &amp;lt;ipaddr 3&amp;gt; cdh-vm3.local cdh-vm3   /etc/yum.conf 内での プロキシサーバーの設定
+ SELinuxの停止（※安全だといえる環境なら…）
+ sed -i -e &#39;s/SELINUX=.*/SELINUX=disabled/g&#39; /etc/selinux/config reboot  Firewalldの停止（※安全だといえる環境なら…）
+ systemctl stop firewalld systemctl disable firewalld  セットアップ用ユーザーの作成
+ パスワードを同一のものを使う場合: Superuserもしくは、パスワードレスでsudoが利用できるユーザーを作成  /etc/ssh/ssh_config  StrictHostKeyChecking no   公開鍵認証を使う場合: ssh-keygen enter x 2 cp .</description>
     </item>
     
     <item>
@@ -470,12 +119,7 @@ sudo ./cloudera-manager-installer.bin
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;
 &amp;gt; ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Courseraの&amp;rdquo;Machine Learning by Andrew Ng&amp;rdquo;を含む、いろいろなコースのPython実装版らしい。 他の人が書いたものを見て学ぶには、同じ課題のものを使うのが効果的だと思っているので、すごくありがたい。（Octaveで解いたけど、補助コードが多くてアレだったし。）&lt;/p&gt;
-
-&lt;p&gt;Python implementations for various topics/courses including “Machine Learning” on Coursera by Andrew Ng. It would be effective to learn from codes for the same exercises written by others, which I’ve been thinking lately, I appreciate for publishing this.
-(I&amp;rsquo;ve completed the course with Octave, but there are too much helper codes which make the coding process somehow unenjoyable.)&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -486,17 +130,7 @@ sudo ./cloudera-manager-installer.bin
       <guid>http://log.tuxedokatze.com/post/2016-08-06-link-paper/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&#34;&gt;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Written Memories: Understanding, Deriving and Extending the LSTM - R2RT&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;In this post, we do a few things: We’ll define and describe RNNs generally, focusing on the limitations of vanilla RNNs that led to the development of the LSTM.
-We’ll describe the intuitions behind the LSTM architecture, which will enable us to build up to and derive the LSTM. Along the way we will derive the GRU. We’ll also derive a pseudo LSTM, which we’ll see is better in principle and performance to the standard LSTM.
-We’ll then extend these intuitions to show how they lead directly to a few recent and exciting architectures: highway and residual networks, and Neural Turing Machines.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Neural系言語処理、全く追いつけていないので勉強しないと… （精度が高いとか流行りだからとかではなく、複合的なタスクが解けるようになるような新しさに興味がある）&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -505,21 +139,7 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
       <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-07-03-cat-sense/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;猫（イエネコ）がどのようにその祖先から変化し、人間との共生をするようになったか、ということから始まる。その後、完全に家畜化されてはいないイエネコの特徴や性質を、著者らのものを含む色々な研究成果から明らかにしていく。最後のほうでは、人間のつくる急速に変化する環境において、これからも猫と人間が互恵関係にあるためには何が必要なのか…という展望を示す、って流れの本だった。&lt;/p&gt;
-
-&lt;p&gt;新しいことを知った、という点では中盤のイエネコの動物行動学的な特徴についての記述が面白かった。&lt;/p&gt;
-
-&lt;p&gt;有益さという点では、猫をよく思わない人間が持ち出すいろいろな理由に対して、事実確認を行っていた後半部がよかった。
-確かに、野良猫の一部（野生化した猫？）は小動物を狩る。しかし、それ以外の都市部で暮らす野良猫やイエネコはもはや熱心なハンターではない。また、ネコ以外にも野鳥などを狩る動物は多い。ネコによる悪影響は想像よりも小さいのではないかといえそうな流れだった。当然、孤立した生態系に野生化した猫が入り込んだ場合は被害が出る点にも触れている。ここでは、こうした野生動物の保護が、猫だけを取り除けば済むような単純な話ではないことを言っていた。&lt;/p&gt;
-
-&lt;p&gt;また、避妊や去勢は現代では常識なだけでなく動物の権利的な面でも推奨されていることだ。けれど、これは、遺伝子プールの多様性確保、特に先の狩猟本能や猫の不安駆動な部分を和らげてより良く人間社会に向いた個体を増やすという点では、果たして良いものなのだろうかという問いかけもできる。
-人間が良かれと思ってやったことが、結局最も人間社会に向いてない猫（野良猫・野生猫）の遺伝子ばかりを残すことになってしまうのではないか、という考えは新しいと思った。&lt;/p&gt;
-
-&lt;p&gt;（なるほど、と思うけど、そんなに短期間に変化するものなのかな、って疑問もある。）&lt;/p&gt;
-
-&lt;p&gt;…という感じの、だいぶ固いアカデミックな本だった。よかった。翻訳は直訳調で読みにくかったかもしれない。ただし、訳の正確性については、原著の&amp;rdquo;Cat Sense &amp;hellip;&amp;ldquo;を読んでないのでわからない。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -528,43 +148,7 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
       <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-04-16-pycharm-bugreport/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;reported-issues&#34;&gt;Reported issues&lt;/h2&gt;
-
-&lt;p&gt;In debugging console (w/ iPython), &lt;code&gt;tput unknown terminal &#39;emacs&#39;&lt;/code&gt; is repeatedly appearing.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o&#34;&gt;http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs&#34;&gt;http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;https://youtrack.jetbrains.com/issue/PY-14999&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;possible-cause&#34;&gt;Possible cause&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;In &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;, $TERM is hard-coded
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;line6:  os.environ[&#39;TERM&#39;] = &#39;emacs&#39; #to use proper page_more() for paging&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;This overwrites your $TERM setting if you use iPython console when debugging.&lt;/li&gt;
-&lt;li&gt;If your env doesn&amp;rsquo;t have terminfo for emacs, then it fails.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;workaround&#34;&gt;Workaround&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Add terminfo for emacs
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&#34;&gt;https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;I just copied terminfo of dumb-terminal as emacs&amp;rsquo;s terminfo, and it worked. (at least stopped showing messages)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Or, edit &lt;code&gt;pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py&lt;/code&gt;`&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;って内容を &lt;a href=&#34;https://youtrack.jetbrains.com/issue/PY-14999&#34;&gt;PyCharmのIssue Tracker&lt;/a&gt; に書いた。 少しは役に立つといいけど。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -575,79 +159,7 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
       <guid>http://log.tuxedokatze.com/post/2016-03-21-why-japanese-people/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00TQE9TIK/ref=r_soa_w_d&#34;&gt;Rochelle Kopp, 『日本企業の社員は、なぜこんなにもモチベーションが低いのか？ 』&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;なぜ読んだか&#34;&gt;「なぜ読んだか」&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;労の地獄に落とされたからには、世界の他の場所でも労が地獄なのかどうかを知らないと気が済まなかった。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;昨年末から「労」批判書籍を少し読んでみた。労働法関連の専門家が書いた新書は読みやすく、いろいろな意欲が停滞しているこの時期にも、思いのほか読み進められた。そして、スタックに積まれていたものは消化した。&lt;/p&gt;
-
-&lt;p&gt;ここで「労」関連の新書や一般書はおやすみにして、言語学関連の本を読みたい。&lt;/p&gt;
-
-&lt;h2 id=&#34;たぶんこんな本だった&#34;&gt;「たぶんこんな本だった」&lt;/h2&gt;
-
-&lt;p&gt;かつて栄華を極めた日本企業とその成功の要因とされた日本式人事管理システム。最近では経済・社会環境の変化により、その利点はもはや小さく、欠点が目立つようになった。様々な調査で分かっている通り、「社員のエンゲージメント」や「社員への信頼」などのスコアが世界的に最低ランクであるという事実を直視し、そんな状態を作り出す人事管理システムを見直すべきはないか、という提言をする本、だと思った。&lt;/p&gt;
-
-&lt;p&gt;この本では、モチベーションを主に「エンゲージメント」（会社への関与や感情的な結びつきの強さで、強ければ良感情を持っていることになる）という言葉で表した事例が多数紹介されている。それらのほとんどで、日本企業の社員のエンゲージメントの度合いは、世界最低レベルだという結果が出ているらしい。
-エンゲージメントの低さの理由を下にあるようなものを例示したのち、そうした困難を改善した（欧米系）企業の事例を紹介するって流れなので、絶望ばかりではない。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;社員を大人扱いしない（信頼しない）&lt;/li&gt;
-&lt;li&gt;職務内容が入社後に決まる&lt;/li&gt;
-&lt;li&gt;配置転換の背後にある仕組みはあまり合理的ではない&lt;/li&gt;
-&lt;li&gt;ローパフォーマンスな人を解雇できない
-
-&lt;ul&gt;
-&lt;li&gt;（できるけどやらない、とか、たらい回しにする、とか、ひどいやり方で自主退職に追い込む、とかいろいろあるらしいが…どれも生産性を下げているので良くない、という。）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;マネージャーが利用する方法が古い、もしくは間違っている
-
-&lt;ul&gt;
-&lt;li&gt;「マイクロマネジメント」を行う&lt;/li&gt;
-&lt;li&gt;（ひどい場合怒鳴る、脅す、恥をかかせるってのもあるらしい）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;社会システム規模での話も書かれている。
-正社員という終身雇用およびその他の福利厚生を享受できる（できた）集団には、無制限の配置転換や転勤、そして残業が強いられる。でも、正社員システムはコストが高いため、非正規＋その他という集団を拡大させた。問題なのは、どちらも働く人のモチベーションについて寄与する仕組みではないということ。それだけではなく、女性や外国人やその他のマイノリティの多様性を受け入れない形態にできあがってしまっていて、これも結局モチベーションを下げている。&lt;/p&gt;
-
-&lt;p&gt;では、どうすればいいのか。システムとしては、法が遵守され、職務経歴書による職務定義の客観化が行われ、自由な労働市場が機能していること。また、働く人自身が、&amp;rdquo;employability&amp;rdquo; （この本では雇用適性と書かれているが、たぶん同じ概念を指す）を意識すること。この状態を保つようにできている他国のシステムの良い部分を採用すること。そのために、人事管理システムや社員にも変化が必要だという。そこには、「限定正社員」の概念の採用も含まれている。&lt;/p&gt;
-
-&lt;h2 id=&#34;雑感&#34;&gt;雑感&lt;/h2&gt;
-
-&lt;p&gt;……という提言は、以前、濱口桂一郎氏の「若者と労働」「働く女子の運命」を読んだから、受け入れやすかった。別に流動性の高い労働市場が無慈悲な即死地帯であるわけではないのだし。現状生じているいろいろなミスマッチを防ぐために、職務内容や評価基準を明確化して運用するのは「みんな」にとっても利益になるんじゃないかな、と思っていた。&lt;/p&gt;
-
-&lt;p&gt;この本が意味があると思うのは、マネジメント層や被雇用者に対するメッセージが多く含まれているところ。労働問題に関心がありそうな人たちだけでなく、もしかしたら加害者になりうる人も、読んでいそうな雰囲気がある。 そのメッセージ成分には、よりよい仕組みがあることに気付かさせてくれる優しさがある反面、急激な変化によって自動的によい仕組みが手に入るという希望は期待せず責任を持つことを要求してくる&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; ので、グサッとくる。でも、この本は個人レベルの責任が全てだと断定した論調&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; のものではない。そのへんも読みやすさに寄与しているのかも。&lt;/p&gt;
-
-&lt;p&gt;諸外国のような仕組みがなぜ自動で手に入っていないのかと思うと気が重くなるけど、だからって同じように一から改善の手間を繰り返す必要もない。
-最良の事例や理論から学んで、一気に変わってもいいような気がする。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;
-期待できるような環境に移る自衛が先か、それとも、意外と環境を変えられるのか、という選択にはまだ時間がかかりそう。&lt;/p&gt;
-
-&lt;h3 id=&#34;他の本&#34;&gt;他の本&lt;/h3&gt;
-
-&lt;p&gt;（IT）技術者は恩恵を受ける側だと思うので、社会システム更新に関する動向を知っておきたかった。それと、他の本で読んだ内容を確認したかった。&lt;/p&gt;
-
-&lt;p&gt;なので、具体的な事例や、「こういうのがいいな」という情報を得るためには 36 Signals の &amp;ldquo;Rework&amp;rdquo; や &amp;ldquo;Remote&amp;rdquo; が面白いと思う。今どうなっているのかは知らないけど、読んだ当時は羨ましく思った。&lt;/p&gt;
-
-&lt;h3 id=&#34;内容には関係ない部分&#34;&gt;内容には関係ない部分&lt;/h3&gt;
-
-&lt;p&gt;後半に入ると誤植がちらほらとあったけど、内容に関わるものはなかった。&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:2&#34;&gt;常軌を逸した環境からは合理的判断に基づいて離れることを勧めている点でちゃんとしている。ひどい仕打ちをされたからと、結果的に自己目的化してしまった「追い出し部屋反対運動」事例については、僕も疑問に思う。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:1&#34;&gt;『当然、悪い仕組みは変えなくてはならないし、個人の選択で自由になれたり周囲を変えることができるかもしれない。いやなのは、こうした仕組み自体を保つような個人が大多数だった場合、その人たちはそもそも、普遍的な「良さ」をそうは感じないかもしれない。こうなると、改善を試みる個人がひどい不利益をかぶるかもしれない。だいたい、そうなっているのが現状じゃないか、と拗ねる気持ちも喚起されそう。だから、個人の集合体による不具合を別に個人が解決すべきとは思わない。もし、より効果的な方法が公権力によるものだったとしたら、別にそれでいいのでは？個人の意識なんてそういう外界の変化に合わせて移ろいゆくものだから。』という感じで好もうと好まざると、個人は環境やシステムの影響を多分に受けると信じている。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;後進国の方は別に先進国がたどった進化を追わなくてもいい。その時に手に入る最良のものを採用すればいい。……という、電話通信インフラで「リープフロッギング」と呼ばれた事例もちょろっと紹介されている。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -658,56 +170,7 @@ We’ll then extend these intuitions to show how they lead directly to a few rec
       <guid>http://log.tuxedokatze.com/post/2016-03-05-kindle-dictionary-management/</guid>
       <description>&lt;p&gt;TL;DR &lt;code&gt;sqlite3 Kindle/system/vocabulary/vocab.db&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Kindleの単語帳機能は、辞書で調べた単語を記録してくれるのでそれ自体は便利だけど、次の2つの点が気に入らなくて不満がたまってきていた。&lt;/p&gt;
-
-&lt;p&gt;まず、本当に「なんでも追加してくれてしまう」ところ。Kindle端末のレスポンスの悪さもあってか、ハイライト時に意図せず、格助詞やその他の機能語も追加されてしまうことがよくあった。 &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-こうして、単語帳は単語分割が失敗したフレーズに含まれるどうでもいい一般名詞や、機能語で埋め尽くされていく。&lt;/p&gt;
-
-&lt;p&gt;こうなると、不要な単語を一括で整理したくなる。が、Kindle端末の単語帳アプリには、登録された単語を一括削除する術が（現時点では）用意されていない。これがふたつめのつらさ。
-一つずつ単語をタップし、辞書のポップアップから削除しなければならない。レスポンスの悪さと画面の点滅のせいで、わりとつらい作業になってしまう。&lt;/p&gt;
-
-&lt;p&gt;何かいい手は無いかなぁと思って、KindleをMacにマウントして中身にそれらしいファイルがあるかどうか調べてみた。 &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;それらしいファイルがあった。 &lt;code&gt;Kindle/system/vocabulary&lt;/code&gt; 内には &lt;code&gt;vocab.db&lt;/code&gt; という sqlite3 のDBが入っていた。
-ここまでくればあとは何とでも…。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sqlite3 vocab.db
-sqlite&amp;gt; PRAGMA table_info(words);
-0|id|TEXT|1||1
-1|word|TEXT|0||0
-2|stem|TEXT|0||0
-3|lang|TEXT|0||0
-4|category|INTEGER|0|0|0
-5|timestamp|INTEGER|0|0|0
-6|profileid|TEXT|0||0
-
-sqlite&amp;gt; SELECT * FROM words WHERE lang = &amp;quot;ja&amp;quot;;
-ja:しかしながら、本来|しかしながら、本来|しかし‐ながら|ja|0|1451836371172|
-ja:ところが|ところが|ところが|ja|0|1451836908962|
-ja:如才|如才|じょ‐さい|ja|0|1456149872209|
-ja:緋色|緋色|ひ‐いろ|ja|0|1430219728555|
-
-sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;最後にKindleをUnmountして、再起動させれば単語の削除が反映される。&lt;/p&gt;
-
-&lt;p&gt;QoLがちょっとだけ上がった。イエィ！&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;日本語の本では、ハイライトやフレーズ選択の操作性があまり良くない。単語分割がうまくできていないからかもしれない。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;ハイライトやメモを抽出しようとした時のことを思い出した。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;©マーク・ワトニー氏
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -718,25 +181,7 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
       <guid>http://log.tuxedokatze.com/post/2016-03-04-software-estimation/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/ebook/dp/B00KR96M6K&#34;&gt;スティーブ・マコネル,「ソフトウェア見積り 人月の暗黙知を解き明かす」&lt;/a&gt; をさっと読んだ。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;現場での実践に注力する「アートとしての見積り」を定義し、その観点からソフトウェア開発（他の知的生産プロジェクトでも当てはまるけど）につきものである不確実さをどのように見積りで考慮するか、そしてアートとしての見積りの限界を示す本だったように感じた。&lt;/p&gt;
-
-&lt;p&gt;アートとしての見積りとサイエンスとしての見積り、という概念をこの本では知ることができた。前者が本書の主な対象で、経験的な根拠に基づいた基本的な見積り手法や、見積りそのものの方法論を扱う。後者は、ソフトウェア工学の知見を多分に含む、学術的で理論に基づく数式を駆使した見積り手法。&lt;/p&gt;
-
-&lt;p&gt;後半で紹介されたいろいろな手法についてはなるほどな〜という感想しかわかなかった。それは開発経験が足りないからであって本の問題ではない。
-（明日から使える小規模プロジェクトにおける規模の見積り・ターゲットの重要度の見積り方法、例えば「Tシャツのサイズ分け」などは早速試してみた。）&lt;/p&gt;
-
-&lt;p&gt;個人的にこの本で得られた知見があるとすれば、「見積りと計画の違い」「ターゲットとコミットメントの違い」「不確実性のコーン」の3つの概念とその説明が有益だったと思う。
-というのは、そもそもこうした概念が自分にも、少なくとも周囲の環境にも浸透していない気がするからだ。
-こと今の会社の現場においては、技術者もマネージャーも無頓着な場合が多く、例えば見積りは更新されうるものだということを理解している人は少なそうな気がする。&lt;/p&gt;
-
-&lt;p&gt;自分がプロジェクト自体の見積りの責任者になるのはすぐには考え難いけど、どういう心持ちで見積りを見ればいいのか、どういうものであるべきなのか、という感覚を持つのは、自衛にしても社会的利益のためにしても、必要なんじゃないかなと思った。
-読んでよかった。&lt;/p&gt;
-
-&lt;h4 id=&#34;mar-21-2016&#34;&gt;Mar 21. 2016&lt;/h4&gt;
-
-&lt;p&gt;なんかセールで半額になってた。つらい。&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -747,12 +192,330 @@ sqlite&amp;gt; DELETE FROM words WHERE lang = &amp;quot;ja&amp;quot;;
       <guid>http://log.tuxedokatze.com/post/2016-02-17-finland-book/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00RGL8DSW/ref=cm_sw_r_tw_dp_5uS7wb0Y3YSQW&#34;&gt;稲垣美晴,「フィンランド語は猫の言葉」&lt;/a&gt; を読んだ。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Kindle] Amazon.comアカウントも持っている場合に困ったこと</title>
+      <link>http://log.tuxedokatze.com/post/2016-01-10-kindle-dual-account-issue/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2016-01-10-kindle-dual-account-issue/</guid>
+      <description>&lt;p&gt;Kindle Paperwhiteは2015年の「買ってよかったもの」のひとつだけど、使用には少し難点があった。&lt;/p&gt;
 
-&lt;p&gt;フィンランドでの言語学科留学体験記（ただし1980年代）という感じで、中島義道氏の「ウィーン愛憎」の「憎」無しバージョンに思えた。
-&lt;strong&gt;残念ながら猫の話はほとんど出てこない。&lt;/strong&gt; フィンランド語の相槌が「ニー」という一エピソードから付けられただけなのであった。&lt;/p&gt;
+&lt;p&gt;その問題とは、Kindle Paperwhiteからストアを開き、端末から直接購入したりサンプルをダウンロードしたりができないってやつで、Kindleの使用頻度が上がってくると結構不便に感じていた。（他の端末から購入してKindleに転送していた…）&lt;/p&gt;
 
-&lt;p&gt;（なぜだかわからないけど、こうした留学日誌的エッセイには、よくある留学指南本のごとく「まず日本を知らなければならない」の類の主張が含まれているのはずっと気になっている。ウィーン愛憎ではそうした帰属意識や義務は皮肉めいた風に使われていた（外敵に対する防御反応のような感じで）。ここに関しては考えをまとめたい。というのも、僕はそういう考えを全く持っていないからだ。必須の段階とは思わないし、そもそも自国の文化的知識やその理解度や、それをうまく表現できるかどうかなんて個々人によって要求される度合いも、自己評価のレベルが異なりすぎて、あたかも共通の必須事項として挙げられるほど果たして客観的なものなのだろうか、と思ってしまうのだった。）&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2015年の本</title>
+      <link>http://log.tuxedokatze.com/post/2015-12-25-books/</link>
+      <pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-12-25-books/</guid>
+      <description>&lt;p&gt;今年の分はひとこと感想付き！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ハイパフォーマンスデータ暴力</title>
+      <link>http://log.tuxedokatze.com/post/2015-12-20-highperformance-data-violence/</link>
+      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-12-20-highperformance-data-violence/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Anaconda2と日本語パス</title>
+      <link>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dokuwikiで日本語PDFを出力したかった</title>
+      <link>http://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</guid>
+      <description>&lt;p&gt;CentOS6.6, Dokuwiki Hrun、Dw2Pdf_20150622でのこと。&lt;/p&gt;
+
+&lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link: Numpy docstring / Howto</title>
+      <link>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link: Type hinting support in PyCharm</title>
+      <link>http://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</guid>
+      <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DL</title>
+      <link>http://log.tuxedokatze.com/post/2015-05-26-deeplearning-forum/</link>
+      <pubDate>Tue, 26 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-05-26-deeplearning-forum/</guid>
+      <description>&lt;p&gt;Deep Learning Forumへ行ってきた。
+仕事扱いなのは金銭面ではうれしい。
+有益だった。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>マイクロ進捗</title>
+      <link>http://log.tuxedokatze.com/post/2015-05-07-micro-shinchoku/</link>
+      <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-05-07-micro-shinchoku/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UnicodeEncodeError when running python scripts in Atom.io</title>
+      <link>http://log.tuxedokatze.com/post/2015-05-06-atom-python-script/</link>
+      <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-05-06-atom-python-script/</guid>
+      <description>&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
+
+&lt;p&gt;Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>http://log.tuxedokatze.com/post/2015-01-27-anaconda/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-01-27-anaconda/</guid>
+      <description>&lt;p&gt;Anaconda Scientific Python Distributionを会社マシンとおうちMacMiniに入れた。
+自前ビルドでは負荷が高そうなNumpy/Scipyを安定的に運用したいのと、念のため色々な環境を同じバージョンにしておきたいので。
+この種の安定版ディストリビューションは瑣末なことで気を揉まなくてすむし、それだけコミュニティも成熟してきたということで、使っていきたい。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octave</title>
+      <link>http://log.tuxedokatze.com/post/2015-01-25-coursera-ml-octave/</link>
+      <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2015-01-25-coursera-ml-octave/</guid>
+      <description>&lt;p&gt;某機械学習のクラスを受講している。
+深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>stack.push(book_hs).push(book_german).push(book_lingua).push(graphic_design)....</title>
+      <link>http://log.tuxedokatze.com/post/2014-12-27-todo-list/</link>
+      <pubDate>Sat, 27 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2014-12-27-todo-list/</guid>
+      <description>&lt;p&gt;積ん読山の高さがどんどん高くなってきた．
+もともと興味が散漫だったうえに，最近は謎の焦燥感に追い立てられて，衝動買いを繰り返しているせいだ．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2014年の本</title>
+      <link>http://log.tuxedokatze.com/post/2014-12-22-books/</link>
+      <pubDate>Mon, 22 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2014-12-22-books/</guid>
+      <description>&lt;p&gt;読んだ本の記録（感想を書いていないのはひどい…）&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Neue Helvetica?</title>
+      <link>http://log.tuxedokatze.com/post/2014-10-26-thoughts-on-helveticaneue/</link>
+      <pubDate>Sun, 26 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2014-10-26-thoughts-on-helveticaneue/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GPU Failure (possibly...) on my MBP15&#39; (early 2011 model)</title>
+      <link>http://log.tuxedokatze.com/post/2014-07-12-mbpgpu/</link>
+      <pubDate>Sat, 12 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2014-07-12-mbpgpu/</guid>
+      <description>Symptoms Various glitch happen when connecting external displays, or doing GPU intensive tasks.
+ More details. made by people who are having the same trouble On Apple&amp;rsquo;s discussion board, it is still actively updated.  Workaround Disable external GPU&amp;hellip; or bring this mbp to &amp;lsquo;genius&amp;rsquo; bar, and get the logic board replaced. The latter is obviously expensive solution, and according to the discussion above, it doesn&amp;rsquo;t resolve the problem permanently.</description>
+    </item>
+    
+    <item>
+      <title>引用</title>
+      <link>http://log.tuxedokatze.com/post/2014-07-05-job/</link>
+      <pubDate>Sat, 05 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2014-07-05-job/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>それでも</title>
+      <link>http://log.tuxedokatze.com/post/2014-06-17-thoughts-2/</link>
+      <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2014-06-17-thoughts-2/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>もしかしたら... と．</title>
+      <link>http://log.tuxedokatze.com/post/2014-05-17-thoughts-on-workplace/</link>
+      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2014-05-17-thoughts-on-workplace/</guid>
+      <description>&lt;p&gt;コード書かない仕事だからつらいのではなく，コード書かない仕事が行われてそうな環境や文化がつらいのかも．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[SublimeText] Enabling key repeating on Mavericks</title>
+      <link>http://log.tuxedokatze.com/post/2013-12-22-sublimetext-enabling-key-repeating/</link>
+      <pubDate>Sun, 22 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2013-12-22-sublimetext-enabling-key-repeating/</guid>
+      <description>On OSX Mavericks, I found the J-K keys repeating was not working when using the vintage (Vim-like) mode.
+It&amp;rsquo;s because of the change made by the OS for providing &amp;lsquo;press-and-hold&amp;rsquo; behavior to input certain characters and accents (like in iOS), so the following command snippet can re-enable key repeating:
+defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false  </description>
+    </item>
+    
+    <item>
+      <title>[SublimeText] UI glitch hell!!</title>
+      <link>http://log.tuxedokatze.com/post/2013-12-20-sublimetext2-ui-glitch/</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2013-12-20-sublimetext2-ui-glitch/</guid>
+      <description>Symptom The UI is broken, on Sublime Text 2 build 2221.
+Screenshot and other info.
+What I did According to the forum post above, it is seemed to be an issue of the sublime package control&amp;rsquo;s automatic update function.
+ Backup the setting file of the package control Re-installed the package control Re-installed the packages  (this fixed the issue, however, seems too obvious and destructive.)
+Added 2014.10.14 I&amp;rsquo;ve just recalled that to delete &amp;ldquo;ignored_packages&amp;rdquo; value in &amp;ldquo;Preferences.</description>
+    </item>
+    
+    <item>
+      <title>ACL2013!</title>
+      <link>http://log.tuxedokatze.com/post/2013-09-13-acl2013/</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2013-09-13-acl2013/</guid>
+      <description>ACL2013
+
+Finally, I&amp;rsquo;ve managed to participate in the ACL 2013@Sofia! Yay!</description>
+    </item>
+    
+    <item>
+      <title>The workflow for my thesis</title>
+      <link>http://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</link>
+      <pubDate>Wed, 07 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write thesis body in &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown&#34;&gt;Pandoc Markdown&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Build latex sources and pdf using &lt;a href=&#34;https://code.google.com/p/waf/&#34;&gt;Waf build system&lt;/a&gt;.
+
+&lt;ol&gt;
+&lt;li&gt;Do with thesis pandoc &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#templates&#34;&gt;template&lt;/a&gt; file if you need.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Haskell: Installing ghc without root privilege</title>
+      <link>http://log.tuxedokatze.com/post/2012-01-30-installing-ghc-without-root/</link>
+      <pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2012-01-30-installing-ghc-without-root/</guid>
+      <description>Get OS specific &amp;ldquo;Binary Packages&amp;rdquo; $cd /home/foo $wget http://www.haskell.org/ghc/dist/7.0.4/ghc-7.0.4-x86_64-unknown-linux.tar.bz2 $tar -xvf ghc-7.0.4-x86_64-unknown-linux.tar.bz2  Configure and install as usual $cd ghc-7.0.4 $./configure --prefix=/home/foo/usr #something like this... $make install  Notes You will obviously need to install cabal from somewhere else&amp;hellip; Using haskell-platform will make it easier.
+$cd /home/foo $wget http://lambda.haskell.org/platform/download/2011.4.0.0/haskell-platform-2011.4.0.0.tar.gz $cd haskell-platform-2011.4.0.0 $./configure --prefix=/home/foo/usr $make $make install  Reference: Stackoverflow</description>
+    </item>
+    
+    <item>
+      <title>Byobu: an useful metacommand for gnu screen</title>
+      <link>http://log.tuxedokatze.com/post/2012-01-26-byobu/</link>
+      <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2012-01-26-byobu/</guid>
+      <description>Notes  Byobu probably doesn&amp;rsquo;t work well on Mac OSX (e.g. via Homebrew or build from source)
+ In my case, newt-python and some libraries are missing. (byobu 5.5)  This commands would be different in the latest versions of byobu, since I could only use byobu 2.68 with screen 4.00.
+  Starting byobu $byobu as the same as screen command.
+Basic commands: Escape sequence is ctrl+a by default though it can be changed in the configuration dialogue (press F9).</description>
+    </item>
+    
+    <item>
+      <title>Simple programming: FizzBuzz</title>
+      <link>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</link>
+      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</guid>
+      <description>In Python [(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]  (this won&amp;rsquo;t work for i = 0)
+In Haskell In ghci:
+[if (mod x 15)==0 then &amp;quot;FizzBuzz&amp;quot; else if (mod x 5)==0 then &amp;quot;Buzz&amp;quot; else if (mod x 3)==0 then &amp;quot;Fizz&amp;quot; else (show x) | x String fizzBuzz x | (mod x 15)== 0 = &amp;quot;FizzBuzz&amp;quot; | (mod x 5) == 0 = &amp;quot;Buzz&amp;quot; | (mod x 3) == 0 = &amp;quot;Fizz&amp;quot; | otherwise = show x  then, load into the interpreter,</description>
+    </item>
+    
+    <item>
+      <title>GNU screen: Run your commands even sudden connection lost occurs</title>
+      <link>http://log.tuxedokatze.com/post/2012-01-12-gnu-screen/</link>
+      <pubDate>Thu, 12 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2012-01-12-gnu-screen/</guid>
+      <description>Assuming your system is Unix like systems, and screen is installed.
+ Create sessions
+ $screen (introduction will appear) press enter  Basic commands
+ C-a c: create new session C-a w: show current sessions C-a [0-Z]: move to other sessions C-a d: detach screen C-a k: kill screen  Restoring sessions if connection lost occurs
+ $screen -ls: which shows list of screen sessions like this:
+There are screens on: pid.</description>
+    </item>
+    
+    <item>
+      <title>Solving Permission Denied</title>
+      <link>http://log.tuxedokatze.com/post/2011-12-30-ssh-permission-denied/</link>
+      <pubDate>Fri, 30 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2011-12-30-ssh-permission-denied/</guid>
+      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
+
+&lt;p&gt;When logging in to server using public key authentication, I couldn&amp;rsquo;t log in.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

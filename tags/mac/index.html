@@ -1,130 +1,178 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="Miaulog">
-		
-		<meta name="generator" content="Hugo 0.17" />
-		<title>Mac &middot; Miaulog</title>
-		<link rel="shortcut icon" href="http://log.tuxedokatze.com/images/favicon.ico">
-		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/style.css">
-		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/highlight.css">
-		
-		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/theme-cactus-fix.css">
-		
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="Mac - Miaulog" property="og:title">
+<title>Mac | Miaulog</title>
+<link rel="stylesheet" href="http://log.tuxedokatze.com//css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-		
-		<link rel="stylesheet" href="http://log.tuxedokatze.com/css/monosocialiconsfont.css">
-		
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
 
-		
-		<link href="http://log.tuxedokatze.com/index.xml" rel="alternate" type="application/rss+xml" title="Miaulog" />
-		
-	</head>
 
-	<body>
-	<nav class="main-nav">
-	
-	
-		<a href='http://log.tuxedokatze.com/'> <span class="arrow">←</span>Home</a>
-	
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://log.tuxedokatze.com/"><h1 class="title is-4">Miaulog</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/tuxedocat/">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
 
-	
-		<a href='http://log.tuxedokatze.com/about'>About</a>
-	
-
-	
-	<a class="cta" href="http://log.tuxedokatze.com/index.xml">Subscribe</a>
-	
-</nav>
-	<div class="profile">
-    <section id="wrapper">
-        <header id="header">
-            <a href='http://log.tuxedokatze.com/about'>
-                <img id="avatar" class="2x" src="http://log.tuxedokatze.com/images/avatar.png"/>
-            </a>
-            <h1>Miaulog</h1>
-            <h2>Photography, Programming, Languages, Cats</h2>
-        </header>
-    </section>
+<section class="section">
+  <div class="container">
+    
+    <article>
+      <h2 class="subtitle is-6">October 30, 2016</h2>
+      <h1 class="title"><a href="http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/">Disk partition manipulation on OSX 10.11</a></h1>
+      
+        <div class="tags">
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/osx">osx</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/mac">mac</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/trouble">trouble</a>
+    
 </div>
 
-	<section id="wrapper" class="home">
-		<ul id="post-list">
-    
-    
-        
-            <li>
-                <a href='http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/'><aside class="dates">Oct 30</aside></a>
-                <a href='http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/'>Disk partition manipulation on OSX 10.11 <h2></h2></a>
-            </li>
-        
-    
-    
-        
-            <li>
-                <a href='http://log.tuxedokatze.com/post/2014-10-26-thoughts-on-helveticaneue/'><aside class="dates">Oct 26</aside></a>
-                <a href='http://log.tuxedokatze.com/post/2014-10-26-thoughts-on-helveticaneue/'>Neue Helvetica? <h2></h2></a>
-            </li>
-        
-    
-    
-        
-            <li>
-                <a href='http://log.tuxedokatze.com/post/2014-07-12-MBPGPU/'><aside class="dates">Jul 12</aside></a>
-                <a href='http://log.tuxedokatze.com/post/2014-07-12-MBPGPU/'>GPU Failure (possibly...) on my MBP15&#39; (early 2011 model) <h2></h2></a>
-            </li>
-        
-    
-</ul>
-        <nav id="post-nav">
-    
-</nav>
-		<footer id="footer">
-    
-        <div id="social">
-
-	
-	
-    
-    <a class="symbol" href="https://github.com/tuxedocat/">
-        github
-    </a>
-    
+      
+      <div class="content">
+        🐡 💢 tl;dr &gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.
+Just a private log of my struggle&hellip;
 
 
+        
+        ...<a class="button is-link" href="http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">October 26, 2014</h2>
+      <h1 class="title"><a href="http://log.tuxedokatze.com/post/2014-10-26-thoughts-on-helveticaneue/">Neue Helvetica?</a></h1>
+      
+        <div class="tags">
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/mac">mac</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/ui">ui</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/typography">typography</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/thoughts">thoughts</a>
+    
 </div>
 
-    
-    <p class="small">
-    
-        tuxedocat / CC BY-NC-SA 4.0
-    
-    </p>
-</footer>
+      
+      <div class="content">
+        
 
-	</section>
+        
+        ...<a class="button is-link" href="http://log.tuxedokatze.com/post/2014-10-26-thoughts-on-helveticaneue/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">July 12, 2014</h2>
+      <h1 class="title"><a href="http://log.tuxedokatze.com/post/2014-07-12-mbpgpu/">GPU Failure (possibly...) on my MBP15&#39; (early 2011 model)</a></h1>
+      
+        <div class="tags">
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/mac">mac</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/trouble">trouble</a>
+    
+</div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://log.tuxedokatze.com/js/main.js"></script>
-<script src="http://log.tuxedokatze.com/js/highlight.js"></script>
+      
+      <div class="content">
+        Symptoms Various glitch happen when connecting external displays, or doing GPU intensive tasks.
+ More details. made by people who are having the same trouble On Apple&rsquo;s discussion board, it is still actively updated.  Workaround Disable external GPU&hellip; or bring this mbp to &lsquo;genius&rsquo; bar, and get the logic board replaced. The latter is obviously expensive solution, and according to the discussion above, it doesn&rsquo;t resolve the problem permanently.
+        
+        ...<a class="button is-link" href="http://log.tuxedokatze.com/post/2014-07-12-mbpgpu/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          
+          <a class="button is-disabled">
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
+          
+        </div>
+      </div>
+      <div class="level-right is-marginless">
+        <div class="level-item">
+          
+          <a class="button is-disabled">
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>tuxedocat / CC BY-NC-SA 4.0</p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+
 <script>hljs.initHighlightingOnLoad();</script>
 
 
-
-
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 ga('create', 'UA-46681113-3', 'auto');
 ga('send', 'pageview');
 </script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
 
 
-	</body>
-</html>
+

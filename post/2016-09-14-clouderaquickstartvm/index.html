@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ - Miaulog" property="og:title">
+<title>Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ | Miaulog</title>
+<link rel="stylesheet" href="http://log.tuxedokatze.com//css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://log.tuxedokatze.com/"><h1 class="title is-4">Miaulog</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/tuxedocat/">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">September 14, 2016</h2>
+    <h1 class="title">Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ</h1>
+    
+      <div class="tags">
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/spark">spark</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/hadoop">hadoop</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/setup">setup</a>
+    
+</div>
+
+    
+    <div class="content">
+      
+
+<h2 id="ダウンロード">ダウンロード</h2>
+
+<p><a href="http://www.cloudera.com/downloads/quickstart_vms/5-8.html">http://www.cloudera.com/downloads/quickstart_vms/5-8.html</a></p>
+
+<p>現在は各種仮想環境用にイメージが用意されている。</p>
+
+<ul>
+<li>Virtual Box</li>
+<li>VMWare</li>
+<li>KVM</li>
+<li>Docker Container (Clusterdock)</li>
+</ul>
+
+<p>今回は単一ノードでの検証用かつSparkコード開発用に、VirtualBoxのVMをダウンロードした。
+CDH5.8の場合は、CentOS6.7だった。</p>
+
+<h2 id="セットアップ">セットアップ</h2>
+
+<p>特になし。</p>
+
+<h2 id="caveats">Caveats</h2>
+
+<h3 id="static-ip">Static IP</h3>
+
+<p>Quickstart VMはデフォルトでは NAT インターフェースしか持たない。
+また、マシンのIPは固定されている。（10.0.2.15）
+仮にNetworkManagerで固定IPを設定しても、 <code>/etc/hosts</code> は上記のものに書き換えられてしまう。</p>
+
+<p>Static IPを設定したかったので、以下のことを試した。</p>
+
+<ul>
+<li><p>どこで設定されているのか</p>
+
+<ul>
+<li><code>/etc/init.d/cloudera-quickstart-init</code> 内で <code>cloudera-quickstart-ip</code> コマンドが実行されている</li>
+<li><code>which cloudera-quickstart-ip</code> -&gt; <code>/usr/bin/cloudera-quickstart-ip</code></li>
+<li><code>/usr/bin/cloudera-quickstart-ip</code>
+
+<ul>
+<li>第一引数に与えられたIPがあればそれを使用する。</li>
+<li>引数なしの場合、eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う。</li>
+<li>IPが決まれば、/etc/hostsを編集する。上記でIPが定まらなかった場合、127.0.0.1 を使う。</li>
+<li>単一ノードクラスタとするために、manager と workerは同一ノードである。上記で決定したIPを <code>/var/lib/cloudera-quickstart/tutorial/js/config.js</code> に反映する。</li>
+</ul></li>
+</ul></li>
+
+<li><p>どうすればよいか</p>
+
+<ul>
+<li>VirtualBoxで Bridge Network を追加し、VM上で利用できるようにする。
+
+<ul>
+<li>CentOS6 なので、<code>service NetworkManager stop</code> <code>chkconfig NetworkManager off</code> をして、手動で設定してもいいかもしれない。</li>
+</ul></li>
+<li><code>/etc/init.d/cloudera-quickstart-init</code> 内で <code>cloudera-quickstart-ip</code> コマンドに引数として 設定した Static IP を与える。</li>
+<li>reboot</li>
+<li>起動後、Cloudera Manager の Management Service の Status が &ldquo;Reconfiguration Required&rdquo; みたいな状態になっている場合は、反映して、（webコンソールからクラスタを）再起動</li>
+</ul></li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>tuxedocat / CC BY-NC-SA 4.0</p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-46681113-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+

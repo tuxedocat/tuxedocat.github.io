@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/programming/index.xml</link>
-    <description>Recent content on Miaulog</description>
+    <title>Programming on Miaulog</title>
+    <link>http://log.tuxedokatze.com/tags/programming/</link>
+    <description>Recent content in Programming on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="http://log.tuxedokatze.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://log.tuxedokatze.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Anaconda2と日本語パス</title>
@@ -15,16 +18,7 @@
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;会社マシンのAnaconda2環境で、とあるパッケージのインストール時に&lt;code&gt;UnicodeDecodeError&lt;/code&gt;が出た。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/conda/conda/issues/1352&#34;&gt;Issues&lt;/a&gt; を見ると、パスに非Ascii文字が含まれる環境でのAnaconda2の利用は非推奨だという感じだった。&lt;/li&gt;
-&lt;li&gt;なのでおとなしくAnaconda3へ移行して、&lt;code&gt;conda create -n py2x python=2.7 anaconda&lt;/code&gt;で環境を作った。&lt;/li&gt;
-&lt;li&gt;それ以降は当該の問題は生じていない。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;（usernameは英数字なのだけど&amp;hellip;）&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,35 +31,7 @@
 
 &lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ipagp.ttf等を&lt;code&gt;dw2pdf/mpdf/ttffonts/&lt;/code&gt;へ格納&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dw2pdf/mpdf/config_lang2fonts.php&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;East Asian&lt;/code&gt;のところで &lt;code&gt;$unifont = &amp;quot;ipagp, sjis, sjisB&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dw2pdf/mpdf/lang2fonts.css&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;:lang(&amp;quot;ja&amp;quot;)&lt;/code&gt;のところで&lt;code&gt;font-family: ipagp;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dw2pdf/conf/style.css&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;body {font-family: ipagp, sans-serif; }&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dw2pdf/DokuPDF.class.php&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;_constructer&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$this-&amp;gt;useAdobeCJK = true;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -76,13 +42,7 @@
       <guid>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;ちゃんとDocstrings書こうと思ったとき、いつもどの流派の書き方でやればいいのか迷ってしまう。そしてその後は結局、Numpy派をお手本にして書いていた気がするので、今後はこの手間を省略できるように、記録しておく。（大げさな感じ…）&lt;/p&gt;
-
-&lt;p&gt;Sphinxもやりたい。SphinxだけではなくPandocやもっと最近の色々なものなど、Documentation周りのことに興味を持っている。学際領域っぽい魅力があるからかもしれない。（ただしTeXは難しすぎてあきらめている。）&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://docs.sphinx-users.jp/latest/ext/example_numpy.html&#34;&gt;Sphinx: Numpy Style Docstring&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -93,15 +53,7 @@
       <guid>http://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</guid>
       <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Eclipse (PyDev) → SublimeText + iPython → Atom + iPython (自宅), Spyder, PyCharm, VS2013 (会社) …という感じで色々試してきたけど、PyCharmが一番使いやすいと感じている。&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Type Hinting&amp;rdquo;については色々なやり方が提案されていて、まだまだ発展途上なんだけど、その中では、PyCharmやJediが対応しているDocstring形式の方法は、現状の折衷案としてうまいやり方かもしれない。 (Pythonのバージョンと独立しているっぽいので。)
-ただ、個人的にはいつもNumpy式のDocstringを真似ていたので、ちょっと面倒くさい。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://legacy.python.org/dev/peps/pep-3107/&#34;&gt;PEP3107&lt;/a&gt; や &lt;a href=&#34;http://www.mypy-lang.org/&#34;&gt;Mypy&lt;/a&gt; みたいな関数アノテーション方式のほうが見た目は好きだ。
-PyCharmはこちらにも部分的に対応しているみたいなので、最高としか言い様がない (?)&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,32 +62,9 @@ PyCharmはこちらにも部分的に対応しているみたいなので、最�
       <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</guid>
-      <description>
-
-&lt;h2 id=&#34;in-python&#34;&gt;In Python&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(this won&amp;rsquo;t work for i = 0)&lt;/p&gt;
-
-&lt;h2 id=&#34;in-haskell&#34;&gt;In Haskell&lt;/h2&gt;
-
-&lt;p&gt;In ghci:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;[if (mod x 15)==0 then &amp;quot;FizzBuzz&amp;quot; else if (mod x 5)==0 then &amp;quot;Buzz&amp;quot; else if (mod x 3)==0 then &amp;quot;Fizz&amp;quot; else (show x) | x  String
-fizzBuzz x
-    | (mod x 15)== 0 = &amp;quot;FizzBuzz&amp;quot;
-    | (mod x 5) == 0 = &amp;quot;Buzz&amp;quot;
-    | (mod x 3) == 0 = &amp;quot;Fizz&amp;quot;
-    | otherwise      = show x
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;then,  load into the interpreter,&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;map fizzBuzz [1..100]
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>In Python [(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]  (this won&amp;rsquo;t work for i = 0)
+In Haskell In ghci:
+[if (mod x 15)==0 then &amp;quot;FizzBuzz&amp;quot; else if (mod x 5)==0 then &amp;quot;Buzz&amp;quot; else if (mod x 3)==0 then &amp;quot;Fizz&amp;quot; else (show x) | x String fizzBuzz x | (mod x 15)== 0 = &amp;quot;FizzBuzz&amp;quot; | (mod x 5) == 0 = &amp;quot;Buzz&amp;quot; | (mod x 3) == 0 = &amp;quot;Fizz&amp;quot; | otherwise = show x  then, load into the interpreter,</description>
     </item>
     
   </channel>

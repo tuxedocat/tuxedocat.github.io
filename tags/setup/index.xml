@@ -1,217 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/setup/index.xml</link>
-    <description>Recent content on Miaulog</description>
+    <title>Setup on Miaulog</title>
+    <link>http://log.tuxedokatze.com/tags/setup/</link>
+    <description>Recent content in Setup on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="http://log.tuxedokatze.com/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Sep 2016 20:39:20 +0900</lastBuildDate>
+    
+	<atom:link href="http://log.tuxedokatze.com/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ</title>
-      <link>http://log.tuxedokatze.com/post/2016-09-14-ClouderaQuickStartVM/</link>
+      <link>http://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</link>
       <pubDate>Wed, 14 Sep 2016 20:39:20 +0900</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2016-09-14-ClouderaQuickStartVM/</guid>
-      <description>
-
-&lt;h2 id=&#34;ダウンロード&#34;&gt;ダウンロード&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cloudera.com/downloads/quickstart_vms/5-8.html&#34;&gt;http://www.cloudera.com/downloads/quickstart_vms/5-8.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;現在は各種仮想環境用にイメージが用意されている。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Virtual Box&lt;/li&gt;
-&lt;li&gt;VMWare&lt;/li&gt;
-&lt;li&gt;KVM&lt;/li&gt;
-&lt;li&gt;Docker Container (Clusterdock)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;今回は単一ノードでの検証用かつSparkコード開発用に、VirtualBoxのVMをダウンロードした。
-CDH5.8の場合は、CentOS6.7だった。&lt;/p&gt;
-
-&lt;h2 id=&#34;セットアップ&#34;&gt;セットアップ&lt;/h2&gt;
-
-&lt;p&gt;特になし。&lt;/p&gt;
-
-&lt;h2 id=&#34;caveats&#34;&gt;Caveats&lt;/h2&gt;
-
-&lt;h3 id=&#34;static-ip&#34;&gt;Static IP&lt;/h3&gt;
-
-&lt;p&gt;Quickstart VMはデフォルトでは NAT インターフェースしか持たない。
-また、マシンのIPは固定されている。（10.0.2.15）
-仮にNetworkManagerで固定IPを設定しても、 &lt;code&gt;/etc/hosts&lt;/code&gt; は上記のものに書き換えられてしまう。&lt;/p&gt;
-
-&lt;p&gt;Static IPを設定したかったので、以下のことを試した。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;どこで設定されているのか&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/etc/init.d/cloudera-quickstart-init&lt;/code&gt; 内で &lt;code&gt;cloudera-quickstart-ip&lt;/code&gt; コマンドが実行されている&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;which cloudera-quickstart-ip&lt;/code&gt; -&amp;gt; &lt;code&gt;/usr/bin/cloudera-quickstart-ip&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/usr/bin/cloudera-quickstart-ip&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;第一引数に与えられたIPがあればそれを使用する。&lt;/li&gt;
-&lt;li&gt;引数なしの場合、eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う。&lt;/li&gt;
-&lt;li&gt;IPが決まれば、/etc/hostsを編集する。上記でIPが定まらなかった場合、127.0.0.1 を使う。&lt;/li&gt;
-&lt;li&gt;単一ノードクラスタとするために、manager と workerは同一ノードである。上記で決定したIPを &lt;code&gt;/var/lib/cloudera-quickstart/tutorial/js/config.js&lt;/code&gt; に反映する。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;どうすればよいか&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;VirtualBoxで Bridge Network を追加し、VM上で利用できるようにする。
-
-&lt;ul&gt;
-&lt;li&gt;CentOS6 なので、&lt;code&gt;service NetworkManager stop&lt;/code&gt; &lt;code&gt;chkconfig NetworkManager off&lt;/code&gt; をして、手動で設定してもいいかもしれない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/etc/init.d/cloudera-quickstart-init&lt;/code&gt; 内で &lt;code&gt;cloudera-quickstart-ip&lt;/code&gt; コマンドに引数として 設定した Static IP を与える。&lt;/li&gt;
-&lt;li&gt;reboot&lt;/li&gt;
-&lt;li&gt;起動後、Cloudera Manager の Management Service の Status が &amp;ldquo;Reconfiguration Required&amp;rdquo; みたいな状態になっている場合は、反映して、（webコンソールからクラスタを）再起動&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</guid>
+      <description>ダウンロード http://www.cloudera.com/downloads/quickstart_vms/5-8.html
+現在は各種仮想環境用にイメージが用意されている。
+ Virtual Box VMWare KVM Docker Container (Clusterdock)  今回は単一ノードでの検証用かつSparkコード開発用に、VirtualBoxのVMをダウンロードした。 CDH5.8の場合は、CentOS6.7だった。
+セットアップ 特になし。
+Caveats Static IP Quickstart VMはデフォルトでは NAT インターフェースしか持たない。 また、マシンのIPは固定されている。（10.0.2.15） 仮にNetworkManagerで固定IPを設定しても、 /etc/hosts は上記のものに書き換えられてしまう。
+Static IPを設定したかったので、以下のことを試した。
+ どこで設定されているのか
+ /etc/init.d/cloudera-quickstart-init 内で cloudera-quickstart-ip コマンドが実行されている which cloudera-quickstart-ip -&amp;gt; /usr/bin/cloudera-quickstart-ip /usr/bin/cloudera-quickstart-ip  第一引数に与えられたIPがあればそれを使用する。 引数なしの場合、eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う。 IPが決まれば、/etc/hostsを編集する。上記でIPが定まらなかった場合、127.0.0.1 を使う。 単一ノードクラスタとするために、manager と workerは同一ノードである。上記で決定したIPを /var/lib/cloudera-quickstart/tutorial/js/config.js に反映する。   どうすればよいか
+ VirtualBoxで Bridge Network を追加し、VM上で利用できるようにする。  CentOS6 なので、service NetworkManager stop chkconfig NetworkManager off をして、手動で設定してもいいかもしれない。  /etc/init.</description>
     </item>
     
     <item>
       <title>Cloudera CDHの手動インストールとVMクラスタ構築方法</title>
-      <link>http://log.tuxedokatze.com/post/2016-09-14-ClouderaCDH5-8-Setup/</link>
+      <link>http://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</link>
       <pubDate>Wed, 14 Sep 2016 20:29:20 +0900</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2016-09-14-ClouderaCDH5-8-Setup/</guid>
-      <description>
-
-&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;master (namenode, service): cdh-vm1.local&lt;/li&gt;
-&lt;li&gt;slave (datanode, worker): cdh-vm2.local, cdh-vm3.local&lt;/li&gt;
-&lt;li&gt;VM: CentOS 7.2 VirtualBox 4Cores 8GB RAM&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;固定IPの設定（VBのBridge Networkを利用）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/etc/hosts&lt;/code&gt; の編集&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;ipaddr 1&amp;gt;    cdh-vm1.local    cdh-vm1
-&amp;lt;ipaddr 2&amp;gt;    cdh-vm2.local    cdh-vm2
-&amp;lt;ipaddr 3&amp;gt;    cdh-vm3.local    cdh-vm3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;/etc/yum.conf&lt;/code&gt; 内での プロキシサーバーの設定&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;SELinuxの停止（※安全だといえる環境なら…）&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sed -i -e &#39;s/SELINUX=.*/SELINUX=disabled/g&#39; /etc/selinux/config&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;reboot&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Firewalldの停止（※安全だといえる環境なら…）&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;systemctl stop firewalld&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;systemctl disable firewalld&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;セットアップ用ユーザーの作成&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;パスワードを同一のものを使う場合: Superuserもしくは、パスワードレスでsudoが利用できるユーザーを作成
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/etc/ssh/ssh_config&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;StrictHostKeyChecking no&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;公開鍵認証を使う場合: &lt;code&gt;ssh-keygen&lt;/code&gt; &lt;code&gt;enter x 2&lt;/code&gt; &lt;code&gt;cp .ssh/id_rsa.pub .ssh/authorized_keys&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;PubkeyAuthentication yes&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;VMのリンククローンを行う。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;MACアドレスはリセットしておく。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;… ここまでをVagrant + Ansibleで構築すると楽。&lt;/p&gt;
-
-&lt;h2 id=&#34;cloudera-cdhの入手&#34;&gt;Cloudera CDHの入手&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cloudera.com/downloads/cdh/5-8-0.html&#34;&gt;Download CDH 5.8.0&lt;/a&gt; をよく読む&lt;/p&gt;
-
-&lt;p&gt;特に、一番簡単なのは、 &lt;a href=&#34;http://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_install_path_a.html#cmig_topic_6_5&#34;&gt;Installation Path A - Automated Installation by Cloudera Manager (Non-Production Mode)&lt;/a&gt;
-以下の流れとなる。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;master への Cloudera Managerのインストール&lt;/li&gt;
-&lt;li&gt;master の Cloudera Manager から、slave へのCDH5.8インストール&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;master-への-cloudera-managerのインストール&#34;&gt;master への Cloudera Managerのインストール&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget https://archive.cloudera.com/cm5/installer/latest/cloudera-manager-installer.bin
-chmod u+x cloudera-manager-installer.bin
-sudo ./cloudera-manager-installer.bin
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;slave-への-cdhインストール&#34;&gt;slave への CDHインストール&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;VMを全機立ち上げる&lt;/li&gt;
-&lt;li&gt;master上で、ブラウザから &lt;code&gt;cdh-vm1:7180/cmf/login&lt;/code&gt; へアクセスする&lt;/li&gt;
-&lt;li&gt;ライセンス条項を読み、同意&lt;/li&gt;
-&lt;li&gt;無償版（Express）、有償版（Enterprise）トライアルなどの選択肢が表示されるが、今回は無償版のExpressを選択&lt;/li&gt;
-&lt;li&gt;クラスタのセットアップのために、クラスタに含まれる全ノード（masterも含む）を選択する&lt;/li&gt;
-&lt;li&gt;インストール方法は以下の２つ。後者がおすすめ、とあるが、頻繁にアップデートしない環境の場合、前者でもよい。今回は、色々な都合で前者を選択。
-
-&lt;ul&gt;
-&lt;li&gt;Package manager 経由 （RPM, DEB）&lt;/li&gt;
-&lt;li&gt;Cloudera Percel での配布&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Oracle JDKのインストールに☑を入れる。&lt;/li&gt;
-&lt;li&gt;インストールに使用するユーザーの設定
-
-&lt;ul&gt;
-&lt;li&gt;root もしくは NOPASSWD 設定の sudoerユーザー&lt;/li&gt;
-&lt;li&gt;共通パスワードもしくは公開鍵を指定する&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;全ノードでManagerおよびCDHのインストールが行われる&lt;/li&gt;
-&lt;li&gt;どのServiceを利用するか選択する&lt;/li&gt;
-&lt;li&gt;どのノードをどの役割（Role）に割り当てるか選択する
-
-&lt;ul&gt;
-&lt;li&gt;今回は初期設定のまま&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;各種Serviceの詳細設定
-
-&lt;ul&gt;
-&lt;li&gt;今回は初期設定のまま&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;セットアップ状況の検証&lt;/li&gt;
-&lt;li&gt;完了&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</guid>
+      <description>Configuration  master (namenode, service): cdh-vm1.local slave (datanode, worker): cdh-vm2.local, cdh-vm3.local VM: CentOS 7.2 VirtualBox 4Cores 8GB RAM  Prerequisites  固定IPの設定（VBのBridge Networkを利用） /etc/hosts の編集  &amp;lt;ipaddr 1&amp;gt; cdh-vm1.local cdh-vm1 &amp;lt;ipaddr 2&amp;gt; cdh-vm2.local cdh-vm2 &amp;lt;ipaddr 3&amp;gt; cdh-vm3.local cdh-vm3   /etc/yum.conf 内での プロキシサーバーの設定
+ SELinuxの停止（※安全だといえる環境なら…）
+ sed -i -e &#39;s/SELINUX=.*/SELINUX=disabled/g&#39; /etc/selinux/config reboot  Firewalldの停止（※安全だといえる環境なら…）
+ systemctl stop firewalld systemctl disable firewalld  セットアップ用ユーザーの作成
+ パスワードを同一のものを使う場合: Superuserもしくは、パスワードレスでsudoが利用できるユーザーを作成  /etc/ssh/ssh_config  StrictHostKeyChecking no   公開鍵認証を使う場合: ssh-keygen enter x 2 cp .</description>
     </item>
     
   </channel>

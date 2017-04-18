@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://log.tuxedokatze.com/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://log.tuxedokatze.com/post/2017-01-01-books2016/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -32,12 +27,12 @@
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/post/2016-09-14-ClouderaQuickStartVM/</loc>
+    <loc>http://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</loc>
     <lastmod>2016-09-14T20:39:20+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/post/2016-09-14-ClouderaCDH5-8-Setup/</loc>
+    <loc>http://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</loc>
     <lastmod>2016-09-14T20:29:20+09:00</lastmod>
   </url>
   
@@ -157,7 +152,7 @@
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/post/2014-07-12-MBPGPU/</loc>
+    <loc>http://log.tuxedokatze.com/post/2014-07-12-mbpgpu/</loc>
     <lastmod>2014-07-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -177,17 +172,17 @@
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/post/2013-12-22-SublimeText-Enabling-Key-Repeating/</loc>
+    <loc>http://log.tuxedokatze.com/post/2013-12-22-sublimetext-enabling-key-repeating/</loc>
     <lastmod>2013-12-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/post/2013-12-20-SublimeText2-UI-Glitch/</loc>
+    <loc>http://log.tuxedokatze.com/post/2013-12-20-sublimetext2-ui-glitch/</loc>
     <lastmod>2013-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/post/2013-09-13-ACL2013/</loc>
+    <loc>http://log.tuxedokatze.com/post/2013-09-13-acl2013/</loc>
     <lastmod>2013-09-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -222,8 +217,308 @@
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/about/2011-01-01-CV/</loc>
+    <loc>http://log.tuxedokatze.com/about/2011-01-01-cv/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/categories/about/</loc>
+    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/aboutme/</loc>
+    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/about/</loc>
+    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/acl/</loc>
+    <lastmod>2013-09-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/atom/</loc>
+    <lastmod>2015-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/books/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/career/</loc>
+    <lastmod>2016-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/categories/</loc>
+    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/cats/</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/coursera/</loc>
+    <lastmod>2015-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/cv/</loc>
+    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/categories/cv/</loc>
+    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/depression/</loc>
+    <lastmod>2014-07-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/documentation/</loc>
+    <lastmod>2015-09-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/dokuwiki/</loc>
+    <lastmod>2015-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/github/</loc>
+    <lastmod>2016-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/categories/hack/</loc>
+    <lastmod>2016-12-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/hadoop/</loc>
+    <lastmod>2016-09-14T20:39:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/haskell/</loc>
+    <lastmod>2012-01-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/intellij/</loc>
+    <lastmod>2016-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/kindle/</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/categories/leben/</loc>
+    <lastmod>2016-12-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/mac/</loc>
+    <lastmod>2016-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/nix/</loc>
+    <lastmod>2015-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/nlp/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/octave/</loc>
+    <lastmod>2015-01-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/osx/</loc>
+    <lastmod>2016-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/pandoc/</loc>
+    <lastmod>2012-11-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/paper/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/post/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/programming/</loc>
+    <lastmod>2015-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/python/</loc>
+    <lastmod>2016-12-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/categories/random/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/reading/</loc>
+    <lastmod>2016-12-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/scala/</loc>
+    <lastmod>2016-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/setup/</loc>
+    <lastmod>2016-09-14T20:39:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/sofia/</loc>
+    <lastmod>2013-09-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/software-engineering/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/spark/</loc>
+    <lastmod>2016-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/study/</loc>
+    <lastmod>2015-05-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/sublimetext/</loc>
+    <lastmod>2013-12-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/</loc>
+    <lastmod>2011-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/categories/tech/</loc>
+    <lastmod>2016-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/thoughts/</loc>
+    <lastmod>2015-05-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/todo/</loc>
+    <lastmod>2014-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/categories/travel/</loc>
+    <lastmod>2013-09-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/trouble/</loc>
+    <lastmod>2016-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/typography/</loc>
+    <lastmod>2014-10-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/ui/</loc>
+    <lastmod>2014-10-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

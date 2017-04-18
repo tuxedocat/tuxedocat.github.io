@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="GPU Failure (possibly...) on my MBP15&#39; (early 2011 model) - Miaulog" property="og:title">
+<title>GPU Failure (possibly...) on my MBP15&#39; (early 2011 model) | Miaulog</title>
+<link rel="stylesheet" href="http://log.tuxedokatze.com//css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://log.tuxedokatze.com/"><h1 class="title is-4">Miaulog</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/tuxedocat/">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">July 12, 2014</h2>
+    <h1 class="title">GPU Failure (possibly...) on my MBP15&#39; (early 2011 model)</h1>
+    
+      <div class="tags">
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/mac">mac</a>
+    
+        <a class="button is-link" href="http://log.tuxedokatze.com/tags/trouble">trouble</a>
+    
+</div>
+
+    
+    <div class="content">
+      
+
+<h2 id="symptoms">Symptoms</h2>
+
+<p>Various glitch happen when connecting external displays, or doing GPU intensive tasks.</p>
+
+<ul>
+<li><a href="http://www.mbp2011.com/">More details. made by people who are having the same trouble</a></li>
+<li><a href="https://discussions.apple.com/thread/4766577">On Apple&rsquo;s discussion board, it is still actively updated.</a></li>
+</ul>
+
+<h2 id="workaround">Workaround</h2>
+
+<p>Disable external GPU&hellip; or bring this mbp to &lsquo;genius&rsquo; bar, and get the logic board replaced. The latter is obviously expensive solution, and according to the discussion above, it doesn&rsquo;t resolve the problem permanently.</p>
+
+<p>I would rather wait for upcoming Macbook Pro (late 2014) than tentatively fixing this 3 years-old macbook with no warranty by paying more than <sup>1</sup>&frasl;<sub>5</sub> of my salary.  So I&rsquo;ve decided to disable external GPU, and forget about my thunderbolt display.</p>
+
+<pre><code class="language-sh"># In the single user mode..... (press Cmd+S on boot)
+
+# mount the disk to operate
+$ mount -uw /
+
+# I'm just a person who always want it back
+$ mkdir ./DisabledExtensions
+
+$ cd /System/Library/Extensions
+$ mv AMD* /DisabledExtensions
+
+# I perhaps had to clear the kext-cache, or rebuild kexts, but that time I just restarted and clear the PRAM
+$ shutdown  -h now
+</code></pre>
+
+<h2 id="how-is-it-lately">How is it lately?</h2>
+
+<p>Absolutely annoying. Of course this saved me from the fatal failure (cannot boot, crash on boot with grayed out display, and etc.), now I can write something on the MBP like this. But while working on some applications which highly depended on the external GPUs such as Google Chrome, Adobe things, some OSX preinstalled applications (Preview.app, Calendar.app, Safari, and etc.) , I&rsquo;ve experienced minor display glitches, and/or very-low FPS animations.</p>
+
+<p>Now I switched to Firefox (reluctantly, but still vimperator is great.), and since I haven&rsquo;t been on the codes lately (sadly because of the job?) it&rsquo;s just annoying not fatal.</p>
+
+<p>(I&rsquo;ll probably buy a new one, and give this to my wife.)</p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>tuxedocat / CC BY-NC-SA 4.0</p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-46681113-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+

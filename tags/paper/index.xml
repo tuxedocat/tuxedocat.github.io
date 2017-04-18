@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/paper/index.xml</link>
-    <description>Recent content on Miaulog</description>
+    <title>Paper on Miaulog</title>
+    <link>http://log.tuxedokatze.com/tags/paper/</link>
+    <description>Recent content in Paper on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <atom:link href="http://log.tuxedokatze.com/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://log.tuxedokatze.com/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Link</title>
@@ -17,17 +20,7 @@
       <guid>http://log.tuxedokatze.com/post/2016-08-06-link-paper/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&#34;&gt;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Written Memories: Understanding, Deriving and Extending the LSTM - R2RT&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;In this post, we do a few things: We’ll define and describe RNNs generally, focusing on the limitations of vanilla RNNs that led to the development of the LSTM.
-We’ll describe the intuitions behind the LSTM architecture, which will enable us to build up to and derive the LSTM. Along the way we will derive the GRU. We’ll also derive a pseudo LSTM, which we’ll see is better in principle and performance to the standard LSTM.
-We’ll then extend these intuitions to show how they lead directly to a few recent and exciting architectures: highway and residual networks, and Neural Turing Machines.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Neural系言語処理、全く追いつけていないので勉強しないと… （精度が高いとか流行りだからとかではなく、複合的なタスクが解けるようになるような新しさに興味がある）&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
