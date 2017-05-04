@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Mar 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://log.tuxedokatze.com/categories/random/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>🐡Venv with anaconda (use system&#39;s python instead...)</title>
+      <link>http://log.tuxedokatze.com/post/2017-03-31-venv-and-anaconda/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://log.tuxedokatze.com/post/2017-03-31-venv-and-anaconda/</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Use system&amp;rsquo;s python instead of anaconda&amp;rsquo;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
+
+&lt;p&gt;venvを使うときにはAnaconda環境のPythonだとコケるので，システムのPythonを使うか，&lt;code&gt;--without-pip&lt;/code&gt;　オプションをつける必要がある．&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2016年内に読んだ本</title>
