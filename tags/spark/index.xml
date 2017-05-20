@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <lastBuildDate>Mon, 31 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Sep 2016 20:39:20 +0900</lastBuildDate>
     
 	<atom:link href="http://log.tuxedokatze.com/tags/spark/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Spark-SQL DataFrame: Selecting multiple columns</title>
-      <link>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</link>
-      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ</title>

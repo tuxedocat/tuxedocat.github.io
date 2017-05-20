@@ -66,15 +66,6 @@
     </item>
     
     <item>
-      <title>Anaconda2と日本語パス</title>
-      <link>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</link>
-      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Link: Numpy docstring / Howto</title>
       <link>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
@@ -120,17 +111,6 @@
 この種の安定版ディストリビューションは瑣末なことで気を揉まなくてすむし、それだけコミュニティも成熟してきたということで、使っていきたい。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Simple programming: FizzBuzz</title>
-      <link>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</link>
-      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</guid>
-      <description>In Python [(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]  (this won&amp;rsquo;t work for i = 0)
-In Haskell In ghci:
-[if (mod x 15)==0 then &amp;quot;FizzBuzz&amp;quot; else if (mod x 5)==0 then &amp;quot;Buzz&amp;quot; else if (mod x 3)==0 then &amp;quot;Fizz&amp;quot; else (show x) | x String fizzBuzz x | (mod x 15)== 0 = &amp;quot;FizzBuzz&amp;quot; | (mod x 5) == 0 = &amp;quot;Buzz&amp;quot; | (mod x 3) == 0 = &amp;quot;Fizz&amp;quot; | otherwise = show x  then, load into the interpreter,</description>
     </item>
     
   </channel>

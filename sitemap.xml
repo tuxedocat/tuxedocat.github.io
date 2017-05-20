@@ -17,11 +17,6 @@
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</loc>
-    <lastmod>2016-10-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/</loc>
     <lastmod>2016-10-30T00:00:00+00:00</lastmod>
   </url>
@@ -94,11 +89,6 @@
   <url>
     <loc>http://log.tuxedokatze.com/post/2015-12-20-highperformance-data-violence/</loc>
     <lastmod>2015-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</loc>
-    <lastmod>2015-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -194,31 +184,6 @@
   <url>
     <loc>http://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</loc>
     <lastmod>2012-11-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://log.tuxedokatze.com/post/2012-01-30-installing-ghc-without-root/</loc>
-    <lastmod>2012-01-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://log.tuxedokatze.com/post/2012-01-26-byobu/</loc>
-    <lastmod>2012-01-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</loc>
-    <lastmod>2012-01-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://log.tuxedokatze.com/post/2012-01-12-gnu-screen/</loc>
-    <lastmod>2012-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://log.tuxedokatze.com/post/2011-12-30-ssh-permission-denied/</loc>
-    <lastmod>2011-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -335,12 +300,6 @@
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/tags/haskell/</loc>
-    <lastmod>2012-01-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://log.tuxedokatze.com/tags/intellij/</loc>
     <lastmod>2016-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -438,7 +397,7 @@
   
   <url>
     <loc>http://log.tuxedokatze.com/tags/scala/</loc>
-    <lastmod>2016-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2016-09-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -462,7 +421,7 @@
   
   <url>
     <loc>http://log.tuxedokatze.com/tags/spark/</loc>
-    <lastmod>2016-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2016-09-14T20:39:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -486,7 +445,7 @@
   
   <url>
     <loc>http://log.tuxedokatze.com/categories/tech/</loc>
-    <lastmod>2016-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2016-09-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

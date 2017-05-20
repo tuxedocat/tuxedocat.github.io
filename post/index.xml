@@ -58,15 +58,6 @@
     </item>
     
     <item>
-      <title>Spark-SQL DataFrame: Selecting multiple columns</title>
-      <link>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</link>
-      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2016-10-31-spark-sql-select/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Disk partition manipulation on OSX 10.11</title>
       <link>http://log.tuxedokatze.com/post/2016-10-30-osx-clean-install/</link>
       <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
@@ -242,15 +233,6 @@ Static IPを設定したかったので、以下のことを試した。
       <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2015-12-20-highperformance-data-violence/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Anaconda2と日本語パス</title>
-      <link>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</link>
-      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2015-11-18-anaconda2-path-issue/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
@@ -471,66 +453,6 @@ Finally, I&amp;rsquo;ve managed to participate in the ACL 2013@Sofia! Yay!</desc
 &lt;li&gt;Do with thesis pandoc &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#templates&#34;&gt;template&lt;/a&gt; file if you need.&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Haskell: Installing ghc without root privilege</title>
-      <link>http://log.tuxedokatze.com/post/2012-01-30-installing-ghc-without-root/</link>
-      <pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2012-01-30-installing-ghc-without-root/</guid>
-      <description>Get OS specific &amp;ldquo;Binary Packages&amp;rdquo; $cd /home/foo $wget http://www.haskell.org/ghc/dist/7.0.4/ghc-7.0.4-x86_64-unknown-linux.tar.bz2 $tar -xvf ghc-7.0.4-x86_64-unknown-linux.tar.bz2  Configure and install as usual $cd ghc-7.0.4 $./configure --prefix=/home/foo/usr #something like this... $make install  Notes You will obviously need to install cabal from somewhere else&amp;hellip; Using haskell-platform will make it easier.
-$cd /home/foo $wget http://lambda.haskell.org/platform/download/2011.4.0.0/haskell-platform-2011.4.0.0.tar.gz $cd haskell-platform-2011.4.0.0 $./configure --prefix=/home/foo/usr $make $make install  Reference: Stackoverflow</description>
-    </item>
-    
-    <item>
-      <title>Byobu: an useful metacommand for gnu screen</title>
-      <link>http://log.tuxedokatze.com/post/2012-01-26-byobu/</link>
-      <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2012-01-26-byobu/</guid>
-      <description>Notes  Byobu probably doesn&amp;rsquo;t work well on Mac OSX (e.g. via Homebrew or build from source)
- In my case, newt-python and some libraries are missing. (byobu 5.5)  This commands would be different in the latest versions of byobu, since I could only use byobu 2.68 with screen 4.00.
-  Starting byobu $byobu as the same as screen command.
-Basic commands: Escape sequence is ctrl+a by default though it can be changed in the configuration dialogue (press F9).</description>
-    </item>
-    
-    <item>
-      <title>Simple programming: FizzBuzz</title>
-      <link>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</link>
-      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2012-01-18-fizzbuzz/</guid>
-      <description>In Python [(i%3==0)*&amp;quot;Fizz&amp;quot;+(i%5==0)*&amp;quot;Buzz&amp;quot;or i for i in range(1,100)]  (this won&amp;rsquo;t work for i = 0)
-In Haskell In ghci:
-[if (mod x 15)==0 then &amp;quot;FizzBuzz&amp;quot; else if (mod x 5)==0 then &amp;quot;Buzz&amp;quot; else if (mod x 3)==0 then &amp;quot;Fizz&amp;quot; else (show x) | x String fizzBuzz x | (mod x 15)== 0 = &amp;quot;FizzBuzz&amp;quot; | (mod x 5) == 0 = &amp;quot;Buzz&amp;quot; | (mod x 3) == 0 = &amp;quot;Fizz&amp;quot; | otherwise = show x  then, load into the interpreter,</description>
-    </item>
-    
-    <item>
-      <title>GNU screen: Run your commands even sudden connection lost occurs</title>
-      <link>http://log.tuxedokatze.com/post/2012-01-12-gnu-screen/</link>
-      <pubDate>Thu, 12 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2012-01-12-gnu-screen/</guid>
-      <description>Assuming your system is Unix like systems, and screen is installed.
- Create sessions
- $screen (introduction will appear) press enter  Basic commands
- C-a c: create new session C-a w: show current sessions C-a [0-Z]: move to other sessions C-a d: detach screen C-a k: kill screen  Restoring sessions if connection lost occurs
- $screen -ls: which shows list of screen sessions like this:
-There are screens on: pid.</description>
-    </item>
-    
-    <item>
-      <title>Solving Permission Denied</title>
-      <link>http://log.tuxedokatze.com/post/2011-12-30-ssh-permission-denied/</link>
-      <pubDate>Fri, 30 Dec 2011 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2011-12-30-ssh-permission-denied/</guid>
-      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
-
-&lt;p&gt;When logging in to server using public key authentication, I couldn&amp;rsquo;t log in.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
