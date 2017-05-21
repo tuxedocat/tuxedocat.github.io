@@ -22,11 +22,6 @@
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/post/2016-09-25-json4s/</loc>
-    <lastmod>2016-09-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</loc>
     <lastmod>2016-09-14T20:39:20+09:00</lastmod>
   </url>
@@ -107,11 +102,6 @@
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/post/2015-05-26-deeplearning-forum/</loc>
-    <lastmod>2015-05-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://log.tuxedokatze.com/post/2015-05-07-micro-shinchoku/</loc>
     <lastmod>2015-05-07T00:00:00+00:00</lastmod>
   </url>
@@ -154,11 +144,6 @@
   <url>
     <loc>http://log.tuxedokatze.com/post/2014-07-05-job/</loc>
     <lastmod>2014-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://log.tuxedokatze.com/post/2014-06-17-thoughts-2/</loc>
-    <lastmod>2014-06-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -396,12 +381,6 @@
   </url>
   
   <url>
-    <loc>http://log.tuxedokatze.com/tags/scala/</loc>
-    <lastmod>2016-09-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://log.tuxedokatze.com/tags/setup/</loc>
     <lastmod>2016-09-14T20:39:20+09:00</lastmod>
     <priority>0</priority>
@@ -427,7 +406,7 @@
   
   <url>
     <loc>http://log.tuxedokatze.com/tags/study/</loc>
-    <lastmod>2015-05-26T00:00:00+00:00</lastmod>
+    <lastmod>2015-05-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -445,13 +424,13 @@
   
   <url>
     <loc>http://log.tuxedokatze.com/categories/tech/</loc>
-    <lastmod>2016-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2016-09-14T20:39:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://log.tuxedokatze.com/tags/thoughts/</loc>
-    <lastmod>2015-05-26T00:00:00+00:00</lastmod>
+    <lastmod>2015-01-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

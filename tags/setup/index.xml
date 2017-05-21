@@ -18,15 +18,7 @@
       <pubDate>Wed, 14 Sep 2016 20:39:20 +0900</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</guid>
-      <description>ダウンロード http://www.cloudera.com/downloads/quickstart_vms/5-8.html
-現在は各種仮想環境用にイメージが用意されている。
- Virtual Box VMWare KVM Docker Container (Clusterdock)  今回は単一ノードでの検証用かつSparkコード開発用に、VirtualBoxのVMをダウンロードした。 CDH5.8の場合は、CentOS6.7だった。
-セットアップ 特になし。
-Caveats Static IP Quickstart VMはデフォルトでは NAT インターフェースしか持たない。 また、マシンのIPは固定されている。（10.0.2.15） 仮にNetworkManagerで固定IPを設定しても、 /etc/hosts は上記のものに書き換えられてしまう。
-Static IPを設定したかったので、以下のことを試した。
- どこで設定されているのか
- /etc/init.d/cloudera-quickstart-init 内で cloudera-quickstart-ip コマンドが実行されている which cloudera-quickstart-ip -&amp;gt; /usr/bin/cloudera-quickstart-ip /usr/bin/cloudera-quickstart-ip  第一引数に与えられたIPがあればそれを使用する。 引数なしの場合、eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う。 IPが決まれば、/etc/hostsを編集する。上記でIPが定まらなかった場合、127.0.0.1 を使う。 単一ノードクラスタとするために、manager と workerは同一ノードである。上記で決定したIPを /var/lib/cloudera-quickstart/tutorial/js/config.js に反映する。   どうすればよいか
- VirtualBoxで Bridge Network を追加し、VM上で利用できるようにする。  CentOS6 なので、service NetworkManager stop chkconfig NetworkManager off をして、手動で設定してもいいかもしれない。  /etc/init.</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,11 +27,7 @@ Static IPを設定したかったので、以下のことを試した。
       <pubDate>Wed, 14 Sep 2016 20:29:20 +0900</pubDate>
       
       <guid>http://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</guid>
-      <description>Configuration  master (namenode, service): cdh-vm1.local slave (datanode, worker): cdh-vm2.local, cdh-vm3.local VM: CentOS 7.2 VirtualBox 4Cores 8GB RAM  Prerequisites  固定IPの設定（VBのBridge Networkを利用） /etc/hosts の編集  &amp;lt;ipaddr 1&amp;gt; cdh-vm1.local cdh-vm1 &amp;lt;ipaddr 2&amp;gt; cdh-vm2.local cdh-vm2 &amp;lt;ipaddr 3&amp;gt; cdh-vm3.local cdh-vm3   /etc/yum.conf 内での プロキシサーバーの設定
- SELinuxの停止（※安全だといえる環境なら…）
- sed -i -e &#39;s/SELINUX=.*/SELINUX=disabled/g&#39; /etc/selinux/config reboot  Firewalldの停止（※安全だといえる環境なら…）
- systemctl stop firewalld systemctl disable firewalld  セットアップ用ユーザーの作成
- パスワードを同一のものを使う場合: Superuserもしくは、パスワードレスでsudoが利用できるユーザーを作成  /etc/ssh/ssh_config  StrictHostKeyChecking no   公開鍵認証を使う場合: ssh-keygen enter x 2 cp .</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
