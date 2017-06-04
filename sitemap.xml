@@ -52,6 +52,11 @@
   </url>
   
   <url>
+    <loc>http://log.tuxedokatze.com/post/dopelearning/</loc>
+    <lastmod>2016-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://log.tuxedokatze.com/post/2016-03-21-why-japanese-people/</loc>
     <lastmod>2016-03-21T00:00:00+00:00</lastmod>
   </url>
@@ -249,6 +254,12 @@
   </url>
   
   <url>
+    <loc>http://log.tuxedokatze.com/tags/deeplearning/</loc>
+    <lastmod>2016-03-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://log.tuxedokatze.com/tags/depression/</loc>
     <lastmod>2014-07-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -305,6 +316,12 @@
   <url>
     <loc>http://log.tuxedokatze.com/tags/mac/</loc>
     <lastmod>2016-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/tags/machinelearning/</loc>
+    <lastmod>2016-03-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -377,6 +394,12 @@
   <url>
     <loc>http://log.tuxedokatze.com/tags/reading/</loc>
     <lastmod>2016-12-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://log.tuxedokatze.com/categories/reading/</loc>
+    <lastmod>2016-03-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

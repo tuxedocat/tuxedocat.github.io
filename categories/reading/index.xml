@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Paper on Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/paper/</link>
-    <description>Recent content in Paper on Miaulog</description>
+    <title>Reading on Miaulog</title>
+    <link>http://log.tuxedokatze.com/categories/reading/</link>
+    <description>Recent content in Reading on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
-    <lastBuildDate>Sat, 06 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Mar 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://log.tuxedokatze.com/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://log.tuxedokatze.com/categories/reading/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Link</title>
-      <link>http://log.tuxedokatze.com/post/2016-08-06-link-paper/</link>
-      <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://log.tuxedokatze.com/post/2016-08-06-link-paper/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&#34;&gt;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>DopeLearning (KDD16) を読んだ。</title>
