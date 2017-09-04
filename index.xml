@@ -425,17 +425,8 @@ Finally, I&amp;rsquo;ve managed to participate in the ACL 2013@Sofia! Yay!</desc
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>http://log.tuxedokatze.com/about/</guid>
-      <description>&lt;p&gt;I am interested in languages, photography, and cats.&lt;/p&gt;
-
-&lt;h3 id=&#34;basic-information&#34;&gt;Basic information&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Name: Yu Sawai&lt;/li&gt;
-&lt;li&gt;Nationality: Japanese&lt;/li&gt;
-&lt;li&gt;Gender: Male&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>Yu Sawai An open-minded engineer interested in both theoretical and practical side of Natural Language Processing. Currently working as a data engineer, trying to build a pipeline which is from data collection to result delivery in not-data-friendly industrial application.
+Skills and proficiency  Natural languages  Japanese (native) English (proficient: TOEIC 935&amp;frasl;990, IELTS Academic overall 7.0/9.0) German (beginner)  Programming languages  Python Sh Scala (beginner)  Frameworks and tools  Linux (RHEL6, 7x / Ubuntu) PyData stack (Numpy/Scipy/Pandas/Scikit-learn/Jupyter) Apache Spark (Cloudera CDH) Git Collaboration tools such as Redmine, GitLab   Education  MS, Information Science (Natural Language Processing), Nara Institute of Science and Technology  Computational Linguistics Lab.</description>
     </item>
     
   </channel>
