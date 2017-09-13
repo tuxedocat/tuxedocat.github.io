@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech on Miaulog</title>
-    <link>http://log.tuxedokatze.com/categories/tech/</link>
+    <link>https://log.tuxedokatze.com/categories/tech/</link>
     <description>Recent content in Tech on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
     <lastBuildDate>Wed, 14 Sep 2016 20:39:20 +0900</lastBuildDate>
     
-	<atom:link href="http://log.tuxedokatze.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://log.tuxedokatze.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ</title>
-      <link>http://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</link>
+      <link>https://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</link>
       <pubDate>Wed, 14 Sep 2016 20:39:20 +0900</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</guid>
+      <guid>https://log.tuxedokatze.com/post/2016-09-14-clouderaquickstartvm/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Cloudera CDHの手動インストールとVMクラスタ構築方法</title>
-      <link>http://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</link>
+      <link>https://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</link>
       <pubDate>Wed, 14 Sep 2016 20:29:20 +0900</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</guid>
+      <guid>https://log.tuxedokatze.com/post/2016-09-14-clouderacdh5-8-setup/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     

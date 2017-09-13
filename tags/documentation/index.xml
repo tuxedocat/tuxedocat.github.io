@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documentation on Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/documentation/</link>
+    <link>https://log.tuxedokatze.com/tags/documentation/</link>
     <description>Recent content in Documentation on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
     <lastBuildDate>Sun, 13 Sep 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://log.tuxedokatze.com/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://log.tuxedokatze.com/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Link: Numpy docstring / Howto</title>
-      <link>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</link>
+      <link>https://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</guid>
+      <guid>https://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>Link: Type hinting support in PyCharm</title>
-      <link>http://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</link>
+      <link>https://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</guid>
+      <guid>https://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</guid>
       <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -36,10 +36,10 @@
     
     <item>
       <title>The workflow for my thesis</title>
-      <link>http://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</link>
+      <link>https://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</link>
       <pubDate>Wed, 07 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</guid>
+      <guid>https://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</guid>
       <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 
 &lt;ol&gt;

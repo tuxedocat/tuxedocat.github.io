@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sublimetext on Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/sublimetext/</link>
+    <link>https://log.tuxedokatze.com/tags/sublimetext/</link>
     <description>Recent content in Sublimetext on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
     <lastBuildDate>Sun, 22 Dec 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://log.tuxedokatze.com/tags/sublimetext/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://log.tuxedokatze.com/tags/sublimetext/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[SublimeText] Enabling key repeating on Mavericks</title>
-      <link>http://log.tuxedokatze.com/post/2013-12-22-sublimetext-enabling-key-repeating/</link>
+      <link>https://log.tuxedokatze.com/post/2013-12-22-sublimetext-enabling-key-repeating/</link>
       <pubDate>Sun, 22 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2013-12-22-sublimetext-enabling-key-repeating/</guid>
+      <guid>https://log.tuxedokatze.com/post/2013-12-22-sublimetext-enabling-key-repeating/</guid>
       <description>On OSX Mavericks, I found the J-K keys repeating was not working when using the vintage (Vim-like) mode.
 It&amp;rsquo;s because of the change made by the OS for providing &amp;lsquo;press-and-hold&amp;rsquo; behavior to input certain characters and accents (like in iOS), so the following command snippet can re-enable key repeating:
 defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false  </description>
@@ -25,10 +25,10 @@ defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false  </descrip
     
     <item>
       <title>[SublimeText] UI glitch hell!!</title>
-      <link>http://log.tuxedokatze.com/post/2013-12-20-sublimetext2-ui-glitch/</link>
+      <link>https://log.tuxedokatze.com/post/2013-12-20-sublimetext2-ui-glitch/</link>
       <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2013-12-20-sublimetext2-ui-glitch/</guid>
+      <guid>https://log.tuxedokatze.com/post/2013-12-20-sublimetext2-ui-glitch/</guid>
       <description>Symptom The UI is broken, on Sublime Text 2 build 2221.
 Screenshot and other info.
 What I did According to the forum post above, it is seemed to be an issue of the sublime package control&amp;rsquo;s automatic update function.

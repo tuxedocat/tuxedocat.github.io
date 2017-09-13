@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Acl on Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/acl/</link>
+    <link>https://log.tuxedokatze.com/tags/acl/</link>
     <description>Recent content in Acl on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
     <lastBuildDate>Fri, 13 Sep 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://log.tuxedokatze.com/tags/acl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://log.tuxedokatze.com/tags/acl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ACL2013!</title>
-      <link>http://log.tuxedokatze.com/post/2013-09-13-acl2013/</link>
+      <link>https://log.tuxedokatze.com/post/2013-09-13-acl2013/</link>
       <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2013-09-13-acl2013/</guid>
+      <guid>https://log.tuxedokatze.com/post/2013-09-13-acl2013/</guid>
       <description>ACL2013
 
 Finally, I&amp;rsquo;ve managed to participate in the ACL 2013@Sofia! Yay!</description>

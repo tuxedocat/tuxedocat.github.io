@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nlp on Miaulog</title>
-    <link>http://log.tuxedokatze.com/tags/nlp/</link>
+    <link>https://log.tuxedokatze.com/tags/nlp/</link>
     <description>Recent content in Nlp on Miaulog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>tuxedocat / CC BY-NC-SA 4.0</copyright>
     <lastBuildDate>Sat, 06 Aug 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://log.tuxedokatze.com/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://log.tuxedokatze.com/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Link</title>
-      <link>http://log.tuxedokatze.com/post/2016-08-06-link-paper/</link>
+      <link>https://log.tuxedokatze.com/post/2016-08-06-link-paper/</link>
       <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2016-08-06-link-paper/</guid>
+      <guid>https://log.tuxedokatze.com/post/2016-08-06-link-paper/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&#34;&gt;http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>DopeLearning (KDD16) を読んだ。</title>
-      <link>http://log.tuxedokatze.com/post/dopelearning/</link>
+      <link>https://log.tuxedokatze.com/post/dopelearning/</link>
       <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/dopelearning/</guid>
+      <guid>https://log.tuxedokatze.com/post/dopelearning/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&#34;&gt;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -36,10 +36,10 @@
     
     <item>
       <title>ACL2013!</title>
-      <link>http://log.tuxedokatze.com/post/2013-09-13-acl2013/</link>
+      <link>https://log.tuxedokatze.com/post/2013-09-13-acl2013/</link>
       <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://log.tuxedokatze.com/post/2013-09-13-acl2013/</guid>
+      <guid>https://log.tuxedokatze.com/post/2013-09-13-acl2013/</guid>
       <description>ACL2013
 
 Finally, I&amp;rsquo;ve managed to participate in the ACL 2013@Sofia! Yay!</description>
