@@ -482,6 +482,11 @@
   </url>
   
   <url>
+    <loc>https://log.tuxedokatze.com/topics/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/categories/travel/</loc>
     <lastmod>2013-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
