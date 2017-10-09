@@ -242,13 +242,13 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/cv/</loc>
+    <loc>https://log.tuxedokatze.com/tags/cv/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/cv/</loc>
+    <loc>https://log.tuxedokatze.com/categories/cv/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -404,14 +404,14 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/reading/</loc>
-    <lastmod>2016-03-29T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/tags/reading/</loc>
+    <lastmod>2016-12-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/reading/</loc>
-    <lastmod>2016-12-31T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/categories/reading/</loc>
+    <lastmod>2016-03-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -472,11 +472,6 @@
   <url>
     <loc>https://log.tuxedokatze.com/tags/todo/</loc>
     <lastmod>2014-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://log.tuxedokatze.com/topics/</loc>
     <priority>0</priority>
   </url>
   
