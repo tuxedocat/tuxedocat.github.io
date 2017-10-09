@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Art</title>
+      <link>https://log.tuxedokatze.com/categories/art/</link>
+      <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/categories/art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cv</title>
       <link>https://log.tuxedokatze.com/categories/cv/</link>
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
@@ -31,65 +40,47 @@
     </item>
     
     <item>
-      <title>Diary</title>
-      <link>https://log.tuxedokatze.com/categories/diary/</link>
+      <title>Life</title>
+      <link>https://log.tuxedokatze.com/categories/life/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/categories/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ramblings</title>
+      <link>https://log.tuxedokatze.com/categories/ramblings/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/categories/diary/</guid>
+      <guid>https://log.tuxedokatze.com/categories/ramblings/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hack</title>
-      <link>https://log.tuxedokatze.com/categories/hack/</link>
-      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      <title>Study</title>
+      <link>https://log.tuxedokatze.com/categories/study/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/categories/hack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Leben</title>
-      <link>https://log.tuxedokatze.com/categories/leben/</link>
-      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://log.tuxedokatze.com/categories/leben/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Random</title>
-      <link>https://log.tuxedokatze.com/categories/random/</link>
-      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://log.tuxedokatze.com/categories/random/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reading</title>
-      <link>https://log.tuxedokatze.com/categories/reading/</link>
-      <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://log.tuxedokatze.com/categories/reading/</guid>
+      <guid>https://log.tuxedokatze.com/categories/study/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tech</title>
       <link>https://log.tuxedokatze.com/categories/tech/</link>
-      <pubDate>Wed, 14 Sep 2016 20:39:20 +0900</pubDate>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/categories/tech/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Travel</title>
-      <link>https://log.tuxedokatze.com/categories/travel/</link>
+      <title>Wunderlust</title>
+      <link>https://log.tuxedokatze.com/categories/wunderlust/</link>
       <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/categories/travel/</guid>
+      <guid>https://log.tuxedokatze.com/categories/wunderlust/</guid>
       <description></description>
     </item>
     
