@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://log.tuxedokatze.com/post/hugo-theme/</loc>
+    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/post/keyboard2017/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url>
@@ -272,6 +277,12 @@
   </url>
   
   <url>
+    <loc>https://log.tuxedokatze.com/tags/design/</loc>
+    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/tags/documentation/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -304,6 +315,12 @@
   <url>
     <loc>https://log.tuxedokatze.com/tags/hadoop/</loc>
     <lastmod>2016-09-14T20:39:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/tags/hugo/</loc>
+    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -375,7 +392,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/post/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -453,7 +470,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/categories/tech/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -495,7 +512,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
