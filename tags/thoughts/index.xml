@@ -6,7 +6,7 @@
     <description>Recent content in Thoughts on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>&amp;copy;tuxedocat / CC BY-NC-SA 4.0</copyright>
+    <copyright>&amp;copy; tuxedocat</copyright>
     <lastBuildDate>Sun, 25 Jan 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
@@ -30,8 +30,8 @@
       <pubDate>Sat, 27 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/post/2014-12-27-todo-list/</guid>
-      <description>&lt;p&gt;積ん読山の高さがどんどん高くなってきた．
-もともと興味が散漫だったうえに，最近は謎の焦燥感に追い立てられて，衝動買いを繰り返しているせいだ．&lt;/p&gt;
+      <description>&lt;p&gt;積ん読山の高さがどんどん高くなってきた。
+もともと興味が散漫だったうえに、最近は謎の焦燥感に追い立てられて、衝動買いを繰り返しているせいだ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -46,23 +46,12 @@
     </item>
     
     <item>
-      <title>引用</title>
+      <title>とある日経の記事</title>
       <link>https://log.tuxedokatze.com/post/2014-07-05-job/</link>
       <pubDate>Sat, 05 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/post/2014-07-05-job/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>もしかしたら... と．</title>
-      <link>https://log.tuxedokatze.com/post/2014-05-17-thoughts-on-workplace/</link>
-      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://log.tuxedokatze.com/post/2014-05-17-thoughts-on-workplace/</guid>
-      <description>&lt;p&gt;コード書かない仕事だからつらいのではなく，コード書かない仕事が行われてそうな環境や文化がつらいのかも．&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

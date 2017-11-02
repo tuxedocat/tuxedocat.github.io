@@ -6,7 +6,7 @@
     <description>Recent content in Tech on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>&amp;copy;tuxedocat / CC BY-NC-SA 4.0</copyright>
+    <copyright>&amp;copy; tuxedocat</copyright>
     <lastBuildDate>Mon, 09 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,11 @@
       <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/post/hugo-theme/</guid>
-      <description>&lt;p&gt;芸術の秋，
-とはいっても，それらしいことは特に何もやっていない．
-昨日おとといと出かけて疲れきっていたので，きょうは10時まで寝ていた．&lt;/p&gt;
+      <description>&lt;p&gt;芸術の秋、
+とはいっても、それらしいことは特に何もやっていない。
+昨日おとといと出かけて疲れきっていたので、きょうは10時まで寝ていた。&lt;/p&gt;
 
-&lt;p&gt;ここ数日やったことといえば，ちょこちょことHugoのテーマをいじっていたことぐらいかもしれない&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
+&lt;p&gt;ここ数日やったことといえば、ちょこちょことHugoのテーマをいじっていたことぐらいかもしれない&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -33,8 +33,8 @@
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/post/keyboard2017/</guid>
-      <description>&lt;p&gt;注文していたキーボード（ARCHISS ProgressTouch RETRO TINY）が届いた．
-個人的に無印HHKB Pro2に感じていた不満&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;がほとんど瞬時に解消されて，QoLが向上した．&lt;/p&gt;
+      <description>&lt;p&gt;注文していたキーボード（ARCHISS ProgressTouch RETRO TINY）が届いた。
+個人的に無印HHKB Pro2に感じていた不満&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;がほとんど瞬時に解消されて、QoLが向上した。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -50,7 +50,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;Use system&amp;rsquo;s python instead of anaconda&amp;rsquo;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
 
-&lt;p&gt;venvを使うときにはAnaconda環境のPythonだとコケるので，システムのPythonを使うか，&lt;code&gt;--without-pip&lt;/code&gt;　オプションをつける必要がある．&lt;/p&gt;
+&lt;p&gt;venvを使うときにはAnaconda環境のPythonだとコケるので、システムのPythonを使うか、&lt;code&gt;--without-pip&lt;/code&gt;　オプションをつける必要がある。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -126,12 +126,12 @@
     </item>
     
     <item>
-      <title>「ソフトウェア見積り 人月の暗黙知を解き明かす」を読んだ</title>
+      <title>『ソフトウェア見積り 人月の暗黙知を解き明かす』を読んだ。</title>
       <link>https://log.tuxedokatze.com/post/2016-03-04-software-estimation/</link>
       <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/post/2016-03-04-software-estimation/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/ebook/dp/B00KR96M6K&#34;&gt;スティーブ・マコネル,「ソフトウェア見積り 人月の暗黙知を解き明かす」&lt;/a&gt; をさっと読んだ。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/ebook/dp/B00KR96M6K&#34;&gt;スティーブ・マコネル,『ソフトウェア見積り 人月の暗黙知を解き明かす』&lt;/a&gt; をさっと読んだ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

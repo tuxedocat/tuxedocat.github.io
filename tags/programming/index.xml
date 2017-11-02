@@ -6,7 +6,7 @@
     <description>Recent content in Programming on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>&amp;copy;tuxedocat / CC BY-NC-SA 4.0</copyright>
+    <copyright>&amp;copy; tuxedocat</copyright>
     <lastBuildDate>Thu, 30 Mar 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
@@ -23,7 +23,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;Use system&amp;rsquo;s python instead of anaconda&amp;rsquo;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
 
-&lt;p&gt;venvを使うときにはAnaconda環境のPythonだとコケるので，システムのPythonを使うか，&lt;code&gt;--without-pip&lt;/code&gt;　オプションをつける必要がある．&lt;/p&gt;
+&lt;p&gt;venvを使うときにはAnaconda環境のPythonだとコケるので、システムのPythonを使うか、&lt;code&gt;--without-pip&lt;/code&gt;　オプションをつける必要がある。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
