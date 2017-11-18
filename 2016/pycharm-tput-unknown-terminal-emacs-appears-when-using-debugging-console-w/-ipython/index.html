@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="Dev, Photography, Languages, Cats" name="keywords">
+<meta content="tuxedocat" name="author">
+<meta property="og:title" content="[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython - miauhaus.log">
+<meta property="og:url" content="https://log.tuxedokatze.com/2016/pycharm-tput-unknown-terminal-emacs-appears-when-using-debugging-console-w/-ipython/">
+<meta property="og:description" content="Tiny diary of a cat who codes.">
+<meta property="og:type" content="website" />
+
+<meta name="generator" content="Hugo 0.29" />
+<title>[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython | miauhaus.log</title>
+
+
+<link rel="stylesheet" href="https://log.tuxedokatze.com//css/style.css">
+<link rel="shortcut icon" href="https://log.tuxedokatze.com//favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://log.tuxedokatze.com/"><h1 class="title is-4">miauhaus.log</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="/categories" title="Show categories">
+            <span class="icon">
+              <i class="fa fa-folder"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/tags" title="Show tags">
+            <span class="icon">
+              <i class="fa fa-hashtag"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/about" title="About me">
+            <span class="icon">
+              <i class="fa fa-heart"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://github.com/tuxedocat/" title="Me on Github">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://tuxedocat.tumblr.com/" title="My photo-blog on Tumblr">
+            <span class="icon">
+              <i class="fa fa-tumblr"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://www.flickr.com/photos/tuxedocat/" title="My photos on Flickr">
+            <span class="icon">
+              <i class="fa fa-flickr"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython</h1>
+    <h2 class="subtitle is-5">April 16, 2016 </h2>
+    
+      <div class="tags">
+    
+        <a class="button is-light is-small" href="/tags/python"><i class="fa fa-hashtag"></i>python</a>
+    
+        <a class="button is-light is-small" href="/tags/intellij"><i class="fa fa-hashtag"></i>intellij</a>
+    
+</div>
+
+    
+    <div class="content">
+      <p></p>
+
+<h2 id="reported-issues">Reported issues</h2>
+
+<p>In debugging console (w/ iPython), <code>tput unknown terminal 'emacs'</code> is repeatedly appearing.</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o">http://stackoverflow.com/questions/30537994/tput-unknown-terminal-emacs-messages-when-using-pycharm-ipython-console-o</a></li>
+<li><a href="http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs">http://stackoverflow.com/questions/36133447/pandas-printing-tput-unknown-terminal-emacs</a></li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-14999">https://youtrack.jetbrains.com/issue/PY-14999</a></li>
+</ul>
+
+<h2 id="possible-cause">Possible cause</h2>
+
+<ul>
+<li>In <code>pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py</code>, $TERM is hard-coded
+
+<ul>
+<li><code>line6:  os.environ['TERM'] = 'emacs' #to use proper page_more() for paging</code></li>
+<li>This overwrites your $TERM setting if you use iPython console when debugging.</li>
+<li>If your env doesn&rsquo;t have terminfo for emacs, then it fails.</li>
+</ul></li>
+</ul>
+
+<h2 id="workaround">Workaround</h2>
+
+<ul>
+<li>Add terminfo for emacs
+
+<ul>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html">https://www.gnu.org/software/emacs/manual/html_node/efaq/Termcap_002fTerminfo-entries-for-Emacs.html</a></li>
+<li>I just copied terminfo of dumb-terminal as emacs&rsquo;s terminfo, and it worked. (at least stopped showing messages)</li>
+</ul></li>
+<li>Or, edit <code>pycharm installation dir./helpers/pydev/_pydev_bundle/pydev_ipython_console.py</code>`</li>
+</ul>
+
+<p>って内容を <a href="https://youtrack.jetbrains.com/issue/PY-14999">PyCharmのIssue Tracker</a> に書いた。 少しは役に立つといいけど。</p>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy;2017 tuxedocat : Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></p>
+  </div>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js" integrity="sha256-+bhVTaRmJ/c07eV80nU8gD2cBBF0rYkf1txqXlrbvb0=" crossorigin="anonymous" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/python.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/bash.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/scala.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/r.min.js" async></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-46681113-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="Dev, Photography, Languages, Cats" name="keywords">
+<meta content="tuxedocat" name="author">
+<meta property="og:title" content="Octave - miauhaus.log">
+<meta property="og:url" content="https://log.tuxedokatze.com/2015/octave/">
+<meta property="og:description" content="Tiny diary of a cat who codes.">
+<meta property="og:type" content="website" />
+
+<meta name="generator" content="Hugo 0.29" />
+<title>Octave | miauhaus.log</title>
+
+
+<link rel="stylesheet" href="https://log.tuxedokatze.com//css/style.css">
+<link rel="shortcut icon" href="https://log.tuxedokatze.com//favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://log.tuxedokatze.com/"><h1 class="title is-4">miauhaus.log</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="/categories" title="Show categories">
+            <span class="icon">
+              <i class="fa fa-folder"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/tags" title="Show tags">
+            <span class="icon">
+              <i class="fa fa-hashtag"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/about" title="About me">
+            <span class="icon">
+              <i class="fa fa-heart"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://github.com/tuxedocat/" title="Me on Github">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://tuxedocat.tumblr.com/" title="My photo-blog on Tumblr">
+            <span class="icon">
+              <i class="fa fa-tumblr"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://www.flickr.com/photos/tuxedocat/" title="My photos on Flickr">
+            <span class="icon">
+              <i class="fa fa-flickr"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Octave</h1>
+    <h2 class="subtitle is-5">January 25, 2015 </h2>
+    
+      <div class="tags">
+    
+        <a class="button is-light is-small" href="/tags/thoughts"><i class="fa fa-hashtag"></i>thoughts</a>
+    
+        <a class="button is-light is-small" href="/tags/coursera"><i class="fa fa-hashtag"></i>coursera</a>
+    
+        <a class="button is-light is-small" href="/tags/octave"><i class="fa fa-hashtag"></i>octave</a>
+    
+</div>
+
+    
+    <div class="content">
+      <p>某機械学習のクラスを受講している。
+深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。</p>
+
+<p></p>
+
+<p>2015年コースも課題はOctaveが推奨プログラミング言語のようなので、Octaveの環境を整える。</p>
+
+<p>会社のマシンには、<a href="http://mxeoctave.osuv.de/">Windows版非公式ビルド(MXE Octave)</a>を。
+自宅MacMiniは、Homebrewで。</p>
+
+<pre><code class="language-sh">$ brew tap homebrew/science
+$ brew install octave
+</code></pre>
+
+<p>OctaveはMATLABとの互換性においては、ScilabやFreeMatよりも高いはず。
+この点で、MATLAB勢力もそこそこ居るという今の仕事においても無駄にはならなさそう。</p>
+
+<p>また、いくらPython（とそのエコシステムに含まれるNumpy/Scipy, Pandas, Scikit-learnなど）が優秀で、ライセンス面でも十分MATLABを代替できるとしても、色々な理由でPython一本で技術計算をするのは難しいと思ったのもある。<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
+
+<p>まぁ、MATLABでもPythonでもRでも、開発環境がつらすぎるExcelVBAに比べると、喜んでやります!って気持ちになる。<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">社内での最大勢力はExcel（+VBA）&hellip;ついでMATLAB、Rという感じ。
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">（悲しいかな、社内にはそういう機械学習寄りの業務の人もいる。自分の業務が全く逸れてしまっているだけで。）（そこに希望を持ってしまうと、色々な判断が遅れてしまうだろう。だが、普段からそういう分野に興味があると言っておいて、何もしていないってのはマズいから&hellip;）
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+</ol>
+</div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy;2017 tuxedocat : Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></p>
+  </div>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js" integrity="sha256-+bhVTaRmJ/c07eV80nU8gD2cBBF0rYkf1txqXlrbvb0=" crossorigin="anonymous" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/python.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/bash.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/scala.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/r.min.js" async></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-46681113-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>

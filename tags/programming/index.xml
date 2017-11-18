@@ -14,10 +14,10 @@
     
     <item>
       <title>🐡Venv with anaconda (use system&#39;s python instead...)</title>
-      <link>https://log.tuxedokatze.com/post/2017-03-31-venv-and-anaconda/</link>
+      <link>https://log.tuxedokatze.com/2017/venv-with-anaconda-use-systems-python-instead.../</link>
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/post/2017-03-31-venv-and-anaconda/</guid>
+      <guid>https://log.tuxedokatze.com/2017/venv-with-anaconda-use-systems-python-instead.../</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
 
 &lt;blockquote&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>Dokuwikiで日本語PDFを出力したかった</title>
-      <link>https://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</link>
+      <link>https://log.tuxedokatze.com/2015/dokuwiki%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9Epdf%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F/</link>
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</guid>
+      <guid>https://log.tuxedokatze.com/2015/dokuwiki%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9Epdf%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F/</guid>
       <description>&lt;p&gt;CentOS6.6, Dokuwiki Hrun、Dw2Pdf_20150622でのこと。&lt;/p&gt;
 
 &lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>Link: Numpy docstring / Howto</title>
-      <link>https://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</link>
+      <link>https://log.tuxedokatze.com/2015/link-numpy-docstring-/-howto/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/post/2015-09-13-numpy-docstring/</guid>
+      <guid>https://log.tuxedokatze.com/2015/link-numpy-docstring-/-howto/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -55,10 +55,10 @@
     
     <item>
       <title>Link: Type hinting support in PyCharm</title>
-      <link>https://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</link>
+      <link>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/post/2015-09-13-type-hinting-python/</guid>
+      <guid>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</guid>
       <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

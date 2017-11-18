@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="Dev, Photography, Languages, Cats" name="keywords">
+<meta content="tuxedocat" name="author">
+<meta property="og:title" content="Cloudera CDHの手動インストールとVMクラスタ構築方法 - miauhaus.log">
+<meta property="og:url" content="https://log.tuxedokatze.com/2016/cloudera-cdh%E3%81%AE%E6%89%8B%E5%8B%95%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8vm%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E6%A7%8B%E7%AF%89%E6%96%B9%E6%B3%95/">
+<meta property="og:description" content="Tiny diary of a cat who codes.">
+<meta property="og:type" content="website" />
+
+<meta name="generator" content="Hugo 0.29" />
+<title>Cloudera CDHの手動インストールとVMクラスタ構築方法 | miauhaus.log</title>
+
+
+<link rel="stylesheet" href="https://log.tuxedokatze.com//css/style.css">
+<link rel="shortcut icon" href="https://log.tuxedokatze.com//favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://log.tuxedokatze.com/"><h1 class="title is-4">miauhaus.log</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="/categories" title="Show categories">
+            <span class="icon">
+              <i class="fa fa-folder"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/tags" title="Show tags">
+            <span class="icon">
+              <i class="fa fa-hashtag"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/about" title="About me">
+            <span class="icon">
+              <i class="fa fa-heart"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://github.com/tuxedocat/" title="Me on Github">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://tuxedocat.tumblr.com/" title="My photo-blog on Tumblr">
+            <span class="icon">
+              <i class="fa fa-tumblr"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://www.flickr.com/photos/tuxedocat/" title="My photos on Flickr">
+            <span class="icon">
+              <i class="fa fa-flickr"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Cloudera CDHの手動インストールとVMクラスタ構築方法</h1>
+    <h2 class="subtitle is-5">September 14, 2016 </h2>
+    
+      <div class="tags">
+    
+        <a class="button is-light is-small" href="/tags/spark"><i class="fa fa-hashtag"></i>spark</a>
+    
+        <a class="button is-light is-small" href="/tags/hadoop"><i class="fa fa-hashtag"></i>hadoop</a>
+    
+        <a class="button is-light is-small" href="/tags/setup"><i class="fa fa-hashtag"></i>setup</a>
+    
+</div>
+
+    
+    <div class="content">
+      <p></p>
+
+<h2 id="configuration">Configuration</h2>
+
+<ul>
+<li>master (namenode, service): cdh-vm1.local</li>
+<li>slave (datanode, worker): cdh-vm2.local, cdh-vm3.local</li>
+<li>VM: CentOS 7.2 VirtualBox 4Cores 8GB RAM</li>
+</ul>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+<li>固定IPの設定（VBのBridge Networkを利用）</li>
+<li><code>/etc/hosts</code> の編集</li>
+</ul>
+
+<pre><code>&lt;ipaddr 1&gt;    cdh-vm1.local    cdh-vm1
+&lt;ipaddr 2&gt;    cdh-vm2.local    cdh-vm2
+&lt;ipaddr 3&gt;    cdh-vm3.local    cdh-vm3
+</code></pre>
+
+<ul>
+<li><p><code>/etc/yum.conf</code> 内での プロキシサーバーの設定</p></li>
+
+<li><p>SELinuxの停止（※安全だといえる環境なら…）</p>
+
+<ul>
+<li><code>sed -i -e 's/SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config</code></li>
+<li><code>reboot</code></li>
+</ul></li>
+
+<li><p>Firewalldの停止（※安全だといえる環境なら…）</p>
+
+<ul>
+<li><code>systemctl stop firewalld</code></li>
+<li><code>systemctl disable firewalld</code></li>
+</ul></li>
+
+<li><p>セットアップ用ユーザーの作成</p>
+
+<ul>
+<li>パスワードを同一のものを使う場合: Superuserもしくは、パスワードレスでsudoが利用できるユーザーを作成
+
+<ul>
+<li><code>/etc/ssh/ssh_config</code>
+
+<ul>
+<li><code>StrictHostKeyChecking no</code></li>
+</ul></li>
+</ul></li>
+<li>公開鍵認証を使う場合: <code>ssh-keygen</code> <code>enter x 2</code> <code>cp .ssh/id_rsa.pub .ssh/authorized_keys</code>
+
+<ul>
+<li><code>/etc/ssh/sshd_config</code>
+
+<ul>
+<li><code>PubkeyAuthentication yes</code></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>VMのリンククローンを行う。</p>
+
+<ul>
+<li>MACアドレスはリセットしておく。</li>
+</ul></li>
+</ul>
+
+<p>… ここまでをVagrant + Ansibleで構築すると楽。</p>
+
+<h2 id="cloudera-cdhの入手">Cloudera CDHの入手</h2>
+
+<p><a href="http://www.cloudera.com/downloads/cdh/5-8-0.html">Download CDH 5.8.0</a> をよく読む</p>
+
+<p>特に、一番簡単なのは、 <a href="http://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_install_path_a.html#cmig_topic_6_5">Installation Path A - Automated Installation by Cloudera Manager (Non-Production Mode)</a>
+以下の流れとなる。</p>
+
+<ul>
+<li>master への Cloudera Managerのインストール</li>
+<li>master の Cloudera Manager から、slave へのCDH5.8インストール</li>
+</ul>
+
+<h2 id="master-への-cloudera-managerのインストール">master への Cloudera Managerのインストール</h2>
+
+<pre><code class="language-bash">wget https://archive.cloudera.com/cm5/installer/latest/cloudera-manager-installer.bin
+chmod u+x cloudera-manager-installer.bin
+sudo ./cloudera-manager-installer.bin
+</code></pre>
+
+<h2 id="slave-への-cdhインストール">slave への CDHインストール</h2>
+
+<ul>
+<li>VMを全機立ち上げる</li>
+<li>master上で、ブラウザから <code>cdh-vm1:7180/cmf/login</code> へアクセスする</li>
+<li>ライセンス条項を読み、同意</li>
+<li>無償版（Express）、有償版（Enterprise）トライアルなどの選択肢が表示されるが、今回は無償版のExpressを選択</li>
+<li>クラスタのセットアップのために、クラスタに含まれる全ノード（masterも含む）を選択する</li>
+<li>インストール方法は以下の２つ。後者がおすすめ、とあるが、頻繁にアップデートしない環境の場合、前者でもよい。今回は、色々な都合で前者を選択。
+
+<ul>
+<li>Package manager 経由 （RPM, DEB）</li>
+<li>Cloudera Percel での配布</li>
+</ul></li>
+<li>Oracle JDKのインストールに☑を入れる。</li>
+<li>インストールに使用するユーザーの設定
+
+<ul>
+<li>root もしくは NOPASSWD 設定の sudoerユーザー</li>
+<li>共通パスワードもしくは公開鍵を指定する</li>
+</ul></li>
+<li>全ノードでManagerおよびCDHのインストールが行われる</li>
+<li>どのServiceを利用するか選択する</li>
+<li>どのノードをどの役割（Role）に割り当てるか選択する
+
+<ul>
+<li>今回は初期設定のまま</li>
+</ul></li>
+<li>各種Serviceの詳細設定
+
+<ul>
+<li>今回は初期設定のまま</li>
+</ul></li>
+<li>セットアップ状況の検証</li>
+<li>完了</li>
+</ul>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy;2017 tuxedocat : Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></p>
+  </div>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js" integrity="sha256-+bhVTaRmJ/c07eV80nU8gD2cBBF0rYkf1txqXlrbvb0=" crossorigin="anonymous" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/python.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/bash.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/scala.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/r.min.js" async></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-46681113-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>

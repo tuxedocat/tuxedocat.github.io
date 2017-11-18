@@ -14,10 +14,10 @@
     
     <item>
       <title>Dokuwikiで日本語PDFを出力したかった</title>
-      <link>https://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</link>
+      <link>https://log.tuxedokatze.com/2015/dokuwiki%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9Epdf%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F/</link>
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/post/2015-11-18-dokuwiki-japanese-pdf/</guid>
+      <guid>https://log.tuxedokatze.com/2015/dokuwiki%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9Epdf%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F/</guid>
       <description>&lt;p&gt;CentOS6.6, Dokuwiki Hrun、Dw2Pdf_20150622でのこと。&lt;/p&gt;
 
 &lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>The workflow for my thesis</title>
-      <link>https://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</link>
+      <link>https://log.tuxedokatze.com/2012/the-workflow-for-my-thesis/</link>
       <pubDate>Wed, 07 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/post/2012-11-07-writing-thesis-with-pandoc/</guid>
+      <guid>https://log.tuxedokatze.com/2012/the-workflow-for-my-thesis/</guid>
       <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 
 &lt;ol&gt;
