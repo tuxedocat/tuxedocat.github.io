@@ -6,7 +6,7 @@
     <description>Recent content in Cv on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>&amp;copy; tuxedocat</copyright>
+    <copyright>&amp;copy;2017 tuxedocat</copyright>
     <lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/tags/cv/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,8 @@
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/about/</guid>
-      <description>@tuxedocat An open-minded engineer interested in both theoretical and practical side of Natural Language Processing. Currently working as a data engineer, trying to build a pipeline which is from data collection to result delivery in not-data-friendly industrial application.
-Skills and proficiency  Natural languages  Japanese (native) English (proficient: TOEIC 935&amp;frasl;990, IELTS Academic overall 7.0/9.0) German (beginner)  Programming languages  Python bash Scala (beginner)  Frameworks and tools  Linux (RHEL6, 7x / Ubuntu) PyData stack (Numpy/Scipy/Pandas/Scikit-learn/Jupyter) Apache Spark (Cloudera CDH) Git Collaboration tools such as Redmine, GitLab   Education  MS, Information Science (Natural Language Processing), Nara Institute of Science and Technology  Computational Linguistics Lab.</description>
+      <description>@tuxedocat I am interested in both theoretical and practical sides of Natural Language Processing. Currently working as a data engineer, trying to build a pipeline which is from data collection to result delivery in not-data-friendly industrial applications.
+Skills and proficiency  Natural languages  Japanese (native) English (not bad: TOEIC 935&amp;frasl;990, IELTS Academic overall 7.0/9.0) German (beginner)  Programming languages  Python 3.x bash Scala (beginner) &amp;hellip;  Frameworks and tools  Linux (RHEL6, 7x / Ubuntu) PyData stack (Numpy/Scipy/Pandas/Scikit-learn/Jupyter) Apache Spark (Cloudera CDH) Git Collaboration tools such as Redmine, GitLab   Education  M.</description>
     </item>
     
   </channel>
