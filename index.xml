@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2017 tuxedocat</copyright>
-    <lastBuildDate>Mon, 09 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>『語学学習支援のための言語処理』を読みました。</title>
+      <link>https://log.tuxedokatze.com/bookreview-nlp-for-language-learning/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/bookreview-nlp-for-language-learning/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;『語学学習支援のための言語処理』を献本していただきました 🎉&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:thanks&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:thanks&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugoのテーマ</title>
@@ -381,6 +394,26 @@ Accomplishmentは100%だった。（本当??）&lt;/p&gt;
       
       <guid>https://log.tuxedokatze.com/2014/%E3%81%A8%E3%81%82%E3%82%8B%E6%97%A5%E7%B5%8C%E3%81%AE%E8%A8%98%E4%BA%8B/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>それでも</title>
+      <link>https://log.tuxedokatze.com/2014/%E3%81%9D%E3%82%8C%E3%81%A7%E3%82%82/</link>
+      <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2014/%E3%81%9D%E3%82%8C%E3%81%A7%E3%82%82/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>もしかしたら... と。</title>
+      <link>https://log.tuxedokatze.com/2014/%E3%82%82%E3%81%97%E3%81%8B%E3%81%97%E3%81%9F%E3%82%89...-%E3%81%A8/</link>
+      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2014/%E3%82%82%E3%81%97%E3%81%8B%E3%81%97%E3%81%9F%E3%82%89...-%E3%81%A8/</guid>
+      <description>&lt;p&gt;コード書かない仕事だからつらいのではなく、コード書かない仕事が行われてそうな環境や文化がつらいのかも。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

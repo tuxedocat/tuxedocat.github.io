@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Book</title>
+      <link>https://log.tuxedokatze.com/tags/book/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Books</title>
       <link>https://log.tuxedokatze.com/tags/books/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
@@ -222,7 +231,7 @@
     <item>
       <title>Nlp</title>
       <link>https://log.tuxedokatze.com/tags/nlp/</link>
-      <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/nlp/</guid>
       <description></description>
@@ -288,6 +297,15 @@
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>https://log.tuxedokatze.com/tags/review/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/tags/review/</guid>
       <description></description>
     </item>
     

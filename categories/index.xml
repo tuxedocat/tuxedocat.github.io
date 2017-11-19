@@ -31,6 +31,15 @@
     </item>
     
     <item>
+      <title>Book</title>
+      <link>https://log.tuxedokatze.com/categories/book/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/categories/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cv</title>
       <link>https://log.tuxedokatze.com/categories/cv/</link>
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
@@ -54,6 +63,15 @@
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/categories/ramblings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://log.tuxedokatze.com/categories/research/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/categories/research/</guid>
       <description></description>
     </item>
     

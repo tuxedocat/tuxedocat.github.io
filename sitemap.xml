@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://log.tuxedokatze.com/bookreview-nlp-for-language-learning/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/2017/hugo%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E/</loc>
     <lastmod>2017-10-09T00:00:00+00:00</lastmod>
   </url>
@@ -163,6 +168,16 @@
   </url>
   
   <url>
+    <loc>https://log.tuxedokatze.com/2014/%E3%81%9D%E3%82%8C%E3%81%A7%E3%82%82/</loc>
+    <lastmod>2014-06-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/2014/%E3%82%82%E3%81%97%E3%81%8B%E3%81%97%E3%81%9F%E3%82%89...-%E3%81%A8/</loc>
+    <lastmod>2014-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/2013/sublimetext-enabling-key-repeating-on-mavericks/</loc>
     <lastmod>2013-12-22T00:00:00+00:00</lastmod>
   </url>
@@ -213,7 +228,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/articles/</loc>
-    <lastmod>2016-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -226,6 +241,18 @@
   <url>
     <loc>https://log.tuxedokatze.com/blog/</loc>
     <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/tags/book/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/categories/book/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -369,7 +396,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/nlp/</loc>
-    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -418,6 +445,18 @@
   <url>
     <loc>https://log.tuxedokatze.com/tags/reading/</loc>
     <lastmod>2016-12-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/categories/research/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/tags/review/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -513,7 +552,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

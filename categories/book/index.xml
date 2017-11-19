@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/articles/</link>
-    <description>Recent content in Articles on miauhaus.log</description>
+    <title>Book on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/categories/book/</link>
+    <description>Recent content in Book on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2017 tuxedocat</copyright>
     <lastBuildDate>Wed, 22 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://log.tuxedokatze.com/articles/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://log.tuxedokatze.com/categories/book/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,17 +21,6 @@
       <description>&lt;!-- textlint-enable --&gt;
 
 &lt;p&gt;『語学学習支援のための言語処理』を献本していただきました 🎉&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:thanks&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:thanks&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>DopeLearning (KDD16) を読んだ。</title>
-      <link>https://log.tuxedokatze.com/dopelearning-kdd16-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://log.tuxedokatze.com/dopelearning-kdd16-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&#34;&gt;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
