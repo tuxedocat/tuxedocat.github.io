@@ -13,13 +13,13 @@
     
     
     <item>
-      <title>CV</title>
+      <title>About @tuxedocat</title>
       <link>https://log.tuxedokatze.com/about/</link>
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/about/</guid>
-      <description>@tuxedocat I am interested in both theoretical and practical sides of Natural Language Processing. Currently working as a data engineer, trying to build a pipeline which is from data collection to result delivery in not-data-friendly industrial applications.
-Skills and proficiency  Natural languages  Japanese (native) English (not bad: TOEIC 935&amp;frasl;990, IELTS Academic overall 7.0/9.0) German (beginner)  Programming languages  Python 3.x bash Scala (beginner) &amp;hellip;  Frameworks and tools  Linux (RHEL6, 7x / Ubuntu) PyData stack (Numpy/Scipy/Pandas/Scikit-learn/Jupyter) Apache Spark (Cloudera CDH) Git Collaboration tools such as Redmine, GitLab   Education  M.</description>
+      <description>I am interested in both theoretical and practical sides of Natural Language Processing. Currently working as a data engineer, I am trying to build a pipeline which is from data collection to analytics in not-data-friendly industrial applications.
+Skills and proficiency  Natural languages  Japanese (native) English (not bad: TOEIC 935&amp;frasl;990, IELTS Academic overall 7.0/9.0) German (beginner)  Programming languages  Python 3.x bash Scala (beginner) &amp;hellip;  Frameworks and tools  Linux (RHEL6, 7x / Ubuntu) PyData stack (Numpy/Scipy/Pandas/Scikit-learn/Jupyter) Apache Spark (Cloudera CDH) Git Collaboration tools such as Redmine, GitLab   Experiences  (Please contact me.</description>
     </item>
     
   </channel>
