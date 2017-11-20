@@ -93,7 +93,7 @@
     <div class="content">
       <!-- textlint-enable -->
 
-<p>『語学学習支援のための言語処理』を献本していただきました 🎉<sup class="footnote-ref" id="fnref:thanks"><a rel="footnote" href="#fn:thanks">1</a></sup></p>
+<p>『語学学習支援のための言語処理』を読者モニタとして献本していただきました 🎉<sup class="footnote-ref" id="fnref:thanks"><a rel="footnote" href="#fn:thanks">1</a></sup></p>
 
 <p></p>
 
@@ -108,7 +108,7 @@
 
 <p>まず、本書は、自然言語処理の側から語学学習支援に関わる方にとっては、心強いサーベイ資料となるはずです。
 各種の語学学習支援タスクの取り扱いや、基礎解析技術（品詞タグ付けや依存構造解析など）を学習者コーパスに適用した場合の性能や、
-評価尺度についての情報がまとまっている点は、特に有益だと思います。</p>
+評価尺度についての解説は、特に有益だと思います。</p>
 
 <p>特徴的なのは、論文にはあまり書かれないような話題が、丁寧に説明されている点です。
 この分野特有の難しさを強調するだけではなく、どうやってその難しさに向き合うかについての知見が書かれています。</p>
@@ -134,9 +134,9 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
 <h3 id="1-3-基礎編">1 ~ 3: 基礎編</h3>
 
 <p><strong>「イントロダクション」</strong>では、語学学習<sup class="footnote-ref" id="fnref:langlearn"><a rel="footnote" href="#fn:langlearn">2</a></sup>支援の目的が示されています。
-語学学習の学習効果を最大化する、という目的のためには、学習者自身への支援と、教育者などへの支援の大きく2つがあります。
-本書では、特に、日本語・英語の学習者支援を対象としています。
-後の章で、それぞれに関するタスクが紹介されます。</p>
+語学学習の学習効果を最大化する、という目的のためには、学習者自身への支援と、教師への支援の大きく2つがあります。
+本書では、主に日本語と英語を対象としています。
+特に、「日本語を母語とする人が英語を学習する場合」を想定した事例や手法の説明に重点が置かれています。</p>
 
 <p><strong>「処理の対象となるデータ」</strong>では、学習者コーパス<sup class="footnote-ref" id="fnref:corpus"><a rel="footnote" href="#fn:corpus">3</a></sup>の特徴やその重要性が強調されています。</p>
 
@@ -148,7 +148,8 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
 計画から始まり、言語データの収集・各種のアノテーション（誤り情報など）・評価、そして公開までの一連の流れが示されます。</p>
 
 <p>章の後半では、学習者コーパスの特徴を概観します。
-綴りや文法の誤りだけではなく、句読点抜け落ちなど、現象は様々であると示されます。</p>
+綴りや文法の誤りだけではなく、句読点抜け落ちなど、その傾向は学習者の属性によって様々であることが言及されます。
+学習者コーパスを注意深く観察しないと、なかなか気付けない問題もあるようです<sup class="footnote-ref" id="fnref:absence-of-period-ref"><a rel="footnote" href="#fn:absence-of-period-ref">4</a></sup>。</p>
 
 <p><strong>「語学学習支援のための言語処理を支える要素技術」</strong>では、自然言語処理における基礎解析が概説されています。
 特に、文分割から構文解析までがここでの対象となっています。
@@ -174,7 +175,7 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
 <h4 id="4-ライティング支援">4. ライティング支援</h4>
 
 <p>本記事では（自由作文に対する）文法誤り検出・訂正を取り上げます。
-よく研究されているテーマであり、ACL<sup class="footnote-ref" id="fnref:acl"><a rel="footnote" href="#fn:acl">4</a></sup> などの自然言語処理の国際会議で、ワークショップや関連するセッションが設けられています。
+よく研究されているテーマであり、ACL<sup class="footnote-ref" id="fnref:acl"><a rel="footnote" href="#fn:acl">5</a></sup> などの自然言語処理の国際会議で、ワークショップや関連するセッションが設けられています。
 そして、一番身近な語学学習支援の実例かもしれません。
 たとえば、<a href="https://www.grammarly.com/">Grammarly</a> のように、英語の文法誤り検出・訂正サービスは、すでに実用段階にあるといえそうです。</p>
 
@@ -184,7 +185,7 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
 <p>このように対象となる誤りの種類は多様である一方、自然言語処理の問題としての取り扱いとしては共通する部分も多いです。
 ここでは代表的な手法として、（人手による）規則を用いた手法、言語モデルを用いた手法、SVMや最大エントロピー法などの機械学習を用いた手法が概説されています。</p>
 
-<p>手法の種類も、そこで用いられるモデルも多様ですが、本書では次のことが強調されています<sup class="footnote-ref" id="fnref:gec-ref"><a rel="footnote" href="#fn:gec-ref">5</a></sup>:</p>
+<p>手法の種類も、そこで用いられるモデルも多様ですが、本書では次のことが強調されています<sup class="footnote-ref" id="fnref:gec-ref"><a rel="footnote" href="#fn:gec-ref">6</a></sup>:</p>
 
 <blockquote>
 <p>語学学習支援を目的とした文法誤り検出/訂正では、検出/訂正性能だけではなく、つねに、より高い学習効果のことを意識するべきであろう。</p>
@@ -196,7 +197,7 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
 
 <p>文章中の難解な語の検出や、より平易な表現への言い換えが含まれます。</p>
 
-<p>イメージを示すために、言い換えタスクの例を以下に引用します<sup class="footnote-ref" id="fnref:paraphrasing-ref"><a rel="footnote" href="#fn:paraphrasing-ref">6</a></sup>:</p>
+<p>イメージを示すために、言い換えタスクの例を以下に引用します<sup class="footnote-ref" id="fnref:paraphrasing-ref"><a rel="footnote" href="#fn:paraphrasing-ref">7</a></sup>:</p>
 
 <blockquote>
 <p>入力文: The Association for Natural Language Processing was <strong>established</strong> in 1994. </br>
@@ -212,13 +213,15 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
 
 <p>「難解語の言い換え」のためには、さらに言い換え規則の獲得と、その適用が必要になります。
 規則の獲得のためには、類義語辞書を使うこともできますが、より広範囲な規則を得るための手法も提案されています。
-対応関係のある2つのコーパス（パラレルコーパス）<sup class="footnote-ref" id="fnref:simple-wikipedia"><a rel="footnote" href="#fn:simple-wikipedia">7</a></sup>を用いる手法です。
+対応関係のある2つのコーパス（パラレルコーパス）<sup class="footnote-ref" id="fnref:simple-wikipedia"><a rel="footnote" href="#fn:simple-wikipedia">8</a></sup>を用いる手法です。
 たとえば、すべての単語の分散表現を計算してから、何らかの類似度尺度を求めれば、類似した分散表現を持つような単語同士の対応が得られます。
 また、パラレルコーパスではなく、単一のコーパスからこうした規則を獲得する手法も提案されているようです。</p>
 
-<p>評価においては、人手で作成した言い換え結果との比較だけでなく、「平易性」、「文法性」、「意味の保持」という3つの観点からの主観評価がされるようです。</p>
+<p>評価方法としては、人手で作成した言い換え結果との自動評価だけでなく、「平易性」、「文法性」、「意味の保持」という3つの観点からの主観評価も用いられるようです。</p>
 
-<p>課題は、どこまでを難解語とするか、どこまで言い換えればよいか、というものです。</p>
+<p>タスク自体の主な課題は、どこまでを難解語とするか、どこまで言い換えればよいか、というものです。
+そもそも、同じような属性の学習者であっても、個人ごとに習熟度は異なります。
+これに対応するため、学習者の語彙知識を問う質問などにより語彙力を推定し、個人差に対応する手法が提案されているようです。</p>
 
 <h3 id="6-7-教師支援">6 ~ 7: 教師支援</h3>
 
@@ -230,7 +233,7 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
 
 <p>「教材作成支援」の中でも「語彙問題生成」は、学習者が受験する語学試験にも関連する点で、特色のあるタスクです。
 このタスクでは、類義語選択問題や穴埋め形式の問題を生成します。
-イメージとしては、TOEFL® Test のリーディングセクションに含まれる類義語選択問題<sup class="footnote-ref" id="fnref:toefl-example"><a rel="footnote" href="#fn:toefl-example">8</a></sup>です。</p>
+イメージとしては、TOEFL® Test のリーディングセクションに含まれる類義語選択問題<sup class="footnote-ref" id="fnref:toefl-example"><a rel="footnote" href="#fn:toefl-example">9</a></sup>です。</p>
 
 <h4 id="7-学習者の能力-特徴の分析">7. 学習者の能力/特徴の分析</h4>
 
@@ -256,14 +259,14 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
 
 <p>全体を通して、語学学習支援の目的を見失わないように、という課題意識が表明されていたように思う。
 個人的には、それがハイライトだと解釈した。
-学習者支援の思想的なところの重要性や、自然言語処理だけでは済まないタスクだと認識する必要がありそうだ<sup class="footnote-ref" id="fnref:regret"><a rel="footnote" href="#fn:regret">9</a></sup>。</p>
+学習者支援の思想的なところの重要性や、自然言語処理だけでは済まないタスクだと認識する必要がありそうだ<sup class="footnote-ref" id="fnref:regret"><a rel="footnote" href="#fn:regret">10</a></sup>。</p>
 
 <p>記事を書いている間、<a href="https://ctrl-x-s.blog/2017/11/06/%e3%83%99%e3%83%b3%e3%83%81%e3%83%9e%e3%83%bc%e3%82%af%e3%81%ae%e5%8a%9f%e7%bd%aa/">『ベンチマークの功罪』（Google 賀沢さんのブログ）</a> で指摘されていたようなことを考えていた。
 語学学習支援での状況はどうなのだろうか、と思ったが、本書や他の論文でも課題意識を表明している方は多い様子なので、大丈夫なのかもしれない。</p>
 
 <p>そもそも、タスクの提案と、それに適した学習者コーパスの構築・公開、評価指標を整備すること自体、この分野ではかなり苦労するものだと思っている。
 しかし、本書でも触れられていた Learner Corpus Association の発足など、状況は着実に良くなっている気がした。
-最近のACLでの関連論文をちらっと眺めてみると、評価手法そのものに関する論文<sup class="footnote-ref" id="fnref:eval-gec"><a rel="footnote" href="#fn:eval-gec">10</a></sup> があったので、ポジティブな印象は強まった。
+最近のACLでの関連論文をちらっと眺めてみると、評価手法そのものに関する論文<sup class="footnote-ref" id="fnref:eval-gec"><a rel="footnote" href="#fn:eval-gec">11</a></sup> があったので、ポジティブな印象は強まった。
 今後は、実運用（教育現場）での効果測定のような問題と向き合うことになるんだろうか。</p>
 
 <p><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></p>
@@ -278,11 +281,13 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
  <a class="footnote-return" href="#fnref:langlearn"><sup>[return]</sup></a></li>
 <li id="fn:corpus">コーパスとは、言語データを集約し、計算機で扱えるようにしたものを指します。
  <a class="footnote-return" href="#fnref:corpus"><sup>[return]</sup></a></li>
+<li id="fn:absence-of-period-ref">p.12 では、中学生の書いた英文の観察から「文末のピリオド脱落」とという問題を初めて認識した、という永田先生の経験談が書かれています。
+ <a class="footnote-return" href="#fnref:absence-of-period-ref"><sup>[return]</sup></a></li>
 <li id="fn:acl">自然言語処理のトップカンファレンスのひとつ。<a href="http://cl.sd.tmu.ac.jp/groups/seminars/conferences">首都大学東京の小町先生による関連学会の紹介</a>が参考になります。
  <a class="footnote-return" href="#fnref:acl"><sup>[return]</sup></a></li>
-<li id="fn:gec-ref">初版第1刷 p.88 より。
+<li id="fn:gec-ref">p.88 より。
  <a class="footnote-return" href="#fnref:gec-ref"><sup>[return]</sup></a></li>
-<li id="fn:paraphrasing-ref">初版第1刷 p.108 より。
+<li id="fn:paraphrasing-ref">p.108 より。
  <a class="footnote-return" href="#fnref:paraphrasing-ref"><sup>[return]</sup></a></li>
 <li id="fn:simple-wikipedia"><a href="https://simple.wikipedia.org/wiki/Main_Page">Simple English Wikipedia</a> がよく利用される印象があります。ただし、言い換えタスクのための言語資源として最適かどうかには議論があるようです。（Xu, W., Callison-Burch, C., &amp; Napoles, C. (2015). Problems in Current Text Simplification Research: New Data Can Help. TACL. など。）
  <a class="footnote-return" href="#fnref:simple-wikipedia"><sup>[return]</sup></a></li>
