@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Se4ml on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/tags/se4ml/</link>
+    <description>Recent content in Se4ml on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy;2017 tuxedocat</copyright>
+    <lastBuildDate>Thu, 23 Nov 2017 23:05:11 +0900</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/se4ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>これなら伝わりそう（たのむ……）</title>
+      <link>https://log.tuxedokatze.com/2017/joeltest4mlsys/</link>
+      <pubDate>Thu, 23 Nov 2017 23:05:11 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2017/joeltest4mlsys/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

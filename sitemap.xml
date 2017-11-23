@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://log.tuxedokatze.com/2017/joeltest4mlsys/</loc>
+    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/bookreview-nlp-for-language-learning/</loc>
     <lastmod>2017-11-22T00:00:00+00:00</lastmod>
   </url>
@@ -240,7 +245,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/blog/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -389,6 +394,12 @@
   </url>
   
   <url>
+    <loc>https://log.tuxedokatze.com/tags/ml/</loc>
+    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/tags/nix/</loc>
     <lastmod>2015-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -438,7 +449,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/categories/ramblings/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -457,6 +468,12 @@
   <url>
     <loc>https://log.tuxedokatze.com/tags/review/</loc>
     <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/tags/se4ml/</loc>
+    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -510,7 +527,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/categories/tech/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -552,7 +569,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/</loc>
-    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
