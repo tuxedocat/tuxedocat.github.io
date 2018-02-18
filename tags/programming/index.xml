@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Thu, 30 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jan 2018 21:54:09 +0900</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PyCharm小ネタ</title>
+      <link>https://log.tuxedokatze.com/2018/pycharm%E5%B0%8F%E3%83%8D%E3%82%BF/</link>
+      <pubDate>Mon, 22 Jan 2018 21:54:09 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/pycharm%E5%B0%8F%E3%83%8D%E3%82%BF/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと、デバッガの立ち上げ時にエラーになる。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>🐡Venv with anaconda (use system&#39;s python instead...)</title>

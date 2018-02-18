@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://log.tuxedokatze.com/2018/pycharm%E5%B0%8F%E3%83%8D%E3%82%BF/</loc>
+    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/2017/joeltest4mlsys/</loc>
     <lastmod>2017-11-23T23:05:11+09:00</lastmod>
   </url>
@@ -235,7 +240,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/blog/</loc>
-    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
+    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -372,6 +377,12 @@
   </url>
   
   <url>
+    <loc>https://log.tuxedokatze.com/tags/linux/</loc>
+    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/tags/mac/</loc>
     <lastmod>2016-10-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -427,13 +438,13 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/programming/</loc>
-    <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/python/</loc>
-    <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -517,7 +528,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/categories/tech/</loc>
-    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
+    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -559,7 +570,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/</loc>
-    <lastmod>2017-11-23T23:05:11+09:00</lastmod>
+    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   

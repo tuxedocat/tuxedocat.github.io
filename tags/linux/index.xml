@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/tags/linux/</link>
+    <description>Recent content in Linux on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Mon, 22 Jan 2018 21:54:09 +0900</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PyCharm小ネタ</title>
+      <link>https://log.tuxedokatze.com/2018/pycharm%E5%B0%8F%E3%83%8D%E3%82%BF/</link>
+      <pubDate>Mon, 22 Jan 2018 21:54:09 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/pycharm%E5%B0%8F%E3%83%8D%E3%82%BF/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと、デバッガの立ち上げ時にエラーになる。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
