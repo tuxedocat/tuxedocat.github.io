@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Mon, 22 Jan 2018 21:54:09 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 03 Apr 2018 21:05:00 +0900</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title> Day One -&gt; Markdown (with metadata)</title>
+      <link>https://log.tuxedokatze.com/2018/dayone2md/</link>
+      <pubDate>Tue, 03 Apr 2018 21:05:00 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/dayone2md/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;or an endless journey for finding a better way for keeping a journal or writing blogs with no stress.&lt;br /&gt;
+（DayOneのJSONを個別のメタデータ付きのMarkdownにしたかった、という話）&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>PyCharm小ネタ</title>

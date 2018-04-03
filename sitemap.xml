@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://log.tuxedokatze.com/2018/dayone2md/</loc>
+    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/2018/pycharm%E5%B0%8F%E3%83%8D%E3%82%BF/</loc>
     <lastmod>2018-01-22T21:54:09+09:00</lastmod>
   </url>
@@ -240,7 +245,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/blog/</loc>
-    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
+    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -299,6 +304,12 @@
   </url>
   
   <url>
+    <loc>https://log.tuxedokatze.com/tags/dayone/</loc>
+    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/tags/deeplearning/</loc>
     <lastmod>2016-03-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -318,7 +329,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/documentation/</loc>
-    <lastmod>2015-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -444,7 +455,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/python/</loc>
-    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
+    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -528,7 +539,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/categories/tech/</loc>
-    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
+    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -570,7 +581,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/</loc>
-    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
+    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
