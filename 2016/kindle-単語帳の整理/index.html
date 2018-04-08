@@ -10,7 +10,7 @@
 <meta property="og:description" content="Tiny diary of a cat who codes.">
 <meta property="og:type" content="website" />
 
-<meta name="generator" content="Hugo 0.34" />
+<meta name="generator" content="Hugo 0.39-DEV" />
 <title>[Kindle] 単語帳の整理 | miauhaus.log</title>
 
 
@@ -95,13 +95,13 @@
 
 <p>Kindleの単語帳機能は、辞書で調べた単語を記録してくれるのでそれ自体は便利だけど、次の2つの点が気に入らなくて不満がたまってきていた。</p>
 
-<p>まず、本当に「なんでも追加してくれてしまう」ところ。Kindle端末のレスポンスの悪さもあってか、ハイライト時に意図せず、格助詞やその他の機能語も追加されてしまうことがよくあった。 <sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>
+<p>まず、本当に「なんでも追加してくれてしまう」ところ。Kindle端末のレスポンスの悪さもあってか、ハイライト時に意図せず、格助詞やその他の機能語も追加されてしまうことがよくあった。 <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>
 こうして、単語帳は単語分割が失敗したフレーズに含まれるどうでもいい一般名詞や、機能語で埋め尽くされていく。</p>
 
 <p>こうなると、不要な単語を一括で整理したくなる。が、Kindle端末の単語帳アプリには、登録された単語を一括削除する術が（現時点では）用意されていない。これがふたつめのつらさ。
 一つずつ単語をタップし、辞書のポップアップから削除しなければならない。レスポンスの悪さと画面の点滅のせいで、わりとつらい作業になってしまう。</p>
 
-<p>何かいい手は無いかなぁと思って、KindleをMacにマウントして中身にそれらしいファイルがあるかどうか調べてみた。 <sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
+<p>何かいい手は無いかなぁと思って、KindleをMacにマウントして中身にそれらしいファイルがあるかどうか調べてみた。 <sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup></p>
 
 <p>それらしいファイルがあった。 <code>Kindle/system/vocabulary</code> 内には <code>vocab.db</code> という sqlite3 のDBが入っていた。
 ここまでくればあとは何とでも…。</p>
@@ -147,7 +147,7 @@ sqlite&gt; DELETE FROM words WHERE lang = &quot;ja&quot;;
 
 <section class="section">
   <div class="container has-text-centered">
-    <p>&copy;2011-2018 tuxedocat : Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></p>
+    <p> : Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></p>
   </div>
 </section>
 
