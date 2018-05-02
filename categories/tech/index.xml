@@ -6,10 +6,22 @@
     <description>Recent content in Tech on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Apr 2018 21:05:00 +0900</lastBuildDate>
+    <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Sat, 21 Apr 2018 01:08:30 +0900</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using pipenv&#39;s virtualenv as a kernel in JupyterHub</title>
+      <link>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</link>
+      <pubDate>Sat, 21 Apr 2018 01:08:30 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</guid>
+      <description>&lt;p&gt;Run &lt;code&gt;python -m ipykernel install --user --name=&amp;lt;kernel-name&amp;gt;&lt;/code&gt; in pipenv-enabled shell.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title> Day One -&gt; Markdown (with metadata)</title>

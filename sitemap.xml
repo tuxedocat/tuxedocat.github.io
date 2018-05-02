@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</loc>
+    <lastmod>2018-04-21T01:08:30+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/2018/dayone2md/</loc>
     <lastmod>2018-04-03T21:05:00+09:00</lastmod>
   </url>
@@ -10,6 +15,11 @@
   <url>
     <loc>https://log.tuxedokatze.com/2018/pycharm%E5%B0%8F%E3%83%8D%E3%82%BF/</loc>
     <lastmod>2018-01-22T21:54:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/2017/%E6%9C%AC%E5%AE%9A%E6%9C%9F/</loc>
+    <lastmod>2017-12-30T18:23:37+09:00</lastmod>
   </url>
   
   <url>
@@ -245,7 +255,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/blog/</loc>
-    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
+    <lastmod>2018-04-21T01:08:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -263,7 +273,13 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/books/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-30T18:23:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/categories/books/</loc>
+    <lastmod>2017-12-30T18:23:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -376,6 +392,12 @@
   </url>
   
   <url>
+    <loc>https://log.tuxedokatze.com/tags/jupyter/</loc>
+    <lastmod>2018-04-21T01:08:30+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/tags/kindle/</loc>
     <lastmod>2016-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -455,7 +477,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/python/</loc>
-    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
+    <lastmod>2018-04-21T01:08:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -468,6 +490,12 @@
   <url>
     <loc>https://log.tuxedokatze.com/tags/reading/</loc>
     <lastmod>2016-12-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/tags/readings/</loc>
+    <lastmod>2017-12-30T18:23:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -539,7 +567,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/categories/tech/</loc>
-    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
+    <lastmod>2018-04-21T01:08:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -581,7 +609,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/</loc>
-    <lastmod>2018-04-03T21:05:00+09:00</lastmod>
+    <lastmod>2018-04-21T01:08:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   

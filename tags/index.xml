@@ -6,6 +6,7 @@
     <description>Recent content in Tags on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
+    <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
     <lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -50,7 +51,7 @@
     <item>
       <title>Books</title>
       <link>https://log.tuxedokatze.com/tags/books/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Dec 2017 18:23:37 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/books/</guid>
       <description></description>
@@ -201,6 +202,15 @@
     </item>
     
     <item>
+      <title>Jupyter</title>
+      <link>https://log.tuxedokatze.com/tags/jupyter/</link>
+      <pubDate>Sat, 21 Apr 2018 01:08:30 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/tags/jupyter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Kindle</title>
       <link>https://log.tuxedokatze.com/tags/kindle/</link>
       <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
@@ -311,7 +321,7 @@
     <item>
       <title>Python</title>
       <link>https://log.tuxedokatze.com/tags/python/</link>
-      <pubDate>Tue, 03 Apr 2018 21:05:00 +0900</pubDate>
+      <pubDate>Sat, 21 Apr 2018 01:08:30 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/python/</guid>
       <description></description>
@@ -323,6 +333,15 @@
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://log.tuxedokatze.com/tags/readings/</link>
+      <pubDate>Sat, 30 Dec 2017 18:23:37 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/tags/readings/</guid>
       <description></description>
     </item>
     

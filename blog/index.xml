@@ -6,10 +6,22 @@
     <description>Recent content in Blogs on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Apr 2018 21:05:00 +0900</lastBuildDate>
+    <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Sat, 21 Apr 2018 01:08:30 +0900</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using pipenv&#39;s virtualenv as a kernel in JupyterHub</title>
+      <link>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</link>
+      <pubDate>Sat, 21 Apr 2018 01:08:30 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</guid>
+      <description>&lt;p&gt;Run &lt;code&gt;python -m ipykernel install --user --name=&amp;lt;kernel-name&amp;gt;&lt;/code&gt; in pipenv-enabled shell.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title> Day One -&gt; Markdown (with metadata)</title>
@@ -36,6 +48,20 @@
 &lt;blockquote&gt;
 &lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと、デバッガの立ち上げ時にエラーになる。&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>本（定期）</title>
+      <link>https://log.tuxedokatze.com/2017/%E6%9C%AC%E5%AE%9A%E6%9C%9F/</link>
+      <pubDate>Sat, 30 Dec 2017 18:23:37 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2017/%E6%9C%AC%E5%AE%9A%E6%9C%9F/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;2017年のあいだに読んだ本を思い出しながら感想をだらだらと書くだけの日記。永遠にWIPなPost。
+そもそも、本の感想を書くって行為自体が、自分には致命的に向いていない気がするぞ 🤔&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

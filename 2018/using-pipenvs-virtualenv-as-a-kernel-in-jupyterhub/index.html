@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="Dev, Photography, Languages, Cats" name="keywords">
+<meta content="tuxedocat" name="author">
+<meta property="og:title" content="Using pipenv&#39;s virtualenv as a kernel in JupyterHub - miauhaus.log">
+<meta property="og:url" content="https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/">
+<meta property="og:description" content="Tiny diary of a cat who codes.">
+<meta property="og:type" content="website" />
+
+<meta name="generator" content="Hugo 0.41-DEV" />
+<title>Using pipenv&#39;s virtualenv as a kernel in JupyterHub | miauhaus.log</title>
+
+
+<link rel="stylesheet" href="https://log.tuxedokatze.com//css/style.css">
+<link rel="shortcut icon" href="https://log.tuxedokatze.com//favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://log.tuxedokatze.com/"><h1 class="title is-4">miauhaus.log</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="/categories" title="Show categories">
+            <span class="icon">
+              <i class="fa fa-folder"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/tags" title="Show tags">
+            <span class="icon">
+              <i class="fa fa-hashtag"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/about" title="About me">
+            <span class="icon">
+              <i class="fa fa-heart"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://github.com/tuxedocat/" title="Me on Github">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://tuxedocat.tumblr.com/" title="My photo-blog on Tumblr">
+            <span class="icon">
+              <i class="fa fa-tumblr"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://www.flickr.com/photos/tuxedocat/" title="My photos on Flickr">
+            <span class="icon">
+              <i class="fa fa-flickr"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Using pipenv&#39;s virtualenv as a kernel in JupyterHub</h1>
+    <h2 class="subtitle is-5">April 21, 2018 </h2>
+    
+      <div class="tags">
+    
+        <a class="button is-light is-small" href="/tags/python"><i class="fa fa-hashtag"></i>python</a>
+    
+        <a class="button is-light is-small" href="/tags/jupyter"><i class="fa fa-hashtag"></i>jupyter</a>
+    
+</div>
+
+    
+    <div class="content">
+      <p>Run <code>python -m ipykernel install --user --name=&lt;kernel-name&gt;</code> in pipenv-enabled shell.</p>
+
+<p></p>
+
+<ol>
+<li><p>Setup JupyterHub properly</p></li>
+
+<li><p>In your pipenv project dir&hellip;.</p>
+
+<pre><code class="language-sh">pipenv install --dev ipykernel
+pipenv shell
+python -m ipykernel install --user --name=&lt;kernel-name&gt;
+</code></pre>
+
+<p>This command will generate <em>kernelspec</em> as <code>~/.local/share/jupyter/kernels/kernel-name</code></p></li>
+</ol>
+
+<h2 id="why-this-works">Why this works?</h2>
+
+<p>JupyterHub just runs your jupyter notebook process as the same procedure as using jupyter notebook solely.</p>
+
+<h2 id="env">Env</h2>
+
+<ul>
+<li>Ubuntu 16.04.3</li>
+<li>Python 3.6.5</li>
+<li>pipenv 11.9.0</li>
+<li>Jupyter 5.3.0</li>
+<li>JupyterHub 0.8.1</li>
+</ul>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy;2011-2018 tuxedocat : Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></p>
+  </div>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js" integrity="sha256-+bhVTaRmJ/c07eV80nU8gD2cBBF0rYkf1txqXlrbvb0=" crossorigin="anonymous" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/python.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/bash.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/scala.min.js" async></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/r.min.js" async></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-46681113-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>
