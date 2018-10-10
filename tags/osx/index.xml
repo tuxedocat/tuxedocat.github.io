@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Osx on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/osx/</link>
+    <link>https://log.tuxedokatze.com/tags/osx/index.xml</link>
     <description>Recent content in Osx on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Sun, 30 Oct 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/osx/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://log.tuxedokatze.com/tags/osx/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Disk partition manipulation on OSX 10.11</title>
@@ -25,7 +22,32 @@
 
 &lt;p&gt;Just a private log of my struggle&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;trace&#34;&gt;Trace&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Saw how people are disappointed with new Macbook Pro&lt;/li&gt;
+&lt;li&gt;Start thinking to re-use my old MBP 2011 (clean install)&lt;/li&gt;
+&lt;li&gt;Found BootCamp partition of 70GB which I won’t use anymore 🔜 Erase partition via DiskUtility.app&lt;/li&gt;
+&lt;li&gt;Reboot, and enter the recovery mode of El Capitan using Recovery HD partition&lt;/li&gt;
+&lt;li&gt;Enter DiskUtility, and try merging the system partition with free-space which is formally BootCamp partition via Partition menu&lt;/li&gt;
+&lt;li&gt;“Operation failed …”&lt;/li&gt;
+&lt;li&gt;Leave DiskUtility, enter Terminal, and play with diskutil command.&lt;/li&gt;
+&lt;li&gt;diskutil mergePartitions or some commands failed.&lt;/li&gt;
+&lt;li&gt;Found Recovery HD partition, which is right next to system partition, was then merged free-space of BootCamp partition&lt;/li&gt;
+&lt;li&gt;Delete Recovery HD partition to get continuous free-space&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;OK, let’s start from zero.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Create El Capitan’s install drive from another mac using &lt;code&gt;sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reboot MBP with that disk, erase Macintosh HD again, and this worked normally.&lt;/li&gt;
+&lt;li&gt;Perform clean install.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;thoughts&#34;&gt;Thoughts&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What if I need to merge scattered partitions which cannot be merged easily? 🔜 Some features of CoreStorage can be used like LVM, I guess.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

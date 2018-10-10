@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deeplearning on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/deeplearning/</link>
+    <link>https://log.tuxedokatze.com/tags/deeplearning/index.xml</link>
     <description>Recent content in Deeplearning on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Tue, 29 Mar 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://log.tuxedokatze.com/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>DopeLearning (KDD16) を読んだ。</title>
@@ -20,7 +17,51 @@
       <guid>https://log.tuxedokatze.com/dopelearning-kdd16-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&#34;&gt;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;KDDの論文をちゃんと読むのは初めてなのかも。
+（iPadでハイパー長文感想書いたのに投稿されていなかった…もう寝る）&lt;/p&gt;
+
+&lt;p&gt;ラップのLyricの生成タスクを定義して、音韻的な特徴を評価尺度として提案し、またそれに基づくIR的な手法によるLyric生成手法を提案した論文。&lt;/p&gt;
+
+&lt;h2 id=&#34;貢献&#34;&gt;貢献&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ラップの歌詞生成の情報検索的アプローチを提案。（他のテキスト生成タスクにも使えそう）&lt;/li&gt;
+&lt;li&gt;ラップの作詞生成タスクをLineを予測する問題として定式化。また意味的な類似度をとらえるために、RNNベースのモデルを利用した素性が有効だと示した。&lt;/li&gt;
+&lt;li&gt;歌詞の技術的な質（すごさ、Dopeさ）を定量化する Rhyme Density を提案。実際のラッパーにより有効性を確認。&lt;/li&gt;
+&lt;li&gt;deepbeat.org でデモが公開されている。（ちゃんと動く。
+著者グループはフィンランド人で、このシステムのデモ版では、英語・フィンランド語でLyricの生成ができる。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;手法&#34;&gt;手法&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;歌詞はLineの連鎖だと定義&lt;/li&gt;
+&lt;li&gt;前文脈が与えられたとき、つぎのLineを推薦する&lt;/li&gt;
+&lt;li&gt;推薦のランク学習にはRankSVMを使う&lt;/li&gt;
+&lt;li&gt;素性
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;音韻的素性&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;構造的素性（文字数ベース。長すぎると歌えないから、全体が同じような長さになるようにする。）&lt;/li&gt;
+&lt;li&gt;意味的素性（BOW, LSA）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;意味的素性2 （Collobertと同様の単語RNN）&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;尺度
+
+&lt;ul&gt;
+&lt;li&gt;歌詞の質: Rhyme Density&lt;/li&gt;
+&lt;li&gt;推薦の質: Rank, MRRなど&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;タイトルに惹かれて読んだ。
+脚注の解説やタスクへの取り組み、デモなど、ラップ愛が強くてよかった。
+手法は堅実で効果もありそうだけど、それ自体は特にラップに特化したものではない。もう少し言語学的な特徴の議論があれば面白くなりそう。
+一番の収穫は、Computational Creativityという面白そうな分野があることを知れたこと。あと、Helsinki大などフィンランドでKDDに通るところがあるというのを知って、留学したくなった。&lt;/p&gt;</description>
     </item>
     
   </channel>

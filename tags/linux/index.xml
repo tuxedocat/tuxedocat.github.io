@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/linux/</link>
+    <link>https://log.tuxedokatze.com/tags/linux/index.xml</link>
     <description>Recent content in Linux on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Mon, 22 Jan 2018 21:54:09 +0900</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://log.tuxedokatze.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PyCharm小ネタ</title>
@@ -24,7 +21,81 @@
 &lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと、デバッガの立ち上げ時にエラーになる。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;環境は、 Ubuntu 16.04.3 + PyCharm CE 2017.3.3。&lt;/p&gt;
+
+&lt;p&gt;Source root ディレクトリ名が &amp;ldquo;code&amp;rdquo; で、以下のようにそれがPythonパッケージの状態となっているとき、&lt;/p&gt;
+
+&lt;!-- Shortcodeはテーマ側であまり対応できてない  --&gt;
+
+&lt;!-- 
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ng.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;NGの状態&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+ --&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ng.png&#34; alt=&#34;NGの状態&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;pydevのデバッガのエラーが出る&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+
+&lt;!-- 
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ng-log.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;エラーログ&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+ --&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ng-log.png&#34; alt=&#34;エラーログ&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;対処は、codeディレクトリはパッケージ化しない（もしくはリネームする）こと。&lt;/p&gt;
+
+&lt;!-- 
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ok.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;codeディレクトリはパッケージ化しない&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+ --&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ok.png&#34; alt=&#34;codeディレクトリはパッケージ化しない（もしくはリネームする）&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;経緯と感想&#34;&gt;経緯と感想&lt;/h2&gt;
+
+&lt;p&gt;デバッガが急に使えなくなって困ってたら、何かの拍子に&lt;code&gt;__init__.py&lt;/code&gt;が作成されてしまったことに気付き、そこからこの問題があると気付けた。
+実験用スクリプト置き場だったとはいえ、雑なディレクトリ構造・命名はやめようと思った&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:2&#34;&gt;そこを直す方法は今回は取らない。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34;&gt;&lt;code&gt;code/&amp;lt;package_name&amp;gt;&lt;/code&gt;にメインのコードを置いていたが、CLIや実験用ラッパースクリプトを楽に扱いたいから、その上のディレクトリをSource rootにしていた。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
     </item>
     
   </channel>

@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cv on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/cv/</link>
+    <link>https://log.tuxedokatze.com/tags/cv/index.xml</link>
     <description>Recent content in Cv on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/cv/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://log.tuxedokatze.com/tags/cv/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About @tuxedocat</title>
@@ -18,8 +15,61 @@
       <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/about/</guid>
-      <description>I am interested in both theoretical and practical sides of Natural Language Processing. Currently working as a data engineer, I am trying to build a pipeline which is from data collection to analytics in not-data-friendly industrial applications.
-Skills and proficiency  Natural languages  Japanese (native) English (not bad: TOEIC 935&amp;frasl;990, IELTS Academic overall 7.0/9.0) German (beginner)  Programming languages  Python 3.x bash Scala (beginner) &amp;hellip;  Frameworks and tools  Linux (RHEL6, 7x / Ubuntu) PyData stack (Numpy/Scipy/Pandas/Scikit-learn/Jupyter) Apache Spark (Cloudera CDH) Git Collaboration tools such as Redmine, GitLab   Experiences  (Please contact me.</description>
+      <description>
+
+&lt;!-- # Yu Sawai --&gt;
+
+&lt;p&gt;I am interested in both theoretical and practical sides of Natural Language Processing.
+Currently working as a data engineer, I am trying to build a pipeline which is from data collection to analytics in not-data-friendly industrial applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;skills-and-proficiency&#34;&gt;Skills and proficiency&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Natural languages
+
+&lt;ul&gt;
+&lt;li&gt;Japanese (native)&lt;/li&gt;
+&lt;li&gt;English (not bad: TOEIC &lt;sup&gt;935&lt;/sup&gt;&amp;frasl;&lt;sub&gt;990&lt;/sub&gt;, IELTS Academic overall 7.0/9.0)&lt;/li&gt;
+&lt;li&gt;German (beginner)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Programming languages
+
+&lt;ul&gt;
+&lt;li&gt;Python 3.x&lt;/li&gt;
+&lt;li&gt;bash&lt;/li&gt;
+&lt;li&gt;Scala (beginner)&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Frameworks and tools
+
+&lt;ul&gt;
+&lt;li&gt;Linux (RHEL6, 7x / Ubuntu)&lt;/li&gt;
+&lt;li&gt;PyData stack (Numpy/Scipy/Pandas/Scikit-learn/Jupyter)&lt;/li&gt;
+&lt;li&gt;Apache Spark (Cloudera CDH)&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;li&gt;Collaboration tools such as Redmine, GitLab&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;experiences&#34;&gt;Experiences&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;(Please contact me.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;M.E. in Information Science (Natural Language Processing), Nara Institute of Science and Technology
+
+&lt;ul&gt;
+&lt;li&gt;Computational Linguistics Lab.&lt;/li&gt;
+&lt;li&gt;Research subjects: Japanese SRL and educational NLP for ESL learners.&lt;/li&gt;
+&lt;li&gt;Teaching assistant: NAIST Spring Seminar, Mar. 2012.&lt;/li&gt;
+&lt;li&gt;Funding: NAIST Creative and International Competitiveness Project 2012.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

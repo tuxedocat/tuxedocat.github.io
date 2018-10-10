@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/programming/</link>
+    <link>https://log.tuxedokatze.com/tags/programming/index.xml</link>
     <description>Recent content in Programming on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Mon, 22 Jan 2018 21:54:09 +0900</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://log.tuxedokatze.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PyCharm小ネタ</title>
@@ -24,7 +21,81 @@
 &lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと、デバッガの立ち上げ時にエラーになる。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;環境は、 Ubuntu 16.04.3 + PyCharm CE 2017.3.3。&lt;/p&gt;
+
+&lt;p&gt;Source root ディレクトリ名が &amp;ldquo;code&amp;rdquo; で、以下のようにそれがPythonパッケージの状態となっているとき、&lt;/p&gt;
+
+&lt;!-- Shortcodeはテーマ側であまり対応できてない  --&gt;
+
+&lt;!-- 
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ng.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;NGの状態&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+ --&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ng.png&#34; alt=&#34;NGの状態&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;pydevのデバッガのエラーが出る&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+
+&lt;!-- 
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ng-log.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;エラーログ&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+ --&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ng-log.png&#34; alt=&#34;エラーログ&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;対処は、codeディレクトリはパッケージ化しない（もしくはリネームする）こと。&lt;/p&gt;
+
+&lt;!-- 
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ok.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;codeディレクトリはパッケージ化しない&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+ --&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://log.tuxedokatze.com/img/pycharm-debugger/ok.png&#34; alt=&#34;codeディレクトリはパッケージ化しない（もしくはリネームする）&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;経緯と感想&#34;&gt;経緯と感想&lt;/h2&gt;
+
+&lt;p&gt;デバッガが急に使えなくなって困ってたら、何かの拍子に&lt;code&gt;__init__.py&lt;/code&gt;が作成されてしまったことに気付き、そこからこの問題があると気付けた。
+実験用スクリプト置き場だったとはいえ、雑なディレクトリ構造・命名はやめようと思った&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:2&#34;&gt;そこを直す方法は今回は取らない。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34;&gt;&lt;code&gt;code/&amp;lt;package_name&amp;gt;&lt;/code&gt;にメインのコードを置いていたが、CLIや実験用ラッパースクリプトを楽に扱いたいから、その上のディレクトリをSource rootにしていた。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -41,7 +112,48 @@
 &lt;p&gt;venvを使うときにはAnaconda環境のPythonだとコケるので、システムのPythonを使うか、&lt;code&gt;--without-pip&lt;/code&gt;　オプションをつける必要がある。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;log&#34;&gt;Log&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;macOS Sierra 10.12.4&lt;/code&gt;, Miniconda3&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;For tiny web app with flask, anaconda seemed overkill. &lt;code&gt;venv&lt;/code&gt; is preferable&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fish&#34;&gt;tuxedocat@katzenwelt:flaskapp
+➤ python3 -m venv --prompt web ./env
+Error: Command &#39;[&#39;/Users/tuxedocat/Codes/_sandbox/flaskapp/env/bin/python3&#39;, &#39;-Im&#39;, &#39;ensurepip&#39;, &#39;--upgrade&#39;, &#39;--default-pip&#39;]&#39; returned non-zero exit status 1.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;noo&amp;hellip;
+&lt;code&gt;--without-pip&lt;/code&gt; worked, but manual instllation of pip is needed.&lt;/p&gt;
+
+&lt;p&gt;What is that &lt;code&gt;ensurepip&lt;/code&gt;?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fish&#34;&gt;tuxedocat@katzenwelt:~
+➤ python -m ensurepip
+/Users/tuxedocat/miniconda3/bin/python: No module named ensurepip
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;OK, anaconda&amp;rsquo;s python cannot work in that way because of &lt;a href=&#34;https://github.com/ContinuumIO/anaconda-issues/issues/952&#34;&gt;this&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(deleted lines that adds conda path to &lt;code&gt;$PATH&lt;/code&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;omake&#34;&gt;Omake&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fish&#34;&gt;tuxedocat@katzenwelt:~
+➤ cat .config/fish/functions/use_conda.fish
+function use_conda --description &amp;quot;Simply add conda path&amp;quot;
+  set -x PATH ~/miniconda3/bin $PATH
+  source ~/miniconda3/etc/fish/conf.d/conda.fish
+end
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -54,7 +166,35 @@
 
 &lt;p&gt;そのままでも一応日本語は出力されるが、中国語フォントだったり、豆腐になったりしたので、いろいろやらなきゃならなかった。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ipagp.ttf等を&lt;code&gt;dw2pdf/mpdf/ttffonts/&lt;/code&gt;へ格納&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/mpdf/config_lang2fonts.php&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;East Asian&lt;/code&gt;のところで &lt;code&gt;$unifont = &amp;quot;ipagp, sjis, sjisB&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/mpdf/lang2fonts.css&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:lang(&amp;quot;ja&amp;quot;)&lt;/code&gt;のところで&lt;code&gt;font-family: ipagp;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/conf/style.css&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;body {font-family: ipagp, sans-serif; }&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dw2pdf/DokuPDF.class.php&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_constructer&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$this-&amp;gt;useAdobeCJK = true;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -65,7 +205,13 @@
       <guid>https://log.tuxedokatze.com/2015/link-numpy-docstring-/-howto/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;ちゃんとDocstrings書こうと思ったとき、いつもどの流派の書き方でやればいいのか迷ってしまう。そしてその後は結局、Numpy派をお手本にして書いていた気がするので、今後はこの手間を省略できるように、記録しておく。（大げさな感じ…）&lt;/p&gt;
+
+&lt;p&gt;Sphinxもやりたい。SphinxだけではなくPandocやもっと最近の色々なものなど、Documentation周りのことに興味を持っている。学際領域っぽい魅力があるからかもしれない。（ただしTeXは難しすぎてあきらめている。）&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://docs.sphinx-users.jp/latest/ext/example_numpy.html&#34;&gt;Sphinx: Numpy Style Docstring&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -76,7 +222,15 @@
       <guid>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</guid>
       <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Eclipse (PyDev) → SublimeText + iPython → Atom + iPython (自宅), Spyder, PyCharm, VS2013 (会社) …という感じで色々試してきたけど、PyCharmが一番使いやすいと感じている。&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Type Hinting&amp;rdquo;については色々なやり方が提案されていて、まだまだ発展途上なんだけど、その中では、PyCharmやJediが対応しているDocstring形式の方法は、現状の折衷案としてうまいやり方かもしれない。 (Pythonのバージョンと独立しているっぽいので。)
+ただ、個人的にはいつもNumpy式のDocstringを真似ていたので、ちょっと面倒くさい。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://legacy.python.org/dev/peps/pep-3107/&#34;&gt;PEP3107&lt;/a&gt; や &lt;a href=&#34;http://www.mypy-lang.org/&#34;&gt;Mypy&lt;/a&gt; みたいな関数アノテーション方式のほうが見た目は好きだ。
+PyCharmはこちらにも部分的に対応しているみたいなので、最高としか言い様がない (?)&lt;/p&gt;</description>
     </item>
     
   </channel>
