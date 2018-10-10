@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Todo on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/todo/index.xml</link>
+    <link>https://log.tuxedokatze.com/tags/todo/</link>
     <description>Recent content in Todo on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <atom:link href="https://log.tuxedokatze.com/tags/todo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/todo/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>stack.push(book_hs).push(book_german).push(book_lingua).push(graphic_design)....</title>
@@ -18,57 +21,7 @@
       <description>&lt;p&gt;積ん読山の高さがどんどん高くなってきた。
 もともと興味が散漫だったうえに、最近は謎の焦燥感に追い立てられて、衝動買いを繰り返しているせいだ。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;周りを見ると焦りだけはつのるが、何がしたいのかと問われると自信をもって答えられる代替案を出せないのがつらい。
-（今がつらいのだけは自覚できる、センサーの感度だけが高い感じ）&lt;/p&gt;
-
-&lt;p&gt;それでも、これは面白いな〜というのはある。
-いろいろあるなかで迷走していると、ふらふらと低空飛行しそうなので、ある程度絞ってみた。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;英語・ドイツ語
-
-&lt;ul&gt;
-&lt;li&gt;念のため&lt;/li&gt;
-&lt;li&gt;娯楽&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;言語学
-
-&lt;ul&gt;
-&lt;li&gt;XX言語学という細分化ができないぐらい無知なのを自覚した&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;写真
-
-&lt;ul&gt;
-&lt;li&gt;絵心のない自分にとって、ほぼ唯一の表現手段&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;デザイン（特にタイポグラフィ）
-
-&lt;ul&gt;
-&lt;li&gt;念のため&lt;/li&gt;
-&lt;li&gt;なぜ良い|善いデザインが良い|善いといえるのか、基本を知りたい。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Haskell
-
-&lt;ul&gt;
-&lt;li&gt;Learn You a Haskell For Great Goodを一読してわかった気になった（わかってない）&lt;/li&gt;
-&lt;li&gt;Project EulerをHaskellで少しずつ解いてみている&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;計算理論等、CSの基本
-
-&lt;ul&gt;
-&lt;li&gt;ここがわかっていないコンプレックスがある
-
-&lt;ul&gt;
-&lt;li&gt;いつまでも疎外感があるのでなんとかしたい&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;機械学習は元々の能力不足で多分投資効果が低そう… もう少し基礎をつけてからやろうかな。
-（いつまでも基礎が終わらない）
-（これでも工学修士（情報学））&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

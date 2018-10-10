@@ -2,13 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/articles/index.xml</link>
+    <link>https://log.tuxedokatze.com/articles/</link>
     <description>Recent content in Articles on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
     <lastBuildDate>Wed, 22 Nov 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://log.tuxedokatze.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://log.tuxedokatze.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>『語学学習支援のための言語処理』を読みました。</title>
@@ -18,212 +20,9 @@
       <guid>https://log.tuxedokatze.com/bookreview-nlp-for-language-learning/</guid>
       <description>&lt;!-- textlint-enable --&gt;
 
-&lt;p&gt;『語学学習支援のための言語処理』を読者モニタとして献本していただきました 🎉&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:thanks&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:thanks&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;『語学学習支援のための言語処理』を読者モニタとして献本していただきました 🎉&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:thanks&#34;&gt;&lt;a href=&#34;#fn:thanks&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;奥村 学（監修），永田 亮： 語学学習支援のための言語処理（自然言語処理シリーズ 11），コロナ社（2017），URL: &lt;a href=&#34;http://www.coronasha.co.jp/np/isbn/9784339027617&#34;&gt;http://www.coronasha.co.jp/np/isbn/9784339027617&lt;/a&gt; &lt;/br&gt; ※以下の内容は、初版第1刷を対象としています。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;短評&#34;&gt;短評&lt;/h2&gt;
-
-&lt;p&gt;自然言語処理を用いた語学学習支援に関しては、今のところ唯一の書籍だと思います。
-また、既存の類書（英書）やサーベイ論文と比べても、取り扱う範囲が幅広く、最近の手法がまとまっている点でよかったです。&lt;/p&gt;
-
-&lt;p&gt;まず、本書は、自然言語処理の側から語学学習支援に関わる方にとっては、心強いサーベイ資料となるはずです。
-各種の語学学習支援タスクの取り扱いや、基礎解析技術（品詞タグ付けや依存構造解析など）を学習者コーパスに適用した場合の性能や、
-評価尺度についての解説は、特に有益だと思います。&lt;/p&gt;
-
-&lt;p&gt;特徴的なのは、論文にはあまり書かれないような話題が、丁寧に説明されている点です。
-この分野特有の難しさを強調するだけではなく、どうやってその難しさに向き合うかについての知見が書かれています。&lt;/p&gt;
-
-&lt;p&gt;たとえば、学習者コーパス構築のためのガイドラインや、どのような前処理や解析を適用すればよいか、
-といった内容が詳しく説明されています。
-KJコーパス構築の事例をはじめ、永田先生自身の経験や知見が反映されている点で、本書のハイライトかもしれません。
-実用的な知識であるというだけでなく、研究の指針としても教わることが多いと感じました。&lt;/p&gt;
-
-&lt;p&gt;一方、本書ではあまり触れられていない事項もあります。
-本書では、基礎となる構文解析や機械学習アルゴリズムの解説は少なめです。
-今すぐ手法を実装したい、という場合には他の文献にあたる必要がありそうです。&lt;/p&gt;
-
-&lt;p&gt;他の分野から語学教育に関わる方と、自然言語処理の側との橋渡しになる点でも、意義があると感じます。
-これを契機に、教育効果の測定や、より良いフィードバック提供の方法などの面で、さらに交流が進むことを期待します。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;内容紹介&#34;&gt;内容紹介&lt;/h2&gt;
-
-&lt;p&gt;内容の整理も兼ねて、全体の内容を紹介します。&lt;/p&gt;
-
-&lt;h3 id=&#34;1-3-基礎編&#34;&gt;1 ~ 3: 基礎編&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;「イントロダクション」&lt;/strong&gt;では、語学学習&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:langlearn&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:langlearn&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;支援の目的が示されています。
-語学学習の学習効果を最大化する、という目的のためには、学習者自身への支援と、教師への支援の大きく2つがあります。
-本書では、主に日本語と英語を対象としています。
-特に、「日本語を母語とする人が英語を学習する場合」を想定した事例や手法の説明に重点が置かれています。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;「処理の対象となるデータ」&lt;/strong&gt;では、学習者コーパス&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:corpus&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:corpus&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;の特徴やその重要性が強調されています。&lt;/p&gt;
-
-&lt;p&gt;学習者の言語機能や学習の過程を言語現象として捉えられる点で、学習者コーパスは重要な情報源となります。
-自然言語処理においては、辞書の構築や、機械学習モデルの訓練データ、そして性能評価にも使われます。&lt;/p&gt;
-
-&lt;p&gt;歴史的経緯として、最初期の学習者コーパス ICLE (International Corpus of Learner English) から、最近の言語資源整備の取り組みまで、丁寧に紹介されています。
-公開済みコーパスの一覧にとどまらず、自力でのコーパス構築についても解説されています。
-計画から始まり、言語データの収集・各種のアノテーション（誤り情報など）・評価、そして公開までの一連の流れが示されます。&lt;/p&gt;
-
-&lt;p&gt;章の後半では、学習者コーパスの特徴を概観します。
-綴りや文法の誤りだけではなく、句読点抜け落ちなど、その傾向は学習者の属性によって様々であることが言及されます。
-学習者コーパスを注意深く観察しないと、なかなか気付けない問題もあるようです&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:absence-of-period-ref&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:absence-of-period-ref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;「語学学習支援のための言語処理を支える要素技術」&lt;/strong&gt;では、自然言語処理における基礎解析が概説されています。
-特に、文分割から構文解析までがここでの対象となっています。
-手法自体に深入りはしませんが、学習者の文章に対して基礎解析技術がどの程度機能するか、という情報がまとめられているのが特徴です。
-こうした解析自体を詳しく知りたい場合は、同シリーズの『構文解析』などがおすすめです。&lt;/p&gt;
-
-&lt;p&gt;問題設定と対象とする言語データ、そして自然言語処理の要素技術に対する知識がそろったところで、いよいよ語学学習支援のタスクが紹介されます。&lt;/p&gt;
-
-&lt;h3 id=&#34;4-5-学習者支援&#34;&gt;4 ~ 5: 学習者支援&lt;/h3&gt;
-
-&lt;p&gt;ここからはそれぞれのタスクが、以下のような構成で説明されます。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;タスク概要&lt;/li&gt;
-&lt;li&gt;性能と実例&lt;/li&gt;
-&lt;li&gt;理論と技術&lt;/li&gt;
-&lt;li&gt;実際的な情報&lt;/li&gt;
-&lt;li&gt;発展的内容と残された問題&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;語学学習を行う学習者本人への支援としては、「ライティング支援」と「リーディング支援」が紹介されています。&lt;/p&gt;
-
-&lt;h4 id=&#34;4-ライティング支援&#34;&gt;4. ライティング支援&lt;/h4&gt;
-
-&lt;p&gt;本記事では（自由作文に対する）文法誤り検出・訂正を取り上げます。
-よく研究されているテーマであり、ACL&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:acl&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:acl&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; などの自然言語処理の国際会議で、ワークショップや関連するセッションが設けられています。
-そして、一番身近な語学学習支援の実例かもしれません。
-たとえば、&lt;a href=&#34;https://www.grammarly.com/&#34;&gt;Grammarly&lt;/a&gt; のように、英語の文法誤り検出・訂正サービスは、すでに実用段階にあるといえそうです。&lt;/p&gt;
-
-&lt;p&gt;ひとことでライティング支援といっても、学習者にとって難しい文法事項は異なります。
-たとえば英語の場合、「主語と動詞の一致」、「前置詞の選択」、「冠詞の選択・有無」など様々なものが挙げられます。&lt;/p&gt;
-
-&lt;p&gt;このように対象となる誤りの種類は多様である一方、自然言語処理の問題としての取り扱いとしては共通する部分も多いです。
-ここでは代表的な手法として、（人手による）規則を用いた手法、言語モデルを用いた手法、SVMや最大エントロピー法などの機械学習を用いた手法が概説されています。&lt;/p&gt;
-
-&lt;p&gt;手法の種類も、そこで用いられるモデルも多様ですが、本書では次のことが強調されています&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:gec-ref&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:gec-ref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;語学学習支援を目的とした文法誤り検出/訂正では、検出/訂正性能だけではなく、つねに、より高い学習効果のことを意識するべきであろう。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;これを反映して、この章では評価の際の注意事項や、学習者への適切なフィードバックの重要性についても大きく紙面が割かれています。&lt;/p&gt;
-
-&lt;h4 id=&#34;5-リーディング支援&#34;&gt;5. リーディング支援&lt;/h4&gt;
-
-&lt;p&gt;文章中の難解な語の検出や、より平易な表現への言い換えが含まれます。&lt;/p&gt;
-
-&lt;p&gt;イメージを示すために、言い換えタスクの例を以下に引用します&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:paraphrasing-ref&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:paraphrasing-ref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;入力文: The Association for Natural Language Processing was &lt;strong&gt;established&lt;/strong&gt; in 1994. &lt;/br&gt;
-出力文: The Association for Natural Language Processing was &lt;strong&gt;started&lt;/strong&gt; in 1994.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;英英辞書を使って、英文を英語のまま、難しい単語の指す概念を理解しようとしたり、
-自分が知っているより簡単な単語と結びつけて学習する、という場面のような学習効果を狙っています。&lt;/p&gt;
-
-&lt;p&gt;「難解語の同定」では、文中の語が難解であるかどうかを判定します。
-あらかじめ定めておいた難解語の辞書を使うこともできますが、文脈によって難解かどうかが変わる場合には対応できません。
-辞書に加え、言語モデルの確率値や品詞列などの周辺文脈の特徴を利用した分類モデルを用いることが、ひとつの改善策となります。&lt;/p&gt;
-
-&lt;p&gt;「難解語の言い換え」のためには、さらに言い換え規則の獲得と、その適用が必要になります。
-規則の獲得のためには、類義語辞書を使うこともできますが、より広範囲な規則を得るための手法も提案されています。
-対応関係のある2つのコーパス（パラレルコーパス）&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:simple-wikipedia&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:simple-wikipedia&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;を用いる手法です。
-たとえば、すべての単語の分散表現を計算してから、何らかの類似度尺度を求めれば、類似した分散表現を持つような単語同士の対応が得られます。
-また、パラレルコーパスではなく、単一のコーパスからこうした規則を獲得する手法も提案されているようです。&lt;/p&gt;
-
-&lt;p&gt;評価方法としては、人手で作成した言い換え結果との自動評価だけでなく、「平易性」、「文法性」、「意味の保持」という3つの観点からの主観評価も用いられるようです。&lt;/p&gt;
-
-&lt;p&gt;タスク自体の主な課題は、どこまでを難解語とするか、どこまで言い換えればよいか、というものです。
-そもそも、同じような属性の学習者であっても、個人ごとに習熟度は異なります。
-これに対応するため、学習者の語彙知識を問う質問などにより語彙力を推定し、個人差に対応する手法が提案されているようです。&lt;/p&gt;
-
-&lt;h3 id=&#34;6-7-教師支援&#34;&gt;6 ~ 7: 教師支援&lt;/h3&gt;
-
-&lt;p&gt;最後の2つの章では、「教材作成支援」と「学習者の能力／特徴の分析」という、教育者の側への支援について書かれています。
-これらに共通する目的は、教育者の負担軽減です。
-後者は、学習者コーパスの分析や、言語現象への仮説を立てるための補助的な情報にもなり得ます。&lt;/p&gt;
-
-&lt;h4 id=&#34;6-教材作成支援&#34;&gt;6. 教材作成支援&lt;/h4&gt;
-
-&lt;p&gt;「教材作成支援」の中でも「語彙問題生成」は、学習者が受験する語学試験にも関連する点で、特色のあるタスクです。
-このタスクでは、類義語選択問題や穴埋め形式の問題を生成します。
-イメージとしては、TOEFL® Test のリーディングセクションに含まれる類義語選択問題&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:toefl-example&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:toefl-example&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;です。&lt;/p&gt;
-
-&lt;h4 id=&#34;7-学習者の能力-特徴の分析&#34;&gt;7. 学習者の能力/特徴の分析&lt;/h4&gt;
-
-&lt;p&gt;先の教材作成支援では、試験問題の作成に利用できるタスクが紹介されました。
-この章のはじめの「言語能力の自動評価」では、主に作文（エッセイ）の自動採点が紹介されます。&lt;/p&gt;
-
-&lt;p&gt;言語能力の測定はそもそも難しいものなので、ここでは、人間による採点を再現することをひとまずの目標としています。
-取り扱いとしては、何段階かの評価や点数への回帰問題とすることが多いようです。&lt;/p&gt;
-
-&lt;p&gt;続く「学習者コーパスからの特徴表現抽出」と「母語干渉の分析」から得られる結果は、それ自体が知識源となるだけではなく、
-他のタスクにおける特徴（素性）としても重要です。
-たとえば、学習者の母語によって前置詞誤りの傾向が異なるという知識を利用して、それを事前分布として利用する手法が提案されています。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
-
-&lt;p&gt;ここからはきわめて個人的な感想となるので、常体に戻す。&lt;/p&gt;
-
-&lt;p&gt;僕は英語学習者支援の研究をしていたことがある、というだけの者なのだが、
-たまたま縁があって、
-自分自身が関わっていた分野の知識が集約された本をじっくりと読む機会に恵まれた。&lt;/p&gt;
-
-&lt;p&gt;全体を通して、語学学習支援の目的を見失わないように、という課題意識が表明されていたように思う。
-個人的には、それがハイライトだと解釈した。
-学習者支援の思想的なところの重要性や、自然言語処理だけでは済まないタスクだということを再認識した&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:regret&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:regret&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
-
-&lt;p&gt;記事を書いている間、&lt;a href=&#34;https://ctrl-x-s.blog/2017/11/06/%e3%83%99%e3%83%b3%e3%83%81%e3%83%9e%e3%83%bc%e3%82%af%e3%81%ae%e5%8a%9f%e7%bd%aa/&#34;&gt;『ベンチマークの功罪』（Google 賀沢さんのブログ）&lt;/a&gt; で指摘されていたようなことを考えていた。
-語学学習支援での状況はどうなのだろうか、と思ったが、本書や他の論文でも課題意識を表明している方は多い様子なので、大丈夫なのかもしれない。&lt;/p&gt;
-
-&lt;p&gt;そもそも、タスクの提案と、それに適した学習者コーパスの構築・公開、評価指標を整備すること自体、この分野ではかなり苦労するものだと思っている。
-しかし、本書でも触れられていた Learner Corpus Association の発足など、状況は着実に良くなっている気がした。
-最近のACLでの関連論文をちらっと眺めてみると、評価手法そのものに関する論文&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:eval-gec&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:eval-gec&#34;&gt;11&lt;/a&gt;&lt;/sup&gt; があったので、ポジティブな印象は強まった。
-今後は、実運用（教育現場）での効果測定のような問題と向き合うことになるんだろうか。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://b.hatena.ne.jp/entry/&#34; class=&#34;hatena-bookmark-button&#34; data-hatena-bookmark-layout=&#34;basic&#34; title=&#34;このエントリーをはてなブックマークに追加&#34;&gt;&lt;img src=&#34;https://b.st-hatena.com/images/entry-button/button-only@2x.png&#34; alt=&#34;このエントリーをはてなブックマークに追加&#34; width=&#34;20&#34; height=&#34;20&#34; style=&#34;border: none;&#34; /&gt;&lt;/a&gt;&lt;script type=&#34;text/javascript&#34; src=&#34;https://b.st-hatena.com/js/bookmark_button.js&#34; charset=&#34;utf-8&#34; async=&#34;async&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:thanks&#34;&gt;コロナ社様より。この度はありがとうございました。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:thanks&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:langlearn&#34;&gt;本書では、第二言語習得と語学学習とを、「対象言語が日常的に使用されている環境下であるか」という基準で区別しています。この区別において、語学学習という用語は「対象言語が日常的に使用されていない環境下での学習」を指します。たとえば「英語が母語ではない人が日本の学校で英語を学習する」という状況です。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:langlearn&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:corpus&#34;&gt;コーパスとは、言語データを集約し、計算機で扱えるようにしたものを指します。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:corpus&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:absence-of-period-ref&#34;&gt;p.12 では、中学生の書いた英文の観察から「文末のピリオド脱落」という問題を初めて認識した、という永田先生の経験談が書かれています。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:absence-of-period-ref&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:acl&#34;&gt;自然言語処理のトップカンファレンスのひとつ。&lt;a href=&#34;http://cl.sd.tmu.ac.jp/groups/seminars/conferences&#34;&gt;首都大学東京の小町先生による関連学会の紹介&lt;/a&gt;が参考になります。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:acl&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:gec-ref&#34;&gt;p.88 より。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:gec-ref&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:paraphrasing-ref&#34;&gt;p.108 より。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:paraphrasing-ref&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:simple-wikipedia&#34;&gt;&lt;a href=&#34;https://simple.wikipedia.org/wiki/Main_Page&#34;&gt;Simple English Wikipedia&lt;/a&gt; がよく利用される印象があります。ただし、言い換えタスクのための言語資源として最適かどうかには議論があるようです。（Xu, W., Callison-Burch, C., &amp;amp; Napoles, C. (2015). Problems in Current Text Simplification Research: New Data Can Help. TACL. など。）
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:simple-wikipedia&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:toefl-example&#34;&gt;&lt;a href=&#34;https://www.ets.org/Media/Tests/TOEFL/pdf/SampleQuestions.pdf&#34;&gt;ETSが公開しているサンプル&lt;/a&gt;の &lt;em&gt;The word &amp;ldquo;&amp;hellip;&amp;rdquo; on line N is closest in meaning to:&lt;/em&gt; という問題。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:toefl-example&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:regret&#34;&gt;自分自身が英語学習者支援のテーマで研究していたときにも、意識していたはずだが……。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:regret&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:eval-gec&#34;&gt;文法誤り訂正における評価手法の再考。Sakaguchi, K., Napoles, C., Post, M., &amp;amp; Tetreault, J. (2016). Reassessing the Goals of Grammatical Error Correction: Fluency Instead of Grammaticality. Transactions of the Association of Computational Linguistics, 4, 169–182.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:eval-gec&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -234,51 +33,7 @@ KJコーパス構築の事例をはじめ、永田先生自身の経験や知見
       <guid>https://log.tuxedokatze.com/dopelearning-kdd16-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&#34;&gt;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;KDDの論文をちゃんと読むのは初めてなのかも。
-（iPadでハイパー長文感想書いたのに投稿されていなかった…もう寝る）&lt;/p&gt;
-
-&lt;p&gt;ラップのLyricの生成タスクを定義して、音韻的な特徴を評価尺度として提案し、またそれに基づくIR的な手法によるLyric生成手法を提案した論文。&lt;/p&gt;
-
-&lt;h2 id=&#34;貢献&#34;&gt;貢献&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ラップの歌詞生成の情報検索的アプローチを提案。（他のテキスト生成タスクにも使えそう）&lt;/li&gt;
-&lt;li&gt;ラップの作詞生成タスクをLineを予測する問題として定式化。また意味的な類似度をとらえるために、RNNベースのモデルを利用した素性が有効だと示した。&lt;/li&gt;
-&lt;li&gt;歌詞の技術的な質（すごさ、Dopeさ）を定量化する Rhyme Density を提案。実際のラッパーにより有効性を確認。&lt;/li&gt;
-&lt;li&gt;deepbeat.org でデモが公開されている。（ちゃんと動く。
-著者グループはフィンランド人で、このシステムのデモ版では、英語・フィンランド語でLyricの生成ができる。）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;手法&#34;&gt;手法&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;歌詞はLineの連鎖だと定義&lt;/li&gt;
-&lt;li&gt;前文脈が与えられたとき、つぎのLineを推薦する&lt;/li&gt;
-&lt;li&gt;推薦のランク学習にはRankSVMを使う&lt;/li&gt;
-&lt;li&gt;素性
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;音韻的素性&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;構造的素性（文字数ベース。長すぎると歌えないから、全体が同じような長さになるようにする。）&lt;/li&gt;
-&lt;li&gt;意味的素性（BOW, LSA）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;意味的素性2 （Collobertと同様の単語RNN）&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;尺度
-
-&lt;ul&gt;
-&lt;li&gt;歌詞の質: Rhyme Density&lt;/li&gt;
-&lt;li&gt;推薦の質: Rank, MRRなど&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
-
-&lt;p&gt;タイトルに惹かれて読んだ。
-脚注の解説やタスクへの取り組み、デモなど、ラップ愛が強くてよかった。
-手法は堅実で効果もありそうだけど、それ自体は特にラップに特化したものではない。もう少し言語学的な特徴の議論があれば面白くなりそう。
-一番の収穫は、Computational Creativityという面白そうな分野があることを知れたこと。あと、Helsinki大などフィンランドでKDDに通るところがあるというのを知って、留学したくなった。&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coursera on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/coursera/index.xml</link>
+    <link>https://log.tuxedokatze.com/tags/coursera/</link>
     <description>Recent content in Coursera on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <atom:link href="https://log.tuxedokatze.com/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 May 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>マイクロ進捗</title>
@@ -18,43 +21,7 @@
       <description>&lt;p&gt;復習と現実逃避と、そしてアリバイ作りのために受けていたCourseraの機械学習のクラス（Andrew Ng先生のml008）の結果が出た。
 Accomplishmentは100%だった。（本当??）&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;このクラスは、自動採点のプログラミング課題の比重が高かったから、好きなときに手を動かすことができた。&lt;/p&gt;
-
-&lt;p&gt;内容は広く浅くという感じで、以前Richard Socherさんと祇園に行った時に聞いていた通り、本科の2割ぐらいの量だった。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-とはいえ、週数時間でこの分野の基礎的なところを概観し、手元で実際に動かせるようになるという点で、MOOCの意義を感じる講義だった。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;
-特に、Bias/Varianceの話や評価、機械学習を利用したシステムづくりへのアドバイスといった土地勘は、ふつうその分野や領域に近くないと得られないと思う。&lt;/p&gt;
-
-&lt;p&gt;そりゃあ、良書を手にすればそうした内容は当然記載されているし、周囲にその分野に長けた人がいれば、直接話を聞けばいいんだけど。
-誰にでもそういう機会があるわけではないので、誰でもアクセスできるようになったのは人類全体の幸福につながって良いと思う。&lt;/p&gt;
-
-&lt;p&gt;これをこなしたからって実際は…というのは他の色々な勉強と同じく当然なので、気にしないことにする。
-次にやることはいくつもあるので、不安に打ちひしがれるのはまだ早い。&lt;/p&gt;
-
-&lt;p&gt;最近コードを書いてないので、言語処理100本ノックをやりながら、ml008の復習をPythonでやってみようと思う。
-僕は小分けになっていないと続かない（続けられない）人間だと思うし、今の状態で高すぎる目標を立てると、すなわち死なので。
-あと、最近出たオンライン機械学習の本を読みたい。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;その他よかったこと&#34;&gt;その他よかったこと&lt;/h3&gt;
-
-&lt;p&gt;ここしばらく、キャリアやスキルに関して悩み続けていてひどく憂鬱だったけれど、このコースとDuolingoのドイツ語は最後まで続けられたので、自己評価が少し上がった。
-よかった。&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:2&#34;&gt;（本科のコースページを見てみたけど、期末レポートでも下手な研究会よりずっと充実していそうなぐらい、ハイレベルだった…）
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:1&#34;&gt;少し気になることもあって、それは、Octaveを使うってところと、自動採点システムの都合上プログラミング課題が穴埋め式に近いというところ。このへんは、今後もっと良くなっていくのかなと期待している。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;（前者は、Ng先生もSocherさんも、研究室の頃の同期も機械学習研究におけるMATLAB・Octaveの手軽さを推していたから、これはこれでいい気もする。）
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:4&#34;&gt;電子版が出るならそっちがいい
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -66,34 +33,7 @@ Accomplishmentは100%だった。（本当??）&lt;/p&gt;
       <description>&lt;p&gt;某機械学習のクラスを受講している。
 深層学習が流行りだして早3年（もっと?）という時期だけど、応用面ではもう少し軽量で、挙動がわかりやすい方が良い場合もあると思うし、線形回帰〜SVMの復習も無駄ではないはず。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;2015年コースも課題はOctaveが推奨プログラミング言語のようなので、Octaveの環境を整える。&lt;/p&gt;
-
-&lt;p&gt;会社のマシンには、&lt;a href=&#34;http://mxeoctave.osuv.de/&#34;&gt;Windows版非公式ビルド(MXE Octave)&lt;/a&gt;を。
-自宅MacMiniは、Homebrewで。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ brew tap homebrew/science
-$ brew install octave
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;OctaveはMATLABとの互換性においては、ScilabやFreeMatよりも高いはず。
-この点で、MATLAB勢力もそこそこ居るという今の仕事においても無駄にはならなさそう。&lt;/p&gt;
-
-&lt;p&gt;また、いくらPython（とそのエコシステムに含まれるNumpy/Scipy, Pandas, Scikit-learnなど）が優秀で、ライセンス面でも十分MATLABを代替できるとしても、色々な理由でPython一本で技術計算をするのは難しいと思ったのもある。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;まぁ、MATLABでもPythonでもRでも、開発環境がつらすぎるExcelVBAに比べると、喜んでやります!って気持ちになる。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;社内での最大勢力はExcel（+VBA）&amp;hellip;ついでMATLAB、Rという感じ。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;（悲しいかな、社内にはそういう機械学習寄りの業務の人もいる。自分の業務が全く逸れてしまっているだけで。）（そこに希望を持ってしまうと、色々な判断が遅れてしまうだろう。だが、普段からそういう分野に興味があると言っておいて、何もしていないってのはマズいから&amp;hellip;）
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

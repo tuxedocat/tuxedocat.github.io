@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jupyter on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/jupyter/index.xml</link>
+    <link>https://log.tuxedokatze.com/tags/jupyter/</link>
     <description>Recent content in Jupyter on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <atom:link href="https://log.tuxedokatze.com/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Apr 2018 01:08:30 +0900</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Using pipenv&#39;s virtualenv as a kernel in JupyterHub</title>
@@ -17,34 +20,7 @@
       <guid>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</guid>
       <description>&lt;p&gt;Run &lt;code&gt;python -m ipykernel install --user --name=&amp;lt;kernel-name&amp;gt;&lt;/code&gt; in pipenv-enabled shell.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Setup JupyterHub properly&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In your pipenv project dir&amp;hellip;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;pipenv install --dev ipykernel
-pipenv shell
-python -m ipykernel install --user --name=&amp;lt;kernel-name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This command will generate &lt;em&gt;kernelspec&lt;/em&gt; as &lt;code&gt;~/.local/share/jupyter/kernels/kernel-name&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;why-this-works&#34;&gt;Why this works?&lt;/h2&gt;
-
-&lt;p&gt;JupyterHub just runs your jupyter notebook process as the same procedure as using jupyter notebook solely.&lt;/p&gt;
-
-&lt;h2 id=&#34;env&#34;&gt;Env&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ubuntu 16.04.3&lt;/li&gt;
-&lt;li&gt;Python 3.6.5&lt;/li&gt;
-&lt;li&gt;pipenv 11.9.0&lt;/li&gt;
-&lt;li&gt;Jupyter 5.3.0&lt;/li&gt;
-&lt;li&gt;JupyterHub 0.8.1&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Typography on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/typography/index.xml</link>
+    <link>https://log.tuxedokatze.com/tags/typography/</link>
     <description>Recent content in Typography on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <atom:link href="https://log.tuxedokatze.com/tags/typography/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Oct 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/typography/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Neue Helvetica?</title>
@@ -15,26 +18,7 @@
       <pubDate>Sun, 26 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2014/neue-helvetica/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Here’s where my ire is really provoked: Helvetica Neue Light as an interface font. Wrong. Horrible and wrong. Let’s get Apple out of the way. Since iOS 7 and soon in OS Yosemite, Apple has been using Helvetica Neue for its user interfaces. The preview of iOS7 used Helvetica Neue Light and Ultra Light, which was received very badly. Consequently the Regular weight is now the default, as it will be in the forthcoming desktop UI. Helvetica is still far from ideal as a UI font, but Apple’s in-built Dynamic Type helps by doing things like tweaking the letter spacing for differently sized text, and on a Retina display it may work fine. But this doesn’t mean that the incumbent Lucida Grande doesn’t remain a better choice from a practical perspective.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://clagnut.com/blog/2379/&#34;&gt;The Scourge of Helvetica Neue Light | Clagnut&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;最近のOSX/iOSのデフォルトUIフォントになっているHelvetica Neue (Light)。
-それからの周辺への広まりに対する苦言。&lt;/p&gt;
-
-&lt;p&gt;VerdanaとかMyriad Proのときもそうかもしれなかったけど、どこか影響力の大きなところが使い出すと、（若干二流気味なところで|デザイン重視ではないところで）なんとなくそのフォントが主軸になる感じがしていた。
-素人だから、XXっぽいフォントだな〜としか感じなかったけれど。&lt;/p&gt;
-
-&lt;p&gt;Helvetica Neueそれ自体には本当に余計な色気がなく、何か面白みに欠けると思っている。
-まだLucida Grandeがデフォルトフォントだったころ、試しにデフォルトフォントをHelvetica Neueにしてみたけれど、すごくWindowsっぽい感じになってしまい萎えた記憶がある。
-そのままUI向けにするのは（素人仕事だと）難しそうに思えた。&lt;/p&gt;
-
-&lt;p&gt;この記事を読むと、そんな素人っぽい仕事が蔓延しそうなので、なかなかつらいですね…と感じた。
-フラットデザインを手抜きだと言ったり、バウハウスっぽい意匠をデザインではないと言ったりする種類の人を脳内で想像して悶々とすることがあるけど、この記事みたいな事例は確かにあるから安易に敵視できないな。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

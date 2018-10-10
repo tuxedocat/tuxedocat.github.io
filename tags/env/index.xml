@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Env on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/env/index.xml</link>
+    <link>https://log.tuxedokatze.com/tags/env/</link>
     <description>Recent content in Env on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <atom:link href="https://log.tuxedokatze.com/tags/env/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/env/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>現時点でのベスト？（キーボードのはなし）</title>
@@ -16,89 +19,9 @@
       
       <guid>https://log.tuxedokatze.com/2017/%E7%8F%BE%E6%99%82%E7%82%B9%E3%81%A7%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97/</guid>
       <description>&lt;p&gt;注文していたキーボード（ARCHISS ProgressTouch RETRO TINY）が届いた。
-個人的に無印HHKB Pro2に感じていた不満&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;がほとんど瞬時に解消されて、QoLが向上した。&lt;/p&gt;
+個人的に無印HHKB Pro2に感じていた不満&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;がほとんど瞬時に解消されて、QoLが向上した。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://log.tuxedokatze.com/img/keyboard/archiss-1.jpg&#34; alt=&#34;外観&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;静音赤軸（ピンク軸）バージョンを買ったのだけど、前に買った同型の赤軸版&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;にシリコンリングをつけたものよりも、ずっと静かでびっくりした。
-シリコンリングによって、キーを目一杯押したときの音や衝撃はだいぶ緩和されたけど、その後の「戻り」の際に生じる高い周波数の音にはあまり効果はなかった。
-こちらのピンク軸版は、全体的にそういう周波数の音が小さくなっている気がする。&lt;/p&gt;
-
-&lt;p&gt;配列に関しては、Esc キーだけ、&lt;code&gt;~&lt;/code&gt;  キーと被っているので、それらを入力するには、Fnキーと同時押しするか、Fn+Qでロックをかけるかする必要がある。
-Vimをつかうときには、たぶん &lt;code&gt;ctrl+[&lt;/code&gt; をモード切替に使う方がよさそう。&lt;/p&gt;
-
-&lt;p&gt;あと、細かいところだけど、Mac向けのキートップが用意されていないので（そして少し長めのWinキーはひとつしかないのでなおさら）下の写真みたいにちょっと変な感じになってしまう。
-Mac向けのCommandキー・Optionキーを作ってもらえたらもっと最高になりそう。
-でも、キートップが2色成形&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;なので、コスト的にそういうものが提供されるかどうかはわからない……。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://log.tuxedokatze.com/img/keyboard/archiss-2.jpg&#34; alt=&#34;配列&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;macos向けの設定&#34;&gt;macOS向けの設定&lt;/h2&gt;
-
-&lt;p&gt;これまで、Karabiner Elementsのお世話にはなっていなかったけど、ここですごく有用だということがわかった。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;本体のDipスイッチは、&lt;code&gt;1000&lt;/code&gt; (Caps to Ctrl)&lt;/li&gt;
-&lt;li&gt;Karabiner Elements で Magic Keyboard風に…
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;right_control&lt;/code&gt;  -&amp;gt; &lt;code&gt;right_option&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;right_option&lt;/code&gt; -&amp;gt; &lt;code&gt;right_command&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;left_option&lt;/code&gt; -&amp;gt; &lt;code&gt;left_command&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;left_command&lt;/code&gt; -&amp;gt; &lt;code&gt;left_option&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;あまりに凝った設定をすると、Macbook Proを使うときや、設定が消えたときに困りそうなのでやめておいた。&lt;/p&gt;
-
-&lt;h2 id=&#34;ほかに迷ったもの&#34;&gt;ほかに迷ったもの&lt;/h2&gt;
-
-&lt;p&gt;ひとに薦められて気になったもの：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;MISTEL Barocco
-
-&lt;ul&gt;
-&lt;li&gt;かっこいいと思った。でも、ピンク軸版がなかったのと、ケーブルが意外と邪魔そうだった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;RealForceシリーズ
-
-&lt;ul&gt;
-&lt;li&gt;昔触らせてもらって、すごく静かで打ち心地もよかったのを覚えている。&lt;/li&gt;
-&lt;li&gt;でも、コンパクトじゃないし、意匠が好みではなかった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;HHKB Type-S
-
-&lt;ul&gt;
-&lt;li&gt;価格と同じものを買うことへの抵抗感から。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Majestouch Minila
-
-&lt;ul&gt;
-&lt;li&gt;ほぼ同じようなスペックだったので最有力候補だったけど、ちょっと配列が詰まりすぎだと思った。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;hhkbどうしよう&#34;&gt;HHKBどうしよう&lt;/h2&gt;
-
-&lt;p&gt;（NAIST時代から6年ぐらい使ってきたけど、）どうしよう。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://log.tuxedokatze.com/img/keyboard/archiss-and-hhkb.jpg&#34; alt=&#34;HHKBどうしよう&#34; /&gt;&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Type-Sではないからなのか、机との相性が悪いのか、結構タイプ音がするし、指への衝撃も大きいと感じていた。音だけなら自宅で使う上ではあまり問題にはならないが、指が疲れるのはやっぱりつらい面があった。半公式グッズである吸振ゴムマットも試したけど、あまり変わらない印象だった。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;確か”TKL赤軸”を買ったのは今年の1月ぐらいだった。もしかしたら、当時はAmazonで買えなかっただけかもしれないけど。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;かなり高品質だと思った。機械的に故障したから買い換えた、という事例は今まで生きてて一度も無く、それよりも外見が汚くなったからという場合の方が多かったので、この点はうれしい。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
