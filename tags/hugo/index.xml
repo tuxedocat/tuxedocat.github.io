@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/hugo/</link>
+    <link>https://log.tuxedokatze.com/tags/hugo/index.xml</link>
     <description>Recent content in Hugo on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Mon, 09 Oct 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://log.tuxedokatze.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hugoのテーマ</title>
@@ -22,9 +19,60 @@
 とはいっても、それらしいことは特に何もやっていない。
 昨日おとといと出かけて疲れきっていたので、きょうは10時まで寝ていた。&lt;/p&gt;
 
-&lt;p&gt;ここ数日やったことといえば、ちょこちょことHugoのテーマをいじっていたことぐらいかもしれない&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;ここ数日やったことといえば、ちょこちょことHugoのテーマをいじっていたことぐらいかもしれない&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;もともとは &amp;ldquo;Hemingway&amp;rdquo; というテーマを使っていた。
+そのあと、そのForkである&amp;rdquo;Hemingway2&amp;rdquo;へ乗り換えていた。
+でも結局いろいろいじる必要が出てきたので、自分のFork&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;を作ってしまった。&lt;/p&gt;
+
+&lt;p&gt;結果、いろいろな細かい不満が解消されたと同時に、ウェブっぽい話をちょっとは知ることができた。
+Hugo自体のコードは全く見てないけど、その仕組みの大部分であるGo Templateはなんとなくわかってきた。
+本筋ではないけど、設定ファイル記述言語としてのTomlがかなり簡潔でよさそうなことも実感できてよかった。&lt;/p&gt;
+
+&lt;p&gt;Hugoテーマの差分はだいたい以下のもの：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tags/Categoriesなどを生成するための &lt;code&gt;terms.html&lt;/code&gt; の追加
+
+&lt;ul&gt;
+&lt;li&gt;Blackburnというテーマを参考にした&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Mathjaxのロード部の修正とconfig.tomlでの有効・無効切り替え&lt;/li&gt;
+&lt;li&gt;スタイルの変更（下記）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Webっぽいことといえば、Sass で書いたスタイルシートを CSS にビルドする仕組みを（Hucoreにあったものだけど）試してみた。Sassが2017年的かどうかはわからないけど、元々のテーマがかなり簡潔で、JS側も含めたそういうフレームワークに左右されない感じだったのがよかった。&lt;/p&gt;
+
+&lt;p&gt;もうちょっと楽をしたいので、&lt;code&gt;yarn&lt;/code&gt; を使って（2017年的かどうかはわからない） &lt;code&gt;gulp&lt;/code&gt; と &lt;code&gt;gulp-sass&lt;/code&gt; を導入する。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yarn config set prefix /usr/local&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;yarn global add gulp gulp-sass&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;もともとのテーマに &lt;code&gt;gulpfile.js&lt;/code&gt; が含まれていて、そこにタスクが定義されているので拝借する。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yarn gulp # デフォルトのタスク。Sassをビルドしてstatic/ 内に配置する&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;yarn gulp watch # Sassの変更を監視して、差分があれば自動的に更新する。&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;という感じ。日本語フォントの適用や、ちょっとした外見の変更だけで、特に大きな差分はない。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;そのほかのできごと 1：大学院時代の友人たちと丸の内でシュラスコを食べた。「丸の内にゃんにゃんOL」という概念を獲得した。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;そのほかのできごと 2：横浜オクトーバーフェストに行ってきた。 🍺はおいしかったけど、連休だったためかとても混んでいて疲れた。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;&lt;a href=&#34;https://github.com/tuxedocat/tuxedoneko&#34;&gt;https://github.com/tuxedocat/tuxedoneko&lt;/a&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
     </item>
     
   </channel>

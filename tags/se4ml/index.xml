@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Se4ml on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/se4ml/</link>
+    <link>https://log.tuxedokatze.com/tags/se4ml/index.xml</link>
     <description>Recent content in Se4ml on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Thu, 23 Nov 2017 23:05:11 +0900</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/se4ml/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://log.tuxedokatze.com/tags/se4ml/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>これなら伝わりそう（たのむ……）</title>
@@ -24,7 +21,90 @@
 &lt;p&gt;Naver の Lucy Park氏による ACML-AIMLP Workshop での 発表 &lt;a href=&#34;https://www.lucypark.kr/docs/slides/2017-acml/#/&#34;&gt;&amp;ldquo;My model has higher BLEU, can I ship it? The Joel Test for machine learning systems&amp;rdquo;&lt;/a&gt; をざっと読んだ。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;joel-test-ソフトウェア開発チーム-プロジェクトの質の評価&#34;&gt;Joel Test: ソフトウェア開発チーム・プロジェクトの質の評価&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://japanese.joelonsoftware.com/Articles/TheJoelTest.html&#34;&gt;Joel Test (Joel on Software日本語版)&lt;/a&gt; は、ソフトウェア開発チームの質を評価する、「12個のYes/Noで答えられる質問リスト」のこと。色々便利に使おうとする例や、これ自体が時代遅れだとする記事も出るぐらい時が流れたが、今回それらは関係ない。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;ソース管理システムを使っているか？&lt;/li&gt;
+&lt;li&gt;１オペレーションでビルドを行えるか？&lt;/li&gt;
+&lt;li&gt;毎日ビルドを行うか？&lt;/li&gt;
+&lt;li&gt;障害票データベースを持っているか？&lt;/li&gt;
+&lt;li&gt;新しいコードを書くまえにバグを修正するか？&lt;/li&gt;
+&lt;li&gt;更新可能なスケジュール表を持っているか？&lt;/li&gt;
+&lt;li&gt;仕様書を持っているか？&lt;/li&gt;
+&lt;li&gt;プログラマは静かな労働環境にあるか？&lt;/li&gt;
+&lt;li&gt;買える範囲で一番良い開発ツールを使っているか？&lt;/li&gt;
+&lt;li&gt;テスト担当者はいるか？&lt;/li&gt;
+&lt;li&gt;プログラマを採用するときにコードを書かせるか？&lt;/li&gt;
+&lt;li&gt;「廊下での使い勝手テスト」を行っているか？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;こうやって問われるとちょっと自信をもって回答できない。少なくとも今いる環境では……。
+まぁ、そもそもソフトウェア開発メインかどうかすら怪しい、なんともふらふらした立場にいるので、ひとまず置いておく。&lt;/p&gt;
+
+&lt;h2 id=&#34;機械学習システムのための-joel-test&#34;&gt;機械学習システムのための Joel Test&lt;/h2&gt;
+
+&lt;p&gt;Naver の Lucy Park氏による ACML-AIMLP Workshop での 発表 &lt;a href=&#34;https://www.lucypark.kr/docs/slides/2017-acml/#/&#34;&gt;&amp;ldquo;My model has higher BLEU, can I ship it? The Joel Test for machine learning systems&amp;rdquo;&lt;/a&gt; をざっと読んだ。&lt;/p&gt;
+
+&lt;p&gt;機械翻訳システムの実運用を例に、Scullyの一連の論文&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; で示された「機械学習システムの技術的負債化」の問題に向き合うための方策を議論している。&lt;/p&gt;
+
+&lt;p&gt;タイトルの通り、キャッチーなわかりやすいスライドでよかった。（機械翻訳はあくまでこの事例での背景。別にBLEUでいいとかダメとかの話は中心ではない。例としては出てくるけど…。）&lt;/p&gt;
+
+&lt;p&gt;スライドでざっと挙げられている「機械学習システムのための Joel Test」はこんな感じ。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Do you keep your data versioned as well as your code? （コードだけじゃなくてデータもバージョン管理してる？）&lt;/li&gt;
+&lt;li&gt;Do you have an experiment database? （実験データベースはある？）&lt;/li&gt;
+&lt;li&gt;Do you have specified evaluation metrics? （定まった評価尺度はある？）&lt;/li&gt;
+&lt;li&gt;Do the evaluation datasets match the needs of your users? （ユーザーのニーズに適合した評価データはある？）&lt;/li&gt;
+&lt;li&gt;Can you reproduce your experiments in one step? （実験は1ステップで再現できる？）&lt;/li&gt;
+&lt;li&gt;Do you have up-to-date documents? （ドキュメントは常に最新？）&lt;/li&gt;
+&lt;li&gt;Do you have the best computational resources money can buy? （お金で買える最高の計算機資源はもってる？）&lt;/li&gt;
+&lt;li&gt;Do you have tools to test model training? （モデルの学習をテストするためのツールはある？）&lt;/li&gt;
+&lt;li&gt;Do you have tools to interpret your models? （モデルを解釈するためのツールはある？）&lt;/li&gt;
+&lt;li&gt;Can you easily replace a component of your algorithm? （簡単にどこかの部分を入れ替えられるつくりになってる？）&lt;/li&gt;
+&lt;li&gt;Does your team have a clear vision? （チームには明確なビジョンがある？&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:vision&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:vision&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;うちのスコアは&#34;&gt;うちのスコアは？&lt;/h2&gt;
+
+&lt;p&gt;Joel on Software から引用すると、&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;１２点は完璧で、１１点は許せる範囲だ。だが、１０点以下だったら君は本当に深刻な問題を抱えていることになる。実際のところ、大半のソフトウェア開発組織は２点か３点の状態で仕事をしている。そして、彼らは本当に助けを必要としている。なぜなら、マイクロソフトのような会社は常に１２点の状態でいるのだから。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ML版は11個しかないので、単純に1点下げて考えればいいのだろうか。&lt;/p&gt;
+
+&lt;p&gt;今の環境は インダストリィ3.10.0 って感じの製造業にくっついているデータ分析部門みたいなやつなので、当然点数は悲しい感じになっている。
+直近ではやっていくしかない💪 が、自分も企業自体も、それじゃつらいだけなので、なんとかしたい。&lt;/p&gt;
+
+&lt;p&gt;（あえて）こうしたものを後追いで導入するような環境に身を置いているのだから、先人の知恵を借りたい。
+そう思って、[Scully+2014, 2015]を一緒に読みましょう、といっても自分と同じような人しかそれに参加しなかった経緯がある。
+つらい経験をしないとわからないならまだしも、そこまでいかないと問題の存在すら見えないのであれば、他人の経験が無駄になってしまう。
+もしそうなら、自分はもう脱出するしかなくなる。&lt;/p&gt;
+
+&lt;p&gt;その前の確認として、このチェックリストは使えそうだな〜と思った。なんでそんなのが必要なの？と言われても、今ならまだ対話ができる余裕は互いにあるのだから。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Sculley, D., Holt, G., Golovin, D., Davydov, E., Phillips, T., Ebner, D., … Young, M. (2014). Machine Learning : The High-Interest Credit Card of Technical Debt. In SE4ML: Software Engineering for Machine Learning (NIPS 2014 Workshop) (pp. 1–9). &lt;a href=&#34;https://doi.org/10.1007/s13398-014-0173-7.2&#34;&gt;https://doi.org/10.1007/s13398-014-0173-7.2&lt;/a&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;Sculley, D., Holt, G., Golovin, D., Davydov, E., Phillips, T., Ebner, D., … Dennison, D. (2015). Hidden Technical Debt in Machine Learning Systems. In NIPS’15 Proceedings of the 28th International Conference on Neural Information Processing Systems. Retrieved from &lt;a href=&#34;https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf&#34;&gt;https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf&lt;/a&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:vision&#34;&gt;この文だけではビジョンがあるかどうかだが、この項目のスライドで &amp;ldquo;Keep in mind that a vision is USELESS if no one is aware about(原文ママ) it&amp;rdquo;  とある。
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:vision&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
     </item>
     
   </channel>

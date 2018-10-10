@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pandoc on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/pandoc/</link>
+    <link>https://log.tuxedokatze.com/tags/pandoc/index.xml</link>
     <description>Recent content in Pandoc on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Wed, 07 Nov 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://log.tuxedokatze.com/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The workflow for my thesis</title>
@@ -29,7 +26,56 @@
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;example-of-wscript&#34;&gt;Example of wscript&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;wscript&lt;/code&gt; is like Makefile for Waf.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;srcdir=&#39;.&#39;
+blddir=&#39;build&#39;
+
+def configure(ctx):
+    ctx.load(&#39;tex&#39;)
+    if not ctx.env.LATEX:
+        ctx.fatal(&#39;The program LaTex is required&#39;)
+
+
+from waflib.Configure import conf
+@conf
+def mktex(ctx):
+    ctx.exec_command(&#39;pandoc %s -t latex --template ./pandoc-template.tex -o %s&#39;%(&#39;mthesis.markdown&#39;, &#39;mthesis.tex&#39;))
+
+def view_pdf(bld):
+    bld.exec_command(&amp;quot;open -a Preview \&amp;quot;{0}/mthesis.pdf\&amp;quot;&amp;quot;.format(blddir))
+
+def build(bld):
+    bld(
+            features = &#39;tex&#39;,
+            type     = &#39;xelatex&#39;, # pdflatex or xelatex
+            source   = &#39;mthesis.tex&#39;, # mandatory, the source
+            outs     = &#39;pdf&#39;, # &#39;pdf&#39; or &#39;ps pdf&#39;
+            deps     = &#39;crossreferencing.lst&#39;, # to give dependencies directly
+            prompt   = 1, # 0 for the batch mode
+        )
+    bld.install_files(&#39;${PREFIX}&#39;,&#39;output_pdf_file.pdf&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;example-of-make-ing&#34;&gt;Example of &amp;lsquo;make&amp;rsquo;-ing&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;./waf clean configure mktex build view_pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;sublimetext2-build-system-setting&#34;&gt;SublimeText2 build system setting&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;    {
+        &amp;quot;working_dir&amp;quot; : &amp;quot;$filedir&amp;quot;,
+        &amp;quot;path&amp;quot;: &amp;quot;/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/usr/local/bin&amp;quot;,
+        &amp;quot;cmd&amp;quot;: [&amp;quot;./waf&amp;quot;, &amp;quot;clean&amp;quot;, &amp;quot;mktex&amp;quot;, &amp;quot;configure&amp;quot;, &amp;quot;build&amp;quot;, &amp;quot;view_pdf&amp;quot;]
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press Cmd+B (on Mac) will do everything&lt;/p&gt;</description>
     </item>
     
   </channel>

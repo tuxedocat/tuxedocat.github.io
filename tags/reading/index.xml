@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reading on miauhaus.log</title>
-    <link>https://log.tuxedokatze.com/tags/reading/</link>
+    <link>https://log.tuxedokatze.com/tags/reading/index.xml</link>
     <description>Recent content in Reading on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy;2011-2018 tuxedocat</copyright>
-    <lastBuildDate>Sat, 31 Dec 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/reading/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://log.tuxedokatze.com/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Simple reading management with Wunderlist</title>
@@ -24,7 +21,71 @@
 &lt;p&gt;Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&amp;rsquo;ve read.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Register dummy app, and get &lt;code&gt;client_id&lt;/code&gt; and &lt;code&gt;access_token&lt;/code&gt; on Wunderlist&amp;rsquo;s developer&amp;rsquo;s page&lt;/li&gt;
+&lt;li&gt;Create list called &amp;ldquo;Reading&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Get some books&lt;/li&gt;
+&lt;li&gt;Add task like &lt;code&gt;Author Name, Title, ...&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Reading time&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write impressions or quote interesting part of the book, and put them into comments form in Wunderlist&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Mark as done when finished or just got bored&lt;/li&gt;
+&lt;li&gt;Retrieve list via API
+
+&lt;ul&gt;
+&lt;li&gt;Filter by keys such as &lt;code&gt;completed_at&lt;/code&gt;, &lt;code&gt;created_at&lt;/code&gt; if you want&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Write article about books I&amp;rsquo;ve read&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;script-python-3-5&#34;&gt;Script (Python 3.5)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python3
+from requests_oauthlib import OAuth2Session
+import json
+import sys
+from typing import Dict
+
+
+def req_get(s: OAuth2Session, url: str, params: Dict=None):
+    got = s.get(url, params=params)
+    if got.status_code == 200:
+        results = json.loads(got.text)
+        return results
+    else:
+        sys.stderr.write(&amp;quot;HTTP Error: {}&amp;quot;.format(got.status_code))
+        return {}
+
+
+def get_id_of_list(lists: Dict, name: str):
+    for d in lists:
+        if d[&#39;title&#39;] == name:
+            return d[&#39;id&#39;]
+    return None
+
+
+if __name__ == &#39;__main__&#39;:
+    client_id = sys.argv[1]
+    access_token = sys.argv[2]
+    api_url = &amp;quot;https://a.wunderlist.com/api/v1/&amp;quot;
+
+    session = OAuth2Session()
+    session.headers[&#39;X-Client-ID&#39;] = client_id
+    session.headers[&#39;X-Access-Token&#39;] = access_token
+    lists = req_get(session, api_url+&amp;quot;lists&amp;quot;)
+    reading_list_id = get_id_of_list(lists, &#39;Reading&#39;)
+
+    if reading_list_id:
+        params = {&#39;completed&#39;: True, &#39;list_id&#39;: reading_list_id}
+        books = req_get(session, api_url+&amp;quot;tasks&amp;quot;, params)
+        for book in sorted(books, key=lambda x: x[&#39;completed_at&#39;]):
+            # Write to stdout as markdown&#39;s numbered list formatting
+            print(&amp;quot;1. &amp;quot; + book[&#39;title&#39;])
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>
