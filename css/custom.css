@@ -4,5 +4,10 @@
 .content h4,
 .content h5,
 .content h6 {
-    color: #50706b;
+    /* Pantone's Astral Aura */
+    color: #2D2C4D;
+}
+
+.content a {
+    color: rgb(76, 74, 137);
 }
