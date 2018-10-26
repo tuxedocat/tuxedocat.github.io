@@ -108,7 +108,7 @@
 
 <p><a href="http://www.cloudera.com/downloads/quickstart_vms/5-8.html">http://www.cloudera.com/downloads/quickstart_vms/5-8.html</a></p>
 
-<p>現在は各種仮想環境用にイメージが用意されている。</p>
+<p>現在は各種仮想環境用にイメージが用意されている．</p>
 
 <ul>
 <li>Virtual Box</li>
@@ -117,22 +117,22 @@
 <li>Docker Container (Clusterdock)</li>
 </ul>
 
-<p>今回は単一ノードでの検証用かつSparkコード開発用に、VirtualBoxのVMをダウンロードした。
-CDH5.8の場合は、CentOS6.7だった。</p>
+<p>今回は単一ノードでの検証用かつSparkコード開発用に，VirtualBoxのVMをダウンロードした．
+CDH5.8の場合は，CentOS6.7だった．</p>
 
 <h2 id="セットアップ">セットアップ</h2>
 
-<p>特になし。</p>
+<p>特になし．</p>
 
 <h2 id="caveats">Caveats</h2>
 
 <h3 id="static-ip">Static IP</h3>
 
-<p>Quickstart VMはデフォルトでは NAT インターフェースしか持たない。
-また、マシンのIPは固定されている。（10.0.2.15）
-仮にNetworkManagerで固定IPを設定しても、 <code>/etc/hosts</code> は上記のものに書き換えられてしまう。</p>
+<p>Quickstart VMはデフォルトでは NAT インターフェースしか持たない．
+また，マシンのIPは固定されている．（10.0.2.15）
+仮にNetworkManagerで固定IPを設定しても， <code>/etc/hosts</code> は上記のものに書き換えられてしまう．</p>
 
-<p>Static IPを設定したかったので、以下のことを試した。</p>
+<p>Static IPを設定したかったので，以下のことを試した．</p>
 
 <ul>
 <li><p>どこで設定されているのか</p>
@@ -143,24 +143,24 @@ CDH5.8の場合は、CentOS6.7だった。</p>
 <li><code>/usr/bin/cloudera-quickstart-ip</code>
 
 <ul>
-<li>第一引数に与えられたIPがあればそれを使用する。</li>
-<li>引数なしの場合、eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う。</li>
-<li>IPが決まれば、/etc/hostsを編集する。上記でIPが定まらなかった場合、127.0.0.1 を使う。</li>
-<li>単一ノードクラスタとするために、manager と workerは同一ノードである。上記で決定したIPを <code>/var/lib/cloudera-quickstart/tutorial/js/config.js</code> に反映する。</li>
+<li>第一引数に与えられたIPがあればそれを使用する．</li>
+<li>引数なしの場合，eth0, eth1, eth2の順に IPが付与されているものがあればそれを使う．</li>
+<li>IPが決まれば，/etc/hostsを編集する．上記でIPが定まらなかった場合，127.0.0.1 を使う．</li>
+<li>単一ノードクラスタとするために，manager と workerは同一ノードである．上記で決定したIPを <code>/var/lib/cloudera-quickstart/tutorial/js/config.js</code> に反映する．</li>
 </ul></li>
 </ul></li>
 
 <li><p>どうすればよいか</p>
 
 <ul>
-<li>VirtualBoxで Bridge Network を追加し、VM上で利用できるようにする。
+<li>VirtualBoxで Bridge Network を追加し，VM上で利用できるようにする．
 
 <ul>
-<li>CentOS6 なので、<code>service NetworkManager stop</code> <code>chkconfig NetworkManager off</code> をして、手動で設定してもいいかもしれない。</li>
+<li>CentOS6 なので，<code>service NetworkManager stop</code> <code>chkconfig NetworkManager off</code> をして，手動で設定してもいいかもしれない．</li>
 </ul></li>
-<li><code>/etc/init.d/cloudera-quickstart-init</code> 内で <code>cloudera-quickstart-ip</code> コマンドに引数として 設定した Static IP を与える。</li>
+<li><code>/etc/init.d/cloudera-quickstart-init</code> 内で <code>cloudera-quickstart-ip</code> コマンドに引数として 設定した Static IP を与える．</li>
 <li>reboot</li>
-<li>起動後、Cloudera Manager の Management Service の Status が &ldquo;Reconfiguration Required&rdquo; みたいな状態になっている場合は、反映して、（webコンソールからクラスタを）再起動</li>
+<li>起動後，Cloudera Manager の Management Service の Status が &ldquo;Reconfiguration Required&rdquo; みたいな状態になっている場合は，反映して，（webコンソールからクラスタを）再起動</li>
 </ul></li>
 </ul>
       

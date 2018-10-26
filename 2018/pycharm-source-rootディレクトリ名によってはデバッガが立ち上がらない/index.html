@@ -107,14 +107,14 @@
 <p>PyCharm小ネタ:</p>
 
 <blockquote>
-<p>PyCharm2017.3.3 Linux: Source root が &ldquo;code&rdquo; というディレクトリ名かつPythonパッケージの状態だと、デバッガの立ち上げ時にエラーになる。</p>
+<p>PyCharm2017.3.3 Linux: Source root が &ldquo;code&rdquo; というディレクトリ名かつPythonパッケージの状態だと，デバッガの立ち上げ時にエラーになる．</p>
 </blockquote>
 
 <p></p>
 
-<p>環境は、 Ubuntu 16.04.3 + PyCharm CE 2017.3.3。</p>
+<p>環境は， Ubuntu 16.04.3 + PyCharm CE 2017.3.3．</p>
 
-<p>Source root ディレクトリ名が &ldquo;code&rdquo; で、以下のようにそれがPythonパッケージの状態となっているとき、</p>
+<p>Source root ディレクトリ名が &ldquo;code&rdquo; で，以下のようにそれがPythonパッケージの状態となっているとき，</p>
 
 <!-- Shortcodeはテーマ側であまり対応できてない  -->
 
@@ -134,7 +134,7 @@
 
 <p><img src="/img/pycharm-debugger/ng.png" alt="NGの状態" /></p>
 
-<p>pydevのデバッガのエラーが出る<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">1</a></sup>。</p>
+<p>pydevのデバッガのエラーが出る<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">1</a></sup>．</p>
 
 <!-- 
 <figure>
@@ -152,7 +152,7 @@
 
 <p><img src="/img/pycharm-debugger/ng-log.png" alt="エラーログ" /></p>
 
-<p>対処は、codeディレクトリはパッケージ化しない（もしくはリネームする）こと。</p>
+<p>対処は，codeディレクトリはパッケージ化しない（もしくはリネームする）こと．</p>
 
 <!-- 
 <figure>
@@ -172,16 +172,16 @@
 
 <h2 id="経緯と感想">経緯と感想</h2>
 
-<p>デバッガが急に使えなくなって困ってたら、何かの拍子に<code>__init__.py</code>が作成されてしまったことに気付き、そこからこの問題があると気付けた。
-実験用スクリプト置き場だったとはいえ、雑なディレクトリ構造・命名はやめようと思った<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">2</a></sup>。</p>
+<p>デバッガが急に使えなくなって困ってたら，何かの拍子に<code>__init__.py</code>が作成されてしまったことに気付き，そこからこの問題があると気付けた．
+実験用スクリプト置き場だったとはいえ，雑なディレクトリ構造・命名はやめようと思った<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">2</a></sup>．</p>
 <div class="footnotes">
 
 <hr />
 
 <ol>
-<li id="fn:2">そこを直す方法は今回は取らない。
+<li id="fn:2">そこを直す方法は今回は取らない．
  <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-<li id="fn:1"><code>code/&lt;package_name&gt;</code>にメインのコードを置いていたが、CLIや実験用ラッパースクリプトを楽に扱いたいから、その上のディレクトリをSource rootにしていた。
+<li id="fn:1"><code>code/&lt;package_name&gt;</code>にメインのコードを置いていたが，CLIや実験用ラッパースクリプトを楽に扱いたいから，その上のディレクトリをSource rootにしていた．
  <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
 </ol>
 </div>

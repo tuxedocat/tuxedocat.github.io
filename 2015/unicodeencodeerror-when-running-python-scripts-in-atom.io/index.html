@@ -104,27 +104,27 @@
     <div class="content">
       <h2 id="何">何?</h2>
 
-<p>Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので、<code>print()</code>などで<code>UnicodeEncodeError</code>が出る。</p>
+<p>Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので，<code>print()</code>などで<code>UnicodeEncodeError</code>が出る．</p>
 
 <p></p>
 
 <h2 id="どうする">どうする?</h2>
 
 <ul>
-<li><p><code>__init__.py</code>などでstdoutのencodingを変更する。</p>
+<li><p><code>__init__.py</code>などでstdoutのencodingを変更する．</p>
 
 <pre><code class="language-python">import sys
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 </code></pre></li>
 
-<li><p>Atom.appから起動時には、環境変数をログインシェルから読むみたいなので、例えば<code>.bash_profile</code>に<code>export LANG='en_US.UTF-8'</code>などと書いておく。</p></li>
+<li><p>Atom.appから起動時には，環境変数をログインシェルから読むみたいなので，例えば<code>.bash_profile</code>に<code>export LANG='en_US.UTF-8'</code>などと書いておく．</p></li>
 </ul>
 
 <h3 id="経緯">経緯</h3>
 
-<p>python3.4をpyenv globalで設定していたのに、atomのscript-pluginではOSXのpython2.7.9が使われるのはなんでだろう、と思っていた。
-普段はiterm2でzshを起動するようにしていたので、ログインシェル(bash)の設定ファイルへ環境を反映していなかったのが原因だった。</p>
+<p>python3.4をpyenv globalで設定していたのに，atomのscript-pluginではOSXのpython2.7.9が使われるのはなんでだろう，と思っていた．
+普段はiterm2でzshを起動するようにしていたので，ログインシェル(bash)の設定ファイルへ環境を反映していなかったのが原因だった．</p>
       
     </div>
     

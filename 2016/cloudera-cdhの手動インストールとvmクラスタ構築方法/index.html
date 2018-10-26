@@ -144,7 +144,7 @@
 <li><p>セットアップ用ユーザーの作成</p>
 
 <ul>
-<li>パスワードを同一のものを使う場合: Superuserもしくは、パスワードレスでsudoが利用できるユーザーを作成
+<li>パスワードを同一のものを使う場合: Superuserもしくは，パスワードレスでsudoが利用できるユーザーを作成
 
 <ul>
 <li><code>/etc/ssh/ssh_config</code>
@@ -164,25 +164,25 @@
 </ul></li>
 </ul></li>
 
-<li><p>VMのリンククローンを行う。</p>
+<li><p>VMのリンククローンを行う．</p>
 
 <ul>
-<li>MACアドレスはリセットしておく。</li>
+<li>MACアドレスはリセットしておく．</li>
 </ul></li>
 </ul>
 
-<p>… ここまでをVagrant + Ansibleで構築すると楽。</p>
+<p>… ここまでをVagrant + Ansibleで構築すると楽．</p>
 
 <h2 id="cloudera-cdhの入手">Cloudera CDHの入手</h2>
 
 <p><a href="http://www.cloudera.com/downloads/cdh/5-8-0.html">Download CDH 5.8.0</a> をよく読む</p>
 
-<p>特に、一番簡単なのは、 <a href="http://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_install_path_a.html#cmig_topic_6_5">Installation Path A - Automated Installation by Cloudera Manager (Non-Production Mode)</a>
-以下の流れとなる。</p>
+<p>特に，一番簡単なのは， <a href="http://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_install_path_a.html#cmig_topic_6_5">Installation Path A - Automated Installation by Cloudera Manager (Non-Production Mode)</a>
+以下の流れとなる．</p>
 
 <ul>
 <li>master への Cloudera Managerのインストール</li>
-<li>master の Cloudera Manager から、slave へのCDH5.8インストール</li>
+<li>master の Cloudera Manager から，slave へのCDH5.8インストール</li>
 </ul>
 
 <h2 id="master-への-cloudera-managerのインストール">master への Cloudera Managerのインストール</h2>
@@ -196,17 +196,17 @@ sudo ./cloudera-manager-installer.bin
 
 <ul>
 <li>VMを全機立ち上げる</li>
-<li>master上で、ブラウザから <code>cdh-vm1:7180/cmf/login</code> へアクセスする</li>
-<li>ライセンス条項を読み、同意</li>
-<li>無償版（Express）、有償版（Enterprise）トライアルなどの選択肢が表示されるが、今回は無償版のExpressを選択</li>
-<li>クラスタのセットアップのために、クラスタに含まれる全ノード（masterも含む）を選択する</li>
-<li>インストール方法は以下の２つ。後者がおすすめ、とあるが、頻繁にアップデートしない環境の場合、前者でもよい。今回は、色々な都合で前者を選択。
+<li>master上で，ブラウザから <code>cdh-vm1:7180/cmf/login</code> へアクセスする</li>
+<li>ライセンス条項を読み，同意</li>
+<li>無償版（Express），有償版（Enterprise）トライアルなどの選択肢が表示されるが，今回は無償版のExpressを選択</li>
+<li>クラスタのセットアップのために，クラスタに含まれる全ノード（masterも含む）を選択する</li>
+<li>インストール方法は以下の２つ．後者がおすすめ，とあるが，頻繁にアップデートしない環境の場合，前者でもよい．今回は，色々な都合で前者を選択．
 
 <ul>
 <li>Package manager 経由 （RPM, DEB）</li>
 <li>Cloudera Percel での配布</li>
 </ul></li>
-<li>Oracle JDKのインストールに☑を入れる。</li>
+<li>Oracle JDKのインストールに☑を入れる．</li>
 <li>インストールに使用するユーザーの設定
 
 <ul>
