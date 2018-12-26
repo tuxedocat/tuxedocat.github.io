@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/categories/tech/</link>
+    <description>Recent content in Tech on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Copyright 2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Sat, 21 Apr 2018 01:08:30 +0900</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using pipenv&#39;s virtualenv as a kernel in JupyterHub</title>
+      <link>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</link>
+      <pubDate>Sat, 21 Apr 2018 01:08:30 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</guid>
+      <description>&lt;p&gt;Run &lt;code&gt;python -m ipykernel install --user --name=&amp;lt;kernel-name&amp;gt;&lt;/code&gt; in pipenv-enabled shell.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> Day One -&gt; Markdown (with metadata)</title>
+      <link>https://log.tuxedokatze.com/2018/dayone2md/</link>
+      <pubDate>Tue, 03 Apr 2018 21:05:00 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/dayone2md/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;or an endless journey for finding a better way for keeping a journal or writing blogs with no stress.&lt;br /&gt;
+（DayOneのJSONを個別のメタデータ付きのMarkdownにしたかった，という話）&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[PyCharm] Source Rootディレクトリ名によってはデバッガが立ち上がらない</title>
+      <link>https://log.tuxedokatze.com/2018/pycharm-source-root%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E5%90%8D%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%81%AF%E3%83%87%E3%83%90%E3%83%83%E3%82%AC%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%89%E3%81%AA%E3%81%84/</link>
+      <pubDate>Mon, 22 Jan 2018 21:54:09 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/pycharm-source-root%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E5%90%8D%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%81%AF%E3%83%87%E3%83%90%E3%83%83%E3%82%AC%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%89%E3%81%AA%E3%81%84/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;PyCharm小ネタ:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと，デバッガの立ち上げ時にエラーになる．&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>機械学習システムのためのJoel Test（または現状の確認）</title>
+      <link>https://log.tuxedokatze.com/2017/joeltest4mlsys/</link>
+      <pubDate>Thu, 23 Nov 2017 23:05:11 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2017/joeltest4mlsys/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Naver の Lucy Park氏による ACML-AIMLP Workshop での 発表 &lt;a href=&#34;https://www.lucypark.kr/docs/slides/2017-acml/#/&#34;&gt;&amp;ldquo;My model has higher BLEU, can I ship it? The Joel Test for machine learning systems&amp;rdquo;&lt;/a&gt; をざっと読んだときの感想．&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugoのテーマ</title>
+      <link>https://log.tuxedokatze.com/2017/hugo%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E/</link>
+      <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2017/hugo%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E/</guid>
+      <description>&lt;p&gt;芸術の秋，
+とはいっても，ここ数日やったことといえば，ちょこちょことHugoのテーマをいじっていたことぐらいかもしれない&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>現時点でのベスト？（キーボードのはなし）</title>
+      <link>https://log.tuxedokatze.com/2017/%E7%8F%BE%E6%99%82%E7%82%B9%E3%81%A7%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2017/%E7%8F%BE%E6%99%82%E7%82%B9%E3%81%A7%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97/</guid>
+      <description>&lt;p&gt;注文していたキーボード（ARCHISS ProgressTouch RETRO TINY）が届いた．
+個人的に無印HHKB Pro2に感じていた不満&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;がほとんど瞬時に解消されて，QoLが向上した．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐡Venv with anaconda (use system&#39;s python instead...)</title>
+      <link>https://log.tuxedokatze.com/2017/venv-with-anaconda-use-systems-python-instead.../</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2017/venv-with-anaconda-use-systems-python-instead.../</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Use system&amp;rsquo;s python instead of anaconda&amp;rsquo;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Simple reading management with Wunderlist</title>
+      <link>https://log.tuxedokatze.com/2016/simple-reading-management-with-wunderlist/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/simple-reading-management-with-wunderlist/</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&amp;rsquo;ve read.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Disk partition manipulation on OSX 10.11</title>
+      <link>https://log.tuxedokatze.com/2016/disk-partition-manipulation-on-osx-10.11/</link>
+      <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/disk-partition-manipulation-on-osx-10.11/</guid>
+      <description>&lt;h2 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h2&gt;
+
+&lt;p&gt;tl;dr
+&amp;gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cloudera CDH 5.8 Quickstart VMで予備の開発環境を作ったときのメモ</title>
+      <link>https://log.tuxedokatze.com/2016/cloudera-cdh-5.8-quickstart-vm%E3%81%A7%E4%BA%88%E5%82%99%E3%81%AE%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E3%83%A1%E3%83%A2/</link>
+      <pubDate>Wed, 14 Sep 2016 20:39:20 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/cloudera-cdh-5.8-quickstart-vm%E3%81%A7%E4%BA%88%E5%82%99%E3%81%AE%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E3%83%A1%E3%83%A2/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cloudera CDHの手動インストールとVMクラスタ構築方法</title>
+      <link>https://log.tuxedokatze.com/2016/cloudera-cdh%E3%81%AE%E6%89%8B%E5%8B%95%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8vm%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E6%A7%8B%E7%AF%89%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Wed, 14 Sep 2016 20:29:20 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/cloudera-cdh%E3%81%AE%E6%89%8B%E5%8B%95%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8vm%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E6%A7%8B%E7%AF%89%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython</title>
+      <link>https://log.tuxedokatze.com/2016/pycharm-tput-unknown-terminal-emacs-appears-when-using-debugging-console-w/-ipython/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/pycharm-tput-unknown-terminal-emacs-appears-when-using-debugging-console-w/-ipython/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Kindle] 単語帳の整理</title>
+      <link>https://log.tuxedokatze.com/2016/kindle-%E5%8D%98%E8%AA%9E%E5%B8%B3%E3%81%AE%E6%95%B4%E7%90%86/</link>
+      <pubDate>Sat, 05 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/kindle-%E5%8D%98%E8%AA%9E%E5%B8%B3%E3%81%AE%E6%95%B4%E7%90%86/</guid>
+      <description>&lt;p&gt;TL;DR &lt;code&gt;sqlite3 Kindle/system/vocabulary/vocab.db&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『ソフトウェア見積り 人月の暗黙知を解き明かす』を読んだ．</title>
+      <link>https://log.tuxedokatze.com/2016/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E8%A6%8B%E7%A9%8D%E3%82%8A-%E4%BA%BA%E6%9C%88%E3%81%AE%E6%9A%97%E9%BB%99%E7%9F%A5%E3%82%92%E8%A7%A3%E3%81%8D%E6%98%8E%E3%81%8B%E3%81%99%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E8%A6%8B%E7%A9%8D%E3%82%8A-%E4%BA%BA%E6%9C%88%E3%81%AE%E6%9A%97%E9%BB%99%E7%9F%A5%E3%82%92%E8%A7%A3%E3%81%8D%E6%98%8E%E3%81%8B%E3%81%99%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/ebook/dp/B00KR96M6K&#34;&gt;スティーブ・マコネル,『ソフトウェア見積り 人月の暗黙知を解き明かす』&lt;/a&gt; をさっと読んだ．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Kindle] Amazon.comアカウントも持っている場合に困ったこと</title>
+      <link>https://log.tuxedokatze.com/2016/kindle-amazon.com%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%82%E6%8C%81%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AB%E5%9B%B0%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/kindle-amazon.com%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%82%E6%8C%81%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AB%E5%9B%B0%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8/</guid>
+      <description>&lt;p&gt;Kindle Paperwhiteは2015年の「買ってよかったもの」のひとつだけど，使用には少し難点があった．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dokuwikiで日本語PDFを出力したかった</title>
+      <link>https://log.tuxedokatze.com/2015/dokuwiki%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9Epdf%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/dokuwiki%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9Epdf%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F/</guid>
+      <description>&lt;p&gt;CentOS6.6, Dokuwiki Hrun，Dw2Pdf_20150622でのこと．&lt;/p&gt;
+
+&lt;p&gt;そのままでも一応日本語は出力されるが，中国語フォントだったり，豆腐になったりしたので，いろいろやらなきゃならなかった．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link: Numpy docstring / Howto</title>
+      <link>https://log.tuxedokatze.com/2015/link-numpy-docstring-/-howto/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/link-numpy-docstring-/-howto/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link: Type hinting support in PyCharm</title>
+      <link>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</guid>
+      <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UnicodeEncodeError when running python scripts in Atom.io</title>
+      <link>https://log.tuxedokatze.com/2015/unicodeencodeerror-when-running-python-scripts-in-atom.io/</link>
+      <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/unicodeencodeerror-when-running-python-scripts-in-atom.io/</guid>
+      <description>&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
+
+&lt;p&gt;Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので，&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>https://log.tuxedokatze.com/2015/anaconda/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/anaconda/</guid>
+      <description>&lt;p&gt;Anaconda Scientific Python Distributionを会社マシンとおうちMacMiniに入れた．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octave</title>
+      <link>https://log.tuxedokatze.com/2015/octave/</link>
+      <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/octave/</guid>
+      <description>&lt;p&gt;某機械学習のクラスを受講している．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GPU Failure (possibly...) on my MBP15&#39; (early 2011 model)</title>
+      <link>https://log.tuxedokatze.com/2014/gpu-failure-possibly...-on-my-mbp15-early-2011-model/</link>
+      <pubDate>Sat, 12 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2014/gpu-failure-possibly...-on-my-mbp15-early-2011-model/</guid>
+      <description>&lt;h2 id=&#34;symptoms&#34;&gt;Symptoms&lt;/h2&gt;
+
+&lt;p&gt;Various glitch happen when connecting external displays, or doing GPU intensive tasks.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[SublimeText] Enabling key repeating on Mavericks</title>
+      <link>https://log.tuxedokatze.com/2013/sublimetext-enabling-key-repeating-on-mavericks/</link>
+      <pubDate>Sun, 22 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2013/sublimetext-enabling-key-repeating-on-mavericks/</guid>
+      <description>&lt;p&gt;On OSX Mavericks, I found the J-K keys repeating was not working when using the vintage (Vim-like) mode.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[SublimeText] UI glitch hell!!</title>
+      <link>https://log.tuxedokatze.com/2013/sublimetext-ui-glitch-hell/</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2013/sublimetext-ui-glitch-hell/</guid>
+      <description>&lt;h2 id=&#34;symptom&#34;&gt;Symptom&lt;/h2&gt;
+
+&lt;p&gt;The UI is broken, on Sublime Text 2 build 2221.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.sublimetext.com/forum/viewtopic.php?f=3&amp;amp;t=13750&#34;&gt;Screenshot and other info.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The workflow for my thesis</title>
+      <link>https://log.tuxedokatze.com/2012/the-workflow-for-my-thesis/</link>
+      <pubDate>Wed, 07 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2012/the-workflow-for-my-thesis/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write thesis body in &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown&#34;&gt;Pandoc Markdown&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Build latex sources and pdf using &lt;a href=&#34;https://code.google.com/p/waf/&#34;&gt;Waf build system&lt;/a&gt;.
+
+&lt;ol&gt;
+&lt;li&gt;Do with thesis pandoc &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#templates&#34;&gt;template&lt;/a&gt; file if you need.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

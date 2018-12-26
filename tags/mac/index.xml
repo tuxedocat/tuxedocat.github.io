@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/tags/mac/</link>
+    <description>Recent content in Mac on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Copyright 2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Sun, 30 Oct 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disk partition manipulation on OSX 10.11</title>
+      <link>https://log.tuxedokatze.com/2016/disk-partition-manipulation-on-osx-10.11/</link>
+      <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/disk-partition-manipulation-on-osx-10.11/</guid>
+      <description>&lt;h2 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h2&gt;
+
+&lt;p&gt;tl;dr
+&amp;gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Neue Helvetica?</title>
+      <link>https://log.tuxedokatze.com/2014/neue-helvetica/</link>
+      <pubDate>Sun, 26 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2014/neue-helvetica/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GPU Failure (possibly...) on my MBP15&#39; (early 2011 model)</title>
+      <link>https://log.tuxedokatze.com/2014/gpu-failure-possibly...-on-my-mbp15-early-2011-model/</link>
+      <pubDate>Sat, 12 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2014/gpu-failure-possibly...-on-my-mbp15-early-2011-model/</guid>
+      <description>&lt;h2 id=&#34;symptoms&#34;&gt;Symptoms&lt;/h2&gt;
+
+&lt;p&gt;Various glitch happen when connecting external displays, or doing GPU intensive tasks.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

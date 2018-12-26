@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/tags/python/</link>
+    <description>Recent content in Python on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Copyright 2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Sat, 21 Apr 2018 01:08:30 +0900</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using pipenv&#39;s virtualenv as a kernel in JupyterHub</title>
+      <link>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</link>
+      <pubDate>Sat, 21 Apr 2018 01:08:30 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/using-pipenvs-virtualenv-as-a-kernel-in-jupyterhub/</guid>
+      <description>&lt;p&gt;Run &lt;code&gt;python -m ipykernel install --user --name=&amp;lt;kernel-name&amp;gt;&lt;/code&gt; in pipenv-enabled shell.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> Day One -&gt; Markdown (with metadata)</title>
+      <link>https://log.tuxedokatze.com/2018/dayone2md/</link>
+      <pubDate>Tue, 03 Apr 2018 21:05:00 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/dayone2md/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;or an endless journey for finding a better way for keeping a journal or writing blogs with no stress.&lt;br /&gt;
+（DayOneのJSONを個別のメタデータ付きのMarkdownにしたかった，という話）&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[PyCharm] Source Rootディレクトリ名によってはデバッガが立ち上がらない</title>
+      <link>https://log.tuxedokatze.com/2018/pycharm-source-root%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E5%90%8D%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%81%AF%E3%83%87%E3%83%90%E3%83%83%E3%82%AC%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%89%E3%81%AA%E3%81%84/</link>
+      <pubDate>Mon, 22 Jan 2018 21:54:09 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/pycharm-source-root%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E5%90%8D%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%81%AF%E3%83%87%E3%83%90%E3%83%83%E3%82%AC%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%89%E3%81%AA%E3%81%84/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;PyCharm小ネタ:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと，デバッガの立ち上げ時にエラーになる．&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐡Venv with anaconda (use system&#39;s python instead...)</title>
+      <link>https://log.tuxedokatze.com/2017/venv-with-anaconda-use-systems-python-instead.../</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2017/venv-with-anaconda-use-systems-python-instead.../</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Use system&amp;rsquo;s python instead of anaconda&amp;rsquo;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Simple reading management with Wunderlist</title>
+      <link>https://log.tuxedokatze.com/2016/simple-reading-management-with-wunderlist/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/simple-reading-management-with-wunderlist/</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&amp;rsquo;ve read.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link: Notebook collection</title>
+      <link>https://log.tuxedokatze.com/2016/link-notebook-collection/</link>
+      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/link-notebook-collection/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jdwittenauer/ipython-notebooks&#34;&gt;https://github.com/jdwittenauer/ipython-notebooks&lt;/a&gt;
+&amp;gt; ipython-notebooks - A collection of IPython notebooks covering various topics.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[PyCharm] ‘tput unknown terminal “emacs”’ appears when using debugging console w/ iPython</title>
+      <link>https://log.tuxedokatze.com/2016/pycharm-tput-unknown-terminal-emacs-appears-when-using-debugging-console-w/-ipython/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2016/pycharm-tput-unknown-terminal-emacs-appears-when-using-debugging-console-w/-ipython/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link: Numpy docstring / Howto</title>
+      <link>https://log.tuxedokatze.com/2015/link-numpy-docstring-/-howto/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/link-numpy-docstring-/-howto/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link: Type hinting support in PyCharm</title>
+      <link>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</guid>
+      <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UnicodeEncodeError when running python scripts in Atom.io</title>
+      <link>https://log.tuxedokatze.com/2015/unicodeencodeerror-when-running-python-scripts-in-atom.io/</link>
+      <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/unicodeencodeerror-when-running-python-scripts-in-atom.io/</guid>
+      <description>&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
+
+&lt;p&gt;Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので，&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>https://log.tuxedokatze.com/2015/anaconda/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2015/anaconda/</guid>
+      <description>&lt;p&gt;Anaconda Scientific Python Distributionを会社マシンとおうちMacMiniに入れた．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

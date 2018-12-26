@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/tags/linux/</link>
+    <description>Recent content in Linux on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Copyright 2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Mon, 22 Jan 2018 21:54:09 +0900</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[PyCharm] Source Rootディレクトリ名によってはデバッガが立ち上がらない</title>
+      <link>https://log.tuxedokatze.com/2018/pycharm-source-root%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E5%90%8D%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%81%AF%E3%83%87%E3%83%90%E3%83%83%E3%82%AC%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%89%E3%81%AA%E3%81%84/</link>
+      <pubDate>Mon, 22 Jan 2018 21:54:09 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2018/pycharm-source-root%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E5%90%8D%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%81%AF%E3%83%87%E3%83%90%E3%83%83%E3%82%AC%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%89%E3%81%AA%E3%81%84/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;PyCharm小ネタ:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと，デバッガの立ち上げ時にエラーになる．&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

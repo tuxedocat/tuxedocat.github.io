@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cats on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/categories/cats/</link>
+    <description>Recent content in Cats on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Copyright 2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Mon, 10 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/categories/cats/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>保護猫カフェで出会ったキジトラ猫との生活</title>
+      <link>https://log.tuxedokatze.com/cat-advent-calendar-2018/</link>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/cat-advent-calendar-2018/</guid>
+      <description>&lt;p&gt;この記事は &lt;a href=&#34;https://adventar.org/calendars/2992&#34;&gt;猫 Advent Calendar 2018&lt;/a&gt; の 10日目の記事です．
+今うちにいるキジトラ猫（いなりちゃん）との出会いと生活を記します．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

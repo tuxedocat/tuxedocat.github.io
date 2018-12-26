@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pandoc on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/tags/pandoc/</link>
+    <description>Recent content in Pandoc on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Copyright 2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Wed, 07 Nov 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The workflow for my thesis</title>
+      <link>https://log.tuxedokatze.com/2012/the-workflow-for-my-thesis/</link>
+      <pubDate>Wed, 07 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2012/the-workflow-for-my-thesis/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write thesis body in &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown&#34;&gt;Pandoc Markdown&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Build latex sources and pdf using &lt;a href=&#34;https://code.google.com/p/waf/&#34;&gt;Waf build system&lt;/a&gt;.
+
+&lt;ol&gt;
+&lt;li&gt;Do with thesis pandoc &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#templates&#34;&gt;template&lt;/a&gt; file if you need.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

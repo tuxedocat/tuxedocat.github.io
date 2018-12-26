@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readings on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/tags/readings/</link>
+    <description>Recent content in Readings on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Copyright 2011-2018 tuxedocat</copyright>
+    <lastBuildDate>Sat, 30 Dec 2017 18:23:37 +0900</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/readings/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>今年読んだ本（定期）</title>
+      <link>https://log.tuxedokatze.com/2017/%E4%BB%8A%E5%B9%B4%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC%E5%AE%9A%E6%9C%9F/</link>
+      <pubDate>Sat, 30 Dec 2017 18:23:37 +0900</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2017/%E4%BB%8A%E5%B9%B4%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC%E5%AE%9A%E6%9C%9F/</guid>
+      <description>&lt;!-- textlint-enable --&gt;
+
+&lt;p&gt;2017年のあいだに読んだ本を思い出しながら感想をだらだらと書くだけの日記．永遠にWIPなPost．
+そもそも，本の感想を書くって行為自体が，自分には致命的に向いていない気がするぞ 🤔&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
