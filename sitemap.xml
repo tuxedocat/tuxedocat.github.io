@@ -275,25 +275,25 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/book/</loc>
-    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://log.tuxedokatze.com/categories/book/</loc>
     <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/books/</loc>
-    <lastmod>2017-12-30T18:23:37+09:00</lastmod>
+    <loc>https://log.tuxedokatze.com/tags/book/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://log.tuxedokatze.com/categories/books/</loc>
+    <lastmod>2017-12-30T18:23:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/tags/books/</loc>
     <lastmod>2017-12-30T18:23:37+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -317,14 +317,14 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/cats/</loc>
-    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/categories/cats/</loc>
+    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/cats/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/tags/cats/</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -335,13 +335,13 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/cv/</loc>
+    <loc>https://log.tuxedokatze.com/categories/cv/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/cv/</loc>
+    <loc>https://log.tuxedokatze.com/tags/cv/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -575,14 +575,14 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/study/</loc>
-    <lastmod>2015-05-07T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/categories/study/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/study/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/tags/study/</loc>
+    <lastmod>2015-05-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -641,13 +641,13 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/wanderlust/</loc>
+    <loc>https://log.tuxedokatze.com/categories/wanderlust/</loc>
     <lastmod>2018-10-08T12:50:15+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/wanderlust/</loc>
+    <loc>https://log.tuxedokatze.com/tags/wanderlust/</loc>
     <lastmod>2018-10-08T12:50:15+09:00</lastmod>
     <priority>0</priority>
   </url>
