@@ -51,7 +51,7 @@
     <item>
       <title>Books</title>
       <link>https://log.tuxedokatze.com/tags/books/</link>
-      <pubDate>Sat, 30 Dec 2017 18:23:37 +0900</pubDate>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/books/</guid>
       <description></description>
@@ -135,6 +135,15 @@
       <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diary</title>
+      <link>https://log.tuxedokatze.com/tags/diary/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/tags/diary/</guid>
       <description></description>
     </item>
     
@@ -231,7 +240,7 @@
     <item>
       <title>Linux</title>
       <link>https://log.tuxedokatze.com/tags/linux/</link>
-      <pubDate>Mon, 22 Jan 2018 21:54:09 +0900</pubDate>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/linux/</guid>
       <description></description>
@@ -252,6 +261,15 @@
       <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/machinelearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memo</title>
+      <link>https://log.tuxedokatze.com/tags/memo/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/tags/memo/</guid>
       <description></description>
     </item>
     
@@ -357,7 +375,7 @@
     <item>
       <title>Readings</title>
       <link>https://log.tuxedokatze.com/tags/readings/</link>
-      <pubDate>Sat, 30 Dec 2017 18:23:37 +0900</pubDate>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/readings/</guid>
       <description></description>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://log.tuxedokatze.com/2019/%E5%A5%BD%E3%81%8D%E5%AB%8C%E3%81%84%E3%81%AF%E3%82%84%E3%82%81%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%AD/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://log.tuxedokatze.com/cat-advent-calendar-2018/</loc>
     <lastmod>2018-12-10T00:00:00+00:00</lastmod>
   </url>
@@ -15,6 +20,11 @@
   <url>
     <loc>https://log.tuxedokatze.com/wanderlust2018/stockholm%E6%97%85%E8%A1%8C/</loc>
     <lastmod>2018-09-11T11:50:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/2018/dd%E3%81%A7%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E6%B6%88%E5%8E%BB%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -270,13 +280,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/blog/</loc>
-    <lastmod>2018-04-21T01:08:30+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://log.tuxedokatze.com/categories/book/</loc>
-    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -287,14 +291,20 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/books/</loc>
-    <lastmod>2017-12-30T18:23:37+09:00</lastmod>
+    <loc>https://log.tuxedokatze.com/categories/book/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/books/</loc>
-    <lastmod>2017-12-30T18:23:37+09:00</lastmod>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/categories/books/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -317,14 +327,14 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/cats/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/tags/cats/</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/cats/</loc>
-    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/categories/cats/</loc>
+    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -335,13 +345,13 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/cv/</loc>
+    <loc>https://log.tuxedokatze.com/tags/cv/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/cv/</loc>
+    <loc>https://log.tuxedokatze.com/categories/cv/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -367,6 +377,12 @@
   <url>
     <loc>https://log.tuxedokatze.com/tags/design/</loc>
     <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/tags/diary/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -438,7 +454,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/linux/</loc>
-    <lastmod>2018-01-22T21:54:09+09:00</lastmod>
+    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -451,6 +467,12 @@
   <url>
     <loc>https://log.tuxedokatze.com/tags/machinelearning/</loc>
     <lastmod>2016-03-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.tuxedokatze.com/tags/memo/</loc>
+    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -528,7 +550,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/tags/readings/</loc>
-    <lastmod>2017-12-30T18:23:37+09:00</lastmod>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -575,14 +597,14 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/study/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/tags/study/</loc>
+    <lastmod>2015-05-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/study/</loc>
-    <lastmod>2015-05-07T00:00:00+00:00</lastmod>
+    <loc>https://log.tuxedokatze.com/categories/study/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -600,7 +622,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/categories/tech/</loc>
-    <lastmod>2018-04-21T01:08:30+09:00</lastmod>
+    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -641,13 +663,13 @@
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/categories/wanderlust/</loc>
+    <loc>https://log.tuxedokatze.com/tags/wanderlust/</loc>
     <lastmod>2018-10-08T12:50:15+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.tuxedokatze.com/tags/wanderlust/</loc>
+    <loc>https://log.tuxedokatze.com/categories/wanderlust/</loc>
     <lastmod>2018-10-08T12:50:15+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -666,7 +688,7 @@
   
   <url>
     <loc>https://log.tuxedokatze.com/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

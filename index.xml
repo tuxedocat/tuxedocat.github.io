@@ -13,6 +13,41 @@
     
     
     <item>
+      <title>好き嫌いはやめましょうね〜</title>
+      <link>https://log.tuxedokatze.com/2019/%E5%A5%BD%E3%81%8D%E5%AB%8C%E3%81%84%E3%81%AF%E3%82%84%E3%82%81%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%AD/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      <author>tuxedocat</author>
+      <guid>https://log.tuxedokatze.com/2019/%E5%A5%BD%E3%81%8D%E5%AB%8C%E3%81%84%E3%81%AF%E3%82%84%E3%82%81%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%AD/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;ジョセフ・ヒース『資本主義が嫌いな人のための経済学』を読んだ．ここ最近何冊か一般向けの経済学書を読んだのだけど，それらの中では一番良かった．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Amazonのレコメンドでこの本に出会ったときは，「資本主義が嫌いな人のための&amp;hellip;&amp;hellip;」という邦題のせいで，買うのをちょっとためらってしまった．
+なんか知らんけどイデオロギー的なものへの拒否反応が出てしまったんだろうか．
+原題は “Filthy Lucre: Economics for People Who Hate Capitalism” なので，邦題はむしろ忠実ともいえるのだけど．
+あと，この著者の最近の本である『啓蒙思想2.0』もすでに読んでいるので，そういう筆致の著者ではないと知っていたのに．不思議．&lt;/p&gt;
+
+&lt;p&gt;冒頭で書かれていること，つまり，なぜ哲学者ヒースが経済学分野での常識を，あえてこんな分厚い本で説こうとしたのかを読めば，こちらが邦題になっているのも理解できた．&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;政治的な議論において経済学は経済について語る上で援用されているが，右派も左派もそれぞれの誤謬を重ねてしまっているのは嘆かわしい．
+ことイデオロギーと一緒くたにされやすい分野だからか，熟慮すればわかることが広まっていない．
+他方，教養レベルの経済学講義で語られる内容は，実世界の経済の様相をうまく表せているとはどうも思えない．
+それぐらいの浅い知識でも，語り手には事欠かないぐらい，経済が関わる物事は多いにも関わらず．みんな，本当は何もわかっていないんじゃないか？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;こういう気持ちが根底にあったので，この本は初めから終わりまでおもしろかった．
+自分が科学的知識をかなりの部分で信頼しているのと同じように，資本主義経済の仕組みを信じているつもりだった．
+でも，もしそのナイーブな視座に対して，現代の資本主義社会にある種の不道徳さや悪意への脆弱性を感じている人からまさにそうした点を問われることがあれば，きっと答えに詰まるんだろうなとも思っていた．
+あとこれは意地悪な考えかもしれないが，自分の周りには科学的思考を身につけたであろう人たちが多いにも関わらず，どうも社会や経済的なテーマについては放言をしてしまう人もいるような気がして，不思議に思うことが多かった．
+経済と雇用との関係や社会福祉，再分配，自己責任論にについてなどなど．
+自分自身はこの意味では左派寄りなのだろうが，それはともかく不思議に感じるようなことを言う人が多く感じていたので，ある種のFAQとして考えられるようになったのは良かった．&lt;/p&gt;</content>
+      
+    </item>
+    
+    <item>
       <title>保護猫カフェで出会ったキジトラ猫との生活</title>
       <link>https://log.tuxedokatze.com/cat-advent-calendar-2018/</link>
       <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
@@ -592,6 +627,49 @@ Location:	アーランダ空港, シグトゥーナ, ストックホルム, ス�
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:iphone&#34;&gt;帰国後，すぐにiPhone Xs Maxを買った．iPad mini 4のリプレースも込みで，ということにして，15万円という価格には目をつむることにする．
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:iphone&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content>
+      
+    </item>
+    
+    <item>
+      <title>ddでディスク消去する</title>
+      <link>https://log.tuxedokatze.com/2018/dd%E3%81%A7%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E6%B6%88%E5%8E%BB%E3%81%99%E3%82%8B/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      <author>tuxedocat</author>
+      <guid>https://log.tuxedokatze.com/2018/dd%E3%81%A7%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E6%B6%88%E5%8E%BB%E3%81%99%E3%82%8B/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;いろいろな制約&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;で、Ubuntuのインストーラーイメージに入っているBusyBoxしか使えないとする．
+&lt;code&gt;shred&lt;/code&gt; などの便利なコマンドはないので，&lt;code&gt;dd&lt;/code&gt; を使う．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;方法&#34;&gt;方法&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ubuntu インストーラー → Rescure modeに入る&lt;/li&gt;
+&lt;li&gt;セットアップダイアログを中断し、Shellを起動する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fdisk -l&lt;/code&gt; でディスクを確認&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;適当に実行する&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;for n in `seq 7`; do dd if=/dev/urandom of=/dev/sda bs=8192; dd if=/dev/urandom of=/dev/sdb bs=8192 done
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;/dev/zero&lt;/code&gt; だとやっぱり数倍早い&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;bs=&lt;/code&gt; は単位を指定しない場合は &lt;code&gt;kilobytes&lt;/code&gt; 単位が使われる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;BusyBoxなので、&lt;code&gt;bash&lt;/code&gt; ではなく &lt;code&gt;ash&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;たとえば，転職が決まった後の最終出社日にPCを返却するときに，会社指定のディスク消去ソフトを原則使わなくてはならないが，そのディスクが貸出中もしくは紛失されており&amp;hellip;というとき．
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content>
       
