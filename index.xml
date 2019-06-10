@@ -20,16 +20,18 @@
       <guid>https://log.tuxedokatze.com/2019/ipad-pro-%E3%81%A7%E3%81%AA%E3%82%93%E3%81%A8%E3%81%8B%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%A8%AD%E5%AE%9A/</guid>
       <description></description>
       
-      <content>&lt;p&gt;開発環境としてはかなり原始的だけど、念のためちょっとした作業はできるようにした。&lt;/p&gt;
+      <content>&lt;p&gt;開発環境としてはかなり原始的だけど、念のためちょっとした作業はiPad ProからGCPのVMインスタンス上でできるようにした。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;GCPのVMで作業する前提なので、まともな端末アプリさえあれば解決。
 どれでもいいんだろうけど、Moshを使ってみたかったので &lt;a href=&#34;https://www.blink.sh&#34;&gt;Blink&lt;/a&gt; にした。2400円、ちょっと高い。&lt;/p&gt;
 
-&lt;p&gt;Firewall Rulesで、 &lt;code&gt;UDP 60000-61000&lt;/code&gt; を許可し、ネットワークタグを適当に設定。
-インスタンスのネットワークタグ設定にそれを追加する。
-gcloud でSSH接続をしたことがある環境では、 &lt;code&gt;~/.ssh/google_compute_engine(|.pub)&lt;/code&gt; ができているので、これをiCloud Drive経由などでBlinkのディレクトリに移動させておく。&lt;/p&gt;
+&lt;p&gt;gcloud でSSH接続をしたことがある環境には、 &lt;code&gt;~/.ssh/google_compute_engine(|.pub)&lt;/code&gt; ができている。
+インスタンス単位のSSH鍵に公開鍵を設定し、秘密鍵はBlinkのディレクトリにコピーしておく。&lt;/p&gt;
+
+&lt;p&gt;Firewall Rulesで、 Moshが利用する &lt;code&gt;UDP 60000-61000&lt;/code&gt; を許可し、ネットワークタグを適当に設定。
+インスタンスのネットワークタグ設定にそれを追加する。&lt;/p&gt;
 
 &lt;p&gt;インスタンス側には、&lt;code&gt;mosh&lt;/code&gt;  パッケージを入れ、&lt;code&gt;mosh-server&lt;/code&gt; コマンドでServerを起動させておく。&lt;/p&gt;
 
