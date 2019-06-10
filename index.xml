@@ -13,6 +13,43 @@
     
     
     <item>
+      <title>iPad Pro でなんとかするための設定</title>
+      <link>https://log.tuxedokatze.com/2019/ipad-pro-%E3%81%A7%E3%81%AA%E3%82%93%E3%81%A8%E3%81%8B%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%A8%AD%E5%AE%9A/</link>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
+      <author>tuxedocat</author>
+      <guid>https://log.tuxedokatze.com/2019/ipad-pro-%E3%81%A7%E3%81%AA%E3%82%93%E3%81%A8%E3%81%8B%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%A8%AD%E5%AE%9A/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;開発環境としてはかなり原始的だけど、念のためちょっとした作業はできるようにした。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;GCPのVMで作業する前提なので、まともな端末アプリさえあれば解決。
+どれでもいいんだろうけど、Moshを使ってみたかったので &lt;a href=&#34;https://www.blink.sh&#34;&gt;Blink&lt;/a&gt; にした。2400円、ちょっと高い。&lt;/p&gt;
+
+&lt;p&gt;Firewall Rulesで、 &lt;code&gt;UDP 60000-61000&lt;/code&gt; を許可し、ネットワークタグを適当に設定。
+インスタンスのネットワークタグ設定にそれを追加する。
+gcloud でSSH接続をしたことがある環境では、 &lt;code&gt;~/.ssh/google_compute_engine(|.pub)&lt;/code&gt; ができているので、これをiCloud Drive経由などでBlinkのディレクトリに移動させておく。&lt;/p&gt;
+
+&lt;p&gt;インスタンス側には、&lt;code&gt;mosh&lt;/code&gt;  パッケージを入れ、&lt;code&gt;mosh-server&lt;/code&gt; コマンドでServerを起動させておく。&lt;/p&gt;
+
+&lt;p&gt;Ephemeral IPはGCPのアプリから確認できるので、それを用いて接続できる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# on blink
+mosh -I .ssh/gcp &amp;lt;username-on-vm&amp;gt;@&amp;lt;external-ip&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Blinkの &lt;code&gt;config&lt;/code&gt; コマンドで表示されるダイアログからこのあたりの設定はできる、はずだったけど、うまく動いていなかったので、コマンドラインから指定した。&lt;/p&gt;
+
+&lt;p&gt;Smart Keyboard Folioは買ってないので、LogicoolのKeys To Goを使っているが、Blinkは装飾キーのマッピングが細かく指定できるので問題ない。
+自分は、 &lt;code&gt;Cmd+Opt+&amp;lt;Num&amp;gt;&lt;/code&gt; でファンクションキーを利用できるようにしている。
+今のところ、ログイン先でのTmuxの使用は何も問題ない。&lt;/p&gt;
+
+&lt;p&gt;VSCode Onlineが使えるようになれば、自前のLaptopは要らなくなるかな？（願望）&lt;/p&gt;</content>
+      
+    </item>
+    
+    <item>
       <title>好き嫌いはやめましょうね〜</title>
       <link>https://log.tuxedokatze.com/2019/%E5%A5%BD%E3%81%8D%E5%AB%8C%E3%81%84%E3%81%AF%E3%82%84%E3%82%81%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%AD/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
