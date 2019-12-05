@@ -11,3 +11,17 @@
 .content a {
     color: rgb(76, 74, 137);
 }
+
+.content figcaption {
+    padding-bottom: 4em;
+    text-align: center;
+    font-size: smaller;
+}
+
+.content figcaption p {
+    text-align: center !important;
+}
+
+.content figure {
+    text-align: center !important;
+}
