@@ -122,64 +122,52 @@
     
     <div class="content">
       <p>芸術の秋，
-とはいっても，ここ数日やったことといえば，ちょこちょことHugoのテーマをいじっていたことぐらいかもしれない<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> <sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>．</p>
-
-<p></p>
-
+とはいっても，ここ数日やったことといえば，ちょこちょことHugoのテーマをいじっていたことぐらいかもしれない<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>．</p>
 <blockquote>
 <p>昨日おとといと出かけて疲れきっていたので，きょうは10時まで寝ていた．</p>
 </blockquote>
-
 <p>もともとは &ldquo;Hemingway&rdquo; というテーマを使っていた．
-そのあと，そのForkである&rdquo;Hemingway2&rdquo;へ乗り換えていた．
-でも結局いろいろいじる必要が出てきたので，自分のFork<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup>を作ってしまった．</p>
-
+そのあと，そのForkである&quot;Hemingway2&quot;へ乗り換えていた．
+でも結局いろいろいじる必要が出てきたので，自分のFork<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>を作ってしまった．</p>
 <p>結果，いろいろな細かい不満が解消されたと同時に，ウェブっぽい話をちょっとは知ることができた．
 Hugo自体のコードは全く見てないけど，その仕組みの大部分であるGo Templateはなんとなくわかってきた．
 本筋ではないけど，設定ファイル記述言語としてのTomlがかなり簡潔でよさそうなことも実感できてよかった．</p>
-
 <p>Hugoテーマの差分はだいたい以下のもの：</p>
-
 <ul>
 <li>Tags/Categoriesなどを生成するための <code>terms.html</code> の追加
-
 <ul>
 <li>Blackburnというテーマを参考にした</li>
-</ul></li>
+</ul>
+</li>
 <li>Mathjaxのロード部の修正とconfig.tomlでの有効・無効切り替え</li>
 <li>スタイルの変更（下記）</li>
 </ul>
-
 <p>Webっぽいことといえば，Sass で書いたスタイルシートを CSS にビルドする仕組みを（Hucoreにあったものだけど）試してみた．Sassが2017年的かどうかはわからないけど，元々のテーマがかなり簡潔で，JS側も含めたそういうフレームワークに左右されない感じだったのがよかった．</p>
-
 <p>もうちょっと楽をしたいので，<code>yarn</code> を使って（2017年的かどうかはわからない） <code>gulp</code> と <code>gulp-sass</code> を導入する．</p>
-
 <ul>
 <li><code>yarn config set prefix /usr/local</code></li>
 <li><code>yarn global add gulp gulp-sass</code></li>
 </ul>
-
 <p>もともとのテーマに <code>gulpfile.js</code> が含まれていて，そこにタスクが定義されているので拝借する．</p>
-
 <ul>
 <li><code>yarn gulp # デフォルトのタスク．Sassをビルドしてstatic/ 内に配置する</code></li>
 <li><code>yarn gulp watch # Sassの変更を監視して，差分があれば自動的に更新する．</code></li>
 </ul>
-
 <p>という感じ．日本語フォントの適用や，ちょっとした外見の変更だけで，特に大きな差分はない．</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1">そのほかのできごと 1：大学院時代の友人たちと丸の内でシュラスコを食べた．「丸の内にゃんにゃんOL」という概念を獲得した．
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">そのほかのできごと 2：横浜オクトーバーフェストに行ってきた． 🍺はおいしかったけど，連休だったためかとても混んでいて疲れた．
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-<li id="fn:3"><a href="https://github.com/tuxedocat/tuxedoneko">https://github.com/tuxedocat/tuxedoneko</a>
- <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>そのほかのできごと 1：大学院時代の友人たちと丸の内でシュラスコを食べた．「丸の内にゃんにゃんOL」という概念を獲得した．<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>そのほかのできごと 2：横浜オクトーバーフェストに行ってきた． 🍺はおいしかったけど，連休だったためかとても混んでいて疲れた．<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://github.com/tuxedocat/tuxedoneko">https://github.com/tuxedocat/tuxedoneko</a><a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
 </ol>
-</div>
+</section>
       
     </div>
     

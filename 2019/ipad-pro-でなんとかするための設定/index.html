@@ -124,32 +124,20 @@
     
     <div class="content">
       <p>開発環境としてはかなり原始的だけど、念のためちょっとした作業はiPad ProからGCPのVMインスタンス上でできるようにした。</p>
-
-<p></p>
-
 <p>GCPのVMで作業する前提なので、まともな端末アプリさえあれば解決。
 どれでもいいんだろうけど、Moshを使ってみたかったので <a href="https://www.blink.sh">Blink</a> にした。2400円、ちょっと高い。</p>
-
 <p>gcloud でSSH接続をしたことがある環境には、 <code>~/.ssh/google_compute_engine(|.pub)</code> ができている。
 インスタンス単位のSSH鍵に公開鍵を設定し、秘密鍵はBlinkのディレクトリにコピーしておく。</p>
-
 <p>Firewall Rulesで、 Moshが利用する <code>UDP 60000-61000</code> を許可し、ネットワークタグを適当に設定。
 インスタンスのネットワークタグ設定にそれを追加する。</p>
-
 <p>インスタンス側には、<code>mosh</code>  パッケージを入れ、<code>mosh-server</code> コマンドでServerを起動させておく。</p>
-
 <p>Ephemeral IPはGCPのアプリから確認できるので、それを用いて接続できる。</p>
-
 <pre><code># on blink
 mosh -I .ssh/gcp &lt;username-on-vm&gt;@&lt;external-ip&gt;
-</code></pre>
-
-<p>Blinkの <code>config</code> コマンドで表示されるダイアログからこのあたりの設定はできる、はずだったけど、うまく動いていなかったので、コマンドラインから指定した。</p>
-
+</code></pre><p>Blinkの <code>config</code> コマンドで表示されるダイアログからこのあたりの設定はできる、はずだったけど、うまく動いていなかったので、コマンドラインから指定した。</p>
 <p>Smart Keyboard Folioは買ってないので、LogicoolのKeys To Goを使っているが、Blinkは装飾キーのマッピングが細かく指定できるので問題ない。
 自分は、 <code>Cmd+Opt+&lt;Num&gt;</code> でファンクションキーを利用できるようにしている。
 今のところ、ログイン先でのTmuxの使用は何も問題ない。</p>
-
 <p>VSCode Onlineが使えるようになれば、自前のLaptopは要らなくなるかな？（願望）</p>
       
     </div>

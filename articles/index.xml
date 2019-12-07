@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on miauhaus.log</title>
@@ -18,9 +18,7 @@
       <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/cat-advent-calendar-2019/</guid>
-      <description>&lt;p&gt;今年も&lt;a href=&#34;https://adventar.org/calendars/4177&#34;&gt;猫 Advent Calendar 2019&lt;/a&gt;の時期がやってきた。この記事では、昨年訪れた Stockholms Katthem という猫保護施設について書いてみようと思う。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;今年も&lt;a href=&#34;https://adventar.org/calendars/4177&#34;&gt;猫 Advent Calendar 2019&lt;/a&gt;の時期がやってきた。この記事では、昨年訪れた Stockholms Katthem という猫保護施設について書いてみようと思う。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,9 +28,7 @@
       
       <guid>https://log.tuxedokatze.com/cat-advent-calendar-2018/</guid>
       <description>&lt;p&gt;この記事は &lt;a href=&#34;https://adventar.org/calendars/2992&#34;&gt;猫 Advent Calendar 2018&lt;/a&gt; の 10日目の記事です．
-今うちにいるキジトラ猫（いなりちゃん）との出会いと生活を記します．&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+今うちにいるキジトラ猫（いなりちゃん）との出会いと生活を記します．&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,11 +37,8 @@
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/bookreview-nlp-for-language-learning/</guid>
-      <description>&lt;!-- textlint-enable --&gt;
-
-&lt;p&gt;『語学学習支援のための言語処理』を読者モニタとして献本していただきました 🎉&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:thanks&#34;&gt;&lt;a href=&#34;#fn:thanks&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;『語学学習支援のための言語処理』を読者モニタとして献本していただきました 🎉&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,9 +47,7 @@
       <pubDate>Tue, 29 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/dopelearning-kdd16-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&#34;&gt;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&#34;&gt;http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

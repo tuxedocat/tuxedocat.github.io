@@ -123,77 +123,71 @@
     <h1 class="title">Simple reading management with Wunderlist</h1>
     
     <div class="content">
-      <h2 id="tl-dr">tl;dr</h2>
-
+      <h2 id="tldr">tl;dr</h2>
 <blockquote>
-<p>Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&rsquo;ve read.</p>
+<p>Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you've read.</p>
 </blockquote>
-
-<p></p>
-
 <ul>
-<li>Register dummy app, and get <code>client_id</code> and <code>access_token</code> on Wunderlist&rsquo;s developer&rsquo;s page</li>
+<li>Register dummy app, and get <code>client_id</code> and <code>access_token</code> on Wunderlist's developer's page</li>
 <li>Create list called &ldquo;Reading&rdquo;</li>
 <li>Get some books</li>
 <li>Add task like <code>Author Name, Title, ...</code></li>
 <li><em>Reading time</em>
-
 <ul>
 <li>Write impressions or quote interesting part of the book, and put them into comments form in Wunderlist</li>
-</ul></li>
+</ul>
+</li>
 <li>Mark as done when finished or just got bored</li>
 <li>Retrieve list via API
-
 <ul>
 <li>Filter by keys such as <code>completed_at</code>, <code>created_at</code> if you want&hellip;</li>
-</ul></li>
-<li>Write article about books I&rsquo;ve read</li>
 </ul>
-
-<h3 id="script-python-3-5">Script (Python 3.5)</h3>
-
-<pre><code class="language-python">#!/usr/bin/env python3
-from requests_oauthlib import OAuth2Session
-import json
-import sys
-from typing import Dict
-
-
-def req_get(s: OAuth2Session, url: str, params: Dict=None):
-    got = s.get(url, params=params)
-    if got.status_code == 200:
-        results = json.loads(got.text)
-        return results
-    else:
-        sys.stderr.write(&quot;HTTP Error: {}&quot;.format(got.status_code))
-        return {}
+</li>
+<li>Write article about books I've read</li>
+</ul>
+<h3 id="script-python-35">Script (Python 3.5)</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python3</span>
+<span style="color:#f92672">from</span> requests_oauthlib <span style="color:#f92672">import</span> OAuth2Session
+<span style="color:#f92672">import</span> json
+<span style="color:#f92672">import</span> sys
+<span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict
 
 
-def get_id_of_list(lists: Dict, name: str):
-    for d in lists:
-        if d['title'] == name:
-            return d['id']
-    return None
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">req_get</span>(s: OAuth2Session, url: str, params: Dict<span style="color:#f92672">=</span>None):
+    got <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>get(url, params<span style="color:#f92672">=</span>params)
+    <span style="color:#66d9ef">if</span> got<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> <span style="color:#ae81ff">200</span>:
+        results <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(got<span style="color:#f92672">.</span>text)
+        <span style="color:#66d9ef">return</span> results
+    <span style="color:#66d9ef">else</span>:
+        sys<span style="color:#f92672">.</span>stderr<span style="color:#f92672">.</span>write(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">HTTP Error: {}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(got<span style="color:#f92672">.</span>status_code))
+        <span style="color:#66d9ef">return</span> {}
 
 
-if __name__ == '__main__':
-    client_id = sys.argv[1]
-    access_token = sys.argv[2]
-    api_url = &quot;https://a.wunderlist.com/api/v1/&quot;
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_id_of_list</span>(lists: Dict, name: str):
+    <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> lists:
+        <span style="color:#66d9ef">if</span> d[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">title</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">==</span> name:
+            <span style="color:#66d9ef">return</span> d[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">id</span><span style="color:#e6db74">&#39;</span>]
+    <span style="color:#66d9ef">return</span> None
 
-    session = OAuth2Session()
-    session.headers['X-Client-ID'] = client_id
-    session.headers['X-Access-Token'] = access_token
-    lists = req_get(session, api_url+&quot;lists&quot;)
-    reading_list_id = get_id_of_list(lists, 'Reading')
 
-    if reading_list_id:
-        params = {'completed': True, 'list_id': reading_list_id}
-        books = req_get(session, api_url+&quot;tasks&quot;, params)
-        for book in sorted(books, key=lambda x: x['completed_at']):
-            # Write to stdout as markdown's numbered list formatting
-            print(&quot;1. &quot; + book['title'])
-</code></pre>
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">__main__</span><span style="color:#e6db74">&#39;</span>:
+    client_id <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]
+    access_token <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">2</span>]
+    api_url <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">https://a.wunderlist.com/api/v1/</span><span style="color:#e6db74">&#34;</span>
+
+    session <span style="color:#f92672">=</span> OAuth2Session()
+    session<span style="color:#f92672">.</span>headers[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">X-Client-ID</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> client_id
+    session<span style="color:#f92672">.</span>headers[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">X-Access-Token</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> access_token
+    lists <span style="color:#f92672">=</span> req_get(session, api_url<span style="color:#f92672">+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">lists</span><span style="color:#e6db74">&#34;</span>)
+    reading_list_id <span style="color:#f92672">=</span> get_id_of_list(lists, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Reading</span><span style="color:#e6db74">&#39;</span>)
+
+    <span style="color:#66d9ef">if</span> reading_list_id:
+        params <span style="color:#f92672">=</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">completed</span><span style="color:#e6db74">&#39;</span>: True, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">list_id</span><span style="color:#e6db74">&#39;</span>: reading_list_id}
+        books <span style="color:#f92672">=</span> req_get(session, api_url<span style="color:#f92672">+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">tasks</span><span style="color:#e6db74">&#34;</span>, params)
+        <span style="color:#66d9ef">for</span> book <span style="color:#f92672">in</span> sorted(books, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> x: x[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">completed_at</span><span style="color:#e6db74">&#39;</span>]):
+            <span style="color:#75715e"># Write to stdout as markdown&#39;s numbered list formatting</span>
+            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1. </span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> book[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">title</span><span style="color:#e6db74">&#39;</span>])
+</code></pre></div>
       
     </div>
     

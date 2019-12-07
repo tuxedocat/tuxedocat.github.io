@@ -126,16 +126,10 @@
     
     <div class="content">
       <p><a href="http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation">http://www.kdd.org/kdd2016/subtopic/view/dopelearning-a-computational-approach-to-rap-lyrics-generation</a></p>
-
-<p></p>
-
 <p>KDDの論文をちゃんと読むのは初めてなのかも．
 （iPadでハイパー長文感想書いたのに投稿されていなかった…もう寝る）</p>
-
 <p>ラップのLyricの生成タスクを定義して，音韻的な特徴を評価尺度として提案し，またそれに基づくIR的な手法によるLyric生成手法を提案した論文．</p>
-
-<h2 id="貢献">貢献</h2>
-
+<h2 id="heading">貢献</h2>
 <ul>
 <li>ラップの歌詞生成の情報検索的アプローチを提案．（他のテキスト生成タスクにも使えそう）</li>
 <li>ラップの作詞生成タスクをLineを予測する問題として定式化．また意味的な類似度をとらえるために，RNNベースのモデルを利用した素性が有効だと示した．</li>
@@ -143,31 +137,27 @@
 <li>deepbeat.org でデモが公開されている．（ちゃんと動く．
 著者グループはフィンランド人で，このシステムのデモ版では，英語・フィンランド語でLyricの生成ができる．）</li>
 </ul>
-
-<h2 id="手法">手法</h2>
-
+<h2 id="heading1">手法</h2>
 <ul>
 <li>歌詞はLineの連鎖だと定義</li>
 <li>前文脈が与えられたとき，つぎのLineを推薦する</li>
 <li>推薦のランク学習にはRankSVMを使う</li>
 <li>素性
-
 <ul>
 <li><strong>音韻的素性</strong></li>
 <li>構造的素性（文字数ベース．長すぎると歌えないから，全体が同じような長さになるようにする．）</li>
 <li>意味的素性（BOW, LSA）</li>
 <li><strong>意味的素性2 （Collobertと同様の単語RNN）</strong></li>
-</ul></li>
+</ul>
+</li>
 <li>尺度
-
 <ul>
 <li>歌詞の質: Rhyme Density</li>
 <li>推薦の質: Rank, MRRなど</li>
-</ul></li>
 </ul>
-
-<h2 id="感想">感想</h2>
-
+</li>
+</ul>
+<h2 id="heading2">感想</h2>
 <p>タイトルに惹かれて読んだ．
 脚注の解説やタスクへの取り組み，デモなど，ラップ愛が強くてよかった．
 手法は堅実で効果もありそうだけど，それ自体は特にラップに特化したものではない．もう少し言語学的な特徴の議論があれば面白くなりそう．

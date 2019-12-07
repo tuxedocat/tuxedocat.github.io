@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kindle on miauhaus.log</title>
+    <title>kindle on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/kindle/</link>
-    <description>Recent content in Kindle on miauhaus.log</description>
+    <description>Recent content in kindle on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -14,11 +14,11 @@
     
     <item>
       <title>『猫的感覚　動物行動学が教えるネコの心理』を読んだ</title>
-      <link>https://log.tuxedokatze.com/2016/%E7%8C%AB%E7%9A%84%E6%84%9F%E8%A6%9A%E5%8B%95%E7%89%A9%E8%A1%8C%E5%8B%95%E5%AD%A6%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%8D%E3%82%B3%E3%81%AE%E5%BF%83%E7%90%86%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <link>https://log.tuxedokatze.com/2016/%E7%8C%AB%E7%9A%84%E6%84%9F%E8%A6%9A-%E5%8B%95%E7%89%A9%E8%A1%8C%E5%8B%95%E5%AD%A6%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%8D%E3%82%B3%E3%81%AE%E5%BF%83%E7%90%86%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
       <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://log.tuxedokatze.com/2016/%E7%8C%AB%E7%9A%84%E6%84%9F%E8%A6%9A%E5%8B%95%E7%89%A9%E8%A1%8C%E5%8B%95%E5%AD%A6%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%8D%E3%82%B3%E3%81%AE%E5%BF%83%E7%90%86%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://log.tuxedokatze.com/2016/%E7%8C%AB%E7%9A%84%E6%84%9F%E8%A6%9A-%E5%8B%95%E7%89%A9%E8%A1%8C%E5%8B%95%E5%AD%A6%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%8D%E3%82%B3%E3%81%AE%E5%BF%83%E7%90%86%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -27,9 +27,7 @@
       <pubDate>Mon, 21 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2016/%E6%97%A5%E6%9C%AC%E4%BC%81%E6%A5%AD%E3%81%AE%E7%A4%BE%E5%93%A1%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%93%E3%82%93%E3%81%AA%E3%81%AB%E3%82%82%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%8E%E3%81%84%E3%81%AE%E3%81%8B%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00TQE9TIK/ref=r_soa_w_d&#34;&gt;Rochelle Kopp, 『日本企業の社員は，なぜこんなにもモチベーションが低いのか？ 』&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/dp/B00TQE9TIK/ref=r_soa_w_d&#34;&gt;Rochelle Kopp, 『日本企業の社員は，なぜこんなにもモチベーションが低いのか？ 』&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,9 +36,7 @@
       <pubDate>Sat, 05 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2016/kindle-%E5%8D%98%E8%AA%9E%E5%B8%B3%E3%81%AE%E6%95%B4%E7%90%86/</guid>
-      <description>&lt;p&gt;TL;DR &lt;code&gt;sqlite3 Kindle/system/vocabulary/vocab.db&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;TL;DR &lt;code&gt;sqlite3 Kindle/system/vocabulary/vocab.db&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -49,9 +45,7 @@
       <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2016/kindle-amazon.com%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%82%E6%8C%81%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AB%E5%9B%B0%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8/</guid>
-      <description>&lt;p&gt;Kindle Paperwhiteは2015年の「買ってよかったもの」のひとつだけど，使用には少し難点があった．&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Kindle Paperwhiteは2015年の「買ってよかったもの」のひとつだけど，使用には少し難点があった．&lt;/p&gt;</description>
     </item>
     
   </channel>

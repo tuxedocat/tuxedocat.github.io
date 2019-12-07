@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sublimetext on miauhaus.log</title>
+    <title>sublimetext on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/sublimetext/</link>
-    <description>Recent content in Sublimetext on miauhaus.log</description>
+    <description>Recent content in sublimetext on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,9 +18,7 @@
       <pubDate>Sun, 22 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2013/sublimetext-enabling-key-repeating-on-mavericks/</guid>
-      <description>&lt;p&gt;On OSX Mavericks, I found the J-K keys repeating was not working when using the vintage (Vim-like) mode.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;On OSX Mavericks, I found the J-K keys repeating was not working when using the vintage (Vim-like) mode.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,12 +28,8 @@
       
       <guid>https://log.tuxedokatze.com/2013/sublimetext-ui-glitch-hell/</guid>
       <description>&lt;h2 id=&#34;symptom&#34;&gt;Symptom&lt;/h2&gt;
-
 &lt;p&gt;The UI is broken, on Sublime Text 2 build 2221.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.sublimetext.com/forum/viewtopic.php?f=3&amp;amp;t=13750&#34;&gt;Screenshot and other info.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://www.sublimetext.com/forum/viewtopic.php?f=3&amp;amp;t=13750&#34;&gt;Screenshot and other info.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

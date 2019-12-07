@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming on miauhaus.log</title>
+    <title>programming on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/programming/</link>
-    <description>Recent content in Programming on miauhaus.log</description>
+    <description>Recent content in programming on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,15 +18,11 @@
       <pubDate>Mon, 22 Jan 2018 21:54:09 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/2018/pycharm-source-root%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E5%90%8D%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%81%AF%E3%83%87%E3%83%90%E3%83%83%E3%82%AC%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%89%E3%81%AA%E3%81%84/</guid>
-      <description>&lt;!-- textlint-enable --&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;PyCharm小ネタ:&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと，デバッガの立ち上げ時にエラーになる．&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -35,13 +31,10 @@
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2017/venv-with-anaconda-use-systems-python-instead.../</guid>
-      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
-
+      <description>&lt;h2 id=&#34;tldr&#34;&gt;tl;dr&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Use system&amp;rsquo;s python instead of anaconda&amp;rsquo;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;Use system&#39;s python instead of anaconda&#39;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -51,10 +44,7 @@
       
       <guid>https://log.tuxedokatze.com/2015/dokuwiki%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9Epdf%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F/</guid>
       <description>&lt;p&gt;CentOS6.6, Dokuwiki Hrun，Dw2Pdf_20150622でのこと．&lt;/p&gt;
-
-&lt;p&gt;そのままでも一応日本語は出力されるが，中国語フォントだったり，豆腐になったりしたので，いろいろやらなきゃならなかった．&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;そのままでも一応日本語は出力されるが，中国語フォントだったり，豆腐になったりしたので，いろいろやらなきゃならなかった．&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,9 +53,7 @@
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2015/link-numpy-docstring-/-howto/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -74,9 +62,7 @@
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</guid>
-      <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;(via &lt;!-- raw HTML omitted --&gt;Type Hinting in PyCharm&lt;!-- raw HTML omitted --&gt;)&lt;/p&gt;</description>
     </item>
     
   </channel>

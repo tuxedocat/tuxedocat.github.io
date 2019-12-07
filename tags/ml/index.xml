@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ml on miauhaus.log</title>
+    <title>ml on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/ml/</link>
-    <description>Recent content in Ml on miauhaus.log</description>
+    <description>Recent content in ml on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,13 +18,10 @@
       <pubDate>Thu, 23 Nov 2017 23:05:11 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/2017/joeltest4mlsys/</guid>
-      <description>&lt;!-- textlint-enable --&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Naver の Lucy Park氏による ACML-AIMLP Workshop での 発表 &lt;a href=&#34;https://www.lucypark.kr/docs/slides/2017-acml/#/&#34;&gt;&amp;ldquo;My model has higher BLEU, can I ship it? The Joel Test for machine learning systems&amp;rdquo;&lt;/a&gt; をざっと読んだときの感想．&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/blockquote&gt;</description>
     </item>
     
   </channel>

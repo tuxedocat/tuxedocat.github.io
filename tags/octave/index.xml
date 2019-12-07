@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Octave on miauhaus.log</title>
+    <title>octave on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/octave/</link>
-    <description>Recent content in Octave on miauhaus.log</description>
+    <description>Recent content in octave on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,9 +18,7 @@
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2015/octave/</guid>
-      <description>&lt;p&gt;某機械学習のクラスを受講している．&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;某機械学習のクラスを受講している．&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -118,35 +118,24 @@
     
     <div class="content">
       <p>Anaconda Scientific Python Distributionを会社マシンとおうちMacMiniに入れた．</p>
-
-<p></p>
-
 <p>自前ビルドでは負荷が高そうなNumpy/Scipyを安定的に運用したいのと，念のため色々な環境を同じバージョンにしておきたいので．
 この種の安定版ディストリビューションは瑣末なことで気を揉まなくてすむし，それだけコミュニティも成熟してきたということで，使っていきたい．</p>
-
 <p>Windowsでは，そのまま<a href="https://store.continuum.io/cshop/anaconda/">Continuumのサイト</a>から．</p>
-
-<p>Macではpyenvが対応しているので <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
-
-<pre><code class="language-sh"> ~/ pyenv install anaconda3-2.1.0
+<p>Macではpyenvが対応しているので <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"> ~/ pyenv install anaconda3-2.1.0
  ~/ pyenv global anaconda3-2.1.0
-</code></pre>
-
-<p>という感じ．</p>
-
+</code></pre></div><p>という感じ．</p>
 <p>科学技術計算や機械学習系のパッケージはだいたい揃っているし，ビルドでコケることもない．
 科学技術計算用途で，MATLAB・Rの代替環境として広めたいのなら，これぐらい楽な方がいいと思う．</p>
-
 <p>この調子で，Haskell環境もStackageのLTS Haskellにしようかな&hellip;</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1">(追記) たまたま以前からpyenvを使っていた，というだけです．anaconda distributionには，<code>conda</code>というパッケージマネージャ兼仮想環境ツールがあるので，今はそちらを使っています．
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>(追記) たまたま以前からpyenvを使っていた，というだけです．anaconda distributionには，<code>conda</code>というパッケージマネージャ兼仮想環境ツールがあるので，今はそちらを使っています．<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
 </ol>
-</div>
+</section>
       
     </div>
     

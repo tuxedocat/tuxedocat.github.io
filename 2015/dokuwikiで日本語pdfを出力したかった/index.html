@@ -124,37 +124,33 @@
     
     <div class="content">
       <p>CentOS6.6, Dokuwiki Hrun，Dw2Pdf_20150622でのこと．</p>
-
 <p>そのままでも一応日本語は出力されるが，中国語フォントだったり，豆腐になったりしたので，いろいろやらなきゃならなかった．</p>
-
-<p></p>
-
 <ul>
 <li>ipagp.ttf等を<code>dw2pdf/mpdf/ttffonts/</code>へ格納</li>
 <li><code>dw2pdf/mpdf/config_lang2fonts.php</code>
-
 <ul>
 <li><code>East Asian</code>のところで <code>$unifont = &quot;ipagp, sjis, sjisB&quot;</code></li>
-</ul></li>
+</ul>
+</li>
 <li><code>dw2pdf/mpdf/lang2fonts.css</code>
-
 <ul>
 <li><code>:lang(&quot;ja&quot;)</code>のところで<code>font-family: ipagp;</code></li>
-</ul></li>
+</ul>
+</li>
 <li><code>dw2pdf/conf/style.css</code>
-
 <ul>
 <li><code>body {font-family: ipagp, sans-serif; }</code></li>
-</ul></li>
+</ul>
+</li>
 <li><code>dw2pdf/DokuPDF.class.php</code>
-
 <ul>
 <li><code>_constructer</code>
-
 <ul>
 <li><code>$this-&gt;useAdobeCJK = true;</code></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
       
     </div>

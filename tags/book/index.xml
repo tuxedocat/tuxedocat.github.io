@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Book on miauhaus.log</title>
+    <title>book on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/book/</link>
-    <description>Recent content in Book on miauhaus.log</description>
+    <description>Recent content in book on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,11 +18,8 @@
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/bookreview-nlp-for-language-learning/</guid>
-      <description>&lt;!-- textlint-enable --&gt;
-
-&lt;p&gt;『語学学習支援のための言語処理』を読者モニタとして献本していただきました 🎉&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:thanks&#34;&gt;&lt;a href=&#34;#fn:thanks&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;『語学学習支援のための言語処理』を読者モニタとして献本していただきました 🎉&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

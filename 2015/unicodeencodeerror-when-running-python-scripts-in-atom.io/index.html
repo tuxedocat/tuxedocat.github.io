@@ -123,27 +123,19 @@
     <h1 class="title">UnicodeEncodeError when running python scripts in Atom.io</h1>
     
     <div class="content">
-      <h2 id="何">何?</h2>
-
+      <h2 id="heading">何?</h2>
 <p>Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので，<code>print()</code>などで<code>UnicodeEncodeError</code>が出る．</p>
-
-<p></p>
-
-<h2 id="どうする">どうする?</h2>
-
+<h2 id="heading1">どうする?</h2>
 <ul>
-<li><p><code>__init__.py</code>などでstdoutのencodingを変更する．</p>
-
-<pre><code class="language-python">import sys
-import io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-</code></pre></li>
-
-<li><p>Atom.appから起動時には，環境変数をログインシェルから読むみたいなので，例えば<code>.bash_profile</code>に<code>export LANG='en_US.UTF-8'</code>などと書いておく．</p></li>
+<li><code>__init__.py</code>などでstdoutのencodingを変更する．</li>
 </ul>
-
-<h3 id="経緯">経緯</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#f92672">import</span> sys
+  <span style="color:#f92672">import</span> io
+  sys<span style="color:#f92672">.</span>stdout <span style="color:#f92672">=</span> io<span style="color:#f92672">.</span>TextIOWrapper(sys<span style="color:#f92672">.</span>stdout<span style="color:#f92672">.</span>buffer, encoding<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">utf-8</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><ul>
+<li>Atom.appから起動時には，環境変数をログインシェルから読むみたいなので，例えば<code>.bash_profile</code>に<code>export LANG='en_US.UTF-8'</code>などと書いておく．</li>
+</ul>
+<h3 id="heading2">経緯</h3>
 <p>python3.4をpyenv globalで設定していたのに，atomのscript-pluginではOSXのpython2.7.9が使われるのはなんでだろう，と思っていた．
 普段はiterm2でzshを起動するようにしていたので，ログインシェル(bash)の設定ファイルへ環境を反映していなかったのが原因だった．</p>
       

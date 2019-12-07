@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Readings on miauhaus.log</title>
+    <title>readings on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/readings/</link>
-    <description>Recent content in Readings on miauhaus.log</description>
+    <description>Recent content in readings on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,9 +18,7 @@
       <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2019/%E5%A5%BD%E3%81%8D%E5%AB%8C%E3%81%84%E3%81%AF%E3%82%84%E3%82%81%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E3%81%AD/</guid>
-      <description>&lt;p&gt;ジョセフ・ヒース『資本主義が嫌いな人のための経済学』を読んだ．ここ最近何冊か一般向けの経済学書を読んだのだけど，それらの中では一番良かった．&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;ジョセフ・ヒース『資本主義が嫌いな人のための経済学』を読んだ．ここ最近何冊か一般向けの経済学書を読んだのだけど，それらの中では一番良かった．&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,12 +27,9 @@
       <pubDate>Sat, 30 Dec 2017 18:23:37 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/2017/%E4%BB%8A%E5%B9%B4%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC%E5%AE%9A%E6%9C%9F/</guid>
-      <description>&lt;!-- textlint-enable --&gt;
-
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;2017年のあいだに読んだ本を思い出しながら感想をだらだらと書くだけの日記．永遠にWIPなPost．
-そもそも，本の感想を書くって行為自体が，自分には致命的に向いていない気がするぞ 🤔&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+そもそも，本の感想を書くって行為自体が，自分には致命的に向いていない気がするぞ 🤔&lt;/p&gt;</description>
     </item>
     
   </channel>

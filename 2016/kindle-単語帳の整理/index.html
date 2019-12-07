@@ -122,55 +122,44 @@
     
     <div class="content">
       <p>TL;DR <code>sqlite3 Kindle/system/vocabulary/vocab.db</code></p>
-
-<p></p>
-
 <p>Kindleの単語帳機能は，辞書で調べた単語を記録してくれるのでそれ自体は便利だけど，次の2つの点が気に入らなくて不満がたまってきていた．</p>
-
-<p>まず，本当に「なんでも追加してくれてしまう」ところ．Kindle端末のレスポンスの悪さもあってか，ハイライト時に意図せず，格助詞やその他の機能語も追加されてしまうことがよくあった． <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>
+<p>まず，本当に「なんでも追加してくれてしまう」ところ．Kindle端末のレスポンスの悪さもあってか，ハイライト時に意図せず，格助詞やその他の機能語も追加されてしまうことがよくあった． <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
 こうして，単語帳は単語分割が失敗したフレーズに含まれるどうでもいい一般名詞や，機能語で埋め尽くされていく．</p>
-
 <p>こうなると，不要な単語を一括で整理したくなる．が，Kindle端末の単語帳アプリには，登録された単語を一括削除する術が（現時点では）用意されていない．これがふたつめのつらさ．
 一つずつ単語をタップし，辞書のポップアップから削除しなければならない．レスポンスの悪さと画面の点滅のせいで，わりとつらい作業になってしまう．</p>
-
-<p>何かいい手は無いかなぁと思って，KindleをMacにマウントして中身にそれらしいファイルがあるかどうか調べてみた． <sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup></p>
-
+<p>何かいい手は無いかなぁと思って，KindleをMacにマウントして中身にそれらしいファイルがあるかどうか調べてみた． <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <p>それらしいファイルがあった． <code>Kindle/system/vocabulary</code> 内には <code>vocab.db</code> という sqlite3 のDBが入っていた．
 ここまでくればあとは何とでも…．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sqlite3 vocab.db
+sqlite&gt; PRAGMA table_info<span style="color:#f92672">(</span>words<span style="color:#f92672">)</span>;
+0|id|TEXT|1<span style="color:#f92672">||</span><span style="color:#ae81ff">1</span>
+1|word|TEXT|0<span style="color:#f92672">||</span><span style="color:#ae81ff">0</span>
+2|stem|TEXT|0<span style="color:#f92672">||</span><span style="color:#ae81ff">0</span>
+3|lang|TEXT|0<span style="color:#f92672">||</span><span style="color:#ae81ff">0</span>
+4|category|INTEGER|0|0|<span style="color:#ae81ff">0</span>
+5|timestamp|INTEGER|0|0|<span style="color:#ae81ff">0</span>
+6|profileid|TEXT|0<span style="color:#f92672">||</span><span style="color:#ae81ff">0</span>
 
-<pre><code class="language-sh">$ sqlite3 vocab.db
-sqlite&gt; PRAGMA table_info(words);
-0|id|TEXT|1||1
-1|word|TEXT|0||0
-2|stem|TEXT|0||0
-3|lang|TEXT|0||0
-4|category|INTEGER|0|0|0
-5|timestamp|INTEGER|0|0|0
-6|profileid|TEXT|0||0
-
-sqlite&gt; SELECT * FROM words WHERE lang = &quot;ja&quot;;
+sqlite&gt; SELECT * FROM words WHERE lang <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ja&#34;</span>;
 ja:しかしながら，本来|しかしながら，本来|しかし‐ながら|ja|0|1451836371172|
 ja:ところが|ところが|ところが|ja|0|1451836908962|
 ja:如才|如才|じょ‐さい|ja|0|1456149872209|
 ja:緋色|緋色|ひ‐いろ|ja|0|1430219728555|
 
-sqlite&gt; DELETE FROM words WHERE lang = &quot;ja&quot;;
-</code></pre>
-
-<p>最後にKindleをUnmountして，再起動させれば単語の削除が反映される．</p>
-
+sqlite&gt; DELETE FROM words WHERE lang <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ja&#34;</span>;
+</code></pre></div><p>最後にKindleをUnmountして，再起動させれば単語の削除が反映される．</p>
 <p>QoLがちょっとだけ上がった．イェァ！</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1">日本語の本では，ハイライトやフレーズ選択の操作性があまり良くない．単語分割がうまくできていないからかもしれない．
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">ハイライトやメモを抽出しようとした時のことを思い出した．
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>日本語の本では，ハイライトやフレーズ選択の操作性があまり良くない．単語分割がうまくできていないからかもしれない．<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>ハイライトやメモを抽出しようとした時のことを思い出した．<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
 </ol>
-</div>
+</section>
       
     </div>
     

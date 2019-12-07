@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dayone on miauhaus.log</title>
+    <title>dayone on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/dayone/</link>
-    <description>Recent content in Dayone on miauhaus.log</description>
+    <description>Recent content in dayone on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,12 +18,9 @@
       <pubDate>Tue, 03 Apr 2018 21:05:00 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/2018/dayone2md/</guid>
-      <description>&lt;!-- textlint-enable --&gt;
-
-&lt;p&gt;or an endless journey for finding a better way for keeping a journal or writing blogs with no stress.&lt;br /&gt;
-（DayOneのJSONを個別のメタデータ付きのMarkdownにしたかった，という話）&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;or an endless journey for finding a better way for keeping a journal or writing blogs with no stress.&lt;br&gt;
+（DayOneのJSONを個別のメタデータ付きのMarkdownにしたかった，という話）&lt;/p&gt;</description>
     </item>
     
   </channel>

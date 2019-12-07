@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dokuwiki on miauhaus.log</title>
+    <title>dokuwiki on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/dokuwiki/</link>
-    <description>Recent content in Dokuwiki on miauhaus.log</description>
+    <description>Recent content in dokuwiki on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -19,10 +19,7 @@
       
       <guid>https://log.tuxedokatze.com/2015/dokuwiki%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9Epdf%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F/</guid>
       <description>&lt;p&gt;CentOS6.6, Dokuwiki Hrun，Dw2Pdf_20150622でのこと．&lt;/p&gt;
-
-&lt;p&gt;そのままでも一応日本語は出力されるが，中国語フォントだったり，豆腐になったりしたので，いろいろやらなきゃならなかった．&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;そのままでも一応日本語は出力されるが，中国語フォントだったり，豆腐になったりしたので，いろいろやらなきゃならなかった．&lt;/p&gt;</description>
     </item>
     
   </channel>

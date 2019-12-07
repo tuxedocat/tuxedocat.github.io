@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mac on miauhaus.log</title>
+    <title>mac on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/mac/</link>
-    <description>Recent content in Mac on miauhaus.log</description>
+    <description>Recent content in mac on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,12 +18,11 @@
       <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2016/disk-partition-manipulation-on-osx-10.11/</guid>
-      <description>&lt;h2 id=&#34;toc_0&#34;&gt;🐡 💢&lt;/h2&gt;
-
-&lt;p&gt;tl;dr
-&amp;gt; For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;-&#34;&gt;🐡 💢&lt;/h2&gt;
+&lt;p&gt;tl;dr&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For clean installation of OSX, there might be some problems for erasing BootCamp partition and getting it merged with main partition using El Capitan’s DiskUtility.app. In my case, erasing Recovery partition is needed.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -32,7 +31,7 @@
       <pubDate>Sun, 26 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2014/neue-helvetica/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -42,10 +41,7 @@
       
       <guid>https://log.tuxedokatze.com/2014/gpu-failure-possibly...-on-my-mbp15-early-2011-model/</guid>
       <description>&lt;h2 id=&#34;symptoms&#34;&gt;Symptoms&lt;/h2&gt;
-
-&lt;p&gt;Various glitch happen when connecting external displays, or doing GPU intensive tasks.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;Various glitch happen when connecting external displays, or doing GPU intensive tasks.&lt;/p&gt;</description>
     </item>
     
   </channel>

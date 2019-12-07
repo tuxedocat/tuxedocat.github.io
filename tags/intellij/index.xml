@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Intellij on miauhaus.log</title>
+    <title>intellij on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/intellij/</link>
-    <description>Recent content in Intellij on miauhaus.log</description>
+    <description>Recent content in intellij on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,7 +18,7 @@
       <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2016/pycharm-tput-unknown-terminal-emacs-appears-when-using-debugging-console-w/-ipython/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
   </channel>

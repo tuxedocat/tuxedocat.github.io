@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Documentation on miauhaus.log</title>
+    <title>documentation on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/tags/documentation/</link>
-    <description>Recent content in Documentation on miauhaus.log</description>
+    <description>Recent content in documentation on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
@@ -18,12 +18,9 @@
       <pubDate>Tue, 03 Apr 2018 21:05:00 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/2018/dayone2md/</guid>
-      <description>&lt;!-- textlint-enable --&gt;
-
-&lt;p&gt;or an endless journey for finding a better way for keeping a journal or writing blogs with no stress.&lt;br /&gt;
-（DayOneのJSONを個別のメタデータ付きのMarkdownにしたかった，という話）&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;or an endless journey for finding a better way for keeping a journal or writing blogs with no stress.&lt;br&gt;
+（DayOneのJSONを個別のメタデータ付きのMarkdownにしたかった，という話）&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,9 +29,7 @@
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2015/link-numpy-docstring-/-howto/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&#34;&gt;https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,9 +38,7 @@
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</guid>
-      <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;(via &lt;!-- raw HTML omitted --&gt;Type Hinting in PyCharm&lt;!-- raw HTML omitted --&gt;)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -55,17 +48,14 @@
       
       <guid>https://log.tuxedokatze.com/2012/the-workflow-for-my-thesis/</guid>
       <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
-
 &lt;ol&gt;
 &lt;li&gt;Write thesis body in &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown&#34;&gt;Pandoc Markdown&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Build latex sources and pdf using &lt;a href=&#34;https://code.google.com/p/waf/&#34;&gt;Waf build system&lt;/a&gt;.
-
 &lt;ol&gt;
 &lt;li&gt;Do with thesis pandoc &lt;a href=&#34;http://johnmacfarlane.net/pandoc/README.html#templates&#34;&gt;template&lt;/a&gt; file if you need.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     
   </channel>
