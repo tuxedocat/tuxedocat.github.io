@@ -123,21 +123,36 @@
     <h1 class="title">[PyCharm] Source Rootディレクトリ名によってはデバッガが立ち上がらない</h1>
     
     <div class="content">
-      <!-- raw HTML omitted -->
+      <!-- textlint-enable -->
 <p>PyCharm小ネタ:</p>
 <blockquote>
 <p>PyCharm2017.3.3 Linux: Source root が &ldquo;code&rdquo; というディレクトリ名かつPythonパッケージの状態だと，デバッガの立ち上げ時にエラーになる．</p>
 </blockquote>
 <p>環境は， Ubuntu 16.04.3 + PyCharm CE 2017.3.3．</p>
 <p>Source root ディレクトリ名が &ldquo;code&rdquo; で，以下のようにそれがPythonパッケージの状態となっているとき，</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!-- Shortcodeはテーマ側であまり対応できてない  -->
+<!-- <figure>
+    <img src="/img/pycharm-debugger/ng.png"/> <figcaption>
+            <h4>NGの状態</h4>
+        </figcaption>
+</figure>
+ -->
 <p><img src="/img/pycharm-debugger/ng.png" alt="NGの状態"></p>
 <p>pydevのデバッガのエラーが出る<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>．</p>
-<!-- raw HTML omitted -->
+<!-- <figure>
+    <img src="/img/pycharm-debugger/ng-log.png"/> <figcaption>
+            <h4>エラーログ</h4>
+        </figcaption>
+</figure>
+ -->
 <p><img src="/img/pycharm-debugger/ng-log.png" alt="エラーログ"></p>
 <p>対処は，codeディレクトリはパッケージ化しない（もしくはリネームする）こと．</p>
-<!-- raw HTML omitted -->
+<!-- <figure>
+    <img src="/img/pycharm-debugger/ok.png"/> <figcaption>
+            <h4>codeディレクトリはパッケージ化しない</h4>
+        </figcaption>
+</figure>
+ -->
 <p><img src="/img/pycharm-debugger/ok.png" alt="codeディレクトリはパッケージ化しない（もしくはリネームする）"></p>
 <h2 id="heading">経緯と感想</h2>
 <p>デバッガが急に使えなくなって困ってたら，何かの拍子に<code>__init__.py</code>が作成されてしまったことに気付き，そこからこの問題があると気付けた．

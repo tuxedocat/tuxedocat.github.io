@@ -27,7 +27,7 @@
       <pubDate>Tue, 03 Apr 2018 21:05:00 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/2018/dayone2md/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;!-- textlint-enable --&gt;
 &lt;p&gt;or an endless journey for finding a better way for keeping a journal or writing blogs with no stress.&lt;br&gt;
 （DayOneのJSONを個別のメタデータ付きのMarkdownにしたかった，という話）&lt;/p&gt;</description>
     </item>
@@ -38,7 +38,7 @@
       <pubDate>Mon, 22 Jan 2018 21:54:09 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/2018/pycharm-source-root%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E5%90%8D%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%81%AF%E3%83%87%E3%83%90%E3%83%83%E3%82%AC%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%89%E3%81%AA%E3%81%84/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;!-- textlint-enable --&gt;
 &lt;p&gt;PyCharm小ネタ:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;PyCharm2017.3.3 Linux: Source root が &amp;ldquo;code&amp;rdquo; というディレクトリ名かつPythonパッケージの状態だと，デバッガの立ち上げ時にエラーになる．&lt;/p&gt;
@@ -105,7 +105,7 @@
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2015/link-type-hinting-support-in-pycharm/</guid>
-      <description>&lt;p&gt;(via &lt;!-- raw HTML omitted --&gt;Type Hinting in PyCharm&lt;!-- raw HTML omitted --&gt;)&lt;/p&gt;</description>
+      <description>&lt;p&gt;(via &lt;a href=&#34;https://www.jetbrains.com/pycharm/help/type-hinting-in-pycharm.html&#34;&gt;Type Hinting in PyCharm&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -18,7 +18,7 @@
       <pubDate>Thu, 23 Nov 2017 23:05:11 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/2017/joeltest4mlsys/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;!-- textlint-enable --&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Naver の Lucy Park氏による ACML-AIMLP Workshop での 発表 &lt;a href=&#34;https://www.lucypark.kr/docs/slides/2017-acml/#/&#34;&gt;&amp;ldquo;My model has higher BLEU, can I ship it? The Joel Test for machine learning systems&amp;rdquo;&lt;/a&gt; をざっと読んだときの感想．&lt;/p&gt;
 &lt;/blockquote&gt;</description>
