@@ -150,8 +150,11 @@
 <span class="p">};</span>
 <span class="kr">const</span> <span class="nx">speech</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">smd</span><span class="p">.</span><span class="nx">SpeechMarkdown</span><span class="p">();</span>
 <span class="kr">const</span> <span class="nx">ssml</span> <span class="o">=</span> <span class="nx">speech</span><span class="p">.</span><span class="nx">toSSML</span><span class="p">(</span><span class="nx">markdown</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
-</code></pre></div><p>SSML で定義されているタグは幅広く、たとえば Speech Markdown では <code>(some text)[disappointed]</code> で表されるような「失望」という状態の表現なんかもある。
-とはいえ、実際に使えるタグ（上記のようなものは Modifier という）は限られていて、たとえば <code>disappointed</code> は <a href="https://developers.google.com/assistant/actions/reference/ssml">Google Assistant の SSML では対応していない</a>。</p>
+</code></pre></div><p>SSML で定義されているタグは幅広く、たとえば Speech Markdown では <code>(some text)[disappointed]</code> で表されるような「失望」という状態の表現なんかもある。</p>
+<ul>
+<li><a href="https://www.speechmarkdown.org/syntax/disappointed/">https://www.speechmarkdown.org/syntax/disappointed/</a></li>
+</ul>
+<p>とはいえ、実際に使えるタグ（上記のようなものは Modifier という）は限られていて、たとえば <code>disappointed</code> は <a href="https://developers.google.com/assistant/actions/reference/ssml">Google Assistant の SSML では対応していない</a>。</p>
 <p>適当に SSML を吐けるようにしておく。</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">node sm2ssml.js input.speechmarkdown &gt; input.ssml
 </code></pre></div><h2 id="google-text-to-speech-api-による発話音声ファイル出力">Google Text-to-speech API による発話音声ファイル出力</h2>
