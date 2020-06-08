@@ -113,15 +113,16 @@
     <div class="subtitle tags is-6 is-pulled-right">
       
       
-<a class="subtitle is-6" href="/tags/books">#books</a>
+<a class="subtitle is-6" href="/tags/books/">#books</a>
 
 
 
   
-  | <a class="subtitle is-6" href="/tags/reading">#reading</a>
+  | <a class="subtitle is-6" href="/tags/reading/">#reading</a>
   
-  | <a class="subtitle is-6" href="/tags/python">#python</a>
+  | <a class="subtitle is-6" href="/tags/python/">#python</a>
   
+
 
       
     </div>
@@ -131,10 +132,10 @@
     <div class="content">
       <h2 id="tldr">tl;dr</h2>
 <blockquote>
-<p>Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you've read.</p>
+<p>Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&rsquo;ve read.</p>
 </blockquote>
 <ul>
-<li>Register dummy app, and get <code>client_id</code> and <code>access_token</code> on Wunderlist's developer's page</li>
+<li>Register dummy app, and get <code>client_id</code> and <code>access_token</code> on Wunderlist&rsquo;s developer&rsquo;s page</li>
 <li>Create list called &ldquo;Reading&rdquo;</li>
 <li>Get some books</li>
 <li>Add task like <code>Author Name, Title, ...</code></li>
@@ -149,7 +150,7 @@
 <li>Filter by keys such as <code>completed_at</code>, <code>created_at</code> if you want&hellip;</li>
 </ul>
 </li>
-<li>Write article about books I've read</li>
+<li>Write article about books I&rsquo;ve read</li>
 </ul>
 <h3 id="script-python-35">Script (Python 3.5)</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python3</span>
@@ -165,34 +166,34 @@
         results <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(got<span style="color:#f92672">.</span>text)
         <span style="color:#66d9ef">return</span> results
     <span style="color:#66d9ef">else</span>:
-        sys<span style="color:#f92672">.</span>stderr<span style="color:#f92672">.</span>write(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">HTTP Error: {}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(got<span style="color:#f92672">.</span>status_code))
+        sys<span style="color:#f92672">.</span>stderr<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;HTTP Error: {}&#34;</span><span style="color:#f92672">.</span>format(got<span style="color:#f92672">.</span>status_code))
         <span style="color:#66d9ef">return</span> {}
 
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_id_of_list</span>(lists: Dict, name: str):
     <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> lists:
-        <span style="color:#66d9ef">if</span> d[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">title</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">==</span> name:
-            <span style="color:#66d9ef">return</span> d[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">id</span><span style="color:#e6db74">&#39;</span>]
+        <span style="color:#66d9ef">if</span> d[<span style="color:#e6db74">&#39;title&#39;</span>] <span style="color:#f92672">==</span> name:
+            <span style="color:#66d9ef">return</span> d[<span style="color:#e6db74">&#39;id&#39;</span>]
     <span style="color:#66d9ef">return</span> None
 
 
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">__main__</span><span style="color:#e6db74">&#39;</span>:
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
     client_id <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]
     access_token <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">2</span>]
-    api_url <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">https://a.wunderlist.com/api/v1/</span><span style="color:#e6db74">&#34;</span>
+    api_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://a.wunderlist.com/api/v1/&#34;</span>
 
     session <span style="color:#f92672">=</span> OAuth2Session()
-    session<span style="color:#f92672">.</span>headers[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">X-Client-ID</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> client_id
-    session<span style="color:#f92672">.</span>headers[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">X-Access-Token</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> access_token
-    lists <span style="color:#f92672">=</span> req_get(session, api_url<span style="color:#f92672">+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">lists</span><span style="color:#e6db74">&#34;</span>)
-    reading_list_id <span style="color:#f92672">=</span> get_id_of_list(lists, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Reading</span><span style="color:#e6db74">&#39;</span>)
+    session<span style="color:#f92672">.</span>headers[<span style="color:#e6db74">&#39;X-Client-ID&#39;</span>] <span style="color:#f92672">=</span> client_id
+    session<span style="color:#f92672">.</span>headers[<span style="color:#e6db74">&#39;X-Access-Token&#39;</span>] <span style="color:#f92672">=</span> access_token
+    lists <span style="color:#f92672">=</span> req_get(session, api_url<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;lists&#34;</span>)
+    reading_list_id <span style="color:#f92672">=</span> get_id_of_list(lists, <span style="color:#e6db74">&#39;Reading&#39;</span>)
 
     <span style="color:#66d9ef">if</span> reading_list_id:
-        params <span style="color:#f92672">=</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">completed</span><span style="color:#e6db74">&#39;</span>: True, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">list_id</span><span style="color:#e6db74">&#39;</span>: reading_list_id}
-        books <span style="color:#f92672">=</span> req_get(session, api_url<span style="color:#f92672">+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">tasks</span><span style="color:#e6db74">&#34;</span>, params)
-        <span style="color:#66d9ef">for</span> book <span style="color:#f92672">in</span> sorted(books, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> x: x[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">completed_at</span><span style="color:#e6db74">&#39;</span>]):
+        params <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;completed&#39;</span>: True, <span style="color:#e6db74">&#39;list_id&#39;</span>: reading_list_id}
+        books <span style="color:#f92672">=</span> req_get(session, api_url<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;tasks&#34;</span>, params)
+        <span style="color:#66d9ef">for</span> book <span style="color:#f92672">in</span> sorted(books, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> x: x[<span style="color:#e6db74">&#39;completed_at&#39;</span>]):
             <span style="color:#75715e"># Write to stdout as markdown&#39;s numbered list formatting</span>
-            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1. </span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> book[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">title</span><span style="color:#e6db74">&#39;</span>])
+            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;1. &#34;</span> <span style="color:#f92672">+</span> book[<span style="color:#e6db74">&#39;title&#39;</span>])
 </code></pre></div>
       
     </div>

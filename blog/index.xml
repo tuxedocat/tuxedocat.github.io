@@ -124,7 +124,7 @@
       <guid>https://log.tuxedokatze.com/2017/venv-with-anaconda-use-systems-python-instead.../</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;tl;dr&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Use system&#39;s python instead of anaconda&#39;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
+&lt;p&gt;Use system&amp;rsquo;s python instead of anaconda&amp;rsquo;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
@@ -146,7 +146,7 @@
       <guid>https://log.tuxedokatze.com/2016/simple-reading-management-with-wunderlist/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;tl;dr&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&#39;ve read.&lt;/p&gt;
+&lt;p&gt;Add books to certain list in Wunderlist, mark as done when finished reading, and retrieve completed tasks via API if you want to make list of the books you&amp;rsquo;ve read.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
@@ -327,7 +327,7 @@ Accomplishmentは100%だった．（本当??）&lt;/p&gt;</description>
       <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2015/unicodeencodeerror-when-running-python-scripts-in-atom.io/</guid>
-      <description>&lt;h2 id=&#34;heading&#34;&gt;何?&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
 &lt;p&gt;Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので，&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る．&lt;/p&gt;</description>
     </item>
     
@@ -424,7 +424,7 @@ Accomplishmentは100%だった．（本当??）&lt;/p&gt;</description>
       <guid>https://log.tuxedokatze.com/2013/acl2013/</guid>
       <description>ACL2013
 
-Finally, I&#39;ve managed to participate in the ACL 2013@Sofia! Yay!</description>
+Finally, I&amp;rsquo;ve managed to participate in the ACL 2013@Sofia! Yay!</description>
     </item>
     
     <item>

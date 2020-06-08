@@ -31,7 +31,7 @@
       <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2015/unicodeencodeerror-when-running-python-scripts-in-atom.io/</guid>
-      <description>&lt;h2 id=&#34;heading&#34;&gt;何?&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;何&#34;&gt;何?&lt;/h2&gt;
 &lt;p&gt;Atomのscript-pluginでpython実行時にsys.stdoutのencodingがUS-ASCIIになっていたので，&lt;code&gt;print()&lt;/code&gt;などで&lt;code&gt;UnicodeEncodeError&lt;/code&gt;が出る．&lt;/p&gt;</description>
     </item>
     

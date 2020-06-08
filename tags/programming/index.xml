@@ -33,7 +33,7 @@
       <guid>https://log.tuxedokatze.com/2017/venv-with-anaconda-use-systems-python-instead.../</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;tl;dr&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Use system&#39;s python instead of anaconda&#39;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
+&lt;p&gt;Use system&amp;rsquo;s python instead of anaconda&amp;rsquo;s one when using &lt;code&gt;python3 -m venv&lt;/code&gt; to create virtual envs. (or use &lt;code&gt;--without-pip&lt;/code&gt; option)&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     

@@ -113,15 +113,16 @@
     <div class="subtitle tags is-6 is-pulled-right">
       
       
-<a class="subtitle is-6" href="/tags/nix">#nix</a>
+<a class="subtitle is-6" href="/tags/nix/">#nix</a>
 
 
 
   
-  | <a class="subtitle is-6" href="/tags/documentation">#documentation</a>
+  | <a class="subtitle is-6" href="/tags/documentation/">#documentation</a>
   
-  | <a class="subtitle is-6" href="/tags/pandoc">#pandoc</a>
+  | <a class="subtitle is-6" href="/tags/pandoc/">#pandoc</a>
   
+
 
       
     </div>
@@ -140,34 +141,34 @@
 </ol>
 <h1 id="example-of-wscript">Example of wscript</h1>
 <p><code>wscript</code> is like Makefile for Waf.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">srcdir<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">.</span><span style="color:#e6db74">&#39;</span>
-blddir<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">build</span><span style="color:#e6db74">&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">srcdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;.&#39;</span>
+blddir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;build&#39;</span>
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">configure</span>(ctx):
-    ctx<span style="color:#f92672">.</span>load(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">tex</span><span style="color:#e6db74">&#39;</span>)
+    ctx<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;tex&#39;</span>)
     <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> ctx<span style="color:#f92672">.</span>env<span style="color:#f92672">.</span>LATEX:
-        ctx<span style="color:#f92672">.</span>fatal(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">The program LaTex is required</span><span style="color:#e6db74">&#39;</span>)
+        ctx<span style="color:#f92672">.</span>fatal(<span style="color:#e6db74">&#39;The program LaTex is required&#39;</span>)
 
 
 <span style="color:#f92672">from</span> waflib.Configure <span style="color:#f92672">import</span> conf
 <span style="color:#a6e22e">@conf</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mktex</span>(ctx):
-    ctx<span style="color:#f92672">.</span>exec_command(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">pandoc </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> -t latex --template ./pandoc-template.tex -o </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">%</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">mthesis.markdown</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">mthesis.tex</span><span style="color:#e6db74">&#39;</span>))
+    ctx<span style="color:#f92672">.</span>exec_command(<span style="color:#e6db74">&#39;pandoc </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> -t latex --template ./pandoc-template.tex -o </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">%</span>(<span style="color:#e6db74">&#39;mthesis.markdown&#39;</span>, <span style="color:#e6db74">&#39;mthesis.tex&#39;</span>))
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">view_pdf</span>(bld):
-    bld<span style="color:#f92672">.</span>exec_command(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">open -a Preview </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">{0}/mthesis.pdf</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(blddir))
+    bld<span style="color:#f92672">.</span>exec_command(<span style="color:#e6db74">&#34;open -a Preview </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">{0}/mthesis.pdf</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(blddir))
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(bld):
     bld(
-            features <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">tex</span><span style="color:#e6db74">&#39;</span>,
-            type     <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">xelatex</span><span style="color:#e6db74">&#39;</span>, <span style="color:#75715e"># pdflatex or xelatex</span>
-            source   <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">mthesis.tex</span><span style="color:#e6db74">&#39;</span>, <span style="color:#75715e"># mandatory, the source</span>
-            outs     <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">pdf</span><span style="color:#e6db74">&#39;</span>, <span style="color:#75715e"># &#39;pdf&#39; or &#39;ps pdf&#39;</span>
-            deps     <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">crossreferencing.lst</span><span style="color:#e6db74">&#39;</span>, <span style="color:#75715e"># to give dependencies directly</span>
+            features <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;tex&#39;</span>,
+            type     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;xelatex&#39;</span>, <span style="color:#75715e"># pdflatex or xelatex</span>
+            source   <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;mthesis.tex&#39;</span>, <span style="color:#75715e"># mandatory, the source</span>
+            outs     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;pdf&#39;</span>, <span style="color:#75715e"># &#39;pdf&#39; or &#39;ps pdf&#39;</span>
+            deps     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;crossreferencing.lst&#39;</span>, <span style="color:#75715e"># to give dependencies directly</span>
             prompt   <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#75715e"># 0 for the batch mode</span>
         )
-    bld<span style="color:#f92672">.</span>install_files(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">${PREFIX}</span><span style="color:#e6db74">&#39;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">output_pdf_file.pdf</span><span style="color:#e6db74">&#39;</span>)
-</code></pre></div><h1 id="example-of-makeing">Example of &lsquo;make&rsquo;-ing</h1>
+    bld<span style="color:#f92672">.</span>install_files(<span style="color:#e6db74">&#39;${PREFIX}&#39;</span>,<span style="color:#e6db74">&#39;output_pdf_file.pdf&#39;</span>)
+</code></pre></div><h1 id="example-of-make-ing">Example of &lsquo;make&rsquo;-ing</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./waf clean configure mktex build view_pdf
 </code></pre></div><h1 id="sublimetext2-build-system-setting">SublimeText2 build system setting</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    {
