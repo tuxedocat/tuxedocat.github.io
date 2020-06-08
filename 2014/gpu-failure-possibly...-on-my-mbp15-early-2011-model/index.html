@@ -137,18 +137,18 @@
 <h2 id="workaround">Workaround</h2>
 <p>Disable external GPU&hellip; or bring this mbp to &lsquo;genius&rsquo; bar, and get the logic board replaced. The latter is obviously expensive solution, and according to the discussion above, it doesn&rsquo;t resolve the problem permanently.</p>
 <p>I would rather wait for upcoming Macbook Pro (late 2014) than tentatively fixing this 3 years-old macbook with no warranty by paying more than 1/5 of my salary.  So I&rsquo;ve decided to disable external GPU, and forget about my thunderbolt display.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># In the single user mode..... (press Cmd+S on boot)</span>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># In the single user mode..... (press Cmd+S on boot)</span>
 
-<span style="color:#75715e"># mount the disk to operate</span>
+<span class="c1"># mount the disk to operate</span>
 $ mount -uw /
 
-<span style="color:#75715e"># I&#39;m just a person who always want it back</span>
+<span class="c1"># I&#39;m just a person who always want it back</span>
 $ mkdir ./DisabledExtensions
 
-$ cd /System/Library/Extensions
+$ <span class="nb">cd</span> /System/Library/Extensions
 $ mv AMD* /DisabledExtensions
 
-<span style="color:#75715e"># I perhaps had to clear the kext-cache, or rebuild kexts, but that time I just restarted and clear the PRAM</span>
+<span class="c1"># I perhaps had to clear the kext-cache, or rebuild kexts, but that time I just restarted and clear the PRAM</span>
 $ shutdown  -h now
 </code></pre></div><h2 id="how-is-it-lately">How is it lately?</h2>
 <p>Absolutely annoying. Of course this saved me from the fatal failure (cannot boot, crash on boot with grayed out display, and etc.), now I can write something on the MBP like this. But while working on some applications which highly depended on the external GPUs such as Google Chrome, Adobe things, some OSX preinstalled applications (Preview.app, Calendar.app, Safari, and etc.) , I&rsquo;ve experienced minor display glitches, and/or very-low FPS animations.</p>
@@ -166,7 +166,7 @@ $ shutdown  -h now
 
 <section class="section">
   <div class="container has-text-centered">
-    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2019 tuxedocat</a></p>
+    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2020 tuxedocat</a></p>
     
   </div>
 </section>

@@ -137,7 +137,7 @@
 <li><code>fdisk -l</code> でディスクを確認</li>
 <li>適当に実行する</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> n in <span style="color:#e6db74">`</span>seq 7<span style="color:#e6db74">`</span>; <span style="color:#66d9ef">do</span> dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/urandom of<span style="color:#f92672">=</span>/dev/sda bs<span style="color:#f92672">=</span>8192; dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/urandom of<span style="color:#f92672">=</span>/dev/sdb bs<span style="color:#f92672">=</span><span style="color:#ae81ff">8192</span> <span style="color:#66d9ef">done</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">for</span> n in <span class="sb">`</span>seq 7<span class="sb">`</span><span class="p">;</span> <span class="k">do</span> dd <span class="k">if</span><span class="o">=</span>/dev/urandom <span class="nv">of</span><span class="o">=</span>/dev/sda <span class="nv">bs</span><span class="o">=</span>8192<span class="p">;</span> dd <span class="k">if</span><span class="o">=</span>/dev/urandom <span class="nv">of</span><span class="o">=</span>/dev/sdb <span class="nv">bs</span><span class="o">=</span><span class="m">8192</span> <span class="k">done</span>
 </code></pre></div><ul>
 <li><code>/dev/zero</code> だとやっぱり数倍早い</li>
 <li><code>bs=</code> は単位を指定しない場合は <code>kilobytes</code> 単位が使われる</li>
@@ -163,7 +163,7 @@
 
 <section class="section">
   <div class="container has-text-centered">
-    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2019 tuxedocat</a></p>
+    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2020 tuxedocat</a></p>
     
   </div>
 </section>

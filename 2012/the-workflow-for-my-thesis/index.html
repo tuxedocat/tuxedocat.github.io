@@ -141,41 +141,41 @@
 </ol>
 <h1 id="example-of-wscript">Example of wscript</h1>
 <p><code>wscript</code> is like Makefile for Waf.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">srcdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;.&#39;</span>
-blddir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;build&#39;</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">srcdir</span><span class="o">=</span><span class="s1">&#39;.&#39;</span>
+<span class="n">blddir</span><span class="o">=</span><span class="s1">&#39;build&#39;</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">configure</span>(ctx):
-    ctx<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;tex&#39;</span>)
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> ctx<span style="color:#f92672">.</span>env<span style="color:#f92672">.</span>LATEX:
-        ctx<span style="color:#f92672">.</span>fatal(<span style="color:#e6db74">&#39;The program LaTex is required&#39;</span>)
+<span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+    <span class="n">ctx</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;tex&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">ctx</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">LATEX</span><span class="p">:</span>
+        <span class="n">ctx</span><span class="o">.</span><span class="n">fatal</span><span class="p">(</span><span class="s1">&#39;The program LaTex is required&#39;</span><span class="p">)</span>
 
 
-<span style="color:#f92672">from</span> waflib.Configure <span style="color:#f92672">import</span> conf
-<span style="color:#a6e22e">@conf</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mktex</span>(ctx):
-    ctx<span style="color:#f92672">.</span>exec_command(<span style="color:#e6db74">&#39;pandoc </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> -t latex --template ./pandoc-template.tex -o </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">%</span>(<span style="color:#e6db74">&#39;mthesis.markdown&#39;</span>, <span style="color:#e6db74">&#39;mthesis.tex&#39;</span>))
+<span class="kn">from</span> <span class="nn">waflib.Configure</span> <span class="kn">import</span> <span class="n">conf</span>
+<span class="nd">@conf</span>
+<span class="k">def</span> <span class="nf">mktex</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+    <span class="n">ctx</span><span class="o">.</span><span class="n">exec_command</span><span class="p">(</span><span class="s1">&#39;pandoc </span><span class="si">%s</span><span class="s1"> -t latex --template ./pandoc-template.tex -o </span><span class="si">%s</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span><span class="s1">&#39;mthesis.markdown&#39;</span><span class="p">,</span> <span class="s1">&#39;mthesis.tex&#39;</span><span class="p">))</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">view_pdf</span>(bld):
-    bld<span style="color:#f92672">.</span>exec_command(<span style="color:#e6db74">&#34;open -a Preview </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">{0}/mthesis.pdf</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(blddir))
+<span class="k">def</span> <span class="nf">view_pdf</span><span class="p">(</span><span class="n">bld</span><span class="p">):</span>
+    <span class="n">bld</span><span class="o">.</span><span class="n">exec_command</span><span class="p">(</span><span class="s2">&#34;open -a Preview </span><span class="se">\&#34;</span><span class="s2">{0}/mthesis.pdf</span><span class="se">\&#34;</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">blddir</span><span class="p">))</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(bld):
-    bld(
-            features <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;tex&#39;</span>,
-            type     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;xelatex&#39;</span>, <span style="color:#75715e"># pdflatex or xelatex</span>
-            source   <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;mthesis.tex&#39;</span>, <span style="color:#75715e"># mandatory, the source</span>
-            outs     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;pdf&#39;</span>, <span style="color:#75715e"># &#39;pdf&#39; or &#39;ps pdf&#39;</span>
-            deps     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;crossreferencing.lst&#39;</span>, <span style="color:#75715e"># to give dependencies directly</span>
-            prompt   <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#75715e"># 0 for the batch mode</span>
-        )
-    bld<span style="color:#f92672">.</span>install_files(<span style="color:#e6db74">&#39;${PREFIX}&#39;</span>,<span style="color:#e6db74">&#39;output_pdf_file.pdf&#39;</span>)
+<span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="n">bld</span><span class="p">):</span>
+    <span class="n">bld</span><span class="p">(</span>
+            <span class="n">features</span> <span class="o">=</span> <span class="s1">&#39;tex&#39;</span><span class="p">,</span>
+            <span class="nb">type</span>     <span class="o">=</span> <span class="s1">&#39;xelatex&#39;</span><span class="p">,</span> <span class="c1"># pdflatex or xelatex</span>
+            <span class="n">source</span>   <span class="o">=</span> <span class="s1">&#39;mthesis.tex&#39;</span><span class="p">,</span> <span class="c1"># mandatory, the source</span>
+            <span class="n">outs</span>     <span class="o">=</span> <span class="s1">&#39;pdf&#39;</span><span class="p">,</span> <span class="c1"># &#39;pdf&#39; or &#39;ps pdf&#39;</span>
+            <span class="n">deps</span>     <span class="o">=</span> <span class="s1">&#39;crossreferencing.lst&#39;</span><span class="p">,</span> <span class="c1"># to give dependencies directly</span>
+            <span class="n">prompt</span>   <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="c1"># 0 for the batch mode</span>
+        <span class="p">)</span>
+    <span class="n">bld</span><span class="o">.</span><span class="n">install_files</span><span class="p">(</span><span class="s1">&#39;${PREFIX}&#39;</span><span class="p">,</span><span class="s1">&#39;output_pdf_file.pdf&#39;</span><span class="p">)</span>
 </code></pre></div><h1 id="example-of-make-ing">Example of &lsquo;make&rsquo;-ing</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./waf clean configure mktex build view_pdf
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">./waf clean configure mktex build view_pdf
 </code></pre></div><h1 id="sublimetext2-build-system-setting">SublimeText2 build system setting</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    {
-        <span style="color:#f92672">&#34;working_dir&#34;</span> : <span style="color:#e6db74">&#34;$filedir&#34;</span>,
-        <span style="color:#f92672">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/usr/local/bin&#34;</span>,
-        <span style="color:#f92672">&#34;cmd&#34;</span>: [<span style="color:#e6db74">&#34;./waf&#34;</span>, <span style="color:#e6db74">&#34;clean&#34;</span>, <span style="color:#e6db74">&#34;mktex&#34;</span>, <span style="color:#e6db74">&#34;configure&#34;</span>, <span style="color:#e6db74">&#34;build&#34;</span>, <span style="color:#e6db74">&#34;view_pdf&#34;</span>]
-    }
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json">    <span class="p">{</span>
+        <span class="nt">&#34;working_dir&#34;</span> <span class="p">:</span> <span class="s2">&#34;$filedir&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/usr/local/bin&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;cmd&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;./waf&#34;</span><span class="p">,</span> <span class="s2">&#34;clean&#34;</span><span class="p">,</span> <span class="s2">&#34;mktex&#34;</span><span class="p">,</span> <span class="s2">&#34;configure&#34;</span><span class="p">,</span> <span class="s2">&#34;build&#34;</span><span class="p">,</span> <span class="s2">&#34;view_pdf&#34;</span><span class="p">]</span>
+    <span class="p">}</span>
 </code></pre></div><p>Press Cmd+B (on Mac) will do everything</p>
       
     </div>
@@ -189,7 +189,7 @@ blddir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;build
 
 <section class="section">
   <div class="container has-text-centered">
-    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2019 tuxedocat</a></p>
+    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2020 tuxedocat</a></p>
     
   </div>
 </section>

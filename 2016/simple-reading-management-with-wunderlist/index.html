@@ -153,47 +153,47 @@
 <li>Write article about books I&rsquo;ve read</li>
 </ul>
 <h3 id="script-python-35">Script (Python 3.5)</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python3</span>
-<span style="color:#f92672">from</span> requests_oauthlib <span style="color:#f92672">import</span> OAuth2Session
-<span style="color:#f92672">import</span> json
-<span style="color:#f92672">import</span> sys
-<span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> Dict
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/usr/bin/env python3</span>
+<span class="kn">from</span> <span class="nn">requests_oauthlib</span> <span class="kn">import</span> <span class="n">OAuth2Session</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
 
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">req_get</span>(s: OAuth2Session, url: str, params: Dict<span style="color:#f92672">=</span>None):
-    got <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>get(url, params<span style="color:#f92672">=</span>params)
-    <span style="color:#66d9ef">if</span> got<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> <span style="color:#ae81ff">200</span>:
-        results <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(got<span style="color:#f92672">.</span>text)
-        <span style="color:#66d9ef">return</span> results
-    <span style="color:#66d9ef">else</span>:
-        sys<span style="color:#f92672">.</span>stderr<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;HTTP Error: {}&#34;</span><span style="color:#f92672">.</span>format(got<span style="color:#f92672">.</span>status_code))
-        <span style="color:#66d9ef">return</span> {}
+<span class="k">def</span> <span class="nf">req_get</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="n">OAuth2Session</span><span class="p">,</span> <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">params</span><span class="p">:</span> <span class="n">Dict</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="n">got</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">got</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">got</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">results</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&#34;HTTP Error: {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">got</span><span class="o">.</span><span class="n">status_code</span><span class="p">))</span>
+        <span class="k">return</span> <span class="p">{}</span>
 
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_id_of_list</span>(lists: Dict, name: str):
-    <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> lists:
-        <span style="color:#66d9ef">if</span> d[<span style="color:#e6db74">&#39;title&#39;</span>] <span style="color:#f92672">==</span> name:
-            <span style="color:#66d9ef">return</span> d[<span style="color:#e6db74">&#39;id&#39;</span>]
-    <span style="color:#66d9ef">return</span> None
+<span class="k">def</span> <span class="nf">get_id_of_list</span><span class="p">(</span><span class="n">lists</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">lists</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">name</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="bp">None</span>
 
 
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-    client_id <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]
-    access_token <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">2</span>]
-    api_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://a.wunderlist.com/api/v1/&#34;</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">client_id</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">access_token</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">api_url</span> <span class="o">=</span> <span class="s2">&#34;https://a.wunderlist.com/api/v1/&#34;</span>
 
-    session <span style="color:#f92672">=</span> OAuth2Session()
-    session<span style="color:#f92672">.</span>headers[<span style="color:#e6db74">&#39;X-Client-ID&#39;</span>] <span style="color:#f92672">=</span> client_id
-    session<span style="color:#f92672">.</span>headers[<span style="color:#e6db74">&#39;X-Access-Token&#39;</span>] <span style="color:#f92672">=</span> access_token
-    lists <span style="color:#f92672">=</span> req_get(session, api_url<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;lists&#34;</span>)
-    reading_list_id <span style="color:#f92672">=</span> get_id_of_list(lists, <span style="color:#e6db74">&#39;Reading&#39;</span>)
+    <span class="n">session</span> <span class="o">=</span> <span class="n">OAuth2Session</span><span class="p">()</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;X-Client-ID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">client_id</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;X-Access-Token&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">access_token</span>
+    <span class="n">lists</span> <span class="o">=</span> <span class="n">req_get</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">api_url</span><span class="o">+</span><span class="s2">&#34;lists&#34;</span><span class="p">)</span>
+    <span class="n">reading_list_id</span> <span class="o">=</span> <span class="n">get_id_of_list</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span> <span class="s1">&#39;Reading&#39;</span><span class="p">)</span>
 
-    <span style="color:#66d9ef">if</span> reading_list_id:
-        params <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;completed&#39;</span>: True, <span style="color:#e6db74">&#39;list_id&#39;</span>: reading_list_id}
-        books <span style="color:#f92672">=</span> req_get(session, api_url<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;tasks&#34;</span>, params)
-        <span style="color:#66d9ef">for</span> book <span style="color:#f92672">in</span> sorted(books, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> x: x[<span style="color:#e6db74">&#39;completed_at&#39;</span>]):
-            <span style="color:#75715e"># Write to stdout as markdown&#39;s numbered list formatting</span>
-            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;1. &#34;</span> <span style="color:#f92672">+</span> book[<span style="color:#e6db74">&#39;title&#39;</span>])
+    <span class="k">if</span> <span class="n">reading_list_id</span><span class="p">:</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;completed&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span> <span class="s1">&#39;list_id&#39;</span><span class="p">:</span> <span class="n">reading_list_id</span><span class="p">}</span>
+        <span class="n">books</span> <span class="o">=</span> <span class="n">req_get</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">api_url</span><span class="o">+</span><span class="s2">&#34;tasks&#34;</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">books</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;completed_at&#39;</span><span class="p">]):</span>
+            <span class="c1"># Write to stdout as markdown&#39;s numbered list formatting</span>
+            <span class="k">print</span><span class="p">(</span><span class="s2">&#34;1. &#34;</span> <span class="o">+</span> <span class="n">book</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">])</span>
 </code></pre></div>
       
     </div>
@@ -207,7 +207,7 @@
 
 <section class="section">
   <div class="container has-text-centered">
-    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2019 tuxedocat</a></p>
+    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2020 tuxedocat</a></p>
     
   </div>
 </section>

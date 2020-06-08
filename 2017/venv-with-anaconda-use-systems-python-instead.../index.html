@@ -140,9 +140,9 @@
 <blockquote>
 <p>For tiny web app with flask, anaconda seemed overkill. <code>venv</code> is preferable&hellip;</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fish" data-lang="fish">tuxedocat@katzenwelt:flaskapp
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish">tuxedocat@katzenwelt:flaskapp
 ➤ python3 -m venv --prompt web ./env
-Error: Command <span style="color:#e6db74">&#39;[&#39;</span>/Users/tuxedocat/Codes/_sandbox/flaskapp/env/bin/python3<span style="color:#e6db74">&#39;, &#39;</span>-Im<span style="color:#e6db74">&#39;, &#39;</span>ensurepip<span style="color:#e6db74">&#39;, &#39;</span>--upgrade<span style="color:#e6db74">&#39;, &#39;</span>--default-pip<span style="color:#e6db74">&#39;]&#39;</span> returned non-zero <span style="color:#66d9ef">exit</span> status 1.
+Error: Command <span class="s1">&#39;[&#39;</span>/Users/tuxedocat/Codes/_sandbox/flaskapp/env/bin/python3<span class="s1">&#39;, &#39;</span>-Im<span class="s1">&#39;, &#39;</span>ensurepip<span class="s1">&#39;, &#39;</span>--upgrade<span class="s1">&#39;, &#39;</span>--default-pip<span class="s1">&#39;]&#39;</span> returned non-zero <span class="k">exit</span> <span class="nb">status </span>1.
 </code></pre></div><blockquote>
 <p>noo&hellip;
 <code>--without-pip</code> worked, but manual instllation of pip is needed.</p>
@@ -150,7 +150,7 @@ Error: Command <span style="color:#e6db74">&#39;[&#39;</span>/Users/tuxedocat/Co
 <blockquote>
 <p>What is that <code>ensurepip</code>?</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fish" data-lang="fish">tuxedocat@katzenwelt:~
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish">tuxedocat@katzenwelt:~
 ➤ python -m ensurepip
 /Users/tuxedocat/miniconda3/bin/python: No module named ensurepip
 </code></pre></div><blockquote>
@@ -160,12 +160,12 @@ Error: Command <span style="color:#e6db74">&#39;[&#39;</span>/Users/tuxedocat/Co
 <p>(deleted lines that adds conda path to <code>$PATH</code>)</p>
 </blockquote>
 <h2 id="omake">Omake</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fish" data-lang="fish">tuxedocat@katzenwelt:~
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish">tuxedocat@katzenwelt:~
 ➤ cat .config/fish/functions/use_conda.fish
-<span style="color:#66d9ef">function</span> use_conda --description <span style="color:#e6db74">&#34;Simply add conda path&#34;</span>
-  <span style="color:#66d9ef">set</span> -x PATH ~/miniconda3/bin $PATH
-  source ~/miniconda3/etc/fish/conf.d/conda.fish
-<span style="color:#66d9ef">end</span>
+<span class="k">function</span> use_conda --description <span class="s2">&#34;Simply add conda path&#34;</span>
+  <span class="k">set</span> -x PATH ~/miniconda3/bin <span class="nv">$PATH</span>
+  <span class="nb">source</span> ~/miniconda3/etc/fish/conf.d/conda.fish
+<span class="k">end</span>
 </code></pre></div>
       
     </div>
@@ -179,7 +179,7 @@ Error: Command <span style="color:#e6db74">&#39;[&#39;</span>/Users/tuxedocat/Co
 
 <section class="section">
   <div class="container has-text-centered">
-    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2019 tuxedocat</a></p>
+    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2020 tuxedocat</a></p>
     
   </div>
 </section>
