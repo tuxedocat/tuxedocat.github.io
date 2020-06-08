@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on miauhaus.log</title>
+    <title>tech on miauhaus.log</title>
     <link>https://log.tuxedokatze.com/categories/tech/</link>
-    <description>Recent content in Tech on miauhaus.log</description>
+    <description>Recent content in tech on miauhaus.log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 10 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SpeechMarkdownとSSML</title>
+      <link>https://log.tuxedokatze.com/speechmarkdown%E3%81%A8ssml/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/speechmarkdown%E3%81%A8ssml/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.speechmarkdown.org/&#34;&gt;Speech Markdown&lt;/a&gt; というものがある。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>iPad Pro でなんとかするための設定</title>

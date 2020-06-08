@@ -9,7 +9,7 @@
 }
 
 .content a {
-    color: rgb(76, 74, 137);
+    color: rgb(76, 74, 137) !important;
 }
 
 .content figcaption {

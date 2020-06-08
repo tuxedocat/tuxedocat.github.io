@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2019 tuxedocat&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://log.tuxedokatze.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gcp</title>
+      <link>https://log.tuxedokatze.com/tags/gcp/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/tags/gcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://log.tuxedokatze.com/tags/python/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>speech</title>
+      <link>https://log.tuxedokatze.com/tags/speech/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/tags/speech/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>cat</title>
@@ -27,15 +54,6 @@
       <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/photography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gcp</title>
-      <link>https://log.tuxedokatze.com/tags/gcp/</link>
-      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://log.tuxedokatze.com/tags/gcp/</guid>
       <description></description>
     </item>
     
@@ -117,15 +135,6 @@
       <pubDate>Sat, 21 Apr 2018 01:08:30 +0900</pubDate>
       
       <guid>https://log.tuxedokatze.com/tags/jupyter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://log.tuxedokatze.com/tags/python/</link>
-      <pubDate>Sat, 21 Apr 2018 01:08:30 +0900</pubDate>
-      
-      <guid>https://log.tuxedokatze.com/tags/python/</guid>
       <description></description>
     </item>
     
