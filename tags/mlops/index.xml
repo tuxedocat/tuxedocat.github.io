@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mlops on miauhaus.log</title>
+    <link>https://log.tuxedokatze.com/tags/mlops/</link>
+    <description>Recent content in mlops on miauhaus.log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2020 tuxedocat&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://log.tuxedokatze.com/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MLflow Tracking Serverを動かす on GCP</title>
+      <link>https://log.tuxedokatze.com/2020/mlflow-tracking-server%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99-on-gcp/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://log.tuxedokatze.com/2020/mlflow-tracking-server%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99-on-gcp/</guid>
+      <description>&lt;p&gt;GKE (+ Ingress) + Cloud IAP や App Engine Flexible Environmentを用いると、Cloud IAPを利用してそこそこセキュアに限定公開かつパブリックインターネットから使用可能なMLflow Tracking Server を構成できそうだった。この記事では、手間がかからないという点で後者のAppEngine FEを利用した構成方法を紹介する。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

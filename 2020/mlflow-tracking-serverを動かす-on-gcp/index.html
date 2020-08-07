@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>MLflow Tracking Serverを動かす on GCP | miauhaus.log</title>
+
+
+
+<link href="https://log.tuxedokatze.com/index.xml" rel="alternate" type="application/rss+xml" title="miauhaus.log" />
+
+<link rel="stylesheet" href="/css/style.css"/><link rel='stylesheet' href='https://log.tuxedokatze.com/css/custom.css'><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="canonical" href="https://log.tuxedokatze.com/2020/mlflow-tracking-server%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99-on-gcp/">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <nav id="nav-main" class="nav">
+      <div id="nav-name" class="nav-left">
+        <a id="nav-anchor" class="nav-item" href="https://log.tuxedokatze.com">
+          <h1 id="nav-heading" class="title is-4">miauhaus.log</h1>
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav id="nav-items" class="nav-item level is-mobile"><a class="level-item" aria-label="github" href='https://github.com/tuxedocat'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+  
+</svg>
+</i>
+            </span>
+          </a><a class="level-item" aria-label="linkedin" href='https://linkedin.com/in/yu-sawai-3071193b'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z" />
+  
+</svg>
+</i>
+            </span>
+          </a><a class="level-item" aria-label="flickr" href='https://www.flickr.com/photos/tuxedocat'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"></circle>
+  <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+  <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+  <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+  <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+  <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+  <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+  
+</svg>
+</i>
+            </span>
+          </a><a class="level-item" aria-label="instagram" href='https://instagram.com/__tuxedocat__'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+  <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+  
+</svg>
+</i>
+            </span>
+          </a><a class="level-item" aria-label="rss" href='/index.xml'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 11a9 9 0 0 1 9 9"></path>
+  <path d="M4 4a16 16 0 0 1 16 16"></path>
+  <circle cx="5" cy="19" r="1"></circle>
+  
+</svg>
+</i>
+            </span>
+          </a></nav>
+      </div>
+    </nav>
+
+    <nav class="nav">
+      
+      <div class="nav-left"></div>
+      
+
+      
+      <div class="nav-right"><a class="nav-item" href="/about">
+          <h2 class="title is-5">About me</h2>
+        </a></div>
+      
+    </nav>
+
+  </div>
+  <script src="/js/navicon-shift.js"></script>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="subtitle tags is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/mlflow/">#mlflow</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/mlops/">#mlops</a>
+  
+  | <a class="subtitle is-6" href="/tags/gcp/">#gcp</a>
+  
+  | <a class="subtitle is-6" href="/tags/appengine/">#appengine</a>
+  
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">August 7, 2020</h2>
+    <h1 class="title">MLflow Tracking Serverを動かす on GCP</h1>
+    
+    <div class="content">
+      <p>GKE (+ Ingress) + Cloud IAP や App Engine Flexible Environmentを用いると、Cloud IAPを利用してそこそこセキュアに限定公開かつパブリックインターネットから使用可能なMLflow Tracking Server を構成できそうだった。この記事では、手間がかからないという点で後者のAppEngine FEを利用した構成方法を紹介する。</p>
+<h2 id="目的と前提">目的と前提</h2>
+<ul>
+<li>Cloud IAPを利用してMLflow Tracking を楽にそこそこ安全に（not 安価に）動かす。</li>
+<li>MLflow Tracking のバックエンドDBはCloudSQL、Artifact storeはGCSとする。</li>
+</ul>
+<blockquote>
+<p>今のところ自分の所属するプロダクトでは、DataflowのGKEクラスタしか動いていないので、今回はGKEではなくApp Engine FEで済ませた。</p>
+</blockquote>
+<p>※ここでの「セキュア」という表現について</p>
+<blockquote>
+<p>パブリックなインターネットに晒すにあたり、HTTPS対応とIAMによる認証ができることが最低限の条件だとする。</p>
+</blockquote>
+<h2 id="ここでは扱わない内容と他の方法">ここでは扱わない内容と他の方法</h2>
+<ul>
+<li>GCPを使わない方法</li>
+<li>GKE (Ingress) + Cloud IAPでやる方法</li>
+<li>MLflow自体に手を入れる方法</li>
+<li>Cloud Run + Cloud Endpointsを使う方法
+<ul>
+<li>Cloud IAPは今のところCloudRunには対応していないので、Endpointsを利用することになりそう。</li>
+<li>Endpoints (Extensive Service Proxy beta 2 がCloudRunでは使える。EnvoyベースのProxy）
+<ul>
+<li>OpenAPIの定義があれば、よしなにしてくれるらしい</li>
+</ul>
+</li>
+<li>が、MLflowのREST APIに swagger.yaml はない様子で、ProcolBuffersで定義されているだけだった ( mlflow/protos)
+<ul>
+<li>このPR待ち？<a href="https://github.com/mlflow/mlflow/issues/2948">[FR] REST API Swagger File · Issue #2948 · mlflow/mlflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="本編">本編</h2>
+<p>サービスアカウントを作成する。以下のようなロールがあれば十分かも。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Cloud IAPを利用する際には必須</span>
+IAP-secured Web App User
+
+<span class="c1"># BackendをCloud SQL, Artifact StorageをGCSにしている場合</span>
+Cloud SQL Client
+Storage Object Creator
+Storage Object Viewer
+
+<span class="c1"># アプリで使うRoleは適宜追加する</span>
+BigQuery User
+</code></pre></div><p>環境変数の設定</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Service Account `mlflow@the-project.iam.gserviceaccount.com`</span>
+<span class="nv">GOOGLE_APPLICATION_CREDENTIALS</span><span class="o">=</span>service_account_key.json
+</code></pre></div><p>クライアントを利用するときに、Cloud IAPのOAuth2 Client IDとそれに対応したTokenを、Service Accountの権限で取得する。</p>
+<p><img src="/img/mlflow/iap-settings.png" alt="Cloud IAP settings">
+<img src="/img/mlflow/oauth2-client-id.png" alt="OAuth2 Client ID"></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">google.oauth2</span> <span class="kn">import</span> <span class="n">id_token</span>
+<span class="kn">from</span> <span class="nn">google.auth.transport.requests</span> <span class="kn">import</span> <span class="n">Request</span> <span class="k">as</span> <span class="n">AuthRequest</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="n">cid</span> <span class="o">=</span> <span class="s2">&#34;xxxxxxxxxxxxx.apps.googleusercontent.com&#34;</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&#34;MLFLOW_TRACKING_TOKEN&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">id_token</span><span class="o">.</span><span class="n">fetch_id_token</span><span class="p">(</span><span class="n">AuthRequest</span><span class="p">(),</span> <span class="n">cid</span><span class="p">)</span>
+<span class="n">mlflow</span><span class="o">.</span><span class="n">set_tracking_uri</span><span class="p">(</span><span class="s2">&#34;https://mlflow-dot-the-project.appspot.com/&#34;</span><span class="p">)</span>
+</code></pre></div><p>自分の場合、OptunaやLightGBMなどのCallback内で <code>MLflowClient</code> を利用することが多いので、以下のような関数をMLflow Tracking APIをコールする前に実行して、<code>MLFLOW_TRACKING_TOKEN</code> を更新するようにしている。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">authorize_mlflow</span><span class="p">(</span><span class="n">oauth2_client_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="bp">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="s2">&#34;&#34;&#34;Set valid service-account path to &#39;GOOGLE_APPLICATION_CREDENTIALS&#39; envvar &#34;&#34;&#34;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&#34;MLFLOW_TRACKING_TOKEN&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">id_token</span><span class="o">.</span><span class="n">fetch_id_token</span><span class="p">(</span>
+            <span class="n">AuthRequest</span><span class="p">(),</span> <span class="n">oauth2_client_id</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;MLFLOW_OAUTH2_CLIENT_ID&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="k">except</span> <span class="n">GoogleAuthError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&#34;OAuth2 token authentication error&#34;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&#34;Continue without authentication&#34;</span><span class="p">)</span>
+</code></pre></div><h2 id="付録">付録</h2>
+<p><code>app.yaml</code> の例</p>
+<ul>
+<li><code>liveness_check</code>, <code>readiness_check</code> には、MLflowの <code>/health</code> エンドポイントが使える。</li>
+<li>バックエンドDBとしてCloudSQLのインスタンスを指定できる。</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">runtime</span><span class="p">:</span><span class="w"> </span>custom<span class="w">
+</span><span class="w"></span><span class="k">env</span><span class="p">:</span><span class="w"> </span>flex<span class="w">
+</span><span class="w"></span><span class="k">service</span><span class="p">:</span><span class="w"> </span>mlflow<span class="w">
+</span><span class="w"></span><span class="k">skip_files</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- service_account.json<span class="w">
+</span><span class="w">  </span>- ^.<span class="cp">*\.venv</span><span class="w">
+</span><span class="w">  </span>- ^.<span class="cp">*\.env</span><span class="w">
+</span><span class="w">  </span>- ^.<span class="cp">*\.terraform</span><span class="w">
+</span><span class="w">  </span>- ^.<span class="cp">*tfvers.*</span><span class="w">
+</span><span class="w">  </span>- ^.<span class="cp">*\.tf</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">entrypoint</span><span class="p">:</span><span class="w"> </span>./entrypoint.sh<span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">liveness_check</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">path</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/health&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">check_interval_sec</span><span class="p">:</span><span class="w"> </span><span class="m">30</span><span class="w">
+</span><span class="w">  </span><span class="k">timeout_sec</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">  </span><span class="k">failure_threshold</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">success_threshold</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">readiness_check</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">path</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/health&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">check_interval_sec</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">  </span><span class="k">timeout_sec</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">  </span><span class="k">failure_threshold</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">success_threshold</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">app_start_timeout_sec</span><span class="p">:</span><span class="w"> </span><span class="m">60</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">beta_settings</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">cloud_sql_instances</span><span class="p">:</span><span class="w"> </span>{INSTANCE_CONNECTION_NAME}<span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">resources</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">cpu</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">memory_gb</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">  </span><span class="k">disk_size_gb</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">manual_scaling</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">instances</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">env_variables</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">DB_URI</span><span class="p">:</span><span class="w"> </span>mysql<span class="p">:</span>//{DB_USER}<span class="p">:</span>{PASSWORD}/{DATABASE}<span class="p">?</span>unix_socket=/cloudsql/{INSTANCE_CONNECTION_NAME}<span class="w">
+</span><span class="w">  </span><span class="k">ARTIFACT_ROOT</span><span class="p">:</span><span class="w"> </span>{GCS_BUCKET}<span class="w">
+</span><span class="w">
+</span></code></pre></div><p><code>entrypoint.sh</code></p>
+<ul>
+<li>AppEngineで動かすので、8080番ポートを使用する。</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="nv">HOST</span><span class="o">=</span><span class="si">${</span><span class="nv">MLFLOW_TRACKING_HOST</span><span class="k">:-</span><span class="nv">0</span><span class="p">.0.0.0</span><span class="si">}</span>
+<span class="nv">PORT</span><span class="o">=</span><span class="si">${</span><span class="nv">PORT</span><span class="k">:-</span><span class="nv">8080</span><span class="si">}</span>
+
+sleep 5s
+mlflow db upgrade <span class="s2">&#34;</span><span class="si">${</span><span class="nv">DB_URI</span><span class="si">}</span><span class="s2">&#34;</span>
+mlflow server <span class="se">\
+</span><span class="se"></span>  --backend-store-uri <span class="s2">&#34;</span><span class="si">${</span><span class="nv">DB_URI</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
+</span><span class="se"></span>  --default-artifact-root <span class="s2">&#34;</span><span class="si">${</span><span class="nv">ARTIFACT_ROOT</span><span class="si">}</span><span class="s2">&#34;</span> <span class="se">\
+</span><span class="se"></span>  --host <span class="s2">&#34;</span><span class="si">${</span><span class="nv">HOST</span><span class="si">}</span><span class="s2">&#34;</span> --port <span class="s2">&#34;</span><span class="si">${</span><span class="nv">PORT</span><span class="si">}</span><span class="s2">&#34;</span>
+</code></pre></div>
+      
+    </div>
+    
+  </div>
+</section>
+
+    <script src="/js/copycode.js"></script>
+
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p><a href="https://github.com/tuxedocat/tuxedocat.github.io">©2011-2020 tuxedocat</a></p>
+    
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-46681113-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>
+
