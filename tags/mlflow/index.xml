@@ -18,7 +18,8 @@
       <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://log.tuxedokatze.com/2020/mlflow-tracking-server%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99-on-gcp/</guid>
-      <description>&lt;p&gt;GKE (+ Ingress) + Cloud IAP や App Engine Flexible Environmentを用いると、Cloud IAPを利用してそこそこセキュアに限定公開かつパブリックインターネットから使用可能なMLflow Tracking Server を構成できそうだった。この記事では、手間がかからないという点で後者のAppEngine FEを利用した構成方法を紹介する。&lt;/p&gt;</description>
+      <description>&lt;p&gt;GKE (+ Ingress) もしくは App Engine Flexible Environmentに加え Cloud IAPを利用すると、限定公開の MLflow Tracking Server を楽に構成できる。
+この記事では、構成が容易な後者のAppEngine FEを利用した方法を紹介する。&lt;/p&gt;</description>
     </item>
     
   </channel>

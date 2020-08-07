@@ -132,7 +132,8 @@
     <h1 class="title">MLflow Tracking Serverを動かす on GCP</h1>
     
     <div class="content">
-      <p>GKE (+ Ingress) + Cloud IAP や App Engine Flexible Environmentを用いると、Cloud IAPを利用してそこそこセキュアに限定公開かつパブリックインターネットから使用可能なMLflow Tracking Server を構成できそうだった。この記事では、手間がかからないという点で後者のAppEngine FEを利用した構成方法を紹介する。</p>
+      <p>GKE (+ Ingress) もしくは App Engine Flexible Environmentに加え Cloud IAPを利用すると、限定公開の MLflow Tracking Server を楽に構成できる。
+この記事では、構成が容易な後者のAppEngine FEを利用した方法を紹介する。</p>
 <h2 id="目的と前提">目的と前提</h2>
 <ul>
 <li>Cloud IAPを利用してMLflow Tracking を楽にそこそこ安全に（not 安価に）動かす。</li>
