@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>MLflow Tracking Serverを動かす on GCP | miauhaus.log</title>
+<title>MLflow Tracking Serverを動かす: AppEngine FE &#43; Cloud IAP | miauhaus.log</title>
 
 
 
@@ -15,7 +15,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="canonical" href="https://log.tuxedokatze.com/2020/mlflow-tracking-server%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99-on-gcp/">
+<link rel="canonical" href="https://log.tuxedokatze.com/2020/mlflow-tracking-server%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99-appengine-fe-cloud-iap/">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 </head>
@@ -129,7 +129,7 @@
       
     </div>
     <h2 class="subtitle is-6">August 7, 2020</h2>
-    <h1 class="title">MLflow Tracking Serverを動かす on GCP</h1>
+    <h1 class="title">MLflow Tracking Serverを動かす: AppEngine FE &#43; Cloud IAP</h1>
     
     <div class="content">
       <p>GKE (+ Ingress) もしくは App Engine Flexible Environmentに加え Cloud IAPを利用すると、限定公開の MLflow Tracking Server を楽に構成できる。
@@ -138,6 +138,7 @@
 <ul>
 <li>Cloud IAPを利用してMLflow Tracking を楽にそこそこ安全に（not 安価に）動かす。</li>
 <li>MLflow Tracking のバックエンドDBはCloudSQL、Artifact storeはGCSとする。</li>
+<li>MLflow 1.9.1 で確認。AppEngine FEのためのコンテナイメージのPythonは3.6.x。</li>
 </ul>
 <blockquote>
 <p>今のところ自分の所属するプロダクトでは、DataflowのGKEクラスタしか動いていないので、今回はGKEではなくApp Engine FEで済ませた。</p>
@@ -206,7 +207,11 @@ BigQuery User
     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&#34;Continue without authentication&#34;</span><span class="p">)</span>
-</code></pre></div><h2 id="付録">付録</h2>
+</code></pre></div><h3 id="仕組み">仕組み</h3>
+<p>MLflow 1.9時点では、認証方式としてBASIC認証とBearer Tokenによる認証が利用できる。
+<a href="https://www.mlflow.org/docs/latest/tracking.html#logging-to-a-tracking-server">公式ドキュメント</a> にあるとおり、これらは <code>MLFLOW_</code> Prefixの環境変数に与えることで利用できる。</p>
+<p>上記の例で、MLflow Tracking ServerのAPIをコールするたびに自前でTokenを取得しているのは、MLflow側にTokenの更新処理が実装されていないため。</p>
+<h2 id="付録">付録</h2>
 <p><code>app.yaml</code> の例</p>
 <ul>
 <li><code>liveness_check</code>, <code>readiness_check</code> には、MLflowの <code>/health</code> エンドポイントが使える。</li>
@@ -255,6 +260,35 @@ BigQuery User
 </span><span class="w">  </span><span class="k">DB_URI</span><span class="p">:</span><span class="w"> </span>mysql<span class="p">:</span>//{DB_USER}<span class="p">:</span>{PASSWORD}/{DATABASE}<span class="p">?</span>unix_socket=/cloudsql/{INSTANCE_CONNECTION_NAME}<span class="w">
 </span><span class="w">  </span><span class="k">ARTIFACT_ROOT</span><span class="p">:</span><span class="w"> </span>{GCS_BUCKET}<span class="w">
 </span><span class="w">
+</span></code></pre></div><p><code>Dockerfile</code></p>
+<ul>
+<li>AppEngine FEでは、<code>app.yaml</code> と同じディレクトリにある <code>Dockerfile</code> から、ランタイムイメージをCloud Buildでビルドして利用するので、これも必要。</li>
+<li>下記の段階では、<code>python3</code> コマンドは Python 3.6 だった。</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="k">FROM</span><span class="s"> gcr.io/google-appengine/python:2020-06-17-111334</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">RUN</span> apt update <span class="o">&amp;&amp;</span> <span class="se">\
+</span><span class="se"></span>  apt install -y --no-install-recommends mysql-client libmysqlclient-dev python3-dev<span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">ENV</span> <span class="nv">PYTHONFAULTHANDLER</span><span class="o">=</span><span class="m">1</span> <span class="se">\
+</span><span class="se"></span>  <span class="nv">PYTHONUNBUFFERED</span><span class="o">=</span><span class="m">1</span> <span class="se">\
+</span><span class="se"></span>  <span class="nv">PYTHONHASHSEED</span><span class="o">=</span>random <span class="se">\
+</span><span class="se"></span>  <span class="c"># pip:</span><span class="err">
+</span><span class="err"></span>  <span class="nv">PIP_NO_CACHE_DIR</span><span class="o">=</span>on <span class="se">\
+</span><span class="se"></span>  <span class="nv">PIP_DISABLE_PIP_VERSION_CHECK</span><span class="o">=</span>on <span class="se">\
+</span><span class="se"></span>  <span class="nv">PIP_DEFAULT_TIMEOUT</span><span class="o">=</span><span class="m">100</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">ARG</span> <span class="nv">MLFLOW_VERSION</span><span class="o">=</span><span class="m">1</span>.9.1<span class="err">
+</span><span class="err"></span><span class="k">RUN</span> <span class="nb">echo</span> <span class="s2">&#34;Installing MLFlow </span><span class="si">${</span><span class="nv">MLFLOW_VERSION</span><span class="si">}</span><span class="s2">&#34;</span><span class="err">
+</span><span class="err"></span><span class="k">RUN</span> pip3 install mlflow<span class="o">[</span>extras<span class="o">]==</span><span class="si">${</span><span class="nv">MLFLOW_VERSION</span><span class="si">}</span> mysqlclient<span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">WORKDIR</span><span class="s"> /mlflow</span><span class="err">
+</span><span class="err"></span><span class="k">COPY</span> ./entrypoint.sh /mlflow/<span class="err">
+</span><span class="err"></span><span class="k">RUN</span> chmod +x entrypoint.sh<span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">EXPOSE</span><span class="s"> 80 5000 8080</span><span class="err">
+</span><span class="err"></span><span class="k">ENTRYPOINT</span> <span class="p">[</span> <span class="s2">&#34;./entrypoint.sh&#34;</span> <span class="p">]</span><span class="err">
+</span><span class="err">
 </span></code></pre></div><p><code>entrypoint.sh</code></p>
 <ul>
 <li>AppEngineで動かすので、8080番ポートを使用する。</li>
