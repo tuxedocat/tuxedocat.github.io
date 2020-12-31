@@ -25,6 +25,11 @@
 .content figure {
     text-align: center !important;
 }
+
+code {
+  font-family: 'JetBrains Mono', 'Source Code Pro', 'Fira Code', 'Inconsolata', menlo, monaco, Courier, monospace;
+}
+
 /* Background */ .chroma { color: #272822; background-color: #fafafa }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
