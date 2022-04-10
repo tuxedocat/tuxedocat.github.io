@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2020 tuxedocat&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 22 Nov 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/categories/research/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 22 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://log.tuxedokatze.com/categories/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>『語学学習支援のための言語処理』を読みました．</title>
       <link>https://log.tuxedokatze.com/bookreview-nlp-for-language-learning/</link>

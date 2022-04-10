@@ -113,14 +113,13 @@
     <div class="subtitle tags is-6 is-pulled-right">
       
       
-<a class="subtitle is-6" href="/tags/books/">#books</a>
+<a class="subtitle is-6" href="/tags/books">#books</a>
 
 
 
   
-  | <a class="subtitle is-6" href="/tags/kindle/">#kindle</a>
+  | <a class="subtitle is-6" href="/tags/kindle">#kindle</a>
   
-
 
       
     </div>
@@ -137,33 +136,33 @@
 <p>何かいい手は無いかなぁと思って，KindleをMacにマウントして中身にそれらしいファイルがあるかどうか調べてみた． <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <p>それらしいファイルがあった． <code>Kindle/system/vocabulary</code> 内には <code>vocab.db</code> という sqlite3 のDBが入っていた．
 ここまでくればあとは何とでも…．</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ sqlite3 vocab.db
-sqlite&gt; PRAGMA table_info<span class="o">(</span>words<span class="o">)</span><span class="p">;</span>
-0<span class="p">|</span>id<span class="p">|</span>TEXT<span class="p">|</span>1<span class="o">||</span><span class="m">1</span>
-1<span class="p">|</span>word<span class="p">|</span>TEXT<span class="p">|</span>0<span class="o">||</span><span class="m">0</span>
-2<span class="p">|</span>stem<span class="p">|</span>TEXT<span class="p">|</span>0<span class="o">||</span><span class="m">0</span>
-3<span class="p">|</span>lang<span class="p">|</span>TEXT<span class="p">|</span>0<span class="o">||</span><span class="m">0</span>
-4<span class="p">|</span>category<span class="p">|</span>INTEGER<span class="p">|</span>0<span class="p">|</span>0<span class="p">|</span><span class="m">0</span>
-5<span class="p">|</span>timestamp<span class="p">|</span>INTEGER<span class="p">|</span>0<span class="p">|</span>0<span class="p">|</span><span class="m">0</span>
-6<span class="p">|</span>profileid<span class="p">|</span>TEXT<span class="p">|</span>0<span class="o">||</span><span class="m">0</span>
-
-sqlite&gt; SELECT * FROM words WHERE <span class="nv">lang</span> <span class="o">=</span> <span class="s2">&#34;ja&#34;</span><span class="p">;</span>
-ja:しかしながら，本来<span class="p">|</span>しかしながら，本来<span class="p">|</span>しかし‐ながら<span class="p">|</span>ja<span class="p">|</span>0<span class="p">|</span>1451836371172<span class="p">|</span>
-ja:ところが<span class="p">|</span>ところが<span class="p">|</span>ところが<span class="p">|</span>ja<span class="p">|</span>0<span class="p">|</span>1451836908962<span class="p">|</span>
-ja:如才<span class="p">|</span>如才<span class="p">|</span>じょ‐さい<span class="p">|</span>ja<span class="p">|</span>0<span class="p">|</span>1456149872209<span class="p">|</span>
-ja:緋色<span class="p">|</span>緋色<span class="p">|</span>ひ‐いろ<span class="p">|</span>ja<span class="p">|</span>0<span class="p">|</span>1430219728555<span class="p">|</span>
-
-sqlite&gt; DELETE FROM words WHERE <span class="nv">lang</span> <span class="o">=</span> <span class="s2">&#34;ja&#34;</span><span class="p">;</span>
-</code></pre></div><p>最後にKindleをUnmountして，再起動させれば単語の削除が反映される．</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ sqlite3 vocab.db
+</span></span><span class="line"><span class="cl">sqlite&gt; PRAGMA table_info<span class="o">(</span>words<span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">0<span class="p">|</span>id<span class="p">|</span>TEXT<span class="p">|</span>1<span class="o">||</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">1<span class="p">|</span>word<span class="p">|</span>TEXT<span class="p">|</span>0<span class="o">||</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">2<span class="p">|</span>stem<span class="p">|</span>TEXT<span class="p">|</span>0<span class="o">||</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">3<span class="p">|</span>lang<span class="p">|</span>TEXT<span class="p">|</span>0<span class="o">||</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">4<span class="p">|</span>category<span class="p">|</span>INTEGER<span class="p">|</span>0<span class="p">|</span>0<span class="p">|</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">5<span class="p">|</span>timestamp<span class="p">|</span>INTEGER<span class="p">|</span>0<span class="p">|</span>0<span class="p">|</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">6<span class="p">|</span>profileid<span class="p">|</span>TEXT<span class="p">|</span>0<span class="o">||</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sqlite&gt; SELECT * FROM words WHERE <span class="nv">lang</span> <span class="o">=</span> <span class="s2">&#34;ja&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">ja:しかしながら，本来<span class="p">|</span>しかしながら，本来<span class="p">|</span>しかし‐ながら<span class="p">|</span>ja<span class="p">|</span>0<span class="p">|</span>1451836371172<span class="p">|</span>
+</span></span><span class="line"><span class="cl">ja:ところが<span class="p">|</span>ところが<span class="p">|</span>ところが<span class="p">|</span>ja<span class="p">|</span>0<span class="p">|</span>1451836908962<span class="p">|</span>
+</span></span><span class="line"><span class="cl">ja:如才<span class="p">|</span>如才<span class="p">|</span>じょ‐さい<span class="p">|</span>ja<span class="p">|</span>0<span class="p">|</span>1456149872209<span class="p">|</span>
+</span></span><span class="line"><span class="cl">ja:緋色<span class="p">|</span>緋色<span class="p">|</span>ひ‐いろ<span class="p">|</span>ja<span class="p">|</span>0<span class="p">|</span>1430219728555<span class="p">|</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sqlite&gt; DELETE FROM words WHERE <span class="nv">lang</span> <span class="o">=</span> <span class="s2">&#34;ja&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><p>最後にKindleをUnmountして，再起動させれば単語の削除が反映される．</p>
 <p>QoLがちょっとだけ上がった．イェァ！</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>日本語の本では，ハイライトやフレーズ選択の操作性があまり良くない．単語分割がうまくできていないからかもしれない． <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>日本語の本では，ハイライトやフレーズ選択の操作性があまり良くない．単語分割がうまくできていないからかもしれない．&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>ハイライトやメモを抽出しようとした時のことを思い出した． <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>ハイライトやメモを抽出しようとした時のことを思い出した．&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

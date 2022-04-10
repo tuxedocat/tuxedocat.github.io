@@ -113,16 +113,15 @@
     <div class="subtitle tags is-6 is-pulled-right">
       
       
-<a class="subtitle is-6" href="/tags/speech/">#speech</a>
+<a class="subtitle is-6" href="/tags/speech">#speech</a>
 
 
 
   
-  | <a class="subtitle is-6" href="/tags/python/">#python</a>
+  | <a class="subtitle is-6" href="/tags/python">#python</a>
   
-  | <a class="subtitle is-6" href="/tags/gcp/">#gcp</a>
+  | <a class="subtitle is-6" href="/tags/gcp">#gcp</a>
   
-
 
       
     </div>
@@ -141,54 +140,54 @@
 <h2 id="speech-markdown---ssml">Speech Markdown -&gt; SSML</h2>
 <p><a href="https://github.com/speechmarkdown/speechmarkdown-js">Speech Markdown の JavaScript 実装</a>を利用する。
 今回は GCP を使うので、ざっくりと以下のようになる。</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 適当にSpeech Markdownを読み込んでおく
-</span><span class="c1">// var markdown =
-</span><span class="c1"></span>
-<span class="c1">// GoogleのTTS向けのサブセットを利用する
-</span><span class="c1"></span><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="nx">platform</span><span class="o">:</span> <span class="s2">&#34;google-assistant&#34;</span><span class="p">,</span>
-<span class="p">};</span>
-<span class="kr">const</span> <span class="nx">speech</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">smd</span><span class="p">.</span><span class="nx">SpeechMarkdown</span><span class="p">();</span>
-<span class="kr">const</span> <span class="nx">ssml</span> <span class="o">=</span> <span class="nx">speech</span><span class="p">.</span><span class="nx">toSSML</span><span class="p">(</span><span class="nx">markdown</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
-</code></pre></div><p>SSML で定義されているタグは幅広く、たとえば Speech Markdown では <code>(some text)[disappointed]</code> で表されるような「失望」という状態の表現なんかもある。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// 適当にSpeech Markdownを読み込んでおく
+</span></span></span><span class="line"><span class="cl"><span class="c1">// var markdown =
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// GoogleのTTS向けのサブセットを利用する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">platform</span><span class="o">:</span> <span class="s2">&#34;google-assistant&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">speech</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">smd</span><span class="p">.</span><span class="nx">SpeechMarkdown</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">ssml</span> <span class="o">=</span> <span class="nx">speech</span><span class="p">.</span><span class="nx">toSSML</span><span class="p">(</span><span class="nx">markdown</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</span></span></code></pre></div><p>SSML で定義されているタグは幅広く、たとえば Speech Markdown では <code>(some text)[disappointed]</code> で表されるような「失望」という状態の表現なんかもある。</p>
 <ul>
 <li><a href="https://www.speechmarkdown.org/syntax/disappointed/">https://www.speechmarkdown.org/syntax/disappointed/</a></li>
 </ul>
 <p>とはいえ、実際に使えるタグ（上記のようなものは Modifier という）は限られていて、たとえば <code>disappointed</code> は <a href="https://developers.google.com/assistant/actions/reference/ssml">Google Assistant の SSML では対応していない</a>。</p>
 <p>適当に SSML を吐けるようにしておく。</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">node sm2ssml.js input.speechmarkdown &gt; input.ssml
-</code></pre></div><h2 id="google-text-to-speech-api-による発話音声ファイル出力">Google Text-to-speech API による発話音声ファイル出力</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">node sm2ssml.js input.speechmarkdown &gt; input.ssml
+</span></span></code></pre></div><h2 id="google-text-to-speech-api-による発話音声ファイル出力">Google Text-to-speech API による発話音声ファイル出力</h2>
 <p>Text-to-speech の API が使えるプログラミング言語ならなんでもいいが、ここでは Python3 を使う。</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Virtualenvを作る</span>
-python -m venv .venv
-<span class="nb">source</span> .venv/bin/activate
-
-<span class="c1"># Virtualenv内に必要なパッケージをインストールする</span>
-pip install google-cloud-texttospeech<span class="o">==</span>2.0.0
-</code></pre></div><p>ミニマルなコード例はこんな感じ。</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">google.cloud</span> <span class="kn">import</span> <span class="n">texttospeech</span> <span class="k">as</span> <span class="n">tts</span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;input.ssml&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">ssml</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-
-<span class="n">client</span> <span class="o">=</span> <span class="n">tts</span><span class="o">.</span><span class="n">TextToSpeechClient</span><span class="p">()</span>
-
-<span class="c1"># 入力形式は text or ssml</span>
-<span class="n">tts_input</span> <span class="o">=</span> <span class="n">tts</span><span class="o">.</span><span class="n">SynthesisInput</span><span class="p">(</span><span class="n">ssml</span><span class="o">=</span><span class="n">ssml</span><span class="p">)</span>
-
-<span class="c1"># 声色の設定： nameが空だと language_code に応じたデフォルト音声が選ばれる</span>
-<span class="n">voice</span> <span class="o">=</span> <span class="n">tts</span><span class="o">.</span><span class="n">VoiceSelectionParams</span><span class="p">(</span>
-    <span class="n">language_code</span><span class="o">=</span><span class="s2">&#34;ja-JP&#34;</span><span class="p">,</span>
-    <span class="n">name</span><span class="o">=</span><span class="s2">&#34;ja-JP-Wavenet-D&#34;</span><span class="p">,</span>
-    <span class="n">ssml_gender</span><span class="o">=</span><span class="n">tts</span><span class="o">.</span><span class="n">SsmlVoiceGender</span><span class="o">.</span><span class="n">MALE</span>
-<span class="p">)</span>
-
-<span class="n">audio_config</span> <span class="o">=</span> <span class="n">tts</span><span class="o">.</span><span class="n">AudioConfig</span><span class="p">(</span><span class="n">audio_encoding</span><span class="o">=</span><span class="n">tts</span><span class="o">.</span><span class="n">AudioEncoding</span><span class="o">.</span><span class="n">MP3</span><span class="p">)</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">synthesize_speech</span><span class="p">(</span><span class="nb">input</span><span class="o">=</span><span class="n">tts_input</span><span class="p">,</span> <span class="n">voice</span><span class="o">=</span><span class="n">voice</span><span class="p">,</span> <span class="n">audio_config</span><span class="o">=</span><span class="n">audio_config</span><span class="p">)</span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;output.mp3&#34;</span><span class="p">,</span> <span class="s2">&#34;wb&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
-    <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">audio_content</span><span class="p">)</span>
-</code></pre></div><p><a href="https://cloud.google.com/text-to-speech/docs/voices?hl=ja">利用できる音声のリスト</a> によると、少し前に話題になっていた WaveNet を使った音声合成モデルも利用できる。
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Virtualenvを作る</span>
+</span></span><span class="line"><span class="cl">python -m venv .venv
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> .venv/bin/activate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Virtualenv内に必要なパッケージをインストールする</span>
+</span></span><span class="line"><span class="cl">pip install google-cloud-texttospeech<span class="o">==</span>2.0.0
+</span></span></code></pre></div><p>ミニマルなコード例はこんな感じ。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">google.cloud</span> <span class="kn">import</span> <span class="n">texttospeech</span> <span class="k">as</span> <span class="n">tts</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;input.ssml&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ssml</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">client</span> <span class="o">=</span> <span class="n">tts</span><span class="o">.</span><span class="n">TextToSpeechClient</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 入力形式は text or ssml</span>
+</span></span><span class="line"><span class="cl"><span class="n">tts_input</span> <span class="o">=</span> <span class="n">tts</span><span class="o">.</span><span class="n">SynthesisInput</span><span class="p">(</span><span class="n">ssml</span><span class="o">=</span><span class="n">ssml</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 声色の設定： nameが空だと language_code に応じたデフォルト音声が選ばれる</span>
+</span></span><span class="line"><span class="cl"><span class="n">voice</span> <span class="o">=</span> <span class="n">tts</span><span class="o">.</span><span class="n">VoiceSelectionParams</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">language_code</span><span class="o">=</span><span class="s2">&#34;ja-JP&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">name</span><span class="o">=</span><span class="s2">&#34;ja-JP-Wavenet-D&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ssml_gender</span><span class="o">=</span><span class="n">tts</span><span class="o">.</span><span class="n">SsmlVoiceGender</span><span class="o">.</span><span class="n">MALE</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">audio_config</span> <span class="o">=</span> <span class="n">tts</span><span class="o">.</span><span class="n">AudioConfig</span><span class="p">(</span><span class="n">audio_encoding</span><span class="o">=</span><span class="n">tts</span><span class="o">.</span><span class="n">AudioEncoding</span><span class="o">.</span><span class="n">MP3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">synthesize_speech</span><span class="p">(</span><span class="nb">input</span><span class="o">=</span><span class="n">tts_input</span><span class="p">,</span> <span class="n">voice</span><span class="o">=</span><span class="n">voice</span><span class="p">,</span> <span class="n">audio_config</span><span class="o">=</span><span class="n">audio_config</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;output.mp3&#34;</span><span class="p">,</span> <span class="s2">&#34;wb&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">audio_content</span><span class="p">)</span>
+</span></span></code></pre></div><p><a href="https://cloud.google.com/text-to-speech/docs/voices?hl=ja">利用できる音声のリスト</a> によると、少し前に話題になっていた WaveNet を使った音声合成モデルも利用できる。
 日本語音声も WaveNet 版と通常版が選べる。</p>
 <p>はい、おわり。</p>
 <h2 id="もともと何がしたかったのか">もともと何がしたかったのか</h2>

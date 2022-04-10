@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2020 tuxedocat&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 22 Jan 2018 21:54:09 +0900</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 22 Jan 2018 21:54:09 +0900</lastBuildDate><atom:link href="https://log.tuxedokatze.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[PyCharm] Source Rootディレクトリ名によってはデバッガが立ち上がらない</title>
       <link>https://log.tuxedokatze.com/2018/pycharm-source-root%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E5%90%8D%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%81%AF%E3%83%87%E3%83%90%E3%83%83%E3%82%AC%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%89%E3%81%AA%E3%81%84/</link>

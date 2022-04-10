@@ -113,14 +113,13 @@
     <div class="subtitle tags is-6 is-pulled-right">
       
       
-<a class="subtitle is-6" href="/tags/programming/">#programming</a>
+<a class="subtitle is-6" href="/tags/programming">#programming</a>
 
 
 
   
-  | <a class="subtitle is-6" href="/tags/python/">#python</a>
+  | <a class="subtitle is-6" href="/tags/python">#python</a>
   
-
 
       
     </div>
@@ -140,33 +139,33 @@
 <blockquote>
 <p>For tiny web app with flask, anaconda seemed overkill. <code>venv</code> is preferable&hellip;</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish">tuxedocat@katzenwelt:flaskapp
-➤ python3 -m venv --prompt web ./env
-Error: Command <span class="s1">&#39;[&#39;</span>/Users/tuxedocat/Codes/_sandbox/flaskapp/env/bin/python3<span class="s1">&#39;, &#39;</span>-Im<span class="s1">&#39;, &#39;</span>ensurepip<span class="s1">&#39;, &#39;</span>--upgrade<span class="s1">&#39;, &#39;</span>--default-pip<span class="s1">&#39;]&#39;</span> returned non-zero <span class="k">exit</span> <span class="nb">status </span>1.
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fish" data-lang="fish"><span class="line"><span class="cl"><span class="nf">tuxedocat</span>@katzenwelt:flaskapp
+</span></span><span class="line"><span class="cl">➤ python3 <span class="na">-m</span> venv <span class="na">--prompt</span> web ./env
+</span></span><span class="line"><span class="cl"><span class="nf">Error</span>: Command <span class="s1">&#39;[&#39;</span>/Users/tuxedocat/Codes/_sandbox/flaskapp/env/bin/python3<span class="s1">&#39;, &#39;</span><span class="o">-</span>Im<span class="s1">&#39;, &#39;</span>ensurepip<span class="s1">&#39;, &#39;</span><span class="o">--</span>upgrade<span class="s1">&#39;, &#39;</span><span class="o">--</span>default<span class="o">-</span>pip<span class="s1">&#39;]&#39;</span> returned non-zero exit <span class="nb">status </span><span class="m">1</span>.
+</span></span></code></pre></div><blockquote>
 <p>noo&hellip;
 <code>--without-pip</code> worked, but manual instllation of pip is needed.</p>
 </blockquote>
 <blockquote>
 <p>What is that <code>ensurepip</code>?</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish">tuxedocat@katzenwelt:~
-➤ python -m ensurepip
-/Users/tuxedocat/miniconda3/bin/python: No module named ensurepip
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fish" data-lang="fish"><span class="line"><span class="cl"><span class="nf">tuxedocat</span>@katzenwelt:~
+</span></span><span class="line"><span class="cl">➤ python <span class="na">-m</span> ensurepip
+</span></span><span class="line"><span class="cl">/Users/tuxedocat/miniconda3/bin/python: No module named ensurepip
+</span></span></code></pre></div><blockquote>
 <p>OK, anaconda&rsquo;s python cannot work in that way because of <a href="https://github.com/ContinuumIO/anaconda-issues/issues/952">this</a></p>
 </blockquote>
 <blockquote>
 <p>(deleted lines that adds conda path to <code>$PATH</code>)</p>
 </blockquote>
 <h2 id="omake">Omake</h2>
-<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish">tuxedocat@katzenwelt:~
-➤ cat .config/fish/functions/use_conda.fish
-<span class="k">function</span> use_conda --description <span class="s2">&#34;Simply add conda path&#34;</span>
-  <span class="k">set</span> -x PATH ~/miniconda3/bin <span class="nv">$PATH</span>
-  <span class="nb">source</span> ~/miniconda3/etc/fish/conf.d/conda.fish
-<span class="k">end</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fish" data-lang="fish"><span class="line"><span class="cl"><span class="nf">tuxedocat</span>@katzenwelt:~
+</span></span><span class="line"><span class="cl">➤ cat .config/<span class="nb">fish</span>/<span class="nb">functions</span>/use_conda.<span class="nb">fish
+</span></span></span><span class="line"><span class="cl"><span class="nb"></span><span class="k">function</span> <span class="nf">use_conda</span> <span class="na">--description</span> <span class="s2">&#34;Simply add conda path&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">set</span> <span class="na">-x</span> <span class="nv">PATH</span> ~/miniconda3/bin <span class="nv">$PATH</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">source</span> ~/miniconda3/etc/<span class="nb">fish</span>/conf.d/conda.<span class="nb">fish
+</span></span></span><span class="line"><span class="cl"><span class="nb"></span><span class="k">end</span>
+</span></span></code></pre></div>
       
     </div>
     

@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&lt;a href=&#34;https://github.com/tuxedocat/tuxedocat.github.io&#34;&gt;©2011-2020 tuxedocat&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 29 Mar 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://log.tuxedokatze.com/tags/machinelearning/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 29 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://log.tuxedokatze.com/tags/machinelearning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DopeLearning (KDD16) を読んだ．</title>
       <link>https://log.tuxedokatze.com/dopelearning-kdd16-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
